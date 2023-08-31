@@ -6,10 +6,14 @@ Link to Notion ticket
 
 What does the reviewer need to know about the implementation or how to test this PR.
 
-# Testing
+# Testing (tester)
 
 The reviewer should check on this branch:
+
 - The code
-- Bookshop browser loads
-- The component in Bookshop browser (if applicable)
-- The site (branch) in CloudCannon
+- The component in Bookshop browser
+- The site in CloudCannon (link here)
+
+# Before merge (PR owner)
+
+- Delete the test site in CloudCannon
