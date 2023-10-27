@@ -1,4 +1,8 @@
 {% assign c = "c-featured-map" %}
 
-<div class="{{c}}">
+<div class="{{c}} 
+            component 
+            {% if styles.background_variant == "Dark" %} 
+                component--dark
+            {% endif %}"><p>{{ text }}</p>
 </div>

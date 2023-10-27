@@ -18,6 +18,7 @@ blueprint:
     map: "bookshop:simple/google-map-embed"
     button: "TODO"
   styles:
+    background_variant: Light
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
