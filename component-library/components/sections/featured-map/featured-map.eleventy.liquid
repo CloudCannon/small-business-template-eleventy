@@ -5,5 +5,21 @@
             {% if styles.background_variant == "Dark" %} 
                 component--dark
             {% endif %}">
-  <h1>{{ heading }}</h1>
+  <div class="{{c}}__map-block">
+    {% bookshop "simple/google-map-embed" bind:content.map %}
+  </div>
+  <div class="{{c}}__content-block">
+    <div class="{{c}}__content-inner-wrapper">
+      <h3>{{ content.heading }}</h3>
+      <div class="{{c}}__content">
+        {{ content.content }}
+      </div>
+      <div class="{{c}}__list">
+        {% for item in content.list_items %}
+          {% bookshop "generic/labelled-icon" bind:item %}
+        {% endfor %}
+      </div>
+      <!-- TODO: Add button when it's built -->
+    </div>
+  </div>
 </div>

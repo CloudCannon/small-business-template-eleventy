@@ -24,3 +24,6 @@ blueprint:
 preview:
 
 _inputs:
+  content:
+    content:
+    type: html

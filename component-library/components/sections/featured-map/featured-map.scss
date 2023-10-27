@@ -1,2 +1,13 @@
 .c-featured-map {
+  display: grid;
+  grid-template-columns: var(--twelve-column-grid);
+
+  &__map-block {
+    grid-column: 2 / 8;
+  }
+  
+  &__content-block {
+    grid-column: 8 / 14;
+    padding: var(--block-padding);
+  }
 }
