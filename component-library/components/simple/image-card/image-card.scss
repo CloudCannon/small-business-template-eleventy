@@ -1,0 +1,13 @@
+.c-image-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+
+    &--content {
+        font-family: var(--font-family);
+        font-size: var(--paragraph);
+        font-weight: var(--font-weight-body);
+        line-height: var(--line-height);
+    }
+}

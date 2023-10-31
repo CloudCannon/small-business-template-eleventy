@@ -8,10 +8,10 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  svg_icon: solid/academic-cap
+  svg_icon: outline/puzzle-piece
   icon_size: small
   rounded_border: false
-  color: '#f9f9fb'
+  color: '#111'
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
