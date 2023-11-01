@@ -1,0 +1,58 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: "Icon Card Grid"
+  description:
+  icon: table_chart
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    eyebrow_headline:
+    heading:
+    text_content:
+    grid_items:
+      - eyebrow_headline:
+        primary_heading:
+        details:
+        link_url:
+        svg_icon:
+    buttons:
+      - label:
+        link_url:
+        open_in_new_tab: false
+        svg_icon:
+  styles:
+    background_variant: Light
+    icon_color:
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    eyebrow_headline: Lorem ipsum dolor sit amet
+    heading: Sed ut perspiciatis unde omnis
+    text_content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    grid_items:
+      - eyebrow_headline: Icon Card
+        primary_heading: Lorem ipsum dolor sit amet
+        details: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        link_url: "/#"
+        svg_icon: solid/puzzle-piece
+    buttons:
+      - label: Book Now
+        link_url: /#
+        open_in_new_tab: false
+        svg_icon: 
+  styles:
+    background_variant: Light
+    icon_color:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  text_content:
+    type: markdown
+  details:
+    type: markdown
