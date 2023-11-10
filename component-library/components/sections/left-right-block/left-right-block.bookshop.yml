@@ -16,7 +16,7 @@ blueprint:
     icons: [bookshop:generic/labelled-icon]
   styles:
     orientation:
-    image: bookshop: generic/image
+    image: bookshop:generic/image
     background_variant: "Dark"
 
 
