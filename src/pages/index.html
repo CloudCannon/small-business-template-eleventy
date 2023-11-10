@@ -11,10 +11,19 @@ content_blocks:
         _bookshop_name: generic/component-heading
         eyebrow_headline: Eyebrow Heading
         primary_heading: Primary Heading
-      content: A classic component, you can select to have your image to the left or the right, add a button or two, and give the viewer a quick intro to your brand.
+      content: >-
+        A classic component, you can select to have your image to the left or
+        the right, add a button or two, and give the viewer a quick intro to
+        your brand.
       buttons:
-        - label: Book Now
-        - label: Cancel Booking
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Button text
+          variant: primary
+          disabled: false
+          arrow: right
+          onclick:
       icons:
         - _bookshop_name: generic/labelled-icon
           arrangement: stacked
@@ -23,9 +32,9 @@ content_blocks:
             _bookshop_name: generic/icon
             hero_icon_name: academic-cap
             icon_size: large
+            icon_type: solid
             rounded_border: true
             color: '#f9f9fb'
-            icon_type: solid
         - _bookshop_name: generic/labelled-icon
           arrangement: stacked
           text: Great customer service
@@ -33,41 +42,41 @@ content_blocks:
             _bookshop_name: generic/icon
             hero_icon_name: archive-box
             icon_size: large
+            icon_type: solid
             rounded_border: true
             color: '#f9f9fb'
-            icon_type: solid
         - _bookshop_name: generic/labelled-icon
           arrangement: stacked
           text: Outstanding product reviews
           icon:
             _bookshop_name: generic/icon
-            hero_icon_name: banknotes     
+            hero_icon_name: banknotes
             icon_size: large
+            icon_type: solid
             rounded_border: true
             color: '#f9f9fb'
-            icon_type: solid
         - _bookshop_name: generic/labelled-icon
           arrangement: stacked
           text: Outstanding product reviews
           icon:
             _bookshop_name: generic/icon
-            hero_icon_name: banknotes     
+            hero_icon_name: banknotes
             icon_size: large
+            icon_type: solid
             rounded_border: true
             color: '#f9f9fb'
-            icon_type: solid
         - _bookshop_name: generic/labelled-icon
           arrangement: stacked
           text: Outstanding product reviews
           icon:
             _bookshop_name: generic/icon
-            hero_icon_name: banknotes     
+            hero_icon_name: banknotes
             icon_size: large
+            icon_type: solid
             rounded_border: true
             color: '#f9f9fb'
-            icon_type: solid
     styles:
       orientation: Left
       image: /uploads/one-piece-square-universal-base-na-01-zxx.jpg
-      background_variant: "Dark"
+      background_variant: Dark
 ---
