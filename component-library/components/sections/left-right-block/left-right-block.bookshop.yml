@@ -12,8 +12,7 @@ blueprint:
   data:
     heading: bookshop:generic/component-heading
     content: 
-    buttons:
-      - label:
+    buttons: [bookshop:generic/button]
     icons: [bookshop:generic/labelled-icon]
   styles:
     orientation:
@@ -30,7 +29,13 @@ preview:
       primary_heading: A featured icons left right block
     content: Content
     buttons:
-      - label: Test button
+      url: "#"
+      open_in_new_tab: false
+      text: "Button text"
+      variant: "primary"
+      disabled: false
+      arrow: "right"
+      onclick: 
     icons:
       - bookshop: generic/labelled-icon
         arrangement: inline
