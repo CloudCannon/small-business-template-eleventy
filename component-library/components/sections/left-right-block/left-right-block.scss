@@ -9,7 +9,7 @@
   }
 
   &__content {
-    padding: 6rem 0;
+    padding: 3rem 0;
     grid-column: 2 / -2;
   }
 
@@ -42,7 +42,9 @@
   }
 
 
-  &__image {
+  & .c-image,
+  .c-image--live-editing,
+  picture {
     height: 100%;
     object-fit: cover;
     grid-column: 1 / -1;
@@ -53,9 +55,12 @@
     &__content {
       grid-column: 2 / 7;
       align-self: center;
+      padding: 6rem 0;
     }
 
-    &__image {
+    & .c-image,
+    .c-image--live-editing,
+    picture  {
       grid-column: 8 / -2;
     }
 
@@ -64,7 +69,9 @@
         grid-column: 9 / -2;
       }
 
-      #{$c}__image {
+      #{$c} .c-image,
+      .c-image--live-editing, 
+      picture {
         grid-column: 2 / 8;
         grid-row: 1;
       }

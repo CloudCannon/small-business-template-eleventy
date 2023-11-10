@@ -28,6 +28,6 @@
     </div>
   </div>
   {% if styles.image %}
-    <img class="{{ c }}__image" src="{{ styles.image }}" alt="" />
+    {% bookshop "generic/image" bind: styles.image %}
   {% endif %}
 </section>

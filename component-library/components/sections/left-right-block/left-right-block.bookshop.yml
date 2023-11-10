@@ -16,7 +16,7 @@ blueprint:
     icons: [bookshop:generic/labelled-icon]
   styles:
     orientation:
-    image:
+    image: bookshop: generic/image
     background_variant: "Dark"
 
 
@@ -48,8 +48,12 @@ preview:
           icon_type: solid
   styles:
     orientation: Left
-    image: http://placekitten.com/500/500
     background_variant: "Dark"
+    image: 
+      bookshop: generic/image
+      image_path: /assets/images/Testimonial--background-feature.png
+      image_alt: A woman laughing
+
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
