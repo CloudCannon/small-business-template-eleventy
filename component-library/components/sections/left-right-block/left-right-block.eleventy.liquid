@@ -21,8 +21,7 @@
       {% if data.buttons %}
         <div class="{{ c }}__buttons">
           {% for button in data.buttons %}
-            {% comment %} TBD: {% bookshop "generic/button" bind: button %} {% endcomment %}
-            <button>{{button.label}}</button>
+            {% bookshop "generic/button" bind: button %}
           {% endfor %}
         </div>
       {% endif %}
