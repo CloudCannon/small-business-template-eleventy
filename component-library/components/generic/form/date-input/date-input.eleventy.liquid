@@ -1,0 +1,28 @@
+{% assign_local c = "c-date-input" %}
+<div class="{{ c }}">
+    <label class="{{ c }}__label" for="{{ id }}">{{ label }}{% if required %} *{% endif %}</label>
+    <input class="{{ c }}__input {% if min_today %}{{ c }}__input--min-today{% endif %} {% if max_today %}{{ c }}__input--max-today{% endif %}"
+        type="date"
+        id="{{ id }}" 
+        name="{{ label }}" 
+        {% if min_today %}min="{{ 'now' | date: '%Y-%m-%d' }}"{% elsif min_today %}min="{{ min | date: '%Y-%m-%d' }}"{% endif %}
+        {% if max_today %}max="{{ 'now' | date: '%Y-%m-%d' }}"{% elsif max_today %}max="{{ max | date: '%Y-%m-%d' }}"{% endif %}
+        onfocus="setMinMaxDateToday(this)"
+        onblur="validateInput(this)"
+        {% if required %}required{% endif %}
+        {% if helper_text %}aria-describedby="{{ id }}--helper"{% endif %}>
+    <div class="{{ c }}__icon">{% bookshop "generic/icon" hero_icon_name:"calendar-days" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'white' %}</div>
+    <div class="{{ c }}__dropdown-arrow">{% bookshop "generic/icon" hero_icon_name:"chevron-down" icon_type:"solid" icon_size:'extra-small' rounded_border:false color:'white' %}</div>
+
+    {% if helper_text %}
+        <div class="{{ c }}__helper">
+            {% bookshop "generic/icon" hero_icon_name:"information-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--brand-grey-000, #F9F9FB)' %}
+            <p class="{{ c }}__helper__text" id="{{ id }}--helper" role="tooltip">{{ helper_text }}<p>
+        </div>
+    {% endif %}
+
+    <div class="{{ c }}__error error">
+        {% bookshop "generic/icon" hero_icon_name:"x-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--error-red-300, #BF2323)' %}
+        <p class="{{ c }}__error__text error__text" id="{{ id }}--error">Error Message<p>
+    </div>
+</div>

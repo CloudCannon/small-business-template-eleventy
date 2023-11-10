@@ -1,0 +1,10 @@
+.c-form-builder {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__submit-button {
+        text-align: center;
+    }
+}

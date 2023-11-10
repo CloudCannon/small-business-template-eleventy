@@ -1,0 +1,9 @@
+{% assign si = "c-social-icons" %}
+
+<div class="{{ si }}" style="--hover-color: {{ style.icon_background_hover_color }}; --fill-color: {{ style.icon_color }}; --fill-color-hover: {{ style.icon_hover_color }};">
+    {% for item in social_media_links %}
+          <a class="{{ si }}__icon" href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">
+              {% bookshop "generic/custom-icon" svg_icon:item.svg_icon icon_size:'small' rounded_border:true color:'transparent' %}
+          </a>
+    {% endfor %}
+</div>

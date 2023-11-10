@@ -17,8 +17,11 @@
   }
 
   &__primary_heading {
-    grid-row: 2;
     font-size: var(--large-heading);
     letter-spacing: var(--letter-spacing);
+  }
+
+  &__eyebrow_heading + &__primary_heading {
+    grid-row: 2;
   }
 }

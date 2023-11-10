@@ -1,4 +1,5 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import "./form-validation"
 
 const swapOpenState = () => {
   const nav = document.getElementById('main-menu');

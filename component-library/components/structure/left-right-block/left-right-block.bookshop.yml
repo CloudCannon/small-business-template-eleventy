@@ -37,9 +37,10 @@ preview:
         text: Icon text
         icon:
           bookshop: generic/icon
-          svg_icon: solid/academic-cap
+          hero_icon_name: academic-cap
           icon_size: small
           rounded_border: true
+          icon_type: solid
   styles:
     orientation: Left
     image: http://placekitten.com/500/500

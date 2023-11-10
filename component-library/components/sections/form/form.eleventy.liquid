@@ -1,0 +1,15 @@
+{% assign_local c = "c-form" %}
+<section class="{{ c }} {{ c }}--content-align-{{ styles.content_alignment }} component 
+            {% if styles.background_variant == 'dark' %} 
+                component--dark
+            {% endif %}" >
+
+    <div class="{{ c }}__heading">
+        {% if content.heading %}{% bookshop "generic/component-heading" bind:content.heading %}{% endif %}
+        {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
+    </div>
+
+    <div class="{{ c }}__form">
+        {% bookshop "simple/form-builder" bind:content.form %}
+    </div>
+</section>

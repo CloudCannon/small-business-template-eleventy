@@ -1,10 +1,14 @@
 {% assign_local c = "c-component-heading" %}
 
 <header class="{{ c }}">
-  <h2 class="{{ c }}__primary_heading">
-    {{ primary_heading }}
-  </h2>
-  <h3 class="{{ c }}__eyebrow_heading">
-    {{ eyebrow_headline }}
-  </h3>
+  {% if primary_heading %}
+    <h2 class="{{ c }}__primary_heading">
+      {{ primary_heading }}
+    </h2>
+  {% endif %}
+  {% if eyebrow_headline %}
+    <h3 class="{{ c }}__eyebrow_heading">
+      {{ eyebrow_headline }}
+    </h3>
+  {% endif %}
 </header>

@@ -2,9 +2,12 @@
 
     <img class="c-image--live-editing" src="{{ image_path }}" alt="{{ image_alt }}">
 
+{% elsif image_path contains 'http://' or image_path contains 'https://' %}
+
+    <img class="c-image" src="{{ image_path }}" alt="{{ image_alt }}">
+
 {% else %}
 
-    {% assign image_path = "src/" | append: image_path %}
-    {% image image_path, image_alt %}
+    {% image image_path, image_alt, 'c-image', true %}
 
 {% endif %}

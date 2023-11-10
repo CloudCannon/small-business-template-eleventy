@@ -5,6 +5,28 @@
     "heading_font": "Lato",
     "content_font": "Lato"
   },
+  "social_media_links": [
+    {
+      "link_url": "https://www.youtube.com/",
+      "svg_icon": "/assets/images/icons/social/youtube.svg"
+    },
+    {
+      "link_url": "https://www.facebook.com/",
+      "svg_icon": "/assets/images/icons/social/facebook.svg"
+    },
+    {
+      "link_url": "https://www.linkedin.com/",
+      "svg_icon": "/assets/images/icons/social/linkedin.svg"
+    },
+    {
+      "link_url": "https://www.twitter.com/",
+      "svg_icon": "/assets/images/icons/social/x.svg"
+    },
+    {
+      "link_url": "https://www.instagram.com/",
+      "svg_icon": "/assets/images/icons/social/instagram.svg"
+    }
+  ],
   "google_maps_api_key": null,
   "_inputs": {
     "light_background_variant": {
@@ -18,6 +40,34 @@
     },
     "content_font": {
       "comment": "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
+    },
+    "social_media_links": {
+      "type": "array",
+      "options": {
+        "structures": {
+          "values": [
+            {
+              "label": "Social Media Link",
+              "icon": "link",
+              "value": {
+                "link_url": null,
+                "svg_icon": null
+              },
+              "_inputs": {
+                "svg_icon": {
+                  "type": "image",
+                  "comment": "This input is restricted to only allow images with type SVG",
+                  "options": {
+                    "accepts_mime_types": [
+                      "image/svg+xml"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
     },
     "google_maps_api_key": {
       "comment": "The API key used for the Google Map component. To see more about getting an API key see the [documentation](https://developers.google.com/maps/documentation/javascript/get-api-key)."
