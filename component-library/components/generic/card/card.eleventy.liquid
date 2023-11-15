@@ -3,11 +3,10 @@
     {% if icon %}
         {% bookshop "generic/icon" bind:icon %}
     {% else %}
-    <h1>Image</h1>
         {% comment %} TODO: put image component here {% endcomment %}
     {% endif %}
     
-    {% bookshop "generic/component-heading" primary_heading=primary_heading eyebrow_headline=eyebrow_headline %}
+    {% bookshop "generic/component-heading" bind:headings %}
 
     <div class="{{c}}--content">{{ details }}</div>
     <div class="{{c}}__buttons">
