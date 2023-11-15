@@ -1,9 +1,11 @@
 {% assign c = "c-custom-icon" %}
 
-<div class="{{ c }} {{ c }}--{{ icon_size }} {{ c }}--{{ icon_style }} {% if rounded_border %}{{c}}--round{% endif %}" style="--c-custom-icon-color: {{ color }}">
-    {% if env_bookshop_live %}
-        <div class="{{ c }}__image" style="--url: url('{{ svg_icon }}')"></div>
+<div class="{{ c }} {{ c }}--{{ icon_size }} {{ c }}--{{ icon_type }} {% if rounded_border %}{{c}}--round{% endif %}" style="--c-custom-icon-color: {{ color }}">
+    {% if icon_path contains '.svg' and env_bookshop_live %}
+        <div class="{{ c }}__image" style="--url: url('{{ icon_path }}')"></div>
+    {% elsif icon_path contains '.svg' %}
+        {{ '/src' | append: icon_path  | svgContents: "c-custom-icon__svg" }}
     {% else %}
-        {{ '/src' | append: svg_icon  | svgContents: "c-custom-icon__svg" }}
+        {% bookshop "generic/image" image_path:icon_path image_alt:'' %}
     {% endif %}
 </div>

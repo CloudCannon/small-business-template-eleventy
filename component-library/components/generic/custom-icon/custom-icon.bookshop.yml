@@ -8,7 +8,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  svg_icon: 
+  icon_path: 
   icon_size: small
   icon_type: solid
   rounded_border: false
@@ -21,7 +21,7 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   color:
-    comment: This controls the icon color and the rounded border color (if one is included)
+    comment: This controls the icon color (if the icon is an svg) and the rounded border color (if one is included)
   icon_size:
     type: choice
     options:
@@ -34,5 +34,5 @@ _inputs:
       values:
         - solid
         - outline
-  svg_icon:
+  icon_path:
     type: image
