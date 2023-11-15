@@ -47,6 +47,10 @@
         }
     }
 
+    &__svg {
+        width: 100%;
+    }
+
     &__image {
         background: var(--c-icon-color);
         width: 100%;
