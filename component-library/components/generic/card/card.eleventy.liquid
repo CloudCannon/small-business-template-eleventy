@@ -1,15 +1,22 @@
 {%  assign c = 'c-card' %}
 <div class={{c}}>
     {% if icon %}
-        {% bookshop "generic/icon" bind:icon %}
+        <div class="{{c}}__icon-wrapper">
+            {% bookshop "generic/icon" bind:icon color:"currentColor" %}
+        </div>
     {% else %}
-        {% comment %} TODO: put image component here {% endcomment %}
+        <div class="{{c}}__image-wrapper">
+            {% comment %} TODO: put image component here {% endcomment %}
+        </div>
     {% endif %}
     
     {% bookshop "generic/component-heading" bind:headings %}
 
-    <div class="{{c}}--content">{{ details }}</div>
+    <div class="{{c}}__content">
+        {{ details }}
+    </div>
+
     <div class="{{c}}__buttons">
-        {% bookshop "generic/button" text:link_label variant:"primary" disabled:false arrow:"arrow-right" url:link_url %}
+        {% bookshop "generic/button" text:link_label variant:"secondary" disabled:false arrow:"arrow-right" url:link_url %}
     </div>
 </div>

@@ -1,0 +1,103 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: "Card Grid"
+  description:
+  icon: table_chart
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    eyebrow_headline:
+    heading:
+    text_content:
+    grid_items:
+      - eyebrow_headline:
+        primary_heading:
+        details:
+        link_url:
+        icon:
+    buttons:
+      - label:
+        link_url:
+        open_in_new_tab: false
+        svg_icon:
+  styles:
+    background_variant: Light
+    icon_color:
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    eyebrow_headline: Bite Sized Information
+    heading: An Icon Card Grid
+    text_content: >-
+      Sometimes you only need a small text and image section and a cards grid is the best option to showcase your content.
+    grid_items:
+      - headings: 
+          _bookshop_name: generic/component-heading
+          eyebrow_headline: SIMPLE CARD
+          primary_heading: PRIMARY HEADING
+        details: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        link_label: Book Now
+        link_url:
+        icon:
+          _bookshop_name: generic/icon
+          svg_icon: puzzle-piece
+          icon_size: small
+          icon_type: solid
+          rounded_border: false
+          color: '#111111'
+        image: 
+      - headings: 
+          _bookshop_name: generic/component-heading
+          eyebrow_headline: SIMPLE CARD
+          primary_heading: PRIMARY HEADING
+        details: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        link_label: Book Now
+        link_url:
+        icon:
+          _bookshop_name: generic/icon
+          svg_icon: puzzle-piece
+          icon_size: small
+          icon_type: solid
+          rounded_border: false
+          color: '#111111'
+        image: 
+      - headings: 
+          _bookshop_name: generic/component-heading
+          eyebrow_headline: SIMPLE CARD
+          primary_heading: PRIMARY HEADING
+        details: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        link_label: Book Now
+        link_url:
+        icon:
+          _bookshop_name: generic/icon
+          svg_icon: puzzle-piece
+          icon_size: small
+          icon_type: solid
+          rounded_border: false
+          color: '#111111'
+        image: 
+    buttons:
+      - url: "#"
+        text: "Book Now"
+        variant: "primary"
+      
+      - url: "#"
+        text: "Biscuits"
+        variant: "secondary"
+  styles:
+    background_variant: Dark
+    icon_color:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  text_content:
+    type: markdown
+  details:
+    type: markdown

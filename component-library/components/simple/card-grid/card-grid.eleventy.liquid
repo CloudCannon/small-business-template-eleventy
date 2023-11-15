@@ -1,0 +1,31 @@
+{% assign c = "c-card-grid" %}
+<div class="{{c}} 
+            component 
+            {% if styles.background_variant == "Dark" %} 
+                component--dark
+            {% endif %}">
+
+  <div class="{{c}}__wrapper">
+    <div class="{{c}}__content-grid">
+      <div class="{{c}}__content-wrapper">
+        <h4 class="{{c}}__eyebrow">{{ content.eyebrow_headline }}</h4>
+        <h3 class="{{c}}__heading">{{ content.heading }}</h3>
+        <div class="{{c}}__content">
+          {{ content.text_content }}
+        </div>
+      </div>
+    </div>
+
+    <div class="{{c}}__grid">
+      {% for item in content.grid_items %}
+        {% bookshop "generic/card" bind:item %}
+      {% endfor %}
+    </div>
+
+    <div class="{{c}}__buttons">
+      {% for button in content.buttons %}
+        {% bookshop "generic/button" bind:button disabled:false arrow:"arrow-right" %}
+      {% endfor % %}
+    </div>
+  </div>
+</div>
