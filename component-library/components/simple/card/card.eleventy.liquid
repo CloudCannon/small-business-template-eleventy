@@ -1,15 +1,15 @@
 {%  assign c = 'c-image-card' %}
 <div class={{c}}>
-    {% if is_image %}
+    {% if svg_icon %}
+    {% bookshop "generic/icon" bind:icon %}
+    {% else %}
         {% comment %} TODO: put image component here {% endcomment %}
-    {% elsif icon %}
-        {% bookshop "generic/icon" bind:icon %}
     {% endif %}
+    
+    {% bookshop "generic/component-heading" primary_heading=primary_heading eyebrow_headline=eyebrow_headline %}
 
-    {% if heading %}{% bookshop "generic/component-heading" bind:heading %}{% endif %}
-
-    <div class="{{c}}--content">{{ content }}</div>
-    <div>
+    <div class="{{c}}--content">{{ details }}</div>
+    <div class="{{c}}__buttons">
         {% comment %} TODO: waiting on Generic Button component {% endcomment %}
         <a href="{{ link_url }}">
             Book Now {% bookshop "generic/icon" svg_icon: 'solid/arrow-right' icon_size: 'small' rounded_border: false color: '#111' %}

@@ -5,33 +5,64 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 content_blocks:
-  - _bookshop_name: simple/image-card
-    is_image: false
-    image:
+  - _bookshop_name: simple/card
+    eyebrow_headline: SIMPLE CARD
+    primary_heading: 
+      _bookshop_name: generic/component-heading
+      eyebrow_headline: PRIMARY HEADING EYEBROW
+      primary_heading: PRIMARY HEADING
+    details: >- 
+      versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience. They come with an action link to get your users into the journey you’ve crafted for them.
+    link_url:
     icon:
       _bookshop_name: generic/icon
       svg_icon: outline/puzzle-piece
       icon_size: small
       rounded_border: false
       color: '#111111'
-    heading:
-      _bookshop_name: generic/component-heading
-      eyebrow_headline: icon card
-      primary_heading: Your service, simplified
-    content: >-
-      These versatile cards can be used to talk about your services or products,
-      or anything else you are keen to share with your audience. They come with
-      an action link to get your users into the journey you’ve crafted for them.
-    link_url:
+    image: 
+  - _bookshop_name: simple/icon-card-grid
+    content:
+      eyebrow_headline: Lorem ipsum dolor sit amet
+      heading: Sed ut perspiciatis unde omnis
+      text_content: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      grid_items:
+        - eyebrow_headline: Icon Card
+          primary_heading: Lorem ipsum dolor sit amet
+          details: >-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          link_url: "/#"
+          svg_icon: solid/puzzle-piece
+        - eyebrow_headline: Icon Card
+          primary_heading: Lorem ipsum dolor sit amet
+          details: >-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          link_url: "/#"
+          svg_icon: solid/puzzle-piece
+        - eyebrow_headline: Icon Card
+          primary_heading: Lorem ipsum dolor sit amet
+          details: >-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          link_url: "/#"
+          svg_icon: solid/puzzle-piece
+      buttons:
+        - label: Book Now
+          link_url: /#
+          open_in_new_tab: false
+          svg_icon: 
+    styles:
+      background_variant: Light
+      icon_color:
   - _bookshop_name: sections/featured-map
     content:
       display_social_media_links: true
-      heading: sadsadas
+      heading: Heading
       content:
       list_items:
         - _bookshop_name: generic/labelled-icon
           arrangement: inline
-          text: HONK
+          text: TEST
           icon:
             _bookshop_name: generic/icon
             svg_icon: solid/academic-cap

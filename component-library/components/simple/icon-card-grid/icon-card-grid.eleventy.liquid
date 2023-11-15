@@ -17,7 +17,9 @@
     <div class="{{c}}__grid">
       {% for item in content.grid_items %}
         {{ item.eyebrow_headline }}
-        {% bookshop "generic/labelled-icon" bind:item %}
+        labelled icon<br>
+        {% bookshop "generic/labelled-icon" bind:item.icon %}<br>
+        labelled icon
       {% endfor %}
     </div>
 
