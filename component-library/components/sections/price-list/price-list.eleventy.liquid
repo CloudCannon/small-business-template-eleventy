@@ -1,0 +1,28 @@
+{% assign pl = "c-price-list" %}
+<section class="{{ pl }} {{ pl }}--content-align-{{ styles.content_alignment }} component 
+            {% if styles.background_variant == 'dark' %} 
+                component--dark
+            {% endif %}">
+    
+    <div class="{{ pl }}__heading">
+        {% if content.heading %}{% bookshop "generic/component-heading" bind:content.heading %}{% endif %}
+        {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
+    </div>
+
+    <div class="{{ pl }}__lists">
+        {% for list in content.lists %}
+            <ul class="{{ pl }}__lists__list">
+                <h4 class="{{ pl }}__lists__list__heading">{{ list.list_heading }}</h4>
+                {% for item in list.list_items %}
+                    <li class="{{ pl }}__lists__list__item">
+                        <p class="{{ pl }}__lists__list__item__label">{{ item.label }}</p>
+                        <span class="{{ pl }}__lists__list__item__seperator"></span>
+                        <p class="{{ pl }}__lists__list__item__detail">{{ item.detail }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
+
+    {% comment %} TODO: add button(s) subcomponent {% endcomment %}
+</section>

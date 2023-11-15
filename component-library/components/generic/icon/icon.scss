@@ -1,6 +1,9 @@
 .c-icon {
     border: none;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     &--round {
         border-radius: 50%;
@@ -28,6 +31,11 @@
         height: 2rem;
     }
 
+    &--tiny {
+        width: 1rem;
+        height: 1rem;
+    }
+
     &--outline {
         .c-icon__svg {
             stroke: var(--c-icon-color, #FFF);
@@ -45,5 +53,9 @@
         height: 100%;
         mask: var(--url);
         -webkit-mask: var(--url);
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: center;
+        -webkit-mask-position: center;
     }
 }

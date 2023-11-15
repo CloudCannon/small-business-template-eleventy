@@ -1,0 +1,10 @@
+{% if env_bookshop_live %}
+
+    <img class="c-image--live-editing" src="{{ image_path }}" alt="{{ image_alt }}">
+
+{% else %}
+
+    {% assign image_path = "src/" | append: image_path %}
+    {% image image_path, image_alt %}
+
+{% endif %}

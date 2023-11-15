@@ -1,0 +1,45 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Button"
+  description:
+  icon: smart_button
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  url: "#"
+  text: "Hello World!"
+  variant: "primary"
+  disabled: false
+  arrow: "right"
+  onclick: ""
+  id: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  url: "#"
+  text: "Hello World!"
+  variant: "primary"
+  disabled: false
+  arrow: "right"
+  onclick: console.log("test")
+  id: ""
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  arrow:
+    type: select
+    options:
+      values:
+        - up
+        - right
+        - down
+        - left
+  variant:
+    type: select
+    options:
+      values:
+        - primary
+        - secondary

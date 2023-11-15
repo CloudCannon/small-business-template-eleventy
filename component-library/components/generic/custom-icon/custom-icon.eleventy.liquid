@@ -1,0 +1,19 @@
+{% assign c = "c-custom-icon" %}
+
+{% assign icon_style="custom" %}
+{% assign icon_path=svg_icon %}
+
+{% comment %} Append path and define style if the icon is selected from the heroicon library options {% endcomment %}
+{% assign icon_path_first = svg_icon | split: '/' | first %}
+{% if icon_path_first == "outline" or icon_path_first == "solid" %}
+    {% assign icon_style = icon_path_first %}
+    {% assign icon_path = "/assets/images/icons/" | append: svg_icon  | append: '.svg' %}
+{% endif %}
+
+<div class="{{ c }} {{ c }}--{{ icon_size }} {{ c }}--{{ icon_style }} {% if rounded_border %}{{c}}--round{% endif %}" style="--c-custom-icon-color: {{ color }}">
+    {% if env_bookshop_live %}
+        <div class="{{ c }}__image" style="--url: url('{{ icon_path }}')"></div>
+    {% else %}
+        {{ '/src' | append: icon_path  | svgContents: "c-icon__svg" }}
+    {% endif %}
+</div>

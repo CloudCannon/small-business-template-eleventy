@@ -8,6 +8,7 @@
     "bookshop-sass:watch": "bookshop-sass -b component-library -o css/bookshop.css -w",
     "bookshop:browser": "bookshop-browser",
     "bookshop:new": "npx @bookshop/init --component",
+    "bookshop:update": "npx @bookshop/up@latest",
     "eleventy:build": "eleventy",
     "eleventy:watch": "ELEVENTY_ENV=development eleventy --serve",
     "sass:watch": "sass --no-source-map --watch src/assets/styles:css",
@@ -27,8 +28,10 @@
   "homepage": "https://github.com/CloudCannon/small-business-template-eleventy#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
     "@bookshop/sass": "^3.6.5",
-    "eleventy-plugin-svg-contents": "^0.7.0"
+    "eleventy-plugin-svg-contents": "^0.7.0",
+    "outdent": "^0.8.0"
   },
   "dependencies": {
     "@bookshop/browser": "3.6.5",
