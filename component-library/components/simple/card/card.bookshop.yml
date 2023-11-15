@@ -15,6 +15,7 @@ blueprint:
   link_url:
   svg_icon: bookshop:generic/icon
   image: 
+  link_label: Book Now
   link_url:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
