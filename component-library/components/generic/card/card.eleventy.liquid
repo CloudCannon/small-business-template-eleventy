@@ -1,8 +1,9 @@
-{%  assign c = 'c-image-card' %}
+{%  assign c = 'c-card' %}
 <div class={{c}}>
-    {% if svg_icon %}
-    {% bookshop "generic/icon" bind:icon %}
+    {% if icon %}
+        {% bookshop "generic/icon" bind:icon %}
     {% else %}
+    <h1>Image</h1>
         {% comment %} TODO: put image component here {% endcomment %}
     {% endif %}
     
@@ -10,6 +11,6 @@
 
     <div class="{{c}}--content">{{ details }}</div>
     <div class="{{c}}__buttons">
-        {% bookshop "generic/button" text:link_label variant:"primary" disabled:false arrow:"right" url:link_url %}
+        {% bookshop "generic/button" text:link_label variant:"primary" disabled:false arrow:"arrow-right" url:link_url %}
     </div>
 </div>
