@@ -13,7 +13,7 @@ blueprint:
   text: "Hello World!"
   variant: "primary"
   disabled: false
-  arrow: "right"
+  arrow: "arrow-right"
   onclick: ""
   id: ""
 
@@ -23,7 +23,7 @@ preview:
   text: "Hello World!"
   variant: "primary"
   disabled: false
-  arrow: "right"
+  arrow: "arrow-right"
   onclick: console.log("test")
   id: ""
 
