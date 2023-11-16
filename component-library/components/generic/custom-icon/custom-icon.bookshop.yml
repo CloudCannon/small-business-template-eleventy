@@ -16,7 +16,7 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  svg_icon: /assets/images/icons/social/youtube.svg
+  icon_path: /assets/images/icons/social/youtube.svg
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

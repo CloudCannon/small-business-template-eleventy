@@ -37,12 +37,12 @@
     }
 
     &--outline {
-        .c-icon__svg {
+        .c-icon__svg, * {
             stroke: var(--c-icon-color, #FFF);
         }
     }
     &--solid {
-        .c-icon__svg {
+        .c-icon__svg, *{
             fill: var(--c-icon-color, #FFF);
         }
     }
