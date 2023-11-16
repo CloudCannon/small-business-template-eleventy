@@ -18,14 +18,14 @@ blueprint:
         primary_heading:
         details:
         link_url:
-        icon:
+        svg_icon:
     buttons:
       - label:
-        link_url:
+        text:
         open_in_new_tab: false
         svg_icon:
   styles:
-    background_variant: Light
+    background_variant: Dark
     icon_color:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
