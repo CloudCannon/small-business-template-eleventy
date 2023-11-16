@@ -18,8 +18,9 @@ content_blocks:
             _bookshop_name: generic/icon
             svg_icon: solid/academic-cap
             icon_size: small
+            icon_type: solid
             rounded_border: false
-            color: 'red'
+            color: red
       map:
         _bookshop_name: simple/google-map-embed
         latitude:
@@ -28,4 +29,27 @@ content_blocks:
       button: TODO
     styles:
       background_variant: Light
+  - _bookshop_name: simple/card-grid
+    content:
+      eyebrow_headline: Eyebrow
+      heading: Heading
+      text_content: Text content
+      grid_items:
+        - svg_icon: outline/adjustments-horizontal
+          eyebrow_headline: Eyebrow
+          primary_heading: Heading
+          details: Content
+          link_label: Book Now
+          link_url:
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          text: Hello World!
+          variant: primary
+          disabled: false
+          arrow: arrow-right
+          onclick: ''
+          id: ''
+    styles:
+      background_variant: Dark
 ---
