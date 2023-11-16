@@ -19,14 +19,9 @@ blueprint:
         details:
         link_url:
         svg_icon:
-    buttons:
-      - label:
-        text:
-        open_in_new_tab: false
-        svg_icon:
+    buttons: [bookshop:generic/button]
   styles:
     background_variant: Dark
-    icon_color:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
