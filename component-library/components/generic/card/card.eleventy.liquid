@@ -2,7 +2,7 @@
 <div class={{c}}>
     {% if icon %}
         <div class="{{c}}__icon-wrapper">
-            {% bookshop "generic/icon" bind:icon color:"currentColor" %}
+            {% bookshop "generic/icon" svg_icon:svg_icon color:"currentColor" icon_size:"small" icon_type:"outline" rounded_border:false %}
         </div>
     {% else %}
         <div class="{{c}}__image-wrapper">

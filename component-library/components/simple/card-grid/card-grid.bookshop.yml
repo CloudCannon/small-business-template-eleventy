@@ -13,7 +13,12 @@ blueprint:
     eyebrow_headline:
     heading:
     text_content:
-    grid_items: [bookshop:generic/card]
+    grid_items:
+      - eyebrow_headline:
+        primary_heading:
+        details:
+        link_url:
+        svg_icon:
     buttons: [bookshop:generic/button]
   styles:
     background_variant: Dark
