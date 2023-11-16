@@ -3,13 +3,13 @@ spec:
   structures:
     - content_blocks
   label: "Left/Right block"
-  description: Left/Right content block
+  description: Content that can be arranged left-right or right-left
   icon: side_navigation
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  data:
+  content:
     heading: bookshop:generic/component-heading
     content: 
     buttons: [bookshop:generic/button]
@@ -22,7 +22,7 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  data:
+  content:
     heading:
       bookshop: generic/component-heading
       eyebrow_headline: Let your features shine
@@ -51,7 +51,7 @@ preview:
     background_variant: "Dark"
     image: 
       bookshop: generic/image
-      image_path: /assets/images/Testimonial--background-feature.png
+      image_path: /assets/images/Left-Right--featured-image.png
       image_alt: A woman laughing
 
 
