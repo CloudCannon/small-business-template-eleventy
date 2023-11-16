@@ -49,8 +49,11 @@
     grid-auto-rows: auto;
     grid-gap: 1.5rem;
 
-    .c-card {
+    @media screen and (max-width: 786px) {
+      grid-template-columns: repeat(1, 1fr);
     }
+
+    .c-card {}
   }
 
   &__buttons {

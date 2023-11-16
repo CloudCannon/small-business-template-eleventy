@@ -27,67 +27,51 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    eyebrow_headline: Bite Sized Information
+    eyebrow_headline: Bite sized information
     heading: An Icon Card Grid
     text_content: >-
-      Sometimes you only need a small text and image section and a cards grid is the best option to showcase your content.
+      Sometimes you only need a small text and image section and a cards grid
+      is the best option to showcase your content.
     grid_items:
-      - headings: 
-          _bookshop_name: generic/component-heading
-          eyebrow_headline: SIMPLE CARD
-          primary_heading: PRIMARY HEADING
+      - svg_icon: megaphone
+        eyebrow_headline: Icon Card
+        primary_heading: Your service, simplified
         details: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        link_label: Book Now
+          These versatile cards can be used to talk about your services or
+          products, or anything else you are keen to share with your audience.
+          They come with an action link to get your users into the journey
+          you’ve crafted for them.
+        link_label: Secondary
         link_url:
-        icon:
-          _bookshop_name: generic/icon
-          svg_icon: puzzle-piece
-          icon_size: small
-          icon_type: solid
-          rounded_border: false
-          color: '#111111'
-        image: 
-      - headings: 
-          _bookshop_name: generic/component-heading
-          eyebrow_headline: SIMPLE CARD
-          primary_heading: PRIMARY HEADING
+      - svg_icon: radio
+        eyebrow_headline: Icon Card
+        primary_heading: Your service, simplified
         details: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        link_label: Book Now
+          These versatile cards can be used to talk about your services or
+          products, or anything else you are keen to share with your audience.
+          They come with an action link to get your users into the journey
+          you’ve crafted for them.
+        link_label: Secondary
         link_url:
-        icon:
-          _bookshop_name: generic/icon
-          svg_icon: puzzle-piece
-          icon_size: small
-          icon_type: solid
-          rounded_border: false
-          color: '#111111'
-        image: 
-      - headings: 
-          _bookshop_name: generic/component-heading
-          eyebrow_headline: SIMPLE CARD
-          primary_heading: PRIMARY HEADING
+      - svg_icon: rocket-launch
+        eyebrow_headline: Icon Card
+        primary_heading: Your service, simplified
         details: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        link_label: Book Now
+          These versatile cards can be used to talk about your services or
+          products, or anything else you are keen to share with your audience.
+          They come with an action link to get your users into the journey
+          you’ve crafted for them.
+        link_label: Secondary
         link_url:
-        icon:
-          _bookshop_name: generic/icon
-          svg_icon: puzzle-piece
-          icon_size: small
-          icon_type: solid
-          rounded_border: false
-          color: '#111111'
-        image: 
     buttons:
-      - url: "#"
-        text: "Book Now"
-        variant: "primary"
-      
-      - url: "#"
-        text: "Biscuits"
-        variant: "secondary"
+      - _bookshop_name: generic/button
+        url: '#'
+        text: Book Now
+        variant: primary
+        disabled: false
+        arrow: arrow-right
+        onclick: ''
+        id: ''
   styles:
     background_variant: Dark
     icon_color:
