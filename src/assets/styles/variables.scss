@@ -9,6 +9,9 @@
   --tablet: 768px;
   --mobile: 479px;
 
+  /* Padding */
+  --block-padding: 138px 120px;
+
   /* Type scale */
   --extra-large-heading: 3.052rem;
   --large-heading: 2.441rem;
@@ -28,6 +31,7 @@
   --font-weight-bold: 700;
 
   /* Colors */
+  --text: #ffffff;
   // Gray
   --brand-grey-000: #f9f9fb;
   --brand-grey-100: #f2f2f4;

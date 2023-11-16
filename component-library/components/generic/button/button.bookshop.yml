@@ -13,8 +13,9 @@ blueprint:
   text: "Button text"
   variant: "primary"
   disabled: false
-  arrow: "right"
-  onclick: 
+  arrow: "arrow-right"
+  onclick: ""
+  id: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -22,8 +23,9 @@ preview:
   text: "Button text"
   variant: "primary"
   disabled: false
-  arrow: "right"
-  onclick: console.log(this)
+  arrow: "arrow-right"
+  onclick: console.log("test")
+  id: ""
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

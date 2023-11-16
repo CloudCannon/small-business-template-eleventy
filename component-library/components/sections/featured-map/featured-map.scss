@@ -1,0 +1,41 @@
+.c-featured-map {
+  display: grid;
+  grid-template-columns: var(--twelve-column-grid);
+  color: var(--text);
+
+  &.component {
+    padding: 0;
+  }
+
+  &__map-block {
+    grid-column: 1/8;
+  }
+  
+  &__content-block {
+    grid-column: 8 / 15;
+    padding: var(--block-padding);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__content-inner-wrapper {
+    padding-left: 24px;
+    border-left: 1px solid var(--text);
+  }
+
+  &__heading {
+    margin-bottom: 24px;
+    font-size: 3.05188rem;
+    font-weight: 700;
+    color: var(--brand-grey-000);
+  }
+
+  &__list {
+    .c-labelled-icon {
+      margin-top: 8px;
+      justify-content: flex-start;
+    }
+  }
+}
