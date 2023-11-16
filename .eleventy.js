@@ -4,6 +4,7 @@ const svgContents = require("eleventy-plugin-svg-contents");
 const esbuild = require('esbuild');
 const { Tokenizer, assert } = require('liquidjs');
 const path = require("node:path");
+const fs = require('fs'); 
 const Image = require("@11ty/eleventy-img");
 
 const IMAGE_OPTIONS = {
@@ -41,20 +42,25 @@ module.exports = function (eleventyConfig) {
 
   // Custom shortcodes
   eleventyConfig.addShortcode("image", async (srcFilePath, alt, className, preferSvg) => {
-		let before = Date.now();
-		let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
-		let metadata = await Image(inputFilePath, Object.assign({
-			svgShortCircuit: preferSvg ? "size" : false,
-		}, IMAGE_OPTIONS));
-		console.log( `[11ty/eleventy-img] ${Date.now() - before}ms: ${inputFilePath}` );
+    let before = Date.now();
+    let inputFilePath = srcFilePath == null ? srcFilePath : path.join(eleventyConfig.dir.input, srcFilePath);
 
-		return Image.generateHTML(metadata, {
-			alt,
-      class: className,
-			sizes: "100vw",
-			loading: "eager",
-			decoding: "async",
-		});
+    if (fs.existsSync(inputFilePath)) {
+      let metadata = await Image(inputFilePath, Object.assign({
+        svgShortCircuit: preferSvg ? "size" : false,
+      }, IMAGE_OPTIONS));
+      console.log( `[11ty/eleventy-img] ${Date.now() - before}ms: ${inputFilePath}` );
+
+      return Image.generateHTML(metadata, {
+        alt,
+        class: className,
+        sizes: "100vw",
+        loading: "eager",
+        decoding: "async",
+      });
+    } else {
+      return `<img src='${srcFilePath}' alt='${alt}'>`;
+    }
 	});
   
   // Plugins

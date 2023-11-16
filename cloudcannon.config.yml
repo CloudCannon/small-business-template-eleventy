@@ -34,22 +34,55 @@ _inputs:
     comment: If an image is uploaded it will be used over a name set in the logo text field
   logo_text:
     comment: If an image is set in the logo image field, this value will not be used
+  footer_content:
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      link: true
+      undo: true
+      redo: true
   font:
     comment: Write the name of any font from https://fonts.google.com/ in data/fonts to access it here
+  content_alignment:
+    type: choice
+    options:
+      value_key: id
+      preview:
+        text: 
+          - key: name
+        icon:
+          - key: icon
+      values:
+        - name: Left
+          id: left
+          icon: format_align_left
+        - name: Center
+          id: center
+          icon: format_align_center
+  background_variant:
+    type: choice
+    options:
+      value_key: id
+      preview:
+        text: 
+          - key: name
+        icon:
+          - key: icon
+      values:
+        - name: Dark
+          id: dark
+          icon: dark_mode
+        - name: Light
+          id: light
+          icon: light_mode
+  show_note:
+    type: switch
+    comment: Hide/Show the note that contains helpful information about the live editing of this component
 _select_data: {}
 _structures:
   content_blocks:
-    style: select
-    id_key: _bookshop_name
-    values:
-      - value:
-          _bookshop_name: generic/sample
-          text:
-        label: Sample
-        description:
-        icon:
-        tags: []
-        _inputs: {}
+    style: modal
 _editables: {}
 
 data_config:

@@ -17,6 +17,7 @@
   }
 
   &__primary_heading {
+    word-break: break-word;
     font-size: var(--large-heading);
     letter-spacing: var(--letter-spacing);
   }

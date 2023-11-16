@@ -1,0 +1,19 @@
+.c-notification {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid var(--interaction-blue-500, #163D91);
+    border-left: 4px solid var(--interaction-blue-500, #163D91);
+    background: var(--interaction-blue-000, #E7EEFF);
+    text-align: left;
+
+    &__text {
+        color: var(--brand-grey-900, #1B1B1D);;
+        &__heading {
+            color: var(--interaction-blue-500, #163D91);
+            font-size: var(--paragraph-large);
+        }
+    }
+}

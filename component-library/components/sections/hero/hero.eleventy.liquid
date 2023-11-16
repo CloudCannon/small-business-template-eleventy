@@ -1,0 +1,15 @@
+{% assign_local c = "c-hero" %}
+<section class="{{ c }} {% if styles.image_alignment =='left' %}{{ c }}--left-right-variant {{ c }}--image-left{% elsif styles.image_alignment =='right' %}{{ c }}--left-right-variant {{ c }}--image-right{% endif %} component component--full-height
+            {% if styles.background_variant == 'dark' %} 
+                component--dark
+            {% endif %}">
+    {% bookshop "generic/image" bind:content.image %}
+    <div class="{{ c }}__cover"></div>
+    <div class="{{ c }}__content">
+        {% if content.heading %}{% bookshop "generic/component-heading" bind:content.heading %}{% endif %}
+        {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
+        <div class="{{ c }}__content__button">
+            {% if content.button %}{% bookshop "generic/button" bind:content.button %}{% endif %}
+        </div>
+    </div>
+</section>

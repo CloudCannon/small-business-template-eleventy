@@ -1,10 +1,13 @@
 @import "reset.css";
-@import 'variables.scss';
-@import 'nav.scss';
+@import "variables.scss";
+@import "nav.scss";
+@import "footer.scss";
 
 body {
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
+  min-height: 100svh;
+  grid-template-rows: auto 1fr auto;
   font-family: var(--content-font), Lato, sans-serif;
   color: var(--brand-grey-000, #f9f9fb);
 
@@ -31,5 +34,9 @@ main {
 
   &--dark {
     background-color: var(--dark-background-variant);
+  }
+
+  &--full-height {
+    padding: 0;
   }
 }

@@ -1,3 +1,36 @@
-<footer style="height: 100px; box-shadow: 0 1px 5px #888888; background-color: rgba(27, 27, 29, 0.60); display: flex; justify-content: center; align-items: center">
-    <h2>FOOTER GOES HERE</h2>
+{% assign_local c = "c-footer" %}
+
+<footer class="{{ c }}">
+    <a class="{{c}}__logo-link" href="/" aria-label="Home" {% if page.url=="/" %}aria-current="page" {% endif %}>
+        {% if footer.logo_image != '' %}
+            <img class="{{c}}__logo-link__image" src="{{footer.logo_image}}" alt="Site logo" />
+        {% else %}
+            <p class="{{c}}__logo-link__text">{{ footer.logo_text.text }}</p>
+        {% endif %}
+    </a>
+    <div class="{{ c }}__social-icons">
+            {% capture social_icon_styles %}
+                icon_background_hover_color: "var(--brand-grey-200, #E9E9EC)"
+                icon_color: "var(--brand-grey-200, #E9E9EC)"
+                icon_hover_color: "var(--brand-grey-900, #f9f9fb)"
+            {% endcapture %}
+            {% assign social_icons_style = social_icon_styles | ymlify %}
+            {% bookshop "generic/social-icons" social_media_links:site.social_media_links style:social_icons_style %}
+        </div>
+    <ul class="{{ c }}__navlist">
+        {% for navitem in footer.navigation_items %}
+            {% assign nav_item_with_slash = navitem.link_url | append: "/" %}
+            {% if page.url == navitem.link_url or page.url == nav_item_with_slash %}
+                <li class="{{ c }}__navlist__item {{ c }}__navlist__item--active" aria-current="page">
+                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}">{{ navitem.label }}</a>
+                </li>
+            {% else %}
+                <li class="{{ c }}__navlist__item">
+                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}">{{ navitem.label }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <div class="{{ c }}__content">{{ footer.footer_content | markdownify }}</div>
+
 </footer>
