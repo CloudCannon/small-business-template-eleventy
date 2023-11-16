@@ -14,11 +14,12 @@ blueprint:
     heading:
     text_content:
     grid_items:
-      - eyebrow_headline:
+      - svg_icon:
+        eyebrow_headline:
         primary_heading:
         details:
+        link_label: Book Now
         link_url:
-        svg_icon:
     buttons: [bookshop:generic/button]
   styles:
     background_variant: Dark
