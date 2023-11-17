@@ -1,0 +1,69 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Featured icons"
+  description: Provides your service description in a nice iconed layout
+  icon: side_navigation
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    heading: bookshop:generic/component-heading
+    icons: [bookshop:generic/labelled-icon]
+    buttons: [bookshop:generic/button]
+  styles:
+    orientation:
+    image: bookshop:generic/image
+    background_variant: "Dark"
+
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    heading:
+      bookshop: generic/component-heading
+      eyebrow_headline: Let your features shine
+      primary_heading: A featured icons left right block
+    icons:
+      - bookshop: generic/labelled-icon
+        arrangement: inline
+        text: 100% Happy customer reviews
+        icon:
+          bookshop: generic/icon
+          hero_icon_name: academic-cap
+          icon_size: small
+          rounded_border: true
+          icon_type: solid
+    buttons:
+      url: "#"
+      open_in_new_tab: false
+      text: "Book now"
+      variant: "primary"
+      disabled: false
+      arrow: "right"
+      onclick: 
+  styles:
+    orientation: Left
+    background_variant: "Dark"
+    image: 
+      bookshop: generic/image
+      image_path: https://placekitten.com/300/500
+      image_alt: A cute kitten
+
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  orientation:
+    type: select
+    options:
+      values:
+        - Left
+        - Right  
+  background_variant:
+    type: select
+    options:
+      values:
+        - 'Dark'
+        - 'Light'

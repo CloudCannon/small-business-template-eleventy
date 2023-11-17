@@ -1,4 +1,4 @@
-.c-testimonial {
+.c-featured-icons {
   $c: &;
 
   display: grid;
@@ -13,15 +13,18 @@
     grid-column: 2 / -2;
   }
 
-  &__content-text {
-    margin-bottom: 1.5rem;
-    max-width: 32.0625rem;
-    text-wrap: pretty;
-  }
-
   &__content-wrapper {
     border-left: 0.0625rem solid var(--brand-grey-000);
     padding-left: 1.5rem;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2.18rem;
+    margin-bottom: 1.5rem;
   }
 
   &__buttons {

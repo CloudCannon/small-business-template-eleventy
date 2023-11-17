@@ -1,0 +1,28 @@
+{% assign_local c = "c-featured-icons" %}
+
+<section class="{{ c }} component {% if styles.orientation == "Right" %}{{ c }}--right{% endif %} {% if styles.background_variant == "Dark" %} 
+  component--dark
+{% endif %}">
+  <div class="{{ c }}__content">
+    <div class="{{ c }}__content-wrapper">
+      {% bookshop "generic/component-heading" bind: content.heading %}
+      {% if content.icons %}
+        <div class="{{ c }}__icons">
+          {% for icon in content.icons %}
+            {% bookshop "generic/labelled-icon" bind: icon %}
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if content.buttons %}
+        <div class="{{ c }}__buttons">
+          {% for button in content.buttons %}
+            {% bookshop "generic/button" bind: button %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% if styles.image %}
+    {% bookshop "generic/image" bind: styles.image %}
+  {% endif %}
+</section>
