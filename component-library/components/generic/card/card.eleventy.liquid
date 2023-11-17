@@ -16,7 +16,7 @@
         {% bookshop "generic/text-block" text:text %}
     </div>
 
-    <div class="{{c}}__buttons">
-        {% bookshop "generic/button" text:link_label variant:"secondary" disabled:false arrow:"right" url:link_url %}
+    <div class="{{c}}__button">
+        {% bookshop "generic/button" url:button.url text:button.label open_in_new_tab:button.open_in_new_tab variant:"secondary" disabled:false arrow:"right"%}
     </div>
 </div>

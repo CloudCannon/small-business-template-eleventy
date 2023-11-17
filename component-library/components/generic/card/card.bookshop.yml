@@ -9,14 +9,14 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   icon:
+  image:
   eyebrow_heading:
   primary_heading:
   text: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience. They come with an action link to get your users into the journey you’ve crafted for them.
-  button: 
-      url: ""
-      text: "Button text"
-      open_in_new_tab: false
-  image: 
+  button:
+    label: Secondary
+    url:
+    open_in_new_tab: false
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
