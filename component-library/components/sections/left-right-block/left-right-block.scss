@@ -1,6 +1,6 @@
 .c-left-right-block {
   $c: &;
-  //Colors added for demo only. Remove before merge.
+
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
 
@@ -24,6 +24,10 @@
     padding-left: 1.5rem;
   }
 
+  & .c-social-icons {
+    justify-content: flex-start;
+  }
+
   &__icons {
     display: flex;
     justify-content: flex-start;
@@ -41,13 +45,15 @@
     gap: 1rem;
   }
 
+  &__media {
+    grid-column: 1 / -1;
+  }
 
   & .c-image,
   .c-image--live-editing,
   picture {
     height: 100%;
     object-fit: cover;
-    grid-column: 1 / -1;
   }
 
   // Desktop styles
@@ -69,11 +75,13 @@
         grid-column: 9 / -2;
       }
 
+      #{$c}__media {
+        grid-column: 2 / 8;
+        grid-row: 1;
+      }
       #{$c} .c-image,
       .c-image--live-editing, 
       picture {
-        grid-column: 2 / 8;
-        grid-row: 1;
       }
     }
   }

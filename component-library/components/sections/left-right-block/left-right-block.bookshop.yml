@@ -1,7 +1,6 @@
 # Metadata about this component, to be used in the CMS
 spec:
   structures:
-    - content_blocks
   label: "Left/Right block"
   description: Content that can be arranged left-right or right-left
   icon: side_navigation
@@ -10,8 +9,10 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
+    social_icons: bookshop:generic/social-icons 
     heading: bookshop:generic/component-heading
-    content: 
+    contact_details:
+    author_name:
     buttons: [bookshop:generic/button]
     icons: [bookshop:generic/labelled-icon]
   styles:
@@ -23,11 +24,18 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
+    social_icons:
+      bookshop: generic/social-icons
+      social_media_links:
+        - link_url: https://www.youtube.com/
+          svg_icon: /assets/images/icons/social/youtube.svg
     heading:
       bookshop: generic/component-heading
       eyebrow_headline: Let your features shine
       primary_heading: A featured icons left right block
-    content: Content
+    contact_details: >-
+      This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
+    author_name: John Smith
     buttons:
       url: "#"
       open_in_new_tab: false
@@ -51,8 +59,8 @@ preview:
     background_variant: "Dark"
     image: 
       bookshop: generic/image
-      image_path: /assets/images/Left-Right--featured-image.png
-      image_alt: A woman laughing
+      image_path: https://placekitten.com/300/500
+      image_alt: A cute kitten
 
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
@@ -63,7 +71,7 @@ _inputs:
       values:
         - Left
         - Right  
-  content:
+  contact_details:
     type: markdown
   background_variant:
     type: select
