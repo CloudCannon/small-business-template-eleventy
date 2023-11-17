@@ -2,6 +2,7 @@
 spec:
   structures:
     - asset_blocks
+    - card_imagery_blocks
   label: "Image"
   description:
   icon: image

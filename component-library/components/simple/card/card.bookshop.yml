@@ -1,0 +1,29 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Card"
+  description: Image/icon and a description in a card format
+  icon: perm_media
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    imagery: bookshop:structure:card_imagery_blocks
+    heading: bookshop:generic/component-heading
+    text: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience. They come with an action link to get your users into the journey you’ve crafted for them.
+    button: 
+      url: ""
+      text: "Button text"
+      open_in_new_tab: false
+  styles:
+    background_variant: dark
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  text:
+    type: textarea
