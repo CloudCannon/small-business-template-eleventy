@@ -18,12 +18,11 @@ blueprint:
         eyebrow_headline:
         primary_heading:
         text:
-        link_label: Book Now
-        link_url:
-    button:
-      label: Secondary
-      url:
-      open_in_new_tab: false
+        button:
+          label: Secondary
+          url:
+          open_in_new_tab: false
+    buttons: [bookshop:generic/button]
   styles:
     background_variant: Dark
 
