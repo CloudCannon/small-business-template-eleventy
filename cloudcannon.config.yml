@@ -79,7 +79,7 @@ _inputs:
   show_note:
     type: switch
     comment: Hide/Show the note that contains helpful information about the live editing of this component
-  svg_icon:
+  icon:
     comment: Visit https://heroicons.com/ to see the full library
     type: select
     options:

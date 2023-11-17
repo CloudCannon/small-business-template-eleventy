@@ -1,8 +1,8 @@
 {%  assign c = 'c-card' %}
 <div class={{c}}>
-    {% if svg_icon %}
+    {% if icon %}
         <div class="{{c}}__icon-wrapper">
-            {% bookshop "generic/icon" svg_icon:svg_icon color:"currentColor" icon_size:"small" icon_type:"outline" rounded_border:false %}
+            {% bookshop "generic/icon" svg_icon:icon color:"currentColor" icon_size:"small" icon_type:"outline" rounded_border:false %}
         </div>
     {% else %}
         <div class="{{c}}__image-wrapper">
@@ -13,7 +13,7 @@
     {% bookshop "generic/component-heading" eyebrow_heading:eyebrow_heading primary_heading:primary_heading %}
 
     <div class="{{c}}__content">
-        {{ details }}
+        {% bookshop "generic/text-block" text:text %}
     </div>
 
     <div class="{{c}}__buttons">
