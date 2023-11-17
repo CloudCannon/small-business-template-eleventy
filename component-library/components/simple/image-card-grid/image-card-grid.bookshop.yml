@@ -1,0 +1,84 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Image Card Grid"
+  description:
+  icon: table_chart
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    eyebrow_headline:
+    heading:
+    text_content:
+    grid_items:
+      - svg_icon:
+        eyebrow_headline:
+        primary_heading:
+        details:
+        link_label: Book Now
+        link_url:
+    buttons: [bookshop:generic/button]
+  styles:
+    background_variant: Dark
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    eyebrow_headline: Bite sized information
+    heading: An Icon Card Grid
+    text_content: >-
+      Sometimes you only need a small text and image section and a cards grid
+      is the best option to showcase your content.
+    grid_items:
+      - svg_icon: megaphone
+        eyebrow_headline: Icon Card
+        primary_heading: Your service, simplified
+        details: >-
+          These versatile cards can be used to talk about your services or
+          products, or anything else you are keen to share with your audience.
+          They come with an action link to get your users into the journey
+          you’ve crafted for them.
+        link_label: Secondary
+        link_url:
+      - svg_icon: radio
+        eyebrow_headline: Icon Card
+        primary_heading: Your service, simplified
+        details: >-
+          These versatile cards can be used to talk about your services or
+          products, or anything else you are keen to share with your audience.
+          They come with an action link to get your users into the journey
+          you’ve crafted for them.
+        link_label: Secondary
+        link_url:
+      - svg_icon: rocket-launch
+        eyebrow_headline: Icon Card
+        primary_heading: Your service, simplified
+        details: >-
+          These versatile cards can be used to talk about your services or
+          products, or anything else you are keen to share with your audience.
+          They come with an action link to get your users into the journey
+          you’ve crafted for them.
+        link_label: Secondary
+        link_url:
+    buttons:
+      - _bookshop_name: generic/button
+        url: '#'
+        text: Book Now
+        variant: primary
+        disabled: false
+        arrow: arrow-right
+        onclick: ''
+        id: ''
+  styles:
+    background_variant: Dark
+    icon_color:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  text_content:
+    type: markdown
+  details:
+    type: markdown
