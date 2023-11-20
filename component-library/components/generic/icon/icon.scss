@@ -52,7 +52,7 @@
         height: 100%;
     }
 
-    &__image {
+    &--outline &__image, &--solid &__image {
         background: var(--c-icon-color);
         width: 100%;
         height: 100%;

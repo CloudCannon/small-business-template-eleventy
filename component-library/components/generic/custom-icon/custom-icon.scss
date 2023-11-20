@@ -7,4 +7,12 @@
     object-fit: cover;
     object-position: 50% 50%;
   }
+
+  &--icon-default-color &__image {
+    background-image: var(--url);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
 }

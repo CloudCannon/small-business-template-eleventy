@@ -1,8 +1,9 @@
 {% assign_local c = "c-icon" %}
+{% assign_local this_c = "c-custom-icon" %}
 
-<span class="c-custom-icon {{ c }} {{ c }}--{{ icon_size }} {% if default_color %}{{c}}--icon-default-color{% else %}{{ c }}--{{ icon_type }}{% endif %} {% if rounded_border %}{{c}}--round{% endif %}" style="--c-icon-color: {% if theme_color %}var(--main-text-color){% else %}{{ color }}{% endif %}">
+<span class="{{ this_c }} {{ c }} {{ c }}--{{ icon_size }} {% if default_color %}{{this_c}}--icon-default-color {% else %}{{ c }}--{{ icon_type }}{% endif %} {% if rounded_border %}{{c}}--round{% endif %}" style="--c-icon-color: {% if theme_color %}var(--main-text-color){% else %}{{ color }}{% endif %}">
     {% if icon_path contains '.svg' and env_bookshop_live %}
-        <span class="{{ c }}__image" style="--url: url('{{ icon_path }}')"></span>
+        <span class="{{ c }}__image {{ this_c }}__image" style="--url: url('{{ icon_path }}')"></span>
     {% elsif icon_path contains '.svg' %}
          {{ '/src' | append: icon_path  | svgContents: "c-icon__svg" }}
     {% else %}
