@@ -16,14 +16,14 @@ blueprint:
     image: bookshop:generic/image!
   styles:
     image_alignment: left
-    background_variant: light
+    background_variant: primary
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   styles:
     image_alignment: left
-    background_variant: light
+    background_variant: primary
   content:
     heading:
       _bookshop_name: generic/component-heading

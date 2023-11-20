@@ -1,5 +1,5 @@
 .c-radio-button-group {
-    color: var(--brand-grey-000, #F9F9FB);
+    color: var(--main-text-color);
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -29,12 +29,12 @@
         gap: 8px;
         font-size: var(--paragraph-small);
         line-height: var(--line-height);
-        color: var(--brand-grey-000, #F9F9FB);
+        color: var(--main-text-color);
     }
         
     &__error {
         display: none;
-        color: var(--error-red-300, #BF2323);
+        color: var(--error-color, #BF2323);
         gap: 8px;
         font-size: var(--paragraph-small);
         line-height: var(--line-height);

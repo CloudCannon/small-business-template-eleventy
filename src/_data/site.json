@@ -1,7 +1,5 @@
 {
   "styles": {
-    "light_background_variant": "#3b3b3d",
-    "dark_background_variant": "#1b1b1d",
     "heading_font": "Lato",
     "content_font": "Lato"
   },
@@ -29,12 +27,6 @@
   ],
   "google_maps_api_key": null,
   "_inputs": {
-    "light_background_variant": {
-      "type": "color"
-    },
-    "dark_background_variant": {
-      "type": "color"
-    },
     "heading_font": {
       "comment": "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
     },

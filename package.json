@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "fetch-theme-colors": "node ./utils/fetch-theme-colors.js",
     "bookshop-sass:build": "bookshop-sass -b component-library -o css/bookshop.css",
     "bookshop-sass:watch": "bookshop-sass -b component-library -o css/bookshop.css -w",
     "bookshop:browser": "bookshop-browser",
@@ -13,7 +14,7 @@
     "eleventy:watch": "ELEVENTY_ENV=development eleventy --serve",
     "sass:watch": "sass --no-source-map --watch src/assets/styles:css",
     "sass:build": "sass --no-source-map src/assets/styles:css",
-    "start": "npm-run-all sass:build bookshop-sass:build --parallel bookshop-sass:watch sass:watch bookshop:browser eleventy:watch"
+    "start": "npm-run-all fetch-theme-colors sass:build bookshop-sass:build --parallel bookshop-sass:watch sass:watch bookshop:browser eleventy:watch"
   },
   "repository": {
     "type": "git",

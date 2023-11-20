@@ -2,13 +2,13 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    color: var(--brand-grey-000, #F9F9FB);
+    color: var(--main-text-color);
 
     &__input {
         appearance: none;
         width: 16px;
         height: 16px;
-        border: 2px solid var(--brand-grey-000, #F9F9FB);
+        border: 2px solid var(--main-text-color);
         border-radius: 50%;
         cursor: pointer;
         display: flex;
@@ -16,16 +16,16 @@
         align-items: center;
     
         &:focus {
-            border: 2px solid var(--interaction-blue-300, #2566F2);
+            border: 2px solid var(--interaction-color, #2566F2);
             outline: none;
         }
 
         &:focus:checked:after {
-            background-color: var(--interaction-blue-300, #2566F2);
+            background-color: var(--interaction-color, #2566F2);
         }
     
         &:checked:not(:focus) {
-          border: 2px solid var(--brand-grey-000, #F9F9FB);
+          border: 2px solid var(--main-text-color);
         }
     
         &:checked:after {
@@ -33,7 +33,7 @@
           width: 8px;
           height: 8px;
           border-radius: 50%;
-          background: var(--brand-grey-000, #F9F9FB);
+          background: var(--main-text-color);
         }
     }
 

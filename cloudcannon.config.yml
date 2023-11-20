@@ -70,29 +70,19 @@ _inputs:
         icon:
           - key: icon
       values:
-        - name: Dark
-          id: dark
-          icon: dark_mode
-        - name: Light
-          id: light
-          icon: light_mode
+        - name: Primary
+          id: primary
+          icon: star
+        - name: Secondary
+          id: secondary
+          icon: star_outline
   show_note:
     type: switch
     comment: Hide/Show the note that contains helpful information about the live editing of this component
 _select_data: {}
 _structures:
   content_blocks:
-    style: select
-    id_key: _bookshop_name
-    values:
-      - value:
-          _bookshop_name: generic/sample
-          text:
-        label: Sample
-        description:
-        icon:
-        tags: []
-        _inputs: {}
+    style: modal
 _editables: {}
 
 data_config:
