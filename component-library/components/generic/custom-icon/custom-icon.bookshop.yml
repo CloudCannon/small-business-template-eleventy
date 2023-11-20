@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Custom Icon"
-  description: A icon (that you upload) with an optional border and customisable color
+  description: An icon (that you upload) with an optional border and customisable color
   icon: bolt
   tags: []
 
