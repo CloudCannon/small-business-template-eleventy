@@ -47,6 +47,7 @@ _inputs:
   content_alignment:
     type: choice
     options:
+      allow_empty: false
       value_key: id
       preview:
         text: 
@@ -63,6 +64,7 @@ _inputs:
   background_variant:
     type: choice
     options:
+      allow_empty: false
       value_key: id
       preview:
         text: 

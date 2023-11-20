@@ -33,12 +33,14 @@ _inputs:
   icon_size:
     type: choice
     options:
+      allow_empty: false
       values:
         - small
         - large
   icon_type:
     type: choice
     options:
+      allow_empty: false
       values:
         - solid
         - outline
