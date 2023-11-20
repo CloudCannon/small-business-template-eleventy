@@ -41,6 +41,7 @@ _inputs:
     comment: Choose outline if you want lines to be filled with color and solid if you want the whole image filled with color
     type: choice
     options:
+      allow_empty: false
       values:
         - solid
         - outline
