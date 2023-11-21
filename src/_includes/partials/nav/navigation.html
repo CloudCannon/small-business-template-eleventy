@@ -36,7 +36,7 @@
                 icon_color: "var(--alt-text-color)"
                 icon_hover_color: "var(--alt-background-color)"
             {% endcapture %}
-            {% assign social_icons_style = social_icon_styles | ymlify %}
+            {% assign_local social_icons_style = social_icon_styles | ymlify %}
             {% bookshop "generic/social-icons" social_media_links:site.social_media_links style:social_icons_style _liveRender:false %}
         </div>
     </nav>
