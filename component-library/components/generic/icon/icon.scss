@@ -37,17 +37,22 @@
     }
 
     &--outline {
-        .c-icon__svg {
+        .c-icon__svg, * {
             stroke: var(--c-icon-color, #FFF);
         }
     }
     &--solid {
-        .c-icon__svg {
+        .c-icon__svg, *{
             fill: var(--c-icon-color, #FFF);
         }
     }
 
-    &__image {
+    &__svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    &--outline &__image, &--solid &__image {
         background: var(--c-icon-color);
         width: 100%;
         height: 100%;
@@ -57,5 +62,7 @@
         -webkit-mask-repeat: no-repeat;
         mask-position: center;
         -webkit-mask-position: center;
+        mask-size: contain;
+        -webkit-mask-size: contain;
     }
 }
