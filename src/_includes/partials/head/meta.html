@@ -1,0 +1,39 @@
+{%- comment -%} Page description for SEO {%- endcomment -%}
+{% if seo.page_description %}
+    <meta name="description" content="{{ seo.page_description }}">
+    <meta property="og:description" content="{{ seo.page_description }}" />
+{% else %}
+    <meta name="description" content="{{ site_seo.site_seo.description }}">
+    <meta property="og:description" content="{{ site_seo.site_seo.description }}" />
+{% endif %}
+
+{%- comment -%} Favicon {%- endcomment -%}
+<link rel="shortcut icon" href="{{ site_seo.site_seo.favicon }}" type="image/x-icon" />
+<link rel="icon" href="{{ site_seo.site_seo.favicon }}" type="image/x-icon" />
+
+{% comment %} meta tags for open graph and twitter {% endcomment %}
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:type" content="website" />
+{% if page.url == "/" %}
+    <meta name="og:title" content="{{ site_seo.site_seo.title }}" />
+    <meta name="og:image" content="{{ site_seo.site_seo.image }}" />
+    <meta name="twitter:title" content="{{ site_seo.site_seo.title }}" />
+    <meta name="twitter:image" content="{{ site_seo.site_seo.image }}" />
+    <meta name="twitter:image:alt" content="{{ site_seo.site_seo.image_alt }}" />
+{% else %}
+    <meta name="og:title" content="{{ title }}" />
+    <meta name="twitter:title" content="{{ title }}" />
+
+    {% if seo.featured_image %}
+        <meta name="og:image" content="{{ seo.featured_image }}" />
+        <meta name="twitter:image" content="{{ seo.featured_image }}" />
+        <meta name="twitter:image:alt" content="{{ seo.featured_image_alt }}" />
+    {% else %}
+        <meta name="og:image" content="{{ site_seo.site_seo.image }}" />
+        <meta name="twitter:image" content="{{ site_seo.site_seo.image }}" />
+        <meta name="twitter:image:alt" content="{{ site_seo.site_seo.image_alt }}" />
+    {% endif %}
+{% endif %}
+
+{%- comment -%} Canonical URL for SEO {%- endcomment -%}
+<link rel="canonical" href="{{ base_url }}{{ page.url | url }}" />
