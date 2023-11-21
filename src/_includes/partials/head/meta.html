@@ -21,8 +21,8 @@
     <meta name="twitter:image" content="{{ seo.image }}" />
     <meta name="twitter:image:alt" content="{{ seo.image_alt }}" />
 {% else %}
-    <meta name="og:title" content="{{ title }}" />
-    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="og:title" content="{{ title }}{% if seo.title %} | {{ seo.title }}{% endif %}" />
+    <meta name="twitter:title" content="{{ title }}{% if seo.title %} | {{ seo.title }}{% endif %}" />
 
     {% if .featured_image %}
         <meta name="og:image" content="{{ .featured_image }}" />
