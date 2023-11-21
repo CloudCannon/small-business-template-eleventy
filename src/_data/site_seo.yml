@@ -1,10 +1,5 @@
-site_seo:
-  favicon:
-  title: Primera Mesa
-  image: /assets/images/card-grid/Card-grid--image-1.png
-  image_alt: People gathering around a table laughing
-  description: An eleventy template targeted toward small businesses
-
-_inputs:
-  site_seo:
-    comment: Site specific SEO information, this can be overridden for all pages within the page
+favicon:
+title: Primera Mesa
+image: /assets/images/card-grid/Card-grid--image-1.png
+image_alt: People gathering around a table laughing
+description: An eleventy template targeted toward small businesses
