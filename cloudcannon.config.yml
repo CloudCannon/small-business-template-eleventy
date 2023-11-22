@@ -30,6 +30,10 @@ _inputs:
     hidden: true
   draft:
     type: switch
+  page_description:
+    comment: If empty, defaults to the description set in the SEO data file
+  featured_image:
+    comment: If empty, defaults to the image set in the SEO data file
   logo_image:
     comment: If an image is uploaded it will be used over a name set in the logo text field
   logo_text:

@@ -3,6 +3,7 @@
     "heading_font": "Lato",
     "content_font": "Lato"
   },
+  "base_url": "http://example.com",
   "social_media_links": [
     {
       "link_url": "https://www.youtube.com/",
