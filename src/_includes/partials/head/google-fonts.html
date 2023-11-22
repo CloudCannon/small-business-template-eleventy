@@ -10,7 +10,7 @@
 
 {% for font in google_fonts %}
   {% assign stripped_font = font | replace: ' ', '+' %}
-  {% assign stripped_font = stripped_font | append: ':wght@100;200;300;400;500;600;700;800;900' %}
+  {% assign stripped_font = stripped_font | append: ':wght@400;700' %}
   {% if forloop.last %}
     {% assign font_string = font_string | append: stripped_font %}
   {% else %}
