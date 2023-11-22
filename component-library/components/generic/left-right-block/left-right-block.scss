@@ -47,6 +47,7 @@
 
   &__media {
     grid-column: 1 / -1;
+    max-height: 100vw;
   }
 
   & .c-image,
@@ -64,9 +65,7 @@
       padding: 6rem 0;
     }
 
-    & .c-image,
-    .c-image--live-editing,
-    picture  {
+    &__media  {
       grid-column: 8 / -2;
     }
 
@@ -78,10 +77,6 @@
       #{$c}__media {
         grid-column: 2 / 8;
         grid-row: 1;
-      }
-      #{$c} .c-image,
-      .c-image--live-editing, 
-      picture {
       }
     }
   }

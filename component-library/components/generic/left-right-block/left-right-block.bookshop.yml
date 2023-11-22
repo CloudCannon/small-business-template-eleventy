@@ -14,8 +14,8 @@ blueprint:
   author_name:
   buttons: [bookshop:generic/button]
   icons: [bookshop:generic/labelled-icon]
-  orientation:
   image: bookshop:generic/image
+  orientation: "Left"
   background_variant: "Dark"
 
 
@@ -67,8 +67,6 @@ _inputs:
       values:
         - Left
         - Right  
-  contact_details:
-    type: markdown
   background_variant:
     type: select
     options:
