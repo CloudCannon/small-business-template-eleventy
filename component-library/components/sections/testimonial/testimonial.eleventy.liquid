@@ -1,12 +1,12 @@
 {% assign_local c = "c-testimonial" %}
 
-{% capture heading_raw %}
+{% capture heading %}
   eyebrow_headline: {{ content.eyebrow_headline }}
-  primary_heading: "&quot;{{ content.quote }}&quot;"
+  primary_heading: "&ldquo;{{ content.quote }}&rdquo;"
 {% endcapture %}
-{% assign_local heading = heading_raw | ymlify %}
+{% assign_local heading = heading | ymlify %}
 
 
 <div class="{{ c }}">
-  {% bookshop "generic/left-right-block" %}
+  {% bookshop "generic/left-right-block" heading:heading buttons:content.buttons author_name:content.author_name image:styles.image%}
 </div>

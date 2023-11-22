@@ -7,14 +7,24 @@ eleventyExcludeFromCollections: false
 content_blocks:
   - _bookshop_name: sections/testimonial
     content:
-      eyebrow_headline: Eyebrow
-      quote: Qote
-      author_name: Name
-      buttons: []
+      eyebrow_headline: What your customers say
+      quote: Their customer service is second to none.
+      author_name: John Smith
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Book Now
+          variant: primary
+          disabled: false
+          arrow: right
+          onclick:
     styles:
-      orientation:
       image:
-      background_variant: Dark
+        bookshop: generic/image
+        image_path: /uploads/testimonial-bg.jpg
+        image_alt: ""
+      background_variant: "Light"
   - _bookshop_name: generic/left-right-block
     social_icons:
       bookshop: generic/social-icons

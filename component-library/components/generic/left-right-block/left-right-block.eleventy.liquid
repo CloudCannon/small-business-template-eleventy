@@ -1,6 +1,6 @@
 {% assign_local c = "c-left-right-block" %}
 
-<section class="{{ c }} component {% if styles.orientation == "Right" %}{{ c }}--right{% endif %} {% if styles.background_variant == "Dark" %} 
+<div class="{{ c }} component {% if styles.orientation == "Right" %}{{ c }}--right{% endif %} {% if styles.background_variant == "Dark" %} 
   component--dark
 {% endif %}">
   <div class="{{ c }}__content">
@@ -42,4 +42,4 @@
       {% bookshop "generic/image" bind: image %}
     {% endif %}
   </div>
-</section>
+</div>
