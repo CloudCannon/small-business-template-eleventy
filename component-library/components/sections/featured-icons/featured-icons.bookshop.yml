@@ -3,50 +3,40 @@ spec:
   structures:
     - content_blocks
   label: "Featured icons"
-  description: Provides your service description in a nice iconed layout
-  icon: side_navigation
+  description: Represents key features or services in a nice iconed layout
+  icon: dataset
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:generic/component-heading
+    headline:
+    heading:
     icons: [bookshop:generic/labelled-icon]
     buttons: [bookshop:generic/button]
   styles:
-    orientation:
+    orientation: Left
     image: bookshop:generic/image
-    background_variant: "Dark"
+    background_variant: Dark
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    heading:
-      bookshop: generic/component-heading
-      eyebrow_headline: Let your features shine
-      primary_heading: A featured icons left right block
-    icons:
-      - bookshop: generic/labelled-icon
-        arrangement: inline
-        text: 100% Happy customer reviews
-        icon:
-          bookshop: generic/icon
-          hero_icon_name: academic-cap
-          icon_size: small
-          rounded_border: true
-          icon_type: solid
+    headline: Let your features shine
+    heading: A featured icons left right block
     buttons:
-      url: "#"
-      open_in_new_tab: false
-      text: "Book now"
-      variant: "primary"
-      disabled: false
-      arrow: "right"
-      onclick: 
+      - _bookshop_name: generic/button
+        url: "#"
+        open_in_new_tab: false
+        text: "Book Now"
+        variant: "primary"
+        disabled: false
+        arrow: "right"
+        onclick: 
   styles:
     orientation: Left
-    background_variant: "Dark"
+    background_variant: Dark
     image: 
       bookshop: generic/image
       image_path: https://placekitten.com/300/500
