@@ -66,7 +66,7 @@
     }
 
     &__media  {
-      grid-column: 8 / -2;
+      grid-column: 8 / -1;
     }
 
     &--right {
@@ -75,7 +75,7 @@
       }
 
       #{$c}__media {
-        grid-column: 2 / 8;
+        grid-column: 1 / 8;
         grid-row: 1;
       }
     }
