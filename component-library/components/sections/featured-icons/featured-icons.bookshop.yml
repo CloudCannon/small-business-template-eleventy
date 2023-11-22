@@ -12,7 +12,7 @@ blueprint:
   content:
     headline:
     heading:
-    icons: [bookshop:generic/labelled-icon]
+    icon:
     buttons: [bookshop:generic/button]
   styles:
     orientation: Left
@@ -45,6 +45,17 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  icon_path:
+    type: image
+  icon:
+    type: array
+    options:
+      structures:
+        values:
+          - label: custom-icon
+            icon_path: 
+          - label: icon
+            hero_icon_name: arrow-right
   orientation:
     type: select
     options:
