@@ -10,7 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    eyebrow_headline:
+    headline:
     quote: 
     author_name:
     buttons: [bookshop:generic/button]
@@ -23,7 +23,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    eyebrow_headline: What your customers says
+    headline: What your customers says
     quote: "Their customer service is second to none."
     author_name: John Smith
     buttons:
