@@ -28,7 +28,9 @@ preview:
     heading:
       _bookshop_name: generic/component-heading
       eyebrow_headline: a small business template
+      eyebrow_headline_hierarchy: h3
       primary_heading: Empower Your Business with This Brilliant Template
+      primary_heading_hierarchy: h2
     button:
       url: "#"
       open_in_new_tab: false
