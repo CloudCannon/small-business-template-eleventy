@@ -69,7 +69,7 @@ preview:
         text: Book Now
         variant: primary
         disabled: false
-        arrow: arrow-right
+        arrow: right
         onclick: ''
         id: ''
   styles:
