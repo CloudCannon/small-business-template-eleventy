@@ -1,71 +1,8 @@
 .c-testimonial {
   $c: &;
 
-  display: grid;
-  grid-template-columns: var(--twelve-column-grid);
-
-  .c-component-heading {
-    margin-bottom: 0.5rem;
-  }
-
-  &__content {
-    padding: 3rem 0;
-    grid-column: 2 / -2;
-  }
-
-  &__content-text {
-    margin-bottom: 1.5rem;
-    max-width: 32.0625rem;
-    text-wrap: pretty;
-  }
-
-  &__content-wrapper {
-    border-left: 0.0625rem solid var(--brand-grey-000);
-    padding-left: 1.5rem;
-  }
-
-  &__buttons {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-
-  & .c-image,
-  .c-image--live-editing,
-  picture {
-    height: 100%;
-    object-fit: cover;
-    grid-column: 1 / -1;
-  }
-
   // Desktop styles
   @media screen and (min-width: 1279px) {
-    &__content {
-      grid-column: 2 / 7;
-      align-self: center;
-      padding: 6rem 0;
-    }
 
-    & .c-image,
-    .c-image--live-editing,
-    picture  {
-      grid-column: 8 / -2;
-    }
-
-    &--right {
-      #{$c}__content {
-        grid-column: 9 / -2;
-      }
-
-      #{$c} .c-image,
-      .c-image--live-editing, 
-      picture {
-        grid-column: 2 / 8;
-        grid-row: 1;
-      }
-    }
   }
 }

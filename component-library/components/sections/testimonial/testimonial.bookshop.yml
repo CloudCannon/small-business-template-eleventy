@@ -10,8 +10,9 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    testimonial: bookshop:generic/component-heading
-    username:
+    eyebrow_headline:
+    quote: 
+    author_name:
     buttons: [bookshop:generic/button]
   styles:
     orientation:
@@ -22,19 +23,18 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    heading:
-      bookshop: generic/component-heading
-      eyebrow_headline: WHAT YOUR CUSTOMERS SAY
-      primary_heading: "Their customer service is second to none."
-    username: John Smith
+    eyebrow_headline: What your customers says
+    quote: "Their customer service is second to none."
+    author_name: John Smith
     buttons:
-      url: "#"
-      open_in_new_tab: false
-      text: "Button text"
-      variant: "primary"
-      disabled: false
-      arrow: "right"
-      onclick: 
+      - _bookshop_name: generic/button
+        url: "#"
+        open_in_new_tab: false
+        text: "Button text"
+        variant: "primary"
+        disabled: false
+        arrow: "right"
+        onclick: 
   styles:
     orientation: Left
     background_variant: "Dark"

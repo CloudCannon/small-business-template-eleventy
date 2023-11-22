@@ -15,6 +15,7 @@
                 icon_hover_color: "var(--brand-grey-900, #f9f9fb)"
             {% endcapture %}
             {% assign social_icons_style = social_icon_styles | ymlify %}
+            {{social_icons_style.icon_background_hover_color}}
             {% bookshop "generic/social-icons" social_media_links:site.social_media_links style:social_icons_style %}
         </div>
     <ul class="{{ c }}__navlist">

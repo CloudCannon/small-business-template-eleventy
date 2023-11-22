@@ -5,32 +5,32 @@
 {% endif %}">
   <div class="{{ c }}__content">
     <div class="{{ c }}__content-wrapper">
-      {% if content.social_icons %}
-        {% bookshop "generic/social-icons" bind: content.social_icons %}
+      {% if social_icons %}
+        {% bookshop "generic/social-icons" bind: social_icons %}
       {% endif %}
-      {% if content.heading %}
-        {% bookshop "generic/component-heading" bind: content.heading %}
+      {% if heading %}
+        {% bookshop "generic/component-heading" bind: heading %}
       {% endif %}
-      {% if content.contact_details %}
+      {% if contact_details %}
         <div class="{{ c }}__content-text">
-          {{ content.contact_details | markdownify }}
+          {{ contact_details | markdownify }}
         </div>
       {% endif %}
-      {% if content.author_name %}
+      {% if author_name %}
         <p class="{{ c }}__content-text">
-          {{ content.author_name }}
+          {{ author_name }}
         </p>
       {% endif %}
-      {% if content.icons %}
+      {% if icons %}
         <div class="{{ c }}__icons">
-          {% for icon in content.icons %}
+          {% for icon in icons %}
             {% bookshop "generic/labelled-icon" bind: icon %}
           {% endfor %}
         </div>
       {% endif %}
-      {% if content.buttons %}
+      {% if buttons %}
         <div class="{{ c }}__buttons">
-          {% for button in content.buttons %}
+          {% for button in buttons %}
             {% bookshop "generic/button" bind: button %}
           {% endfor %}
         </div>
@@ -38,8 +38,8 @@
     </div>
   </div>
   <div class="{{ c }}__media">
-    {% if styles.image %}
-      {% bookshop "generic/image" bind: styles.image %}
+    {% if image %}
+      {% bookshop "generic/image" bind: image %}
     {% endif %}
   </div>
 </section>

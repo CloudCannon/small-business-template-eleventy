@@ -1,26 +1,12 @@
 {% assign_local c = "c-testimonial" %}
 
-<section class="{{ c }} component {% if styles.orientation == "Right" %}{{ c }}--right{% endif %} {% if styles.background_variant == "Dark" %} 
-  component--dark
-{% endif %}">
-  <div class="{{ c }}__content">
-    <div class="{{ c }}__content-wrapper">
-      {% bookshop "generic/component-heading" bind: content.heading %}
-      {% if content.username %}
-        <p class="{{ c }}__content-text">
-          {{ content.username }}
-        </p>
-      {% endif %}
-      {% if content.buttons %}
-        <div class="{{ c }}__buttons">
-          {% for button in content.buttons %}
-            {% bookshop "generic/button" bind: button %}
-          {% endfor %}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-  {% if styles.image %}
-    {% bookshop "generic/image" bind: styles.image %}
-  {% endif %}
-</section>
+{% capture heading_raw %}
+  eyebrow_headline: {{ content.eyebrow_headline }}
+  primary_heading: "&quot;{{ content.quote }}&quot;"
+{% endcapture %}
+{% assign_local heading = heading_raw | ymlify %}
+
+
+<div class="{{ c }}">
+  {% bookshop "generic/left-right-block" %}
+</div>
