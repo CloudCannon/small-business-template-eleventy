@@ -52,8 +52,6 @@ _inputs:
       values:
         - Left
         - Right  
-  username:
-    type: text
   background_variant:
     type: select
     options:
