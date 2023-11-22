@@ -82,6 +82,10 @@ _inputs:
         - name: Secondary
           id: secondary
           icon: star_outline
+  heading_font:
+    comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
+  content_font":
+    comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
   hero_icon_name:
     comment: Visit https://heroicons.com/ to see the full library
     type: select
