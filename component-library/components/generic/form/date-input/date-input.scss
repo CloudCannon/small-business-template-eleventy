@@ -1,7 +1,7 @@
 .c-date-input {
     display: grid;
     gap: 4px;
-    color: var(--brand-grey-000, #F9F9FB);
+    color: var(--main-text-color);
 
     &__label {
         font-size: var(--label);
@@ -19,7 +19,7 @@
         border: 2px solid;
         position: relative;
         background-color: transparent;
-        color: var(--brand-grey-000, #F9F9FB);
+        color: var(--main-text-color);
         
         &::placeholder {
             opacity: 1;
@@ -27,7 +27,7 @@
         }
 
         &:focus {
-            border: 2px solid var(--interaction-blue-300, #2566F2);
+            border: 2px solid var(--interaction-color, #2566F2);
             outline: none;
         }
 
@@ -50,7 +50,7 @@
         gap: 8px;
         font-size: var(--paragraph-small);
         line-height: var(--line-height);
-        color: var(--brand-grey-000, #F9F9FB);
+        color: var(--main-text-color);
     }
 
     &__icon, &__input, &__dropdown-arrow {
@@ -79,7 +79,7 @@
 
     &__error {
         display: none;
-        color: var(--error-red-300, #BF2323);
+        color: var(--error-color, #BF2323);
         gap: 8px;
         font-size: var(--paragraph-small);
         line-height: var(--line-height);

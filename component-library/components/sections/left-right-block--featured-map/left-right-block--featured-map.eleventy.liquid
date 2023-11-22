@@ -1,0 +1,61 @@
+{% assign_local c = "c-left-right-block--featured-map" %}
+
+<section class='{{ c }} component {{ c }}
+    {% if styles.map_alignment == "Left" %}
+        {{ c }}--map-left
+    {% endif %} 
+    {% if styles.background_variant == "secondary" %} 
+        component--secondary
+    {% endif %}'>
+  <div class="{{ c }}__content">
+    <div class="{{ c }}__content-wrapper">            
+        {% if content.display_social_icons %}
+          {% if env_bookshop_live and content.show_note %}
+            {% bookshop "generic/notification" heading:"Social Icons" text:"This is where your social icons will appear in the live site, but will not show in live editing in CloudCannon <br> You can edit the icons and their details in /data/site <br> This note only will only show in live editing" %}
+          {% endif %}
+          {% capture social_icon_styles %}
+            icon_background_hover_color: "var(--main-text-color)"
+            icon_color: "var(--main-text-color)"
+            icon_hover_color: "var(--main-background-color)"
+          {% endcapture %}
+          {% assign_local social_icons_style = social_icon_styles | ymlify %}
+          <div class="{{ c }}__social-icons">
+            {% bookshop "generic/social-icons" social_media_links:site.social_media_links style:social_icons_style %}
+          </div>
+        {% endif %}
+        <div class="{{ c }}__contact-details">          
+          {% if content.heading %}
+            {% bookshop "generic/component-heading" primary_heading:content.heading %}
+          {% endif %}
+        
+          <div class="{{ c }}__contact-details--content">
+            {% if content.description %}
+              {% bookshop "generic/text-block" text:content.description %}
+            {% endif %}          
+
+            {% for detail in content.contact_details %}
+              {% capture icon_styles %}
+                icon_size: "small"
+                icon_type: "outline"
+                hero_icon_name: {{ detail.hero_icon_name }}
+                rounded_border: true        
+                color:  "var(--main-text-color)"
+              {% endcapture %}
+              {% assign icon_styles = icon_styles | ymlify %}
+              {% bookshop "generic/labelled-icon"
+                text:detail.text 
+                arrangement:'inline' 
+                icon:icon_styles
+              %}
+            {% endfor %}  
+          </div>
+          {% if content.button %}
+            <div class="{{ c }}__button">{% bookshop "generic/button" bind:content.button %}</div>
+          {% endif %}
+      </div>                
+    </div>
+  </div>
+  <div class="{{ c }}__map-wrapper">
+    {% bookshop "simple/google-map-embed" bind:content.map %}
+  </div>
+</section>

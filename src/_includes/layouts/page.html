@@ -8,7 +8,7 @@
         {% include 'partials/head/stylesheets.html' %}
 
         <script src="/assets/js/main.js" defer></script>
-        <title>{{ title }}</title>
+        <title>{{ title }}{% if seo.title %} | {{ seo.title }}{% endif %}</title>
         {% include 'partials/head/google-fonts.html' %}
     </head>
     <body>

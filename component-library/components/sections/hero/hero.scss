@@ -4,9 +4,10 @@
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
   grid-template-rows: minmax(0, 1fr);
-  color: var(--brand-grey-000, #f9f9fb);
+  color: var(--main-text-color);
   &__cover {
-    background-color: var(--header-color, rgba(27, 27, 29, 1));
+    background-color: var(--main-background-color);
+    opacity:.4;
     grid-row: 1 / -1;
     grid-column: 1 / -1;
   }
@@ -21,6 +22,7 @@
     object-position: 50% 50%;
   }
   &__content {
+    z-index:1;
     display: grid;
     gap: 1.5rem;
     grid-row: 1 / -1;

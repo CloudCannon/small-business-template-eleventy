@@ -16,7 +16,7 @@ blueprint:
     button: bookshop:generic/button
     show_note: true
   styles:
-    background_variant: light
+    background_variant: primary
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser

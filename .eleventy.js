@@ -103,7 +103,7 @@ module.exports = function (eleventyConfig) {
         render: function(ctx) {
             ctx.scopes[ctx.scopes.length-1][this.key] = this.liquid.evalValueSync(this.value, ctx);
         }
-      }
+    }
   });
 
   eleventyConfig.addFilter('contains_block', function(content_blocks, blockName) {

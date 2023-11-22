@@ -28,40 +28,26 @@
   --font-weight-bold: 700;
 
   /* Colors */
-  // Gray
-  --brand-grey-000: #f9f9fb;
-  --brand-grey-100: #f2f2f4;
-  --brand-grey-200: #e9e9ec;
-  --brand-grey-300: #d9d9dc;
-  --brand-grey-400: #b6b6b8;
-  --brand-grey-500: #969698;
-  --brand-grey-600: #6e6e70;
-  --brand-grey-700: #5a5a5c;
-  --brand-grey-800: #3b3b3d;
-  --brand-grey-900: #1b1b1d;
-  // Red
-  --error-red-000: #f9e9e9;
-  --error-red-100: #efc8c8;
-  --error-red-200: #df9191;
-  --error-red-300: #bf2323;
-  --error-red-400: #ab1d1d;
-  --error-red-500: #881212;
-  // Blue
-  --interaction-blue-000: #e7eeff;
-  --interaction-blue-100: #c4d4fe;
-  --interaction-blue-200: #92b2f8;
-  --interaction-blue-300: #2566f2;
-  --interaction-blue-400: #1d51c1;
-  --interaction-blue-500: #163d91;
-  // Green
-  --success-green-000: #e7f3ec;
-  --success-green-100: #c2e1d0;
-  --success-green-200: #49a672;
-  --success-green-300: #0d8843;
-  --success-green-400: #017737;
-  --success-green-500: #005824;
+  // User editable theme colors
+  --primary-background-color: #3B3B3D;
+  --primary-foreground-color: #F9F9FB;
+  --secondary-background-color: #1B1B1D;
+  --secondary-foreground-color: #D9D9DC;
 
-  --header-color: #1b1b1d99;
+  // FOR INTERNAL USE
+  --main-background-color: var(--primary-background-color, #3B3B3D);
+  --main-text-color: var(--primary-foreground-color, #F9F9FB);
+  --alt-background-color: var(--secondary-background-color, #1B1B1D);
+  --alt-text-color: var(--secondary-foreground-color, #D9D9DC);
+
+  // Red - error
+  --error-color: #bf2323;
+
+  // Blue - interaction
+  --interaction-color: #2566F2;
+
+  // Green - success
+  --success-color: #0d8843;
 
   --nav-height: 60px;
 }
