@@ -2,7 +2,9 @@
 
 <header>
     <nav class="{{c}}" aria-label="Main menu" id="main-menu">
-
+        <a class="{{c}}__skip-to-content-link" href="#main">
+            Skip to content
+        </a>
         <a class="{{c}}__logo-link" href="/" aria-label="Home" {% if page.url=="/" %}aria-current="page" {% endif %}>
             {% if nav.logo_image != '' %}
                 <img class="{{c}}__logo-link__image" src="{{nav.logo_image}}" alt="Site logo" />
