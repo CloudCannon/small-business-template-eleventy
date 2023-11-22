@@ -1,7 +1,7 @@
 module.exports = {
     engines: {
         "@bookshop/eleventy-engine": {
-            "plugins": ["./image.js"]
+            "plugins": ["./assign_local.js", "./image.js", "./military_time.js", "./ymlify.js"]
         }
     }
 }

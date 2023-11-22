@@ -1,5 +1,5 @@
 .c-price-list {
-    color: var(--brand-grey-000, #F9F9FB);
+    color: var(--main-text-color);
     display: grid;
     grid-template-columns: var(--twelve-column-grid);
     row-gap: 48px;
@@ -58,7 +58,7 @@
                 }
 
                 &__seperator {
-                    border-bottom: 1px var(--brand-grey-000, #F9F9FB) dotted
+                    border-bottom: 1px var(--main-text-color) dotted
                 }
             }
         }

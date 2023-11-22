@@ -1,0 +1,26 @@
+{% assign_local c = "c-embed" %}
+<section class="{{ c }} {{ c }}--content-align-{{ styles.content_alignment }} component 
+            {% if styles.background_variant == 'secondary' %} 
+                component--secondary
+            {% endif %}" >
+
+    {% if content.heading or content.description %}
+        <div class="{{ c }}__heading">
+            {% if content.heading %}{% bookshop "generic/component-heading" bind:content.heading %}{% endif %}
+            {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
+        </div>
+    {% endif %}
+
+    {% if env_bookshop_live and content.show_note %}
+        <div class="{{ c }}__note">
+            {% bookshop "generic/notification" heading:"Embed Display" text:"If your embed contains a script tag, it will not show in live editing <br> This note only will only show in live editing" %}
+        </div>
+    {% endif %}
+    <div class="{{ c }}__embed">
+        {% bookshop "generic/custom-embed" bind:content.embed %}
+    </div>
+
+    {% if content.button %}
+        <div class="{{ c }}__button">{% bookshop "generic/button" bind:content.button %}</div>
+    {% endif %}
+</section>

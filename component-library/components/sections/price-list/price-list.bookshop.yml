@@ -19,7 +19,7 @@ blueprint:
             detail: $$
     # TODO: add button(s) subcomponent
   styles:
-    background_variant: light
+    background_variant: primary
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -51,42 +51,10 @@ preview:
           - label: Service 3
             detail: $40
   styles:
-    background_variant: light
+    background_variant: primary
     content_alignment: center
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   description:
     type: textarea
-  content_alignment:
-    type: choice
-    options:
-      value_key: id
-      preview:
-        text: 
-          - key: name
-        icon:
-          - key: icon
-      values:
-        - name: Left
-          id: left
-          icon: format_align_left
-        - name: Center
-          id: center
-          icon: format_align_center
-  background_variant:
-    type: choice
-    options:
-      value_key: id
-      preview:
-        text: 
-          - key: name
-        icon:
-          - key: icon
-      values:
-        - name: Dark
-          id: dark
-          icon: dark_mode
-        - name: Light
-          id: light
-          icon: light_mode

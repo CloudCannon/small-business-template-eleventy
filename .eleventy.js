@@ -1,8 +1,19 @@
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const yaml = require("js-yaml");
 const svgContents = require("eleventy-plugin-svg-contents");
-const imageShortcode = require("./11ty/shortcodes/image");
 const esbuild = require('esbuild');
+const { Tokenizer, assert } = require('liquidjs');
+const path = require("node:path");
+const fs = require('fs'); 
+const Image = require("@11ty/eleventy-img");
+
+const IMAGE_OPTIONS = {
+	widths: [400, 800, 1280, 1600],
+	formats: ["avif", "webp", "svg", "jpeg"],
+	outputDir: "./_site/optimized/",
+	urlPath: "/optimized/",
+	// svgCompressionSize: "br",
+};
 
 const MarkdownIt = require("markdown-it"),
   md = new MarkdownIt({
@@ -30,7 +41,27 @@ module.exports = function (eleventyConfig) {
   );
 
   // Custom shortcodes
-  eleventyConfig.addShortcode("image", imageShortcode);
+  eleventyConfig.addShortcode("image", async (srcFilePath, alt, className, preferSvg) => {
+    let before = Date.now();
+    let inputFilePath = srcFilePath == null ? srcFilePath : path.join(eleventyConfig.dir.input, srcFilePath);
+
+    if (fs.existsSync(inputFilePath)) {
+      let metadata = await Image(inputFilePath, Object.assign({
+        svgShortCircuit: preferSvg ? "size" : false,
+      }, IMAGE_OPTIONS));
+      console.log( `[11ty/eleventy-img] ${Date.now() - before}ms: ${inputFilePath}` );
+
+      return Image.generateHTML(metadata, {
+        alt,
+        class: className,
+        sizes: "100vw",
+        loading: "eager",
+        decoding: "async",
+      });
+    } else {
+      return `<img src='${srcFilePath}' alt='${alt}'>`;
+    }
+	});
   
   // Plugins
   eleventyConfig.addPlugin(svgContents);
@@ -42,9 +73,37 @@ module.exports = function (eleventyConfig) {
   // Filters
   eleventyConfig.addFilter("markdownify", (markdown) => md.render(markdown));
   eleventyConfig.addFilter("ymlify", (yml) => yaml.load(yml));
+  eleventyConfig.addFilter("militaryTime", function(value) { 
+    const [time, period] = value.split(' '); 
+    const [hour, minute] = time.split(':'); 
+    let formattedHour = parseInt(hour); 
+  
+    if (period === 'pm' || period === 'PM') { 
+        formattedHour += 12; 
+    } 
+  
+    return `${formattedHour}:${minute}`; 
+  });
 
   eleventyConfig.setBrowserSyncConfig({
     files: "./_site/css/**/*.css",
+  });
+
+    // Tags
+    eleventyConfig.addLiquidTag('assign_local', function(liquidEngine) {
+      return {
+        parse: function (token) {
+            const tokenizer = new Tokenizer(token.args, this.liquid.options.operatorsTrie);
+            this.key = tokenizer.readIdentifier().content;
+            tokenizer.skipBlank();
+            assert(tokenizer.peek() === '=', () => `illegal token ${token.getText()}`);
+            tokenizer.advance();
+            this.value = tokenizer.remaining();
+        },
+        render: function(ctx) {
+            ctx.scopes[ctx.scopes.length-1][this.key] = this.liquid.evalValueSync(this.value, ctx);
+        }
+    }
   });
 
   eleventyConfig.addFilter('contains_block', function(content_blocks, blockName) {

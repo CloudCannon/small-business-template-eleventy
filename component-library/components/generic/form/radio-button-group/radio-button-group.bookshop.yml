@@ -1,0 +1,47 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - form_blocks
+  label: "Radio Button Group"
+  description: Group of radio button inputs
+  icon: radio_button_unchecked
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  label: ""
+  id:
+  required: false
+  radio_buttons: 
+    - label:
+      checked: false
+  arrangement: inline
+  helper_text:
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  label: "Radio Button group"
+  radio_buttons:
+    - label: Radio button 1
+      checked: false
+    - label: Radio button 2
+      checked: false
+    - label: Radio button 3
+      checked: false
+    - label: Radio button 4
+      checked: false
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    hidden: true
+    instance_value: UUID
+  arrangement:
+    type: select
+    comment: The layout of the icon and text together
+    options:
+      values:
+        - inline
+        - stacked
+  helper_text:
+    comment: Helpful text for the user such as 'Option 1 is only available on weekends'

@@ -1,4 +1,18 @@
-footer_image:
-display_social_media_links: true
-display_navigation: true
-footer_content:
+logo_image: ""
+logo_text:
+  text: Primera Mesa
+  font: Birthstone Bounce
+navigation_items:
+  - label: About Us
+    link_url: /about
+    open_in_new_tab: false
+  - label: Our Services
+    link_url: /services
+    open_in_new_tab: false
+  - label: Book Now
+    link_url: /bookings
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+footer_content: ©Enter your copyright and terms and conditions.

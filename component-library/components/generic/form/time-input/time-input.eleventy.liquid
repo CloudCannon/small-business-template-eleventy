@@ -1,0 +1,27 @@
+{% assign_local c = "c-time-input" %}
+<div class="{{ c }}">
+    <label class="{{ c }}__label" for="{{ id }}">{{ label }}</label>
+    <input class="{{ c }}__input"
+        type="time" id="{{ id }}" 
+        name="{{ label }}" 
+        value="{{ placeholder }}"
+        {% if min %}min="{{ min | militaryTime }}"{% endif %}
+        {% if max %}max="{{ max | militaryTime }}"{% endif %}
+        onblur="validateInput(this)"
+        oninput="validateInputTyping(this)"
+        {% if helper_text %}aria-describedby="{{ id }}--helper"{% endif %}>
+    <div class="{{ c }}__icon">{% bookshop "generic/icon" hero_icon_name:"clock" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'white' %}</div>
+    <div class="{{ c }}__dropdown-arrow">{% bookshop "generic/icon" hero_icon_name:"chevron-down" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'white' %}</div>
+
+    {% if helper_text %}
+        <div class="{{ c }}__helper">
+            {% bookshop "generic/icon" hero_icon_name:"information-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--primary-foreground-color, #F9F9FB)' %}
+            <p class="{{ c }}__helper__text" id="{{ id }}--helper" role="tooltip">{{ helper_text }}<p>
+        </div>
+    {% endif %}
+
+    <div class="{{ c }}__error error">
+        {% bookshop "generic/icon" hero_icon_name:"x-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--error-color, #BF2323)' %}
+        <p class="{{ c }}__error__text error__text" id="{{ id }}--error">Error Message<p>
+    </div>
+</div>

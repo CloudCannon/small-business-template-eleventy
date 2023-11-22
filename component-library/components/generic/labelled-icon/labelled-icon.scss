@@ -1,4 +1,5 @@
 .c-labelled-icon {
+    $c: &;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +13,9 @@
     &--stacked {
         flex-direction: column;
         text-align: center;
+        #{$c}__text {
+            max-width: 5rem;
+        }
     }
 
     &__text {

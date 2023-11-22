@@ -1,0 +1,42 @@
+.c-radio-button-group {
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__group {
+        padding: 12px 16px;
+        border-radius: 4px;
+        border: 2px solid;
+
+        &__label {
+            font-size: var(--label);
+            line-height: var(--line-height);
+        }
+
+        &__inputs {
+            &--arrangement-inline {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &__helper {
+        display: flex;
+        gap: 8px;
+        font-size: var(--paragraph-small);
+        line-height: var(--line-height);
+        color: var(--main-text-color);
+    }
+        
+    &__error {
+        display: none;
+        color: var(--error-color, #BF2323);
+        gap: 8px;
+        font-size: var(--paragraph-small);
+        line-height: var(--line-height);
+    }
+}

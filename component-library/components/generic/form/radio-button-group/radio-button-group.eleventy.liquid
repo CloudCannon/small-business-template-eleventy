@@ -1,0 +1,26 @@
+{% assign_local c = "c-radio-button-group" %}
+<div class="{{ c }}">
+    <fieldset class="{{ c }}__group" onClick="validateInputGroup(this)" {% if helper_text %}aria-describedby="{{ id }}--helper"{% endif %}>
+        <legend class="{{ c }}__group__label">{{ label }}{% if required %} *{% endif %}</legend>
+        <div class="{{ c }}__group__inputs {{ c }}__group__inputs--arrangement-{{ arrangement }}">
+            {% assign_local group_name = label | append: "-" | append: id %}
+            {% for item in radio_buttons %}
+                {% bookshop "generic/form/radio-input" bind:item required:required group_name:group_name %}
+            {% endfor %}
+        </div>
+
+    </fieldset>
+
+    {% if helper_text %}
+        <div class="{{ c }}__helper">
+            {% bookshop "generic/icon" hero_icon_name:"information-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--primary-foreground-color, #F9F9FB)' %}
+            <p class="{{ c }}__helper__text" id="{{ id }}--helper" role="tooltip">{{ helper_text }}<p>
+        </div>
+    {% endif %}
+
+    <div class="{{ c }}__error error">
+        {% bookshop "generic/icon" hero_icon_name:"x-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--error-color, #BF2323)' %}
+        <p class="{{ c }}__error__text error__text" id="{{ id }}--error">Error Message<p>
+    </div>
+
+</div>
