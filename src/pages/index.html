@@ -20,12 +20,12 @@ content_blocks:
           arrow: right
           onclick:
     styles:
+      orientation: Right
       image:
         bookshop: generic/image
         image_path: /uploads/testimonial-bg.jpg
-        image_alt: ""
-      orientation: "Right"
-      background_variant: "Dark"
+        image_alt: ''
+      background_variant: Dark
   - _bookshop_name: generic/left-right-block
     social_icons:
       bookshop: generic/social-icons
@@ -33,17 +33,17 @@ content_blocks:
         - link_url: https://www.youtube.com/
           svg_icon: /assets/images/icons/social/youtube.svg
       style:
-        icon_background_hover_color: "#f9f9fb"
-        icon_color: "#f9f9fb"
-        icon_hover_color: "#000000"
+        icon_background_hover_color: '#f9f9fb'
+        icon_color: '#f9f9fb'
+        icon_hover_color: '#000000'
     heading:
       _bookshop_name: generic/component-heading
       eyebrow_headline: Eyebrow Heading
       primary_heading: Primary Heading
     contact_details: >-
-      A classic component, you can select to have your image to the left or
-      the right, add a button or two, and give the viewer a quick intro to
-      your brand.
+      A classic component, you can select to have your image to the left or the
+      right, add a button or two, and give the viewer a quick intro to your
+      brand.
     author_name: John Smith
     buttons:
       - _bookshop_name: generic/button
@@ -88,8 +88,48 @@ content_blocks:
     image:
       bookshop: generic/image
       image_path: http://placekitten.com/400/600
-      image_alt: ""
+      image_alt: ''
     styles:
       orientation: Left
+      background_variant: Dark
+  - _bookshop_name: sections/featured-icons
+    content:
+      headline: Let your features shine
+      heading: A featured icons left right block
+      icons:
+        - _bookshop_name: generic/labelled-icon
+          arrangement: inline
+          text: 100% Happy customer reviews
+          icon:
+            _bookshop_name: generic/icon
+            hero_icon_name: face-smile
+            icon_size: small
+            icon_type: outline
+            rounded_border: true
+            theme_color: false
+            color: '#ffffff'
+        - _bookshop_name: generic/labelled-icon
+          arrangement: stacked
+          text: Great customer service
+          icon:
+            _bookshop_name: generic/icon
+            hero_icon_name: heart
+            icon_size: small
+            icon_type: outline
+            rounded_border: true
+            theme_color: false
+            color: '#7d7f7c'
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Book Now
+          variant: primary
+          disabled: false
+          arrow: right
+          onclick:
+    styles:
+      orientation: Left
+      image:
       background_variant: Dark
 ---
