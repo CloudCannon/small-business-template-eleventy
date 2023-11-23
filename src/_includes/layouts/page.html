@@ -14,8 +14,10 @@
     <body>
         {% include 'partials/nav/navigation.html' %}
         <main>
-            {% assign component = hero %}
-            {% bookshop {{component._bookshop_name}} bind:component %}
+            {% if hero %}
+                {% bookshop {{hero._bookshop_name}} bind:hero %}
+            {% endif %}
+            
             {% bookshop_include "page" content_blocks: content_blocks %}
             {{ content }}
         </main>
