@@ -63,6 +63,7 @@ _inputs:
         - Right 
   icons:
     type: array
+    comment: Recommended to have no more than three icons here
     options:
       structures: _structures.icon_types
 _structures:
