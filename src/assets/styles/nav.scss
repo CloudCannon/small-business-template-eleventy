@@ -65,6 +65,7 @@
         text-decoration: none;
         color: var(--alt-text-color);
         white-space: nowrap;
+        padding: 0.5rem;
 
         &:hover,
         &:active {
@@ -187,9 +188,9 @@
       grid-column: 5 / -2;
       height: auto;
       display: flex;
-      gap: 1.5rem;
       justify-self: end;
       flex-direction: row;
+      gap: .5rem;
     }
 
     &__burger-menu {
