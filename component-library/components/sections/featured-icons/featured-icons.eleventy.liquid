@@ -1,4 +1,5 @@
 {% assign_local c = "c-featured-icons" %}
+{%  assign block_icons = "" %}
 
 {% capture heading %}
   eyebrow_headline: {{ content.headline }}
@@ -6,7 +7,30 @@
 {% endcapture %}
 {% assign_local heading = heading | ymlify %}
 
+{% for icon_data in content.icons %}
+  {% if icon_data.hero_icon_name %}
+    {% capture labelled-icon %}
+      - bookshop: generic/labelled-icon
+        arrangement: stacked
+        text: {{ icon_data.icon_text }}
+        icon:
+          bookshop: generic/icon
+          hero_icon_name: {{ icon_data.hero_icon_name }}
+          icon_size: large
+          icon_type: outline
+          rounded_border: true
+          color: var(--main-text-color)
+    {% endcapture %}
+    {%  assign block_icons = block_icons | append: labelled-icon %}    
+  {% else %}
+    {% comment %}
+      TBD after adding custom icons support to labelled-icon
+    {% endcomment %}
+  {% endif %}
+{% endfor %}
+
+{% assign block_icons = block_icons | ymlify %}
 
 <section class="{{ c }}">
-  {% bookshop "generic/left-right-block" heading:heading icons:content.icons buttons:content.buttons image:styles.image orientation:styles.orientation background_variant:styles.background_variant %}
+  {% bookshop "generic/left-right-block" heading:heading buttons:content.buttons icons:block_icons image:styles.image orientation:styles.orientation background_variant:styles.background_variant %}
 </section>

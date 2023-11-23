@@ -25,6 +25,13 @@ preview:
   content:
     headline: Let your features shine
     heading: A featured icons left right block
+    icons:
+      - hero_icon_name: face-smile
+        icon_text: 100% Happy customer reviews
+      - hero_icon_name: heart
+        icon_text: Great customer service
+      - hero_icon_name: star
+        icon_text: Outstanding product reviews
     buttons:
       - _bookshop_name: generic/button
         url: "#"
@@ -69,8 +76,8 @@ _structures:
       - label: Standard Icon
         value:
           hero_icon_name:
-          icson_text:
+          icon_text:
       - label: Custom Icon
         value:
           icon_path:
-          icson_text:
+          icon_text:
