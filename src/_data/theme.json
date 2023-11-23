@@ -1,17 +1,13 @@
 {
-    "primary_background_color": "#3B3B3D",
-    "primary_foreground_color": "#F9F9FB",
-    "secondary_background_color": "#1B1B1D",
-    "secondary_foreground_color": "#D9D9DC",
+    "site_colors" : [
+        {
+            "name": "Primary",
+            "background_color" : "#3B3B3D",
+            "foreground_color" : "#F9F9FB"
+        }
+    ],
     "interaction_color": "#2566F2",
     "heading_font": "Lato",
     "content_font": "Lato",
-    "logo_font": "Birthstone Bounce",
-    "colors" : [
-        {
-            "name": "",
-            "background_color" : "",
-            "foreground_color" : ""
-        }
-    ]
+    "logo_font": "Birthstone Bounce"   
 }

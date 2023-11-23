@@ -66,7 +66,7 @@ _inputs:
           id: center
           icon: format_align_center
   background_variant:
-    type: choice
+    type: select
     options:
       allow_empty: false
       value_key: id
@@ -74,14 +74,8 @@ _inputs:
         text:
           - key: name
         icon:
-          - key: icon
-      values:
-        - name: Primary
-          id: primary
-          icon: star
-        - name: Secondary
-          id: secondary
-          icon: star_outline
+          - key: icon            
+      values: data.theme.site_colors
   heading_font:
     comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
   content_font:
@@ -396,5 +390,6 @@ _editables: {}
 
 data_config:
   fonts: true
+
 
 timezone: Etc/UTC
