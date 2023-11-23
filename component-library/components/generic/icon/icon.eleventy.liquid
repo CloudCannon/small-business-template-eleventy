@@ -1,6 +1,5 @@
 {% assign_local c = "c-icon" %}
 
-{% assign icon_style = icon_type %}
 {% assign icon_path = "/assets/images/icons/" 
     | append: icon_type 
     | append: "/" 
@@ -10,7 +9,7 @@
     class="
         {{ c }} 
         {{ c }}--{{ icon_size }} 
-        {{ c }}--{{ icon_style }}
+        {{ c }}--{{ icon_type }}
         {% if rounded_border %}
             {{c}}--round
         {% endif %}
