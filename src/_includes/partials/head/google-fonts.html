@@ -1,8 +1,8 @@
 {% assign google_fonts = '' | split: '' %}
 {% assign google_fonts = google_fonts | push: "Lato" %}
-{% assign google_fonts = google_fonts | push: site.styles.heading_font %}
-{% assign google_fonts = google_fonts | push: site.styles.content_font %}
-{% if nav.logo_image == '' %}{% assign google_fonts = google_fonts | push: nav.logo_text.font %}{% endif %}
+{% assign google_fonts = google_fonts | push: theme.heading_font %}
+{% assign google_fonts = google_fonts | push: theme.content_font %}
+{% if nav.logo_image == '' %}{% assign google_fonts = google_fonts | push: theme.logo_font %}{% endif %}
 
 {% assign google_fonts = google_fonts | uniq %}
 {% assign count = 0 %}
@@ -10,7 +10,7 @@
 
 {% for font in google_fonts %}
   {% assign stripped_font = font | replace: ' ', '+' %}
-  {% assign stripped_font = stripped_font | append: ':wght@100;200;300;400;500;600;700;800;900' %}
+  {% assign stripped_font = stripped_font | append: ':wght@400;700' %}
   {% if forloop.last %}
     {% assign font_string = font_string | append: stripped_font %}
   {% else %}
