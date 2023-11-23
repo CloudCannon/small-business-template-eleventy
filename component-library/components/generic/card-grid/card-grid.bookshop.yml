@@ -10,7 +10,7 @@ spec:
 blueprint:
   content:
     heading: bookshop:generic/component-heading
-    text:
+    description:
     grid_items:
       - hero_icon_name:
         eyebrow_headline:
@@ -28,47 +28,48 @@ blueprint:
 preview:
   content:
     heading:
-      _bookshop_name: bookshop:generic/component-heading
-      eyebrow_headline: Bite Sized Information
-      primary_heading: An Icon Card Grid
-    text: >-
-      Sometimes you only need a small text and image section and a cards grid
-      is the best option to showcase your content.
+      _bookshop_name: generic/component-heading
+      eyebrow_headline: Eyebrow Heading
+      primary_heading: Primary Heading
+    description: Card Grid Description
     grid_items:
-      - hero_icon_name: sparkles
-        eyebrow_headline: Icon Card
-        primary_heading: Heading
+      - image: http://placekitten.com/g/200/300
+        hero_icon_name: adjustments-horizontal
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
         text: >-
-          These versatile cards can be used to talk about your services or
-          products, or anything else you are keen to share with your audience.
-          They come with an action link to get your users into the journey
-          you’ve crafted for them.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         button:
-          label: Button
+          label: Secondary
           url:
           open_in_new_tab: false
-      - hero_icon_name: scissors
-        eyebrow_headline: Icon Card
-        primary_heading: Heading
+      - image: http://placekitten.com/g/200/300
+        hero_icon_name: adjustments-horizontal
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
         text: >-
-          These versatile cards can be used to talk about your services or
-          products, or anything else you are keen to share with your audience.
-          They come with an action link to get your users into the journey
-          you’ve crafted for them.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         button:
-          label: Button
+          label: Secondary
           url:
           open_in_new_tab: false
-      - hero_icon_name: play
-        eyebrow_headline: Icon Card
-        primary_heading: Heading
+      - image: http://placekitten.com/g/200/300
+        hero_icon_name: adjustments-horizontal
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
         text: >-
-          These versatile cards can be used to talk about your services or
-          products, or anything else you are keen to share with your audience.
-          They come with an action link to get your users into the journey
-          you’ve crafted for them.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         button:
-          label: Button
+          label: Secondary
           url:
           open_in_new_tab: false
     buttons:
@@ -78,8 +79,7 @@ preview:
         text: Button text
         variant: primary
         arrow: right
-        onclick: ""
-        id: ""
+        onclick:
   styles:
     background_variant: secondary
 # Any extra CloudCannon inputs configuration to apply to the blueprint
