@@ -4,5 +4,30 @@ layout: layouts/page.html
 permalink: /
 draft: false
 eleventyExcludeFromCollections: false
-content_blocks: []
+content_blocks:
+  - _bookshop_name: sections/featured-icons
+    content:
+      headline: Headline
+      heading: Heading
+      icons:
+        - hero_icon_name: adjustments-horizontal
+          icson_text: dfsfdfgg
+        - icon_path: /assets/images/icons/outline/academic-cap.svg
+          icson_text: dsfasdg
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Book Now
+          variant: primary
+          disabled: false
+          arrow: right
+          onclick:
+    styles:
+      orientation: Left
+      image:
+        _bookshop_name: generic/image
+        image_path: /uploads/feaured-icons-bg.jpg
+        image_alt:
+      background_variant: Dark
 ---
