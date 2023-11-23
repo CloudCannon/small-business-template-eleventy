@@ -64,7 +64,7 @@ _inputs:
   icons[*]:
     type: select
     options:
-      structures: _structures.icon
+      values: _structures.icon
   _structures:
     icon:
       values:
