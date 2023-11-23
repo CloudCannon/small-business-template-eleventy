@@ -8,12 +8,12 @@
         {% include 'partials/head/stylesheets.html' %}
 
         <script src="/assets/js/main.js" defer></script>
-        <title>{{ title }}</title>
+        <title>{{ title }}{% if seo.title %} | {{ seo.title }}{% endif %}</title>
         {% include 'partials/head/google-fonts.html' %}
     </head>
     <body>
         {% include 'partials/nav/navigation.html' %}
-        <main>
+        <main id="main">
             {% bookshop_include "hero" hero: hero title: title permalink: permalink %}
 
             {% bookshop_include "page" content_blocks: content_blocks %}

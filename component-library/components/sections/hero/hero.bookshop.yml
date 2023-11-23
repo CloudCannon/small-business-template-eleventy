@@ -36,7 +36,6 @@ preview:
       open_in_new_tab: false
       text: Primary
       variant: primary
-      disabled: false
       arrow: right
       onclick: console.log(this)
     description: "We wanted you to have a couple of options to use above the fold, and give you the customisation you need to display your product/service in the best way possible."

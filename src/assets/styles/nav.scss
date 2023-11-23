@@ -6,7 +6,19 @@
   height: auto;
   background: var(--alt-background-color);
   --nav-padding: 8px;
-
+  &__skip-to-content-link {
+    // background: var(--primary-foreground-color);
+    .c-button {
+      left: 45%;
+      position: absolute;
+      transform: translateY(-100%);
+      transition: transform 0.3s;
+      border-radius: 0 0 1rem 1rem;
+      &:focus {
+        transform: translateY(0%);
+      }
+    }
+  }
   &__logo-link {
     grid-column: 2 / -3;
     text-decoration: none;

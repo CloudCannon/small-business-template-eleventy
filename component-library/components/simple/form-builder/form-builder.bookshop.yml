@@ -87,7 +87,6 @@ preview:
     - _bookshop_name: generic/form/country-select-input
       id: country-selector
       label: Country
-      required: false
       placeholder: Select your country
       helper_text: The country you primarily reside in
     - _bookshop_name: generic/form/date-input
@@ -101,7 +100,6 @@ preview:
       label: Choose a time slot
       placeholder: '15:00'
       id: time
-      required: false
       min: 9:00 am
       max: 3:00 pm
       helper_text: Select a time between 9:00 and 15:00
@@ -113,7 +111,6 @@ preview:
         - key: Option 2
         - key: Option 3
         - key: Option 4
-      required: false
       helper_text: Option 1 is only available on weekdays
     - _bookshop_name: generic/form/text-area-input
       label: Comment
