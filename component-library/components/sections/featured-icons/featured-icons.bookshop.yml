@@ -61,6 +61,8 @@ _inputs:
         - 'Light'
   icons:
     type: array
+  icons[*]:
+    type: select
     options:
       structures: _structures.icon
   _structures:
