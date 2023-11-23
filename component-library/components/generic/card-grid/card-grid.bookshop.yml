@@ -8,8 +8,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content:
-    eyebrow_headline:
+  eyebrow_headline:
     heading:
     text:
     grid_items:
@@ -22,62 +21,57 @@ blueprint:
           url:
           open_in_new_tab: false
     buttons: [bookshop:generic/button]
-  styles:
-    background_variant: secondary
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  content:
-    eyebrow_headline: Bite Sized Information
-    heading: An Icon Card Grid
-    text: >-
-      Sometimes you only need a small text and image section and a cards grid
-      is the best option to showcase your content.
-    grid_items:
-      - hero_icon_name: sparkles
-        eyebrow_headline: Icon Card
-        primary_heading: Heading
-        text: >-
-          These versatile cards can be used to talk about your services or
-          products, or anything else you are keen to share with your audience.
-          They come with an action link to get your users into the journey
-          you’ve crafted for them.
-        button:
-          label: Button
-          url:
-          open_in_new_tab: false
-      - hero_icon_name: scissors
-        eyebrow_headline: Icon Card
-        primary_heading: Heading
-        text: >-
-          These versatile cards can be used to talk about your services or
-          products, or anything else you are keen to share with your audience.
-          They come with an action link to get your users into the journey
-          you’ve crafted for them.
-        button:
-          label: Button
-          url:
-          open_in_new_tab: false
-      - hero_icon_name: play
-        eyebrow_headline: Icon Card
-        primary_heading: Heading
-        text: >-
-          These versatile cards can be used to talk about your services or
-          products, or anything else you are keen to share with your audience.
-          They come with an action link to get your users into the journey
-          you’ve crafted for them.
-        button:
-          label: Button
-          url:
-          open_in_new_tab: false
-    buttons:
-      - _bookshop_name: generic/button
-        url: "#"
+  eyebrow_headline: Bite Sized Information
+  heading: An Icon Card Grid
+  text: >-
+    Sometimes you only need a small text and image section and a cards grid
+    is the best option to showcase your content.
+  grid_items:
+    - hero_icon_name: sparkles
+      eyebrow_headline: Icon Card
+      primary_heading: Heading
+      text: >-
+        These versatile cards can be used to talk about your services or
+        products, or anything else you are keen to share with your audience.
+        They come with an action link to get your users into the journey
+        you’ve crafted for them.
+      button:
+        label: Button
+        url:
         open_in_new_tab: false
-        text: Button text
-        variant: primary
-        arrow: right
-        onclick: ""
-        id: ""
-  styles:
-    background_variant: secondary
+    - hero_icon_name: scissors
+      eyebrow_headline: Icon Card
+      primary_heading: Heading
+      text: >-
+        These versatile cards can be used to talk about your services or
+        products, or anything else you are keen to share with your audience.
+        They come with an action link to get your users into the journey
+        you’ve crafted for them.
+      button:
+        label: Button
+        url:
+        open_in_new_tab: false
+    - hero_icon_name: play
+      eyebrow_headline: Icon Card
+      primary_heading: Heading
+      text: >-
+        These versatile cards can be used to talk about your services or
+        products, or anything else you are keen to share with your audience.
+        They come with an action link to get your users into the journey
+        you’ve crafted for them.
+      button:
+        label: Button
+        url:
+        open_in_new_tab: false
+  buttons:
+    - _bookshop_name: generic/button
+      url: "#"
+      open_in_new_tab: false
+      text: Button text
+      variant: primary
+      arrow: right
+      onclick: ""
+      id: ""
