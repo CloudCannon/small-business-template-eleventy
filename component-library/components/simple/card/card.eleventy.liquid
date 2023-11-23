@@ -17,25 +17,13 @@
 
     <div class="{{ c }}__content-wrapper">
         {% if content.heading %}
-            <header class="{{ c }}__header">
-                {% if content.heading.primary_heading %}
-                    <h4 class="{{ c }}__header__primary_heading">
-                        {{ content.heading.primary_heading }}
-                    </h4>
-                {% endif %}
-                
-                {% if content.heading.eyebrow_headline %}
-                    <h5 class="{{ c }}__header__eyebrow_heading">
-                        {{ content.heading.eyebrow_headline }}
-                    </h5>
-                {% endif %}
-            </header>
+            {% bookshop "generic/component-heading" bind:content.heading %}
         {% endif %}
 
         <div class="{{c}}__content">{% bookshop "generic/text-block" text:content.text %}</div>
         {% if content.button %}
             <div class="{{ c }}__button">
-                {% bookshop "generic/button" url:content.button.url text:content.button.text open_in_new_tab:content.button.open_in_new_tab variant:"secondary" disabled:false arrow:"right"%}
+                {% bookshop "generic/button" url:content.button.url text:content.button.text open_in_new_tab:content.button.open_in_new_tab variant:"secondary" arrow:"right"%}
             </div>
         {% endif %}
     </div>

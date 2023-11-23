@@ -1,8 +1,4 @@
 {
-  "styles": {
-    "heading_font": "Lato",
-    "content_font": "Lato"
-  },
   "base_url": "http://example.com",
   "social_media_links": [
     {
@@ -28,12 +24,6 @@
   ],
   "google_maps_api_key": null,
   "_inputs": {
-    "heading_font": {
-      "comment": "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
-    },
-    "content_font": {
-      "comment": "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
-    },
     "social_media_links": {
       "type": "array",
       "options": {
