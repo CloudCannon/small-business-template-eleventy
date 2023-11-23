@@ -9,15 +9,12 @@
             {% endif %}">
 
   <div class="{{c}}__wrapper">
-    <div class="{{c}}__content-grid">
-      <div class="{{c}}__content-wrapper">
-        <h4 class="{{c}}__eyebrow">{{ content.eyebrow_headline }}</h4>
-        <h3 class="{{c}}__heading">{{ content.heading }}</h3>
-        <div class="{{c}}__content">
-          {{ content.text }}
+    {% if content.heading or content.description %}
+        <div class="{{ c }}__heading">
+            {% if content.heading %}{% bookshop "generic/component-heading" bind:content.heading %}{% endif %}
+            {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
         </div>
-      </div>
-    </div>
+    {% endif %}
 
     <div class="{{c}}__grid">
       {% for item in content.grid_items %}
