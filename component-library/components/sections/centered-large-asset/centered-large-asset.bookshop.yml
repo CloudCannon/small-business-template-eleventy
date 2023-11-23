@@ -34,7 +34,3 @@ preview:
 _inputs:
   description:
     type: textarea
-  styles.background_variant:
-    type: select
-    options:
-      values: data.theme.site_colors

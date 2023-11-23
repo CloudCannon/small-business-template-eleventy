@@ -75,7 +75,7 @@ _inputs:
           - key: name
         icon:
           - key: icon            
-      values: data.theme.site_colors
+      values: data.theme.site_colors[*].name
   heading_font:
     comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
   content_font:
