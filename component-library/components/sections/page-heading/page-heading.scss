@@ -1,0 +1,9 @@
+.c-page-heading {
+    display: grid;
+    grid-template-columns: var(--twelve-column-grid);
+    text-align: center;
+
+    .c-component-heading {
+        grid-column: 2 / -2;
+    }
+}

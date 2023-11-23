@@ -16,8 +16,10 @@
         <main>
             {% if hero %}
                 {% bookshop {{hero._bookshop_name}} bind:hero %}
+            {% elsif permalink != "/components/" %}
+                {% bookshop "sections/page-heading" heading: title %}
             {% endif %}
-            
+
             {% bookshop_include "page" content_blocks: content_blocks %}
             {{ content }}
         </main>
