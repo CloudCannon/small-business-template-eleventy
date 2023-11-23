@@ -22,8 +22,7 @@ preview:
   text: "Button text"
   variant: "primary"
   arrow: "right"
-  onclick: console.log("test")
-  id: ""
+  onclick: console.log(this)
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
