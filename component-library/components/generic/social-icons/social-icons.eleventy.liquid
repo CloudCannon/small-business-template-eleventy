@@ -1,6 +1,6 @@
 {% assign si = "c-social-icons" %}
 
-<div class="{{ si }}" style="--hover-color: {{ style.icon_background_hover_color }}; --fill-color: {{ style.icon_color }}; --fill-color-hover: {{ style.icon_hover_color }};">
+<div class="{{ si }}" style="{% if style.icon_background_hover_color %}--hover-color: {{ style.icon_background_hover_color }};{% endif %} {% if style.icon_color %}--fill-color: {{ style.icon_color }};{% endif %} {% if style.icon_hover_color %}--fill-color-hover: {{ style.icon_hover_color }};{% endif %}">
     {% for item in social_media_links %}
           <a class="{{ si }}__icon" href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">
               {% bookshop "generic/custom-icon" icon_path:item.icon_path icon_size:'small' icon_type:'solid' rounded_border:true color:'transparent' %}
