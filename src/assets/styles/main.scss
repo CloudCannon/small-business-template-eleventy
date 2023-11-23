@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "nav.scss";
 @import "footer.scss";
+@import "component-browser.scss";
 
 body {
   display: grid;
@@ -9,6 +10,7 @@ body {
   min-height: 100svh;
   grid-template-rows: auto 1fr auto;
   font-family: var(--content-font), Lato, sans-serif;
+  color: var(--main-text-color);
 
   h1,
   h2,
@@ -30,9 +32,13 @@ main {
 // Component-specific styles are defined within their component directory
 .component {
   padding: 96px 0px;
-  background-color: var(--light-background-variant);
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
 
-  &--dark {
-    background-color: var(--dark-background-variant);
+  &--secondary {
+    --main-background-color: var(--secondary-background-color, #1B1B1D);
+    --main-text-color: var(--secondary-foreground-color, #D9D9DC);
+    --alt-background-color: var(--primary-background-color, #3B3B3D);
+    --alt-text-color: var(--primary-foreground-color, #F9F9FB);
   }
 }

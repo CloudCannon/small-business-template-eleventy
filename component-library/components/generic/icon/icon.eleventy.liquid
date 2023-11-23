@@ -15,7 +15,7 @@
             {{c}}--round
         {% endif %}
     "
-    style="--c-icon-color: {{ color }}">
+    style="--c-icon-color: {% if theme_color %}var(--main-text-color){% else %}{{ color }}{% endif %}">
     {% if env_bookshop_live %}
         <span class="{{ c }}__image" style="--url: url('{{ icon_path }}')"></span>
     {% else %}

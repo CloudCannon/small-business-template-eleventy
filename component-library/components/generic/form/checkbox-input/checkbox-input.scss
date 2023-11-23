@@ -2,13 +2,13 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  color: var(--brand-grey-000, #F9F9FB);
+  color: var(--main-text-color);
 
   &__input {
     appearance: none;
     width: 16px;
     height: 16px;
-    border: 2px solid var(--brand-grey-000, #F9F9FB);
+    border: 2px solid var(--main-text-color);
     cursor: pointer;
     position: relative;
     display: flex;
@@ -17,16 +17,16 @@
     flex-shrink: 0;
 
     &:focus {
-        border: 2px solid var(--interaction-blue-300, #2566F2);
+        border: 2px solid var(--interaction-color, #2566F2);
         outline: none;
     }
 
     &:checked:not(:focus) {
-      border: 2px solid var(--brand-grey-000, #F9F9FB);
+      border: 2px solid var(--main-text-color);
     }
 
     &:focus:checked:after {
-      color: var(--interaction-blue-300, #2566F2);
+      color: var(--interaction-color, #2566F2);
     }
 
     &:checked:after {
@@ -34,7 +34,7 @@
       position: absolute;
       font-size: var(--paragraph-small);
       line-height: var(--paragraph-small);
-      color: var(--brand-grey-000, #F9F9FB);
+      color: var(--main-text-color);
     }
   }
 

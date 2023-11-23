@@ -19,7 +19,7 @@ blueprint:
             detail: $$
     # TODO: add button(s) subcomponent
   styles:
-    background_variant: light
+    background_variant: primary
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -51,7 +51,7 @@ preview:
           - label: Service 3
             detail: $40
   styles:
-    background_variant: light
+    background_variant: primary
     content_alignment: center
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint

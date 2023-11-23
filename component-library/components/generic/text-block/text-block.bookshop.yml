@@ -89,6 +89,7 @@ _inputs:
   text:
     type: markdown
     options:
+      link: true
       blockquote: false
       bold: true
       format: p h3 h4 h5 h6
@@ -98,9 +99,9 @@ _inputs:
       superscript: true
       underline: true
       bulletedlist: true
-      indent: true
       numberedlist: true
-      outdent: true
+      indent: false
+      outdent: false
       code: false
       embed: false
       horizontalrule: false

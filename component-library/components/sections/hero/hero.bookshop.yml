@@ -16,14 +16,14 @@ blueprint:
     image: bookshop:generic/image!
   styles:
     image_alignment: left
-    background_variant: light
+    background_variant: primary
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   styles:
     image_alignment: left
-    background_variant: light
+    background_variant: primary
   content:
     heading:
       _bookshop_name: generic/component-heading
@@ -34,7 +34,6 @@ preview:
       open_in_new_tab: false
       text: Primary
       variant: primary
-      disabled: false
       arrow: right
       onclick: console.log(this)
     description: "We wanted you to have a couple of options to use above the fold, and give you the customisation you need to display your product/service in the best way possible."

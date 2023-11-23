@@ -1,6 +1,6 @@
 .c-footer {
   $c: &;
-  background: var(--brand-grey-900, #1b1b1d);
+  background: var(--alt-background-color);
   padding: 3.5rem 1rem;
   display: grid;
   gap: 1rem;
@@ -8,7 +8,7 @@
 
   &__logo-link {
     text-decoration: none;
-    color: var(--brand-grey-200, #e9e9ec);
+    color: var(--alt-text-color);
     font-family: var(--logo-font), Lato, sans-serif;
     white-space: nowrap;
     font-size: 4.58025rem;
@@ -30,19 +30,19 @@
     &__item {
       &__link {
         text-decoration: none;
-        color: var(--brand-grey-200, #e9e9ec);
+        color: var(--alt-text-color);
         white-space: nowrap;
 
         &:hover,
         &:active {
-          border-bottom: 1px solid var(--brand-grey-000, #f9f9fb);
-          color: var(--brand-grey-000, #f9f9fb);
+          border-bottom: 1px solid var(--alt-text-color);
+          color: var(--alt-text-color);
         }
       }
       &--active {
         #{$c}__navlist__item__link {
-          border-bottom: 1px solid var(--brand-grey-000, #f9f9fb);
-          color: var(--brand-grey-000, #f9f9fb);
+          border-bottom: 1px solid var(--alt-text-color);
+          color: var(--alt-text-color);
         }
       }
     }
@@ -51,10 +51,10 @@
   &__content {
     padding-top: 7rem;
     text-align: center;
-    color: var(--neutral-000, #FFF);
+    color: var(--alt-text-color);
 
     a {
-      color: var(--neutral-000, #FFF);
+      color: var(--alt-text-color);
     }
   }
 }

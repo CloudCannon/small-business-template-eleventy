@@ -12,7 +12,6 @@ blueprint:
   open_in_new_tab: false
   text: "Button text"
   variant: "primary"
-  disabled: false
   arrow: "right"
   onclick: ""
   id: ""
@@ -22,7 +21,6 @@ preview:
   url: "#"
   text: "Button text"
   variant: "primary"
-  disabled: false
   arrow: "right"
   onclick: console.log("test")
   id: ""
