@@ -5,52 +5,31 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 content_blocks:
-  - _bookshop_name: sections/left-right-block--featured-icons
+  - _bookshop_name: sections/left-right-block--featured-map
     content:
-      headline: Let your features shine
-      heading: A featured icons left right block
-      icons:
-        - hero_icon_name: face-smile
-          icon_text: 100% Happy customer reviews
-        - hero_icon_name: heart
-          icon_text: Great customer service
-        - hero_icon_name: star
-          icon_text: Outstanding product reviews
-      buttons:
-        - _bookshop_name: generic/button
-          url: '#'
-          open_in_new_tab: false
-          text: Book Now
-          variant: primary
-          disabled: false
-          arrow: right
-          onclick:
-      image:
-        _bookshop_name: generic/image
-        image_path: /uploads/feaured-icons-bg.jpg
-        image_alt:
+      display_social_icons: true
+      show_note: true
+      heading: A contact block
+      description: >-
+        This is a simple yet powerful block to display not only your location by
+        using Google Maps, but also any other contact details you wish to share
+        with your customers.
+      contact_details:
+        - _type: Email
+          text: 'Email address: mybusiness@business.com'
+          hero_icon_name: envelope
+        - _type: Phone
+          text: 'Phone number: 312 325 326'
+          hero_icon_name: phone
+      button:
+        _bookshop_name: generic/button
+        url: '#'
+        open_in_new_tab: false
+        text: Button text
+        variant: primary
+        arrow: right
+        onclick:
     styles:
-      image_alignment: Left
-      background_variant: primary
-  - _bookshop_name: sections/left-right-block--testimonial
-    content:
-      headline: WHAT YOUR CUSTOMERS SAY
-      quote: Their customer service is second to none.
-      author_name: John Smith
-      buttons:
-        - _bookshop_name: generic/button
-          url: '#'
-          open_in_new_tab: false
-          text: Book Now
-          variant: primary
-          disabled: false
-          arrow: right
-          onclick:
-      image:
-        _bookshop_name: generic/image
-        image_path: /uploads/testimonial-bg.jpg
-        image_alt:
-    styles:
-      image_alignment: Right
-      background_variant: primary
+      map_alignment: Left
+      background_variant: secondary
 ---
