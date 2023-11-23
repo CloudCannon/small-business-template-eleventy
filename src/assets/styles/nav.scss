@@ -6,6 +6,8 @@
   height: auto;
   background: var(--alt-background-color);
   --nav-padding: 8px;
+  animation-name: closeMobileMenu;
+  animation-duration: 0.5s;
   &__skip-to-content-link {
     .c-button {
       left: 45%;
@@ -135,10 +137,30 @@
     }
   }
 
+  @keyframes openMobileMenu {
+    from {
+      height: 6svh;
+    }
+    to {
+      height: 100svh;
+    }
+  }
+
+  @keyframes closeMobileMenu {
+    from {
+      height: 100svh;
+    }
+    to {
+      height: 6svh;
+    }
+  }
+
   // Mobile menu open state
   &--open {
     grid-template-rows: var(--nav-height) 1fr 140px;
     height: 100svh;
+    animation-name: openMobileMenu;
+    animation-duration: 0.5s;
     #{$c}__burger-menu {
       &__burger {
         &::before {
@@ -190,7 +212,7 @@
       display: flex;
       justify-self: end;
       flex-direction: row;
-      gap: .5rem;
+      gap: 0.5rem;
     }
 
     &__burger-menu {
