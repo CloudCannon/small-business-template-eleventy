@@ -24,7 +24,7 @@ blueprint:
           open_in_new_tab: false
     buttons: [bookshop:generic/button]
   styles:
-    background_variant: Dark
+    background_variant: Secondary
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
