@@ -16,8 +16,8 @@ blueprint:
   icons: [bookshop:generic/labelled-icon]
   image: bookshop:generic/image
   map: bookshop:simple/google-map-embed
-  orientation: "Left"
-  background_variant: "Dark"
+  image_alignment: Left
+  background_variant: primary
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -52,8 +52,8 @@ preview:
         icon_size: small
         rounded_border: true
         icon_type: solid
-  orientation: Left
-  background_variant: "Dark"
+  image_alignment: Left
+  background_variant: primary
   image: 
     bookshop: generic/image
     image_path: https://placekitten.com/300/500
@@ -68,15 +68,9 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  orientation:
+  image_alignment:
     type: select
     options:
       values:
         - Left
-        - Right  
-  background_variant:
-    type: select
-    options:
-      values:
-        - 'Dark'
-        - 'Light'
+        - Right 
