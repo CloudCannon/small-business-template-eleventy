@@ -61,12 +61,12 @@ _inputs:
     type: array
     options:
       structures: _structures.icon_types
-  _structures:
-    icon_types:
-      values:
-        - label: Icon
-          value:
-            name:
-        - label: Custom Icon
-          value:
-            path:
+_structures:
+  icon_types:
+    values:
+      - label: Icon
+        value:
+          name:
+      - label: Custom Icon
+        value:
+          path:
