@@ -1,5 +1,8 @@
 {% assign c = "c-card-grid" %}
 <div class="{{c}} 
+            {% if _bookshop_name contains "image-card-grid" %}
+              {{c}}--image-cards
+            {% endif %}
             component 
             {% if styles.background_variant == "Dark" %} 
                 component--dark

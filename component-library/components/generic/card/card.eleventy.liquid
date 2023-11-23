@@ -6,17 +6,19 @@
         </div>
     {% else %}
         <div class="{{c}}__image-wrapper">
-            {% comment %} TODO: put image component here {% endcomment %}
+            {% bookshop "generic/image" image_path:image image_alt:primary_heading %}
         </div>
     {% endif %}
     
-    {% bookshop "generic/component-heading" eyebrow_heading:eyebrow_heading primary_heading:primary_heading %}
+    <div class="{{c}}__content-wrapper">
+        {% bookshop "generic/component-heading" eyebrow_heading:eyebrow_heading primary_heading:primary_heading %}
 
-    <div class="{{c}}__content">
-        {% bookshop "generic/text-block" text:text %}
-    </div>
+        <div class="{{c}}__content">
+            {% bookshop "generic/text-block" text:text %}
+        </div>
 
-    <div class="{{c}}__button">
-        {% bookshop "generic/button" url:button.url text:button.label open_in_new_tab:button.open_in_new_tab variant:"secondary" disabled:false arrow:"right"%}
+        <div class="{{c}}__button">
+            {% bookshop "generic/button" url:button.url text:button.label open_in_new_tab:button.open_in_new_tab variant:"secondary" disabled:false arrow:"right"%}
+        </div>
     </div>
 </div>
