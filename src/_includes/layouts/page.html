@@ -20,14 +20,13 @@
                 {% capture hero %}
                     content:
                         heading:
-                            primary_heading: {{title}}
+                            primary_heading: {{title | default: "Page title will appear here" }}
                             primary_heading_hierarchy: "h1"
                     styles:
                         content_alignment: center
                         background_variant: secondary
                 {% endcapture %}
-                {% assign_local hero = hero | ymlify %}
-                {% bookshop "sections/hero--simple" bind: hero _liveRender:false %}
+                {% bookshop "sections/hero--simple" bind: hero %}
             {% endif %}
 
             {% bookshop_include "page" content_blocks: content_blocks %}
