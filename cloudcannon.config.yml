@@ -390,6 +390,7 @@ _editables: {}
 
 data_config:
   fonts: true
+  theme: true
 
 
 timezone: Etc/UTC
