@@ -15,6 +15,7 @@ blueprint:
   buttons: [bookshop:generic/button]
   icons: [bookshop:generic/labelled-icon]
   image: bookshop:generic/image
+  map: bookshop:simple/google-map-embed
   orientation: "Left"
   background_variant: "Dark"
 
@@ -57,6 +58,12 @@ preview:
     bookshop: generic/image
     image_path: https://placekitten.com/300/500
     image_alt: A cute kitten
+  map:
+    bookshop: simple/google-map-embed
+    latitude: 37.782046
+    longitude: -122.4514212
+    zoom_level: 9
+
 
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint

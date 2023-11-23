@@ -41,5 +41,8 @@
     {% if image %}
       {% bookshop "generic/image" bind: image %}
     {% endif %}
+    {% if map %}
+      {% bookshop "simple/google-map-embed" bind:map %}
+    {% endif %}
   </div>
 </div>
