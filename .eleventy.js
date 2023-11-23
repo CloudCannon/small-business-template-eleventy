@@ -54,7 +54,7 @@ module.exports = function (eleventyConfig) {
       return Image.generateHTML(metadata, {
         alt,
         class: className,
-        sizes: "100vw",
+        sizes: "(min-width: 37.5em) 50vw, 100vw",
         loading: "eager",
         decoding: "async",
       });
