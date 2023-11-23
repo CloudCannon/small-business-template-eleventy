@@ -10,8 +10,8 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:generic/heading
-    text:
+    heading: bookshop:generic/component-heading
+    description:
     grid_items:
       - hero_icon_name:
         eyebrow_headline:
@@ -28,7 +28,11 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    text: >-
+    heading:
+      _bookshop_name: bookshop:generic/component-heading
+      eyebrow_headline: Bite Sized Information
+      primary_heading: An Icon Card Grid
+    description: >-
       Sometimes you only need a small text and image section and a cards grid
       is the best option to showcase your content.
     grid_items:

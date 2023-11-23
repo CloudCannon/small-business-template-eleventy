@@ -11,14 +11,8 @@
   <div class="{{c}}__wrapper">
     <div class="{{c}}__content-grid">
       <div class="{{c}}__content-wrapper">
-        {% if content.heading or content.eyebrow_headline %}
-          {% bookshop "generic/component-heading" eyebrow_headline:content.eyebrow_headline primary_heading:content.heading %}
-        {% endif %}
-        {% if content.text %}
-          <div class="{{c}}__content">
-            {{ content.text }}
-          </div>
-        {% endif %}
+      {% if content.heading %}{% bookshop "generic/component-heading" bind:content.heading %}{% endif %}
+      {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
       </div>
     </div>
 
