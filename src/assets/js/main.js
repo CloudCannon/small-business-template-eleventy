@@ -17,5 +17,5 @@ const swapOpenState = () => {
   }
 }
 
-const manMenuToggle = document.getElementById("main-menu-toggle");
-manMenuToggle.addEventListener("click", swapOpenState);
+const mainMenuToggle = document.getElementById("main-menu-toggle");
+mainMenuToggle.addEventListener("click", swapOpenState);
