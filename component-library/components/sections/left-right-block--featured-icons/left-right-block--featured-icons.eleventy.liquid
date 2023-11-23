@@ -1,4 +1,4 @@
-{% assign_local c = "c-featured-icons" %}
+{% assign_local c = "c-left-right-block--featured-icons" %}
 {%  assign block_icons = "" %}
 
 {% capture heading %}
@@ -32,5 +32,5 @@
 {% assign block_icons = block_icons | ymlify %}
 
 <section class="{{ c }}">
-  {% bookshop "generic/left-right-block" heading:heading buttons:content.buttons icons:block_icons image:styles.image orientation:styles.orientation background_variant:styles.background_variant %}
+  {% bookshop "generic/left-right-block" heading:heading buttons:content.buttons icons:block_icons image:content.image image_alignment:styles.image_alignment background_variant:styles.background_variant %}
 </section>
