@@ -13,8 +13,7 @@ blueprint:
   text: "Button text"
   variant: "primary"
   arrow: "right"
-  onclick: ""
-  id: ""
+  onclick: 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
