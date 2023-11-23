@@ -17,7 +17,17 @@
             {% if hero %}
                 {% bookshop {{hero._bookshop_name}} bind:hero %}
             {% elsif permalink != "/components/" %}
-                {% bookshop "sections/page-heading" heading: title %}
+                {% capture hero %}
+                    content:
+                        heading:
+                            primary_heading: {{title}}
+                            primary_heading_hierarchy: "h1"
+                    styles:
+                        content_alignment: center
+                        background_variant: primary
+                {% endcapture %}
+                {% assign_local hero = hero | ymlify %}
+                {% bookshop "sections/hero--simple" bind: hero %}
             {% endif %}
 
             {% bookshop_include "page" content_blocks: content_blocks %}
