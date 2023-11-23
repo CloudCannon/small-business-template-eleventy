@@ -2,7 +2,7 @@
 spec:
   structures:
     - content_blocks
-  label: "Featured icons"
+  label: "Left/Right - Featured icons"
   description: Represents key features or services in a nice iconed layout
   icon: dataset
   tags: []

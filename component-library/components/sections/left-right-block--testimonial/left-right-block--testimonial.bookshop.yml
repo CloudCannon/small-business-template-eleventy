@@ -2,7 +2,7 @@
 spec:
   structures:
     - content_blocks
-  label: "Testimonial"
+  label: "Left/Right - Testimonial"
   description: A short statement where people share feedback or recommendations
   icon: side_navigation
   tags: []
