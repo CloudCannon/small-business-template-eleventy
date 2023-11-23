@@ -24,10 +24,10 @@
                             primary_heading_hierarchy: "h1"
                     styles:
                         content_alignment: center
-                        background_variant: primary
+                        background_variant: secondary
                 {% endcapture %}
                 {% assign_local hero = hero | ymlify %}
-                {% bookshop "sections/hero--simple" bind: hero %}
+                {% bookshop "sections/hero--simple" bind: hero _liveRender:false %}
             {% endif %}
 
             {% bookshop_include "page" content_blocks: content_blocks %}
