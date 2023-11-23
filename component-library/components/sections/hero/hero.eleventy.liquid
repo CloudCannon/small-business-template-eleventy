@@ -6,7 +6,14 @@
     {% bookshop "generic/image" bind:content.image %}
     <div class="{{ c }}__cover"></div>
     <div class="{{ c }}__content">
-        {% if content.heading %}{% bookshop "generic/component-heading" bind:content.heading %}{% endif %}
+        {% capture heading %}
+            eyebrow_headline: {{content.heading.eyebrow_headline}}
+            eyebrow_headline_hierarchy: "h2"
+            primary_heading: {{content.heading.primary_heading}}
+            primary_heading_hierarchy: "h1"
+        {% endcapture %}
+        {% assign_local heading = heading | ymlify %}
+        {% if content.heading %}{% bookshop "generic/component-heading" bind:heading %}{% endif %}
         {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
         <div class="{{ c }}__content__button">
             {% if content.button %}{% bookshop "generic/button" bind:content.button %}{% endif %}
