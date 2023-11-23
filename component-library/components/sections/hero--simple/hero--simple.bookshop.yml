@@ -10,7 +10,6 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    use_page_title: false
     heading: bookshop:generic/component-heading!
   styles:
     content_alignment: center
@@ -23,7 +22,6 @@ preview:
     content_alignment: center
     background_variant: primary
   content:
-    use_page_title: false
     heading:
       _bookshop_name: generic/component-heading
       eyebrow_headline: a small business template
