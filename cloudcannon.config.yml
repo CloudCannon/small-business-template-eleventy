@@ -383,7 +383,7 @@ _structures:
   content_blocks:
     style: modal
   hero:
-    type: array
+    type: object
     options:
       structures: _structures.hero_blocks
 _editables: {}
