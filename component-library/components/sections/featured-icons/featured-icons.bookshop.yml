@@ -45,8 +45,6 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  icon_path:
-    type: image  
   orientation:
     type: select
     options:
@@ -61,16 +59,14 @@ _inputs:
         - 'Light'
   icons:
     type: array
-  icons[*]:
-    type: select
     options:
-      values: _structures.icon
+      structures: _structures.icon_types
   _structures:
-    icon:
+    icon_types:
       values:
         - label: Icon
           value:
-            hero_icon_name:
+            name:
         - label: Custom Icon
           value:
-            icon_path:
+            path:
