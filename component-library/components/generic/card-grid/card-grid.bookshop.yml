@@ -9,7 +9,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:generic/heading
+    heading: bookshop:component-heading
     description:
     grid_items:
       - hero_icon_name:
@@ -28,7 +28,7 @@ blueprint:
 preview:
   content:
     heading:
-      _bookshop_name: generic/heading
+      _bookshop_name: bookshop:component-heading
       eyebrow_headline: Bite Sized Information
       primary_heading: An Icon Card Grid
     text: >-
