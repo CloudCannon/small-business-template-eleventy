@@ -8,6 +8,22 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  content:
+    eyebrow_headline:
+    heading:
+    text:
+    grid_items:
+      - hero_icon_name:
+        eyebrow_headline:
+        primary_heading:
+        text:
+        button:
+          label: Secondary
+          url:
+          open_in_new_tab: false
+    buttons: [bookshop:generic/button]
+  styles:
+    background_variant: secondary
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
