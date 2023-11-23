@@ -26,11 +26,19 @@
     font-size: 2rem;
     line-height: 3.75rem;
     white-space: nowrap;
+    padding-top: var(--nav-padding);
+    padding-bottom: var(--nav-padding);
+    width: min-content;
+    img,
+    picture,
+    svg {
+      max-width: initial;
+    }
     .c-image {
-      height: 100%;
+      padding-top: unset;
+      padding-bottom: unset;
+      max-height: 52px;
       width: auto;
-      padding-top: var(--nav-padding);
-      padding-bottom: var(--nav-padding);
     }
   }
 
