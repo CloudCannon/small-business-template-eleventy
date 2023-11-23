@@ -1,8 +1,8 @@
 {%  assign_local c = 'c-card' %}
 <div class={{c}}>
-    {% if icon %}
+    {% if hero_icon_name %}
         <div class="{{c}}__icon-wrapper">
-            {% bookshop "generic/icon" svg_icon:icon color:"currentColor" icon_size:"small" icon_type:"outline" rounded_border:false %}
+            {% bookshop "generic/icon" svg_icon:hero_icon_name color:"currentColor" icon_size:"small" icon_type:"outline" rounded_border:false %}
         </div>
     {% else %}
         <div class="{{c}}__image-wrapper">

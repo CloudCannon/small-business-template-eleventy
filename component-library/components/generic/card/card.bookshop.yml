@@ -8,7 +8,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  icon:
+  hero_icon_name:
   image:
   eyebrow_heading:
   primary_heading:
