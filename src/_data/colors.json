@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Primary",
+        "background_color": "#3b3b3d",
+        "foreground_color": "#f9f9fb"
+    },
+    {
+        "name": "Test",
+        "background_color": "#9f0000",
+        "foreground_color": "#4dffa5"
+    }
+]

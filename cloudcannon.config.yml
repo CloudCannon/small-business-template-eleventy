@@ -75,9 +75,9 @@ _inputs:
           - key: name
         icon:
           - key: icon            
-      values: data.theme.site_colors[*].name
+      values: data.colors
   heading_font:
-    comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
+    comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"    
   content_font:
     comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
   hero_icon_name:
@@ -390,7 +390,7 @@ _editables: {}
 
 data_config:
   fonts: true
-  theme: true
+  colors: true
 
 
 timezone: Etc/UTC
