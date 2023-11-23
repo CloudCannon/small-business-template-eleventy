@@ -11,14 +11,20 @@
     {% endif %}
     
     <div class="{{c}}__content-wrapper">
-        {% bookshop "generic/component-heading" eyebrow_heading:eyebrow_heading primary_heading:primary_heading %}
+        {% if content.heading or content.eyebrow_headline %}
+            {% bookshop "generic/component-heading" eyebrow_heading:eyebrow_heading primary_heading:primary_heading %}
+        {% endif %}
 
-        <div class="{{c}}__content">
-            {% bookshop "generic/text-block" text:text %}
-        </div>
+        {% if text %}
+            <div class="{{c}}__content">
+                {% bookshop "generic/text-block" text:text %}
+            </div>
+        {% endif %}
 
-        <div class="{{c}}__button">
-            {% bookshop "generic/button" url:button.url text:button.label open_in_new_tab:button.open_in_new_tab variant:"secondary" disabled:false arrow:"right"%}
-        </div>
+        {% if button.label %}
+            <div class="{{c}}__button">
+                {% bookshop "generic/button" url:button.url text:button.label open_in_new_tab:button.open_in_new_tab variant:"secondary" disabled:false arrow:"right"%}
+            </div>
+        {% endif %}
     </div>
 </div>
