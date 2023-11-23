@@ -10,7 +10,7 @@
         {% capture heading %}
             eyebrow_headline: {{content.heading.eyebrow_headline}}
             eyebrow_headline_hierarchy: "h2"
-            primary_heading: {{content.heading.primary_heading}}
+            primary_heading: {% if use_page_title %}"Page title will display here"{% else %}{{content.heading.primary_heading}}{% endif %}
             primary_heading_hierarchy: "h1"
         {% endcapture %}
         {% assign_local heading = heading | ymlify %}
