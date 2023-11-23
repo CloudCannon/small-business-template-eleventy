@@ -10,8 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    headline:
-    heading:
+    heading: bookshop:generic/component-heading
     icons:
     buttons: [bookshop:generic/button]
     image: bookshop:generic/image
@@ -23,8 +22,10 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    headline: Let your features shine
-    heading: A featured icons left right block
+    heading:
+      _bookshop_name: generic/component-heading
+      eyebrow_headline: Let your features shine
+      primary_heading: A featured icons left right block
     icons:
       - hero_icon_name: face-smile
         icon_text: 100% Happy customer reviews
