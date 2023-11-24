@@ -9,5 +9,10 @@
     "heading_font": "Lato",
     "content_font": "Lato",
     "logo_font": "Birthstone Bounce",
-    "theme": ""
+    "site_colors": [
+      {
+        "background_color" : "#000000",
+        "foreground_color" : "#ffffff"
+      }  
+    ]
 }
