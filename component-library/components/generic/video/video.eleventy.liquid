@@ -1,8 +1,9 @@
 {% assign_local c = "c-video" %}
 <div class="{{ c }}__video-aspect-wrapper">
   <div class="{{ c }}__video">
-    {% comment %} TODO: potentially replace with image component {% endcomment %}
-    {% if fallback_image.image_path %}<img class="{{ c }}__default-image" src="{{ fallback_image.image_path }}" alt="{{ fallback_image.image_alt }}">{% endif %}
+    {% if fallback_image.image_path %}
+      {% bookshop "generic/image" image_path:  fallback_image.image_path image_alt:  fallback_image.image_alt  %}
+    {% endif %}
 
     {% if video_url %}
       {% if video_source == "Vimeo" %}

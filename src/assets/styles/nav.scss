@@ -5,9 +5,14 @@
   grid-template-rows: var(--nav-height) 1fr auto;
   height: auto;
   background: var(--alt-background-color);
+  position: absolute;
+  width: 100vw;
+  z-index: 50;
   --nav-padding: 8px;
+  &__placeholder {
+    height: var(--nav-height);
+  }
   &__skip-to-content-link {
-    // background: var(--primary-foreground-color);
     .c-button {
       left: 45%;
       position: absolute;
@@ -27,11 +32,19 @@
     font-size: 2rem;
     line-height: 3.75rem;
     white-space: nowrap;
-    &__image {
-      height: 100%;
+    padding-top: var(--nav-padding);
+    padding-bottom: var(--nav-padding);
+    width: min-content;
+    img,
+    picture,
+    svg {
+      max-width: initial;
+    }
+    .c-image {
+      padding-top: unset;
+      padding-bottom: unset;
+      max-height: 52px;
       width: auto;
-      padding-top: var(--nav-padding);
-      padding-bottom: var(--nav-padding);
     }
   }
 
@@ -58,6 +71,7 @@
         text-decoration: none;
         color: var(--alt-text-color);
         white-space: nowrap;
+        padding: 0.5rem;
 
         &:hover,
         &:active {
@@ -127,10 +141,34 @@
     }
   }
 
+  @keyframes openMobileMenu {
+    from {
+      height: 6svh;
+    }
+    to {
+      height: 100svh;
+    }
+  }
+
+  @keyframes closeMobileMenu {
+    from {
+      height: 100svh;
+    }
+    to {
+      height: 6svh;
+    }
+  }
+  &--close {
+    animation-name: closeMobileMenu;
+    animation-duration: 0.5s;
+  }
   // Mobile menu open state
   &--open {
     grid-template-rows: var(--nav-height) 1fr 140px;
     height: 100svh;
+    animation-name: openMobileMenu;
+    animation-duration: 0.5s;
+    
     #{$c}__burger-menu {
       &__burger {
         &::before {
@@ -161,7 +199,9 @@
   @media screen and (min-width: 768px) {
     height: auto;
     grid-template-rows: var(--nav-height) var(--nav-height) auto;
-
+    &__placeholder {
+      height: calc(2 * var(--nav-height));
+    }
     &__social-icons {
       display: block;
       justify-self: flex-end;
@@ -180,9 +220,9 @@
       grid-column: 5 / -2;
       height: auto;
       display: flex;
-      gap: 1.5rem;
       justify-self: end;
       flex-direction: row;
+      gap: 0.5rem;
     }
 
     &__burger-menu {

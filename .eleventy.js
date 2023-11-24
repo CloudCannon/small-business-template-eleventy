@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
 
   // Custom shortcodes
-  eleventyConfig.addShortcode("image", async (srcFilePath, alt, className, preferSvg) => {
+  eleventyConfig.addShortcode("image", async (srcFilePath, alt, className, sizes, preferSvg) => {
     let before = Date.now();
     let inputFilePath = srcFilePath == null ? srcFilePath : path.join(eleventyConfig.dir.input, srcFilePath);
 
@@ -45,14 +45,14 @@ module.exports = function (eleventyConfig) {
       return Image.generateHTML(metadata, {
         alt,
         class: className,
-        sizes: "100vw",
+        sizes: sizes || "100vw", // Set default value to "100vw" if sizes is not provided
         loading: "eager",
         decoding: "async",
       });
     } else {
       return `<img src='${srcFilePath}' alt='${alt}'>`;
     }
-	});
+  });
   
   eleventyConfig.addWatchTarget("component-library/");
   
