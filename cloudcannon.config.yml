@@ -9,7 +9,6 @@ paths:
   pages: ""
 
 
-
 collections_config:
   data:
     path: _data
@@ -32,6 +31,11 @@ collections_config:
     schemas:
       new_theme:
         path: schemas/theme.json
+        _inputs:
+          background:
+            type: color
+          foreground:
+            type: color
   pages:
     path: pages
     output: true
