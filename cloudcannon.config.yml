@@ -17,17 +17,17 @@ collections_config:
     disable_file_actions: false
   themes:
     path: _data/themes
-    output: false
+    output: true
     icon: color_lens
     disable_add: false
     disable_add_folder: true
     add_options:
-      - name: Add Theme
+      - name: Add New Theme
         editor: data
         collection: themes
-        schema: default
+        schema: theme
     schemas:
-      default:
+      theme:
         path: schemas/theme.json
       _enabled_editors:
         - data
