@@ -1,5 +1,10 @@
 {% assign_local c = "c-left-right-block--featured-map" %}
 
+{% capture heading %}
+  primary_heading: {{ content.heading }}
+{% endcapture %}
+{% assign_local heading = heading | ymlify %}
+
 <section class="{{ c }}">
-  {% bookshop "generic/left-right-block" description:content.description buttons:content.buttons map:content.map image_alignment:styles.map_alignment background_variant:styles.background_variant %}
+  {% bookshop "generic/left-right-block" display_social_icons:content.display_social_icons heading:heading description:content.description buttons:content.buttons map:content.map image_alignment:styles.map_alignment background_variant:styles.background_variant %}
 </section>

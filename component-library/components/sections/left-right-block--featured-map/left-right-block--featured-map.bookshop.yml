@@ -10,6 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
+    display_social_icons: true
     heading: A contact block
     description: This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
     contact_details:
@@ -25,6 +26,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
+    display_social_icons: true
     heading: A contact block
     content: Content
     contact_details:

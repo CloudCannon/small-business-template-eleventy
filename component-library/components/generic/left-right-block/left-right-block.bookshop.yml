@@ -9,7 +9,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   heading: bookshop:generic/component-heading
-  social_icons: bookshop:generic/social-icons 
+  display_social_icons: true 
   description:
   author_name:
   buttons: [bookshop:generic/button]
@@ -26,11 +26,7 @@ preview:
     bookshop: generic/component-heading
     eyebrow_headline: Let your features shine
     primary_heading: A featured icons left right block
-  social_icons:
-    bookshop: generic/social-icons
-    social_media_links:
-      - link_url: https://www.youtube.com/
-        svg_icon: /assets/images/icons/social/youtube.svg
+  display_social_icons: true
   description: >-
     This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
   author_name: John Smith
