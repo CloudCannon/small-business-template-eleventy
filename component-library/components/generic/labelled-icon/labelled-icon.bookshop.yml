@@ -10,7 +10,7 @@ spec:
 blueprint:
   arrangement: inline
   text: 
-  icon: bookshop:generic/icon!
+  icon: bookshop:structure:icons
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
