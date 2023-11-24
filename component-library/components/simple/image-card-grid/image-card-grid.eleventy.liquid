@@ -1,10 +1,23 @@
 {% assign grid_items = "" %} 
+{% assign card_primary_heading_hierarchy = "h2" %}
+{% assign card_eyebrow_headline_hierarchy = "h3" %}
+{% if content.heading.primary_heading and content.heading.eyebrow_headline %}
+    {% assign card_primary_heading_hierarchy = "h4" %}
+    {% assign card_eyebrow_headline_hierarchy = "h5" %}
+{% elsif content.heading.primary_heading or content.heading.eyebrow_headline %}
+    {% assign card_primary_heading_hierarchy = "h3" %}
+    {% assign card_eyebrow_headline_hierarchy = "h4" %}
+{% endif %}
     
 {% for item in content.grid_items %}
     {% capture card %}
         - content:
             imagery: {{ item.image | json }}
-            heading: {{ item.heading | json }}
+            heading: 
+                eyebrow_headline: {{item.heading.eyebrow_headline}}
+                eyebrow_headline_hierarchy: {{ card_eyebrow_headline_hierarchy }}
+                primary_heading: {{item.heading.primary_heading}}
+                primary_heading_hierarchy: {{ card_primary_heading_hierarchy }}
             text: {{ item.text }}
             button: {{ item.button | json }}
     {% endcapture %}
