@@ -10,10 +10,10 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:generic/component-heading
-    text: bookshop:generic/text-block
+    heading: bookshop:generic/component-heading!
+    text: bookshop:generic/text-block!
     buttons: [bookshop:generic/button]
-    image: bookshop:generic/image
+    image: bookshop:generic/image!
   styles:
     image_padding: true
     image_alignment: Left
