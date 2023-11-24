@@ -40,6 +40,11 @@ main {
     --main-text-color: var(--secondary-foreground-color, #D9D9DC);
   }
 
+  &--tertiary {
+    --main-background-color: var(--tertiary-background-color, #1B1B1D);
+    --main-text-color: var(--tertiary-foreground-color, #D9D9DC);
+  }
+
   &--full-height {
     padding: 0;
   }
