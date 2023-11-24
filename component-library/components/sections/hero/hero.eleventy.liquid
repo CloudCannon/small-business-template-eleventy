@@ -13,10 +13,14 @@
             primary_heading_hierarchy: "h1"
         {% endcapture %}
         {% assign_local heading = heading | ymlify %}
-        {% if content.heading %}{% bookshop "generic/component-heading" bind:heading %}{% endif %}
-        {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
-        <div class="{{ c }}__content__button">
-            {% if content.button %}{% bookshop "generic/button" bind:content.button %}{% endif %}
-        </div>
-    </div>
+        {% if content.heading or content.description or content.button %}
+            {% if content.heading %}{% bookshop "generic/component-heading" bind:heading %}{% endif %}
+            {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
+            {% if content.button %}
+                <div class="{{ c }}__content__button">
+                    {% bookshop "generic/button" bind:content.button %}
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endif %}
 </section>

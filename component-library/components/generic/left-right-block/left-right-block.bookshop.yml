@@ -10,13 +10,13 @@ spec:
 blueprint:
   heading: bookshop:generic/component-heading
   display_social_icons: true 
-  description:
-  author_name:
+  text:
   buttons: [bookshop:generic/button]
   icons: [bookshop:generic/labelled-icon]
   image: bookshop:generic/image
   map: bookshop:simple/google-map-embed
   image_alignment: Left
+  image_padding: false
   background_variant: primary
 
 
@@ -27,9 +27,7 @@ preview:
     eyebrow_headline: Let your features shine
     primary_heading: A featured icons left right block
   display_social_icons: true
-  description: >-
-    This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
-  author_name: John Smith
+  text: John Smith
   buttons:
     url: "#"
     open_in_new_tab: false
