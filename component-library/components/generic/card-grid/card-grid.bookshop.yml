@@ -11,15 +11,7 @@ blueprint:
   content:
     heading: bookshop:generic/component-heading
     description:
-    grid_items:
-      - hero_icon_name:
-        eyebrow_headline:
-        primary_heading:
-        text:
-        button:
-          label: Secondary
-          url:
-          open_in_new_tab: false
+    grid_items: [bookshop:generic/card]
     buttons: [bookshop:generic/button]
   styles:
     background_variant: secondary
@@ -33,45 +25,9 @@ preview:
       primary_heading: Primary Heading
     description: Card Grid Description
     grid_items:
-      - image: http://placekitten.com/g/200/300
-        hero_icon_name: adjustments-horizontal
-        eyebrow_headline: Eyebrow Heading
-        primary_heading: Primary Heading
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        button:
-          label: Secondary
-          url: /
-          open_in_new_tab: false
-      - image: http://placekitten.com/g/200/300
-        hero_icon_name: adjustments-horizontal
-        eyebrow_headline: Eyebrow Heading
-        primary_heading: Primary Heading
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        button:
-          label: Secondary
-          url: /
-          open_in_new_tab: false
-      - image: http://placekitten.com/g/200/300
-        hero_icon_name: adjustments-horizontal
-        eyebrow_headline: Eyebrow Heading
-        primary_heading: Primary Heading
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        button:
-          label: Secondary
-          url: /
-          open_in_new_tab: false
+      - bookshop:generic/card
+      - bookshop:generic/card
+      - bookshop:generic/card
     buttons:
       - _bookshop_name: generic/button
         url: "#"
