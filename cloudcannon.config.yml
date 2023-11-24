@@ -7,7 +7,6 @@ paths:
   uploads: uploads
   includes: _includes
   pages: ""
-  schemas: schemas
 collections_config:
   data:
     path: _data
@@ -22,8 +21,13 @@ collections_config:
     icon: color_lens
     disable_add: false
     disable_add_folder: true
+    add_options:
+      - name: Add Theme
+        editor: data
+        collection: themes
+        schema: default
     schemas:
-      theme:
+      default:
         path: schemas/theme.json
       _enabled_editors:
         - data
