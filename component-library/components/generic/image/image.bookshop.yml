@@ -18,7 +18,7 @@ blueprint:
 preview:
   image_path: /assets/images/Testimonial--background-feature.png
   image_alt: A woman laughing
-  image_sizes: 100vh
+  image_sizes: 100vw
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
