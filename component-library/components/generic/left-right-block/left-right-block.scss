@@ -3,14 +3,20 @@
 
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
+  padding-bottom: 0;
 
   .c-component-heading {
     margin-bottom: 0.5rem;
   }
 
   &__content {
-    padding: 3rem 0;
+    padding-bottom: 3rem;
     grid-column: 2 / -2;
+  }
+  &.component--full-height {
+    #{$c}__content {
+      padding: 3rem 0;
+    }
   }
 
   &__content-text {
@@ -59,12 +65,15 @@
 
   // Desktop styles
   @media screen and (min-width: 1279px) {
+    padding-bottom: 6rem;
+
     &__content {
       padding: 0;
       grid-column: 9 / -2;
       align-self: center;
     }
     &.component--full-height {
+      padding-bottom: 0;
       &__content {
         padding: 6rem 0;
       }
