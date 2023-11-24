@@ -3,7 +3,7 @@ spec:
   structures:
   label: "Left/Right block"
   description: Content that can be arranged left-right or right-left
-  icon: side_navigation
+  icon: art_track
   tags: []
 
 # Defines the structure of this component, as well as the default values

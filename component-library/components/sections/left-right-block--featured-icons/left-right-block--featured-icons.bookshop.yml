@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: "Left/Right - Featured icons"
   description: Represents key features or services in a nice iconed layout
-  icon: dataset
+  icon: art_track
   tags: []
 
 # Defines the structure of this component, as well as the default values

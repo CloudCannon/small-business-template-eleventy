@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Form"
-  description:
+  description: A CloudCannon form with a heading
   icon: dynamic_form
   tags: []
 
