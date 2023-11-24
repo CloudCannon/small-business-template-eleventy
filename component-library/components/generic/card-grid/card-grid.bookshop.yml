@@ -2,7 +2,7 @@
 spec:
   structures:
   label: "Card Grid"
-  description:
+  description: "A reusable card grid that can take in icons or an image as the card header"
   icon: table_chart
   tags: []
 
