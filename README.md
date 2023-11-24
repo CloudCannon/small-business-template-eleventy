@@ -62,11 +62,9 @@ If you are running locally you should rebuild the site to see your changes.
 
 ## Embeding content
 
-See dedicated components for video, image gallery, maps
-
 - "Embed" component is built to be generic and support any embed.
 - However we cannot guarantee it will work with all other embeds.
-- We recommend using the dedicated "Gallery", "Video", "Maps" embeds where possible.
+- We recommend using the dedicated "Gallery", "Video", "Maps" embed components where possible.
 - We have succesfully tested the following embeds:
     - google forms
     - hubspot forms
