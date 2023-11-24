@@ -44,7 +44,7 @@ preview:
           aliquip ex ea commodo consequat.
         button:
           label: Secondary
-          url:
+          url: /
           open_in_new_tab: false
       - image: http://placekitten.com/g/200/300
         hero_icon_name: adjustments-horizontal
@@ -57,7 +57,7 @@ preview:
           aliquip ex ea commodo consequat.
         button:
           label: Secondary
-          url:
+          url: /
           open_in_new_tab: false
       - image: http://placekitten.com/g/200/300
         hero_icon_name: adjustments-horizontal
@@ -70,7 +70,7 @@ preview:
           aliquip ex ea commodo consequat.
         button:
           label: Secondary
-          url:
+          url: /
           open_in_new_tab: false
     buttons:
       - _bookshop_name: generic/button
@@ -79,7 +79,6 @@ preview:
         text: Button text
         variant: primary
         arrow: right
-        onclick:
   styles:
     background_variant: secondary
 # Any extra CloudCannon inputs configuration to apply to the blueprint
