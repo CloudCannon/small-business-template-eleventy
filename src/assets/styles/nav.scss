@@ -5,7 +5,13 @@
   grid-template-rows: var(--nav-height) 1fr auto;
   height: auto;
   background: var(--alt-background-color);
+  position: absolute;
+  width: 100vw;
+  z-index: 50;
   --nav-padding: 8px;
+  &__placeholder {
+    height: var(--nav-height);
+  }
   &__skip-to-content-link {
     .c-button {
       left: 45%;
@@ -162,6 +168,7 @@
     height: 100svh;
     animation-name: openMobileMenu;
     animation-duration: 0.5s;
+    
     #{$c}__burger-menu {
       &__burger {
         &::before {
@@ -192,7 +199,9 @@
   @media screen and (min-width: 768px) {
     height: auto;
     grid-template-rows: var(--nav-height) var(--nav-height) auto;
-
+    &__placeholder {
+      height: calc(2 * var(--nav-height));
+    }
     &__social-icons {
       display: block;
       justify-self: flex-end;
