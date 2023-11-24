@@ -7,6 +7,11 @@ paths:
   uploads: uploads
   includes: _includes
   pages: ""
+
+schemas:
+  new_theme:
+    path: schemas/theme.json
+
 collections_config:
   data:
     path: _data
@@ -25,7 +30,7 @@ collections_config:
       - name: Add New Theme
         editor: data
         collection: themes
-        schema: schemas/theme.json
+        schema: new_theme
   pages:
     path: pages
     output: true
