@@ -17,25 +17,6 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-  themes:
-    path: _data/themes
-    output: true
-    icon: color_lens
-    disable_add: false
-    disable_add_folder: true
-    add_options:
-      - name: Add New Theme
-        editor: data
-        collection: themes
-        schema: new_theme
-    schemas:
-      new_theme:
-        path: schemas/theme.json
-        _inputs:
-          background:
-            type: color
-          foreground:
-            type: color
   pages:
     path: pages
     output: true
@@ -422,6 +403,5 @@ _editables: {}
 
 data_config:
   fonts: true
-  themes: true
 
 timezone: Etc/UTC
