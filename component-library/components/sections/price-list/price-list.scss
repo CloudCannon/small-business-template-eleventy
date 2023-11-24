@@ -5,6 +5,9 @@
     row-gap: 48px;
     align-items: left;
     text-align: left;
+    &__button {
+        grid-column: 2 / -2;
+    }
 
     &__heading, &__lists {
         grid-column: 2 / -2;

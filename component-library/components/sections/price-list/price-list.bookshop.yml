@@ -50,6 +50,12 @@ preview:
             detail: $40
           - label: Service 3
             detail: $40
+    button:
+      url: '#'
+      open_in_new_tab: false
+      text: Book Now
+      variant: primary
+      arrow: right
   styles:
     background_variant: primary
     content_alignment: center
