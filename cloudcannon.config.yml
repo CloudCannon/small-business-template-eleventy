@@ -25,7 +25,7 @@ collections_config:
       - name: Add New Theme
         editor: data
         collection: themes
-        schema: theme
+        schema: schemas/theme.json
   pages:
     path: pages
     output: true
