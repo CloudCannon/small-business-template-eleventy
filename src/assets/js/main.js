@@ -7,12 +7,15 @@ const swapOpenState = () => {
 
   if (!nav) return;
   const openClass = "c-navigation--open";
+  const closeClass = "c-navigation--close";
   if (nav.classList.contains(openClass)) {
       nav.classList.remove(openClass);
+      nav.classList.add(closeClass);
       enableBodyScroll(nav);
   }
   else {
       nav.classList.add(openClass);
+      nav.classList.remove(closeClass);
       disableBodyScroll(nav);
   }
 }

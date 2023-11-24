@@ -6,8 +6,6 @@
   height: auto;
   background: var(--alt-background-color);
   --nav-padding: 8px;
-  animation-name: closeMobileMenu;
-  animation-duration: 0.5s;
   &__skip-to-content-link {
     .c-button {
       left: 45%;
@@ -154,7 +152,10 @@
       height: 6svh;
     }
   }
-
+  &--close {
+    animation-name: closeMobileMenu;
+    animation-duration: 0.5s;
+  }
   // Mobile menu open state
   &--open {
     grid-template-rows: var(--nav-height) 1fr 140px;
