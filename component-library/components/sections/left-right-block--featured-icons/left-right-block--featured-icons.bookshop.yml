@@ -1,0 +1,79 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: "Left/Right - Featured icons"
+  description: Represents key features or services in a nice iconed layout
+  icon: dataset
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content:
+    heading: bookshop:generic/component-heading
+    icons:
+    buttons: [bookshop:generic/button]
+    image: bookshop:generic/image
+  styles:
+    image_alignment: Left
+    background_variant: primary
+
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content:
+    heading:
+      _bookshop_name: generic/component-heading
+      eyebrow_headline: Let your features shine
+      primary_heading: A featured icons left right block
+    icons:
+      - hero_icon_name: face-smile
+        icon_text: 100% Happy customer reviews
+      - hero_icon_name: heart
+        icon_text: Great customer service
+      - hero_icon_name: star
+        icon_text: Outstanding product reviews
+    buttons:
+      - _bookshop_name: generic/button
+        url: "#"
+        open_in_new_tab: false
+        text: "Book Now"
+        variant: "primary"
+        disabled: false
+        arrow: "right"
+        onclick: 
+    image: 
+      bookshop: generic/image
+      image_path: https://placekitten.com/300/500
+      image_alt: A cute kitten
+  styles:
+    image_alignment: Left
+    background_variant: primary
+
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  icon_path:
+    type: image
+  image_alignment:
+    type: select
+    options:
+      values:
+        - Left
+        - Right 
+  icons:
+    type: array
+    comment: Recommended to have no more than three icons here
+    options:
+      structures: _structures.icon_types
+_structures:
+  icon_types:
+    values:
+      - label: Standard Icon
+        value:
+          hero_icon_name:
+          icon_text:
+      - label: Custom Icon
+        value:
+          icon_path:
+          icon_text:
