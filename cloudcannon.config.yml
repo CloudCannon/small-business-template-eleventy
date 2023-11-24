@@ -7,6 +7,7 @@ paths:
   uploads: uploads
   includes: _includes
   pages: ""
+  schemas: schemas
 collections_config:
   data:
     path: _data
