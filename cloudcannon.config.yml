@@ -15,6 +15,9 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/theme.json
   pages:
     path: pages
     output: true
