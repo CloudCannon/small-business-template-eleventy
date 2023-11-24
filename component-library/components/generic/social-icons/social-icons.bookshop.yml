@@ -3,7 +3,7 @@ spec:
   structures:
   label: "Social Icons"
   description: Icon links to social media platforms
-  icon: diversity_3
+  icon: share
   tags: []
 
 # Defines the structure of this component, as well as the default values
