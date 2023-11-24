@@ -1,7 +1,10 @@
 {% assign_local c = "c-left-right-block" %}
 
-<div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {% if styles.image_alignment == "Right" %}{{ c }}--right{% endif %} {% if styles.background_variant == "secondary" %} 
-  component--secondary
+<div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {% if styles.image_alignment == "Right" %}{{ c }}--right{% endif %} 
+  {% if styles.background_variant == "secondary" %} 
+    component--secondary
+  {% elsif styles.background_variant == 'tertiary' %}
+    component--tertiary
 {% endif %}">
   <div class="{{ c }}__content">
     <div class="{{ c }}__content-wrapper">
