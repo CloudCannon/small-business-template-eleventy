@@ -25,7 +25,7 @@
         {% endif %}
         <div class="{{ c }}__contact-details">          
           {% if content.heading %}
-            {% bookshop "generic/component-heading" primary_heading:content.heading %}
+            {% bookshop "generic/component-heading" primary_heading:content.heading primary_heading_hierarchy:"h2" %}
           {% endif %}
         
           <div class="{{ c }}__contact-details--content">
@@ -41,7 +41,7 @@
                 rounded_border: true        
                 color:  "var(--main-text-color)"
               {% endcapture %}
-              {% assign icon_styles = icon_styles | ymlify %}
+              {% assign_local icon_styles = icon_styles | ymlify %}
               {% bookshop "generic/labelled-icon"
                 text:detail.text 
                 arrangement:'inline' 

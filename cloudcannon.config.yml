@@ -383,6 +383,11 @@ _inputs:
         - wrench
         - x-circle
         - x-mark
+  hero:
+    comment: If a hero is not explicitly included, the default is to display the page title
+    type: object
+    options:
+      structures: _structures.hero_blocks
   show_note:
     type: switch
     comment: Hide/Show the note that contains helpful information about the live editing of this component

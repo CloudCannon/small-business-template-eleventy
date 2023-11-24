@@ -1,0 +1,77 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: "Left/Right block"
+  description: Content that can be arranged left-right or right-left
+  icon: side_navigation
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  heading: bookshop:generic/component-heading
+  social_icons: bookshop:generic/social-icons 
+  contact_details:
+  text:
+  buttons: [bookshop:generic/button]
+  icons: [bookshop:generic/labelled-icon]
+  image: bookshop:generic/image
+  map: bookshop:simple/google-map-embed
+  image_alignment: Left
+  image_padding: false
+  background_variant: primary
+
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  heading:
+    bookshop: generic/component-heading
+    eyebrow_headline: Let your features shine
+    primary_heading: A featured icons left right block
+  social_icons:
+    bookshop: generic/social-icons
+    social_media_links:
+      - link_url: https://www.youtube.com/
+        svg_icon: /assets/images/icons/social/youtube.svg
+  contact_details: >-
+    This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
+  text: John Smith
+  buttons:
+    url: "#"
+    open_in_new_tab: false
+    text: "Button text"
+    variant: "primary"
+    disabled: false
+    arrow: "right"
+    onclick: 
+  icons:
+    - bookshop: generic/labelled-icon
+      arrangement: inline
+      text: Icon text
+      icon:
+        bookshop: generic/icon
+        hero_icon_name: academic-cap
+        icon_size: small
+        rounded_border: true
+        icon_type: solid
+  image_alignment: Left
+  background_variant: primary
+  image: 
+    bookshop: generic/image
+    image_path: https://placekitten.com/300/500
+    image_alt: A cute kitten
+  map:
+    bookshop: simple/google-map-embed
+    latitude: 37.782046
+    longitude: -122.4514212
+    zoom_level: 9
+
+
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  image_alignment:
+    type: select
+    options:
+      values:
+        - Left
+        - Right 

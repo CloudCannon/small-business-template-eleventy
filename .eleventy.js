@@ -30,15 +30,6 @@ module.exports = function (eleventyConfig) {
   // Data extensions
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
   eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
-  // Bookshop
-  eleventyConfig.addWatchTarget("component-library/");
-
-  eleventyConfig.addPlugin(
-    pluginBookshop({
-      bookshopLocations: ["component-library"],
-      pathPrefix: "",
-    })
-  );
 
   // Custom shortcodes
   eleventyConfig.addShortcode("image", async (srcFilePath, alt, className, preferSvg) => {
@@ -62,6 +53,8 @@ module.exports = function (eleventyConfig) {
       return `<img class='${className}' src='${srcFilePath}' alt='${alt}'>`;
     }
 	});
+  
+  eleventyConfig.addWatchTarget("component-library/");
   
   // Plugins
   eleventyConfig.addPlugin(svgContents);

@@ -22,6 +22,16 @@
     letter-spacing: var(--letter-spacing);
   }
 
+  h1.c-component-heading__primary_heading {
+    font-size: var(--extra-large-heading);
+  }
+  h3.c-component-heading__primary_heading {
+    font-size: var(--medium-heading);
+  }
+  h4.c-component-heading__primary_heading {
+    font-size: var(--small-heading);
+  }
+
   &__eyebrow_heading + &__primary_heading {
     grid-row: 2;
   }
