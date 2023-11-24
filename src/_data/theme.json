@@ -11,6 +11,7 @@
     "logo_font": "Birthstone Bounce",
     "site_colors": [
       {
+        "name" : "Primary theme",
         "background_color" : "#000000",
         "foreground_color" : "#ffffff"
       }  
