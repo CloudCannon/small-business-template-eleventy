@@ -12,11 +12,13 @@ spec:
 blueprint:
   image_path: 
   image_alt:
+  image_sizes: 100vh
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   image_path: /assets/images/Testimonial--background-feature.png
   image_alt: A woman laughing
+  image_sizes: 100vh
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
