@@ -16,7 +16,7 @@ blueprint:
       - image: bookshop:generic/image!
         heading:  bookshop:generic/component-heading!
         text:
-        button: bookshop:generic/!
+        button: bookshop:generic/button!
     buttons: [bookshop:generic/button]
   styles:
     background_variant: secondary
