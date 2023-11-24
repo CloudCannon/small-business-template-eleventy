@@ -12,7 +12,7 @@ spec:
 blueprint:
   image_path: 
   image_alt:
-  image_sizes: 100vh
+  image_sizes: 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
