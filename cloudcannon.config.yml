@@ -422,5 +422,6 @@ _editables: {}
 
 data_config:
   fonts: true
+  themes: true
 
 timezone: Etc/UTC
