@@ -9,16 +9,16 @@
 
 {% for detail in content.contact_details %}
   {% capture labelled-icon %}
-    - bookshop: generic/labelled-icon
+    - _bookshop_name: generic/labelled-icon
       arrangement: inline
       text: "{{ detail.text }}"
       icon:
-        bookshop: generic/icon
+        _bookshop_name: generic/icon
         hero_icon_name: "{{ detail.hero_icon_name }}"
         icon_size: small
         icon_type: outline
         rounded_border: true
-        color: var(--main-text-color)
+        theme_color: true
   {% endcapture %}
   {%  assign featured_map_icons = featured_map_icons | append: labelled-icon %}
 {% endfor %}
