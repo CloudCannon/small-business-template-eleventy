@@ -11,7 +11,7 @@ spec:
 blueprint:
   content:
     heading: bookshop:generic/component-heading
-    text:
+    text: bookshop:generic/text-block
     buttons: [bookshop:generic/button]
     image: bookshop:generic/image
   styles:
@@ -22,14 +22,15 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    text: A classic component, you can select to have your image to the left or the right, add a button or two, and give the viewer a quick intro to your brand.
+    text:
+      _bookshop_name: generic/text-block
+      text: >-
+        A classic component, you can select to have your image to the left or the right, add a button or two, and give the viewer a quick intro to your brand.
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   image_padding:
     type: switch
-  text:
-    type: textarea
   image_alignment:
     type: select
     options:
