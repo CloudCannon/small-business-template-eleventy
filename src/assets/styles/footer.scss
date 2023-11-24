@@ -36,7 +36,7 @@
         &:hover,
         &:active {
           border-bottom: 1px solid var(--secondary-foreground-color);
-          color: var(--secondary-text-color);
+          color: var(--secondary-foreground-color);
         }
       }
       &--active {
