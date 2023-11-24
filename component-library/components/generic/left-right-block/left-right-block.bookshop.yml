@@ -10,7 +10,7 @@ spec:
 blueprint:
   heading: bookshop:generic/component-heading
   social_icons: bookshop:generic/social-icons 
-  contact_details:
+  description:
   author_name:
   buttons: [bookshop:generic/button]
   icons: [bookshop:generic/labelled-icon]
@@ -31,7 +31,7 @@ preview:
     social_media_links:
       - link_url: https://www.youtube.com/
         svg_icon: /assets/images/icons/social/youtube.svg
-  contact_details: >-
+  description: >-
     This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
   author_name: John Smith
   buttons:

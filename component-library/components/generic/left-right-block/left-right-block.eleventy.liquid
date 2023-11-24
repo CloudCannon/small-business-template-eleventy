@@ -11,9 +11,9 @@
       {% if heading %}
         {% bookshop "generic/component-heading" bind: heading %}
       {% endif %}
-      {% if contact_details %}
+      {% if description %}
         <div class="{{ c }}__content-text">
-          {{ contact_details | markdownify }}
+          {{ description | markdownify }}
         </div>
       {% endif %}
       {% if author_name %}
