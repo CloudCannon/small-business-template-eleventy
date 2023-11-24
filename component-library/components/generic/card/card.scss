@@ -12,7 +12,19 @@
 
   &--icon &__imagery{
     padding:1.5rem 1.5rem 0;
+  }
+
+  &--image &__imagery {
     max-height: 210px;
+
+    .c-image,
+    .c-image--live-editing,
+    picture {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
   }
 
   &__content-wrapper{
