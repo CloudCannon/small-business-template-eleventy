@@ -1,8 +1,5 @@
 {%  assign_local c = 'c-card' %}
-<div class="{{c}} component component--full-height
-            {% if styles.background_variant == 'secondary' %} 
-                component--secondary
-            {% endif %}
+<div class="{{c}} component--full-height
             {% if content.imagery._bookshop_name == 'generic/image' %} 
                 {{ c }}--image 
             {% elsif content.imagery._bookshop_name == 'generic/icon' %} 
