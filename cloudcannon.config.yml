@@ -15,6 +15,12 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+  themes:
+    path: _data/themes
+    output: false
+    icon: color_lens
+    disable_add: false
+    disable_add_folder: true
     schemas:
       default:
         path: schemas/theme.json
