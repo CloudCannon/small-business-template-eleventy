@@ -38,8 +38,6 @@ main {
   &--secondary {
     --main-background-color: var(--secondary-background-color, #1B1B1D);
     --main-text-color: var(--secondary-foreground-color, #D9D9DC);
-    --alt-background-color: var(--primary-background-color, #3B3B3D);
-    --alt-text-color: var(--primary-foreground-color, #F9F9FB);
   }
 
   &--full-height {

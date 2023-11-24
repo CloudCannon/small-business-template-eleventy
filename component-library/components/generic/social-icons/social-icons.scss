@@ -7,7 +7,7 @@
 
   --dynamic-fill-color: var(--fill-color, var(--main-text-color));
   --dynamic-hover-color: var(--hover-color, var(--main-text-color));
-  --dynamic-fill-color-hover: var(--fill-color-hover, var(--alt-background-color));
+  --dynamic-fill-color-hover: var(--fill-color-hover, var(--main-background-color));
 
   &__icon {
     transition: background-color 300ms ease-out, fill 300ms ease-out;

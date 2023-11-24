@@ -74,10 +74,16 @@ _inputs:
         text:
           - key: name
         icon:
-          - key: icon            
-      values: _select_data.colors
+          - key: icon
+      values:
+        - name: Primary
+          id: primary
+        - name: Secondary
+          id: secondary
+        - name: Tertiary
+          id: tertiary
   heading_font:
-    comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"    
+    comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
   content_font:
     comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
   hero_icon_name:
@@ -377,13 +383,17 @@ _inputs:
         - wrench
         - x-circle
         - x-mark
+  hero:
+    comment: If a hero is not explicitly included, the default is to display the page title
+    type: object
+    options:
+      structures: _structures.hero_blocks
   show_note:
     type: switch
     comment: Hide/Show the note that contains helpful information about the live editing of this component
   skipnav_text:
     comment: A hidden link at the top of the page that, when activated, jumps the user to the beginning of the main content area.
-_select_data: 
-  colors: data.colors
+_select_data: {}
 _structures:
   content_blocks:
     style: modal
@@ -391,7 +401,5 @@ _editables: {}
 
 data_config:
   fonts: true
-  colors: true
-
 
 timezone: Etc/UTC

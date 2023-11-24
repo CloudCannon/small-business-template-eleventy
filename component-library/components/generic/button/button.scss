@@ -22,12 +22,12 @@
   &--primary {
     border: 2px solid var(--main-text-color);
     &:hover {
-      color: var(--alt-text-color);
-      border: 2px solid var(--alt-text-color);
-      background: var(--alt-background-color);
+      color: var(--main-background-color);
+      border: 2px solid var(--main-background-color);
+      background: var(--main-text-color);
       
       .c-icon__image, .c-icon__svg {
-        --c-icon-color: var(--alt-text-color);
+        --c-icon-color: var(--main-background-color);
       }
     }
   }
