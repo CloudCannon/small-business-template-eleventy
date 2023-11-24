@@ -17,7 +17,7 @@ blueprint:
         list_items:
           - label: List item
             detail: $$
-    button: bookshop:generic/button!
+    button: bookshop:generic/button
   styles:
     background_variant: primary
     content_alignment: center

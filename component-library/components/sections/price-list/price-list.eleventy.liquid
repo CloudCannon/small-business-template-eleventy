@@ -23,7 +23,9 @@
             </ul>
         {% endfor %}
     </div>
-    <div class="{{ c }}__button">
-        {% bookshop "generic/button" bind:content.button %}
-    </div>
+    {% if content.button %}
+        <div class="{{ c }}__button">
+            {% bookshop "generic/button" bind:content.button %}
+        </div>
+    {% endif %}
 </section>
