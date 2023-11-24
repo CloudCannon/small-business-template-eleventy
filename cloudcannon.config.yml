@@ -22,7 +22,7 @@ collections_config:
     disable_add: false
     disable_add_folder: true
     schemas:
-      default:
+      theme:
         path: schemas/theme.json
       _enabled_editors:
         - data
