@@ -13,14 +13,10 @@ blueprint:
     heading: bookshop:generic/component-heading
     description:
     grid_items:
-      - image:
-        eyebrow_headline:
-        primary_heading:
+      - image: bookshop:generic/image
+        heading:  bookshop:generic/component-heading
         text:
-        button:
-          label: Secondary
-          url:
-          open_in_new_tab: false
+        button: bookshop:generic/button
     buttons: [bookshop:generic/button]
   styles:
     background_variant: secondary
@@ -34,42 +30,24 @@ preview:
       primary_heading: Primary Heading
     description: Card Grid Description
     grid_items:
-      - image: http://placekitten.com/g/200/300
-        eyebrow_headline: Eyebrow Heading
-        primary_heading: Primary Heading
+      - image: bookshop:generic/image
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-        button:
-          label: Secondary
-          url: /
-          open_in_new_tab: false
-      - image: http://placekitten.com/g/200/300
-        eyebrow_headline: Eyebrow Heading
-        primary_heading: Primary Heading
+      - image: bookshop:generic/image
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-        button:
-          label: Secondary
-          url: /
-          open_in_new_tab: false
-      - image: http://placekitten.com/g/200/300
-        eyebrow_headline: Eyebrow Heading
-        primary_heading: Primary Heading
+      - image: bookshop:generic/image
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-        button:
-          label: Secondary
-          url: /
-          open_in_new_tab: false
     buttons:
       - _bookshop_name: generic/button
         url: "#"

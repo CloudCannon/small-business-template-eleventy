@@ -24,5 +24,6 @@
     buttons: {{ content.buttons | json }}
 {% endcapture %}
 {% assign_local card_grid_content = card_grid_content | ymlify %}
+{{ card_grid_content | json }}
 
 {% bookshop "generic/card-grid" content:card_grid_content styles:styles %}

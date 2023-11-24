@@ -1,1 +1,22 @@
-{% bookshop "generic/card-grid" content:content styles:styles %}
+{% assign_local grid_items = "" %} 
+    
+{% for item in content.grid_items %}
+    {% capture card %}
+        - content:
+            imagery: {{ item.image | json }}
+            heading: {{ item.heading | json }}
+            text: {{ item.text }}
+            button: {{ item.button | json }}
+    {% endcapture %}
+    {% assign grid_items = grid_items | append: card %}
+{% endfor %}
+
+{% capture card_grid_content %}
+    heading: {{ content.heading | json }}
+    description: {{ content.description }}
+    grid_items: {{ grid_items }}
+    buttons: {{ content.buttons | json }}
+{% endcapture %}
+{% assign_local card_grid_content = card_grid_content | ymlify %}
+
+{% bookshop "generic/card-grid" content:card_grid_content styles:styles %}
