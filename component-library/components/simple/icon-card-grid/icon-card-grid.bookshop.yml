@@ -14,13 +14,9 @@ blueprint:
     description:
     grid_items:
       - hero_icon_name:
-        eyebrow_headline:
-        primary_heading:
+        heading: bookshop:generic/component-heading
         text:
-        button:
-          label: Secondary
-          url:
-          open_in_new_tab: false
+        button: bookshop:generic/button
     buttons: [bookshop:generic/button]
   styles:
     background_variant: secondary
@@ -28,10 +24,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    heading:
-      _bookshop_name: generic/component-heading
-      eyebrow_headline: Eyebrow Heading
-      primary_heading: Primary Heading
+    heading: bookshop:generic/component-heading
     description: Card Grid Description
     grid_items:
       - hero_icon_name: adjustments-horizontal
@@ -42,10 +35,6 @@ preview:
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-        button:
-          label: Secondary
-          url: /
-          open_in_new_tab: false
       - hero_icon_name: adjustments-horizontal
         eyebrow_headline: Eyebrow Heading
         primary_heading: Primary Heading
@@ -54,10 +43,6 @@ preview:
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-        button:
-          label: Secondary
-          url: /
-          open_in_new_tab: false
       - hero_icon_name: adjustments-horizontal
         eyebrow_headline: Eyebrow Heading
         primary_heading: Primary Heading
@@ -66,10 +51,6 @@ preview:
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-        button:
-          label: Secondary
-          url: /
-          open_in_new_tab: false
     buttons:
       - _bookshop_name: generic/button
         url: "#"
