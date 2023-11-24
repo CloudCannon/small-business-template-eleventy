@@ -13,7 +13,9 @@
     </head>
     <body>
         {% include 'partials/nav/navigation.html' %}
-        <main>
+        <main id="main">
+            {% bookshop_include "hero" hero: hero title: title permalink: permalink %}
+
             {% bookshop_include "page" content_blocks: content_blocks %}
             {{ content }}
         </main>

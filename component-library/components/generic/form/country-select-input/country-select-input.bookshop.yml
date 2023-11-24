@@ -4,7 +4,7 @@ spec:
     - form_blocks
   label: "Country Input"
   description: Country selector input
-  icon: create
+  icon: checklist
   tags: []
 
 # Defines the structure of this component, as well as the default values
