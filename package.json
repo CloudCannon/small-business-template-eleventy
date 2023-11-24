@@ -37,7 +37,7 @@
   "dependencies": {
     "@bookshop/browser": "3.6.5",
     "@bookshop/eleventy-bookshop": "3.6.5",
-    "@bookshop/eleventy-engine": "3.6.5",
+    "@bookshop/eleventy-engine": "^3.8.1",
     "@bookshop/generate": "3.6.5",
     "body-scroll-lock": "^4.0.0-beta.0",
     "esbuild": "^0.19.4",
