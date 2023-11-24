@@ -5,8 +5,11 @@
 {% if styles.background_variant == 'secondary' %} 
     component--secondary
 {% endif %} '>
+
+{% if content.heading or content.text %}
     <div class='{{c}}__content'>
         {% bookshop "generic/component-heading" bind:content.heading %}
         {% bookshop "generic/text-block" bind:content.text %}
     </div>
+{% endif %}
 </section>
