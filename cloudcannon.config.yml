@@ -28,14 +28,15 @@ collections_config:
         schema: theme
     schemas:
       theme:
+        name: Theme
         path: schemas/theme.json
-      _enabled_editors:
-        - data
-      _inputs:
-        background:
-          type: color
-        foreground:
-          type: color
+        _enabled_editors:
+          - data
+        _inputs:
+          background:
+            type: color
+          foreground:
+            type: color
   pages:
     path: pages
     output: true
