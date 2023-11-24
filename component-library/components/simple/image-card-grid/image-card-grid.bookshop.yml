@@ -10,13 +10,13 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:generic/component-heading
+    heading: bookshop:generic/component-heading!
     description:
     grid_items:
-      - image: bookshop:generic/image
-        heading:  bookshop:generic/component-heading
+      - image: bookshop:generic/image!
+        heading:  bookshop:generic/component-heading!
         text:
-        button: bookshop:generic/button
+        button: bookshop:generic/!
     buttons: [bookshop:generic/button]
   styles:
     background_variant: secondary

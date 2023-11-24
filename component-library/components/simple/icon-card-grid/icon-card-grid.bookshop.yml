@@ -10,13 +10,13 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:generic/component-heading
+    heading: bookshop:generic/component-heading!
     description:
     grid_items:
       - hero_icon_name:
-        heading: bookshop:generic/component-heading
+        heading: bookshop:generic/component-heading!
         text:
-        button: bookshop:generic/button
+        button: bookshop:generic/button!
     buttons: [bookshop:generic/button]
   styles:
     background_variant: secondary
@@ -28,8 +28,6 @@ preview:
     description: Card Grid Description
     grid_items:
       - hero_icon_name: adjustments-horizontal
-        eyebrow_headline: Eyebrow Heading
-        primary_heading: Primary Heading
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -44,8 +42,6 @@ preview:
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
       - hero_icon_name: adjustments-horizontal
-        eyebrow_headline: Eyebrow Heading
-        primary_heading: Primary Heading
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
