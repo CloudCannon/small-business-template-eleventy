@@ -391,6 +391,7 @@ _inputs:
   show_note:
     type: switch
     comment: Hide/Show the note that contains helpful information about the live editing of this component
+
   skipnav_text:
     comment: A hidden link at the top of the page that, when activated, jumps the user to the beginning of the main content area.
 _select_data: {}

@@ -42,4 +42,4 @@ _inputs:
   onclick:
     hidden: true
   open_in_new_tab:
-    hidden: '!url'
+    hidden: "!url"
