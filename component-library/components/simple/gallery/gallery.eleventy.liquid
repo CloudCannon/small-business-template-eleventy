@@ -1,6 +1,6 @@
 <div class="c-gallery">
     {% if env_bookshop_live %}
-        {% comment %} TODO: add notification for live editing to explain all tiles will show but on the live site it will display 3-6 initially with a load more button {% endcomment %}
+        {% bookshop "generic/notification" heading:"Embed Display" text:"All tiles will show up while editing but on the live site it will display 3-6 initially <br> with a load more button to load more tiles." %}
         <div class="c-gallery__tiles">
             {% for image in images %}
                 <div class="c-gallery__tiles__tile">{% bookshop "generic/image" bind:image %}</div>
