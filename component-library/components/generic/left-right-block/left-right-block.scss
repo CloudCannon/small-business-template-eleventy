@@ -48,7 +48,6 @@
   &__media {
     aspect-ratio: 1 / 1;
     grid-column: 1 / -1;
-    max-height: 100vw;
   }
 
   & .c-image,
@@ -69,6 +68,10 @@
     &__media  {
       grid-column: 1 / 8;
       grid-row: 1;
+      justify-self: end;
+      height: 100%;
+      max-height: 700px;
+      align-self: center;
     }
 
     &--right {
@@ -78,7 +81,7 @@
 
       #{$c}__media {
         grid-column: 8 / -1;
-        
+        justify-self: start;
       }
     }
   }
