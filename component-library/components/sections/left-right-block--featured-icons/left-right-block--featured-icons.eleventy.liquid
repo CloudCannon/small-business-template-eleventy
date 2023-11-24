@@ -1,12 +1,6 @@
 {% assign_local c = "c-left-right-block--featured-icons" %}
 {%  assign block_icons = "" %}
 
-{% capture heading %}
-  eyebrow_headline: {{ content.headline }}
-  primary_heading: {{ content.heading }}
-{% endcapture %}
-{% assign_local heading = heading | ymlify %}
-
 {% for icon_data in content.icons %}
   {% if icon_data.hero_icon_name %}
     {% capture labelled-icon %}
@@ -32,5 +26,5 @@
 {% assign block_icons = block_icons | ymlify %}
 
 <section class="{{ c }}">
-  {% bookshop "generic/left-right-block" heading:heading buttons:content.buttons icons:block_icons image:content.image image_alignment:styles.image_alignment background_variant:styles.background_variant %}
+  {% bookshop "generic/left-right-block" heading:content.heading buttons:content.buttons icons:block_icons image:content.image image_alignment:styles.image_alignment background_variant:styles.background_variant %}
 </section>
