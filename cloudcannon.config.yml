@@ -8,9 +8,7 @@ paths:
   includes: _includes
   pages: ""
 
-schemas:
-  new_theme:
-    path: schemas/theme.json
+
 
 collections_config:
   data:
@@ -31,6 +29,9 @@ collections_config:
         editor: data
         collection: themes
         schema: new_theme
+    schemas:
+      new_theme:
+        path: schemas/theme.json
   pages:
     path: pages
     output: true
