@@ -10,5 +10,5 @@
             primary_heading_hierarchy: "h1"
         {% endcapture %}
         {% assign_local heading = heading | ymlify %}
-        {% if content.heading %}{% bookshop "generic/component-heading" bind:heading %}{% endif %}
+        {% if content.heading %}{% bookshop "generic/heading" bind:heading %}{% endif %}
 </section>

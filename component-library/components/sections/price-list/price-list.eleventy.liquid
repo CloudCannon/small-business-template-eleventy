@@ -6,7 +6,7 @@
 
     {% if content.heading or content.description %}
         <div class="{{ pl }}__heading">
-            {% if content.heading %}{% bookshop "generic/component-heading" bind:content.heading %}{% endif %}
+            {% if content.heading %}{% bookshop "generic/heading" bind:content.heading %}{% endif %}
             {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
         </div>
     {% endif %}

@@ -1,16 +1,16 @@
 {% assign_local c = "c-card-grid" %}
 <div class="{{c}} 
-            {% if _bookshop_name contains "image-card-grid" %}
+            {% if _bookshop_name contains 'grid--image-cards' %}
               {{c}}--image-cards
             {% endif %}
             component 
-            {% if styles.background_variant == "secondary" %} 
+            {% if styles.background_variant == 'secondary' %} 
                 component--secondary
             {% endif %}">
 
     {% if content.heading or content.description %}
         <div class="{{ c }}__heading">
-            {% if content.heading %}{% bookshop "generic/component-heading" bind:content.heading %}{% endif %}
+            {% if content.heading %}{% bookshop "generic/heading" bind:content.heading %}{% endif %}
             {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
         </div>
     {% endif %}

@@ -14,7 +14,7 @@
 
     <div class="{{ c }}__content-wrapper">
         {% if content.heading %}
-            {% bookshop "generic/component-heading" bind:content.heading %}
+            {% bookshop "generic/heading" bind:content.heading %}
         {% endif %}
 
         <div class="{{c}}__content">{% bookshop "generic/text-block" text:content.text %}</div>
