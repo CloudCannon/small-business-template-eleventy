@@ -25,18 +25,7 @@ collections_config:
       - name: Add New Theme
         editor: data
         collection: themes
-        schema: new
-    schemas:
-      new:
-        name: Theme
-        path: schemas/theme.json
-        _enabled_editors:
-          - data
-        _inputs:
-          background:
-            type: color
-          foreground:
-            type: color
+        schema: theme
   pages:
     path: pages
     output: true
