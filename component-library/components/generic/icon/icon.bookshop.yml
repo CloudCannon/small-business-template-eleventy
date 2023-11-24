@@ -2,6 +2,7 @@
 spec:
   structures:
     - card_imagery_blocks
+    - icon_blocks
   label: "Icon"
   description: A icon (from https://heroicons.com/) with an optional border and customisable color
   icon: bolt
