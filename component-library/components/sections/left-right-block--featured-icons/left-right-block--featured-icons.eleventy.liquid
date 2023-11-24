@@ -4,16 +4,16 @@
 {% for icon_data in content.icons %}
   {% if icon_data.hero_icon_name %}
     {% capture labelled-icon %}
-      - bookshop: generic/labelled-icon
+      - _bookshop_name: generic/labelled-icon
         arrangement: stacked
         text: "{{ icon_data.icon_text }}"
         icon:
-          bookshop: generic/icon
+          _bookshop_name: generic/icon
           hero_icon_name: "{{ icon_data.hero_icon_name }}"
           icon_size: large
           icon_type: outline
           rounded_border: true
-          color: var(--main-text-color)
+          theme_color: true
     {% endcapture %}
     {%  assign block_icons = block_icons | append: labelled-icon %}    
   {% else %}
