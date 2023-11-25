@@ -84,6 +84,10 @@ _inputs:
       values:
         - name: Primary theme
           id: primary_theme
+        - name: Adon's theme
+          id: adon_s_theme
+        - name: Nice theme
+          id: nice_theme
   heading_font:
     comment: >-
       Write the name of any font from https://fonts.google.com/ in data/fonts to

@@ -1,10 +1,22 @@
 :root {
 --primary_theme__background : #000000;
 --primary_theme__foreground : #ffffff;
+--adon_s_theme__background : #d94fe9;
+--adon_s_theme__foreground : #5ad819;
+--nice_theme__background : #001947;
+--nice_theme__foreground : #c8ffff;
 }
 .component {
 &--primary_theme {
 background-color: var(--primary_theme__background);
 color: var(--primary_theme__foreground);
+}
+&--adon_s_theme {
+background-color: var(--adon_s_theme__background);
+color: var(--adon_s_theme__foreground);
+}
+&--nice_theme {
+background-color: var(--nice_theme__background);
+color: var(--nice_theme__foreground);
 }
 }
