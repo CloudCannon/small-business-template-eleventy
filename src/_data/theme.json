@@ -10,10 +10,20 @@
     "content_font": "Lato",
     "logo_font": "Birthstone Bounce",
     "site_colors": [
-      {
-        "name" : "Primary theme",
-        "background_color" : "#000000",
-        "foreground_color" : "#ffffff"
-      }  
+        {
+            "name": "Primary theme",
+            "background_color": "#000000",
+            "foreground_color": "#ffffff"
+        },
+        {
+            "name": "Adon's theme",
+            "background_color": "#d94fe9",
+            "foreground_color": "#5ad819"
+        },
+        {
+            "name": "Nice theme",
+            "background_color": "#001947",
+            "foreground_color": "#c8ffff"
+        }
     ]
 }
