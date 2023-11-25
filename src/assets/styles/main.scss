@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "variables.scss";
+@import "site_colors.scss";
 @import "nav.scss";
 @import "footer.scss";
 @import "component-browser.scss";
@@ -32,10 +33,10 @@ main {
 // Component-specific styles are defined within their component directory
 .component {
   padding: 96px 0px;
-  background-color: var(--main-background-color);
-  color: var(--main-text-color);
+  /*background-color: var(--main-background-color);
+  color: var(--main-text-color);*/
 
-  &--secondary {
+ /* &--secondary {
     --main-background-color: var(--secondary-background-color, #1B1B1D);
     --main-text-color: var(--secondary-foreground-color, #D9D9DC);
   }
@@ -43,7 +44,7 @@ main {
   &--tertiary {
     --main-background-color: var(--tertiary-background-color, #1B1B1D);
     --main-text-color: var(--tertiary-foreground-color, #D9D9DC);
-  }
+  }*/
 
   &--full-height {
     padding: 0;

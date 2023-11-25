@@ -34,22 +34,22 @@
 
   /* Colors */
   // User editable theme colors
-  --primary-background-color: #3B3B3D;
-  --primary-foreground-color: #F9F9FB;
-  --secondary-background-color: #1B1B1D;
-  --secondary-foreground-color: #D9D9DC;
-  --tertiary-background-color: #1B1B1D;
-  --tertiary-foreground-color: #D9D9DC;
+  /*--primary-background-color: #000095;
+  --primary-foreground-color: #b4b4ff;
+  --secondary-background-color: #990000;
+  --secondary-foreground-color: #ffbcbc;
+  --tertiary-background-color: #008704;
+  --tertiary-foreground-color: #d9fdd8;
 
   // FOR INTERNAL USE
   --main-background-color: var(--primary-background-color, #3B3B3D);
-  --main-text-color: var(--primary-foreground-color, #F9F9FB);
+  --main-text-color: var(--primary-foreground-color, #F9F9FB);*/
 
   // Red - error
   --error-color: #bf2323;
 
   // Blue - interaction
-  --interaction-color: #2566F2;
+  --interaction-color: #2566f2;
 
   // Green - success
   --success-color: #0d8843;
