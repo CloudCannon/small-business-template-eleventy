@@ -24,6 +24,11 @@
             "name": "Nice theme",
             "background_color": "#001947",
             "foreground_color": "#c8ffff"
+        },
+        {
+            "name": "Fourth theme",
+            "background_color": "#cec926",
+            "foreground_color": "#ffffff"
         }
     ]
 }
