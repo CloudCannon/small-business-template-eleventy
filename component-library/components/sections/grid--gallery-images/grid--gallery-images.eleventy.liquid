@@ -1,10 +1,5 @@
 {% assign_local c = "c-grid--gallery-images" %}
-<section class="{{ c }} component 
-            {% if styles.background_variant == 'secondary' %} 
-                component--secondary
-            {% elsif styles.background_variant == 'tertiary' %}
-                component--tertiary     
-            {% endif %}">
+<section class="{{ c }} component component--{{ styles.background_variant }}">
     
     {% if content.heading or content.description %}
         <div class="{{ c }}__heading">

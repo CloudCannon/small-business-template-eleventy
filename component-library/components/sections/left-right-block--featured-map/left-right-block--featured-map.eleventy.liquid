@@ -3,12 +3,7 @@
 <section class='{{ c }} component {{ c }}
     {% if styles.map_alignment == "Left" %}
         {{ c }}--map-left
-    {% endif %} 
-    {% if styles.background_variant == "secondary" %} 
-        component--secondary
-    {% elsif styles.background_variant == 'tertiary' %}
-        component--tertiary     
-    {% endif %}'>
+    {% endif %} component--{{ styles.background_variant }}'>
   <div class="{{ c }}__content">
     <div class="{{ c }}__content-wrapper">            
         {% if content.display_social_icons %}
