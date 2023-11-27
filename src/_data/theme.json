@@ -3,8 +3,8 @@
     "primary_foreground_color": "#b4b4ff",
     "secondary_background_color": "#990000",
     "secondary_foreground_color": "#ffbcbc",
-    "tertiary_background_color": "#008704",
-    "tertiary_foreground_color": "#d9fdd8",
+    "tertiary_background_color": null,
+    "tertiary_foreground_color": null,
     "interaction_color": "#2566f2",
     "heading_font": "Lato",
     "content_font": "Lato",
@@ -19,6 +19,11 @@
             "name": "Liv's theme",
             "background_color": "#b800aa",
             "foreground_color": "#f99cff"
+        },
+        {
+            "name": "Empty",
+            "background_color": null,
+            "foreground_color": null
         }
     ]
 }
