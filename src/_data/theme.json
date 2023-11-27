@@ -1,9 +1,4 @@
 {
-   
-    "interaction_color": "#2566f2",
-    "heading_font": "Lato",
-    "content_font": "Lato",
-    "logo_font": "Birthstone Bounce",
     "site_colors": [
         {
             "name": "Primary theme",
@@ -20,5 +15,10 @@
             "background_color": null,
             "foreground_color": null
         }
-    ]
+    ],
+    "interaction_color": "#2566f2",
+    "heading_font": "Lato",
+    "content_font": "Lato",
+    "logo_font": "Birthstone Bounce",
+    
 }
