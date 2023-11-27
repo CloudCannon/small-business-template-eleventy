@@ -28,8 +28,8 @@ fs.readFile('src/_data/theme.json', 'utf8', (err, dataFile) => {
 
     let css_string = `:root {\n`
 
-    site_colors.forEach(color_set => {
-        let name = color_set.name.toLowerCase().replaceAll(/(\s|')/g, "_")
+    site_colors.forEach((color_set, i) => {
+        let name = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
         let background = color_set.background_color
         let foreground = color_set.foreground_color
         
@@ -41,8 +41,8 @@ fs.readFile('src/_data/theme.json', 'utf8', (err, dataFile) => {
 
     //start of classes
     css_string += `.component {\n`
-    site_colors.forEach(color_set => {
-        let name = color_set.name.toLowerCase().replaceAll(/(\s|')/g, "_")
+    site_colors.forEach((color_set, i) => {
+        let name = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
 
         let obj = {
             "name" : color_set.name,

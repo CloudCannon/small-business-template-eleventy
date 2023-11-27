@@ -83,11 +83,11 @@ _inputs:
           - key: icon
       values:
         - name: Primary theme
-          id: primary_theme
+          id: primary_theme0
         - name: Adon's theme
-          id: adon_s_theme
+          id: adon_s_theme1
         - name: Nice theme
-          id: nice_theme
+          id: nice_theme2
   heading_font:
     comment: >-
       Write the name of any font from https://fonts.google.com/ in data/fonts to
