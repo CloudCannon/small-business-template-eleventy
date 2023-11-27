@@ -16,19 +16,9 @@
             "foreground_color": "#ffffff"
         },
         {
-            "name": "Adon's theme",
-            "background_color": "#d94fe9",
-            "foreground_color": "#5ad819"
-        },
-        {
-            "name": "Nice theme",
-            "background_color": "#001947",
-            "foreground_color": "#c8ffff"
-        },
-        {
-            "name": "Fourth theme",
-            "background_color": "#cec926",
-            "foreground_color": "#ffffff"
+            "name": "Liv's theme",
+            "background_color": "#b800aa",
+            "foreground_color": "#f99cff"
         }
     ]
 }
