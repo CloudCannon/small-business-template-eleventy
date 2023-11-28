@@ -29,10 +29,13 @@ preview:
     icons:
       - hero_icon_name: face-smile
         icon_text: 100% Happy customer reviews
-      - hero_icon_name: heart
+        icon_type: outline
+      - icon_path: /assets/images/icons/social/youtube.svg
         icon_text: Great customer service
+        icon_type: outline
       - hero_icon_name: star
         icon_text: Outstanding product reviews
+        icon_type: solid
     buttons:
       - _bookshop_name: generic/button
         url: "#"
@@ -66,14 +69,24 @@ _inputs:
     comment: Recommended to have no more than three icons here
     options:
       structures: _structures.icon_types
+  icon_type:
+    comment: Choose outline if you want lines to be filled with color and solid if you want the whole image filled with color
+    type: choice
+    options:
+      allow_empty: false
+      values:
+        - solid
+        - outline
 _structures:
   icon_types:
     values:
       - label: Standard Icon
         value:
           hero_icon_name:
+          icon_type:
           icon_text:
       - label: Custom Icon
         value:
           icon_path:
+          icon_type:
           icon_text:
