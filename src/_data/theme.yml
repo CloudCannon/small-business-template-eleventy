@@ -16,6 +16,8 @@ color_groups:
     background_color: "#cec926"
     foreground_color: "#345368"
     interaction_color: "#2566f2"
+nav_color_group: "Primary theme"
+footer_color_group: "Primary theme"
 heading_font: "Lato"
 content_font: "Lato"
 logo_font: "Birthstone Bounce"

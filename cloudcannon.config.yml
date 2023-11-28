@@ -90,6 +90,11 @@ _inputs:
           id: nice_theme2
         - name: Fourth theme
           id: fourth_theme3
+  nav_color_group:
+    comment: Choose the color group for the navigation header
+    type: select
+    options:
+      values: theme.color_groups
   color_groups:
     comment: Define different color groups here to easily style site components
   color_groups[*].name:
@@ -432,4 +437,5 @@ _structures:
 _editables: {}
 data_config:
   fonts: true
+  color_groups: true
 timezone: Etc/UTC
