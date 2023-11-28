@@ -28,64 +28,55 @@ if(fs.existsSync(colorsFileLocation))
 fs.writeFileSync(colorsFileLocation, "")
 
 
-let css_string = `:root {\n`
+let css_string_root = `:root {\n`
+let css_string_component = `.component {\n`
+let css_string_nav = `.c-navigation {\n`
+let css_string_footer = `.c-footer {\n`
 
-color_groups = color_groups.map((color_set, i) => {
-    let name = color_set.name
+css_string_component += `--main-background-color: #000000;\n`
+css_string_component += `--main-text-color: #ffffff;\n`
+css_string_component += `--interaction-color: #2566f2;\n`
+css_string_component += `background-color: var(--main-background-color);\n`
+css_string_component += `color: var(--main-text-color);\n`
+
+css_string_nav += `--main-background-color: #000000;\n`
+css_string_nav += `--main-text-color: #ffffff;\n`
+
+css_string_footer += `--main-background-color: #000000;\n`
+css_string_footer += `--main-text-color: #ffffff;\n`
+
+
+let addColorDefinitions = (str, id) => {
+    str += `&--${id} {\n`
+    str += `--main-background-color: var(--${id}__background);\n`
+    str += `--main-text-color: var(--${id}__foreground);\n`
+    str += `--interaction-color: var(--${id}__interaction);\n`
+    str += `}\n`    
+    return str
+}
+
+color_groups = color_groups.forEach((color_set, i) => {
     let id = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
+    let name = color_set.name
     let background = color_set.background_color
     let foreground = color_set.foreground_color
     let interaction = color_set.interaction_color
     
-    css_string += `--${id}__background : ${background};\n`
-    css_string += `--${id}__foreground : ${foreground};\n`
-    css_string += `--${id}__interaction : ${interaction};\n`
-
-    return {
-        id,
-        name,
-        background,
-        foreground,
-        interaction
-    }
-})
-
-css_string += `}\n` // end of :root
-
-//start of classes
-css_string += `.component {\n`
-css_string += `--main-background-color: #000000;\n`
-css_string += `--main-text-color: #ffffff;\n`
-css_string += `--interaction-color: #2566f2;\n`
-css_string += `background-color: var(--main-background-color);\n`
-css_string += `color: var(--main-text-color);\n`
-
-
-color_groups.forEach((color_set, i) => {
-    let obj = {
-        "name" : color_set.name,
-        "id" : color_set.id
-    }
-
+    let obj = { name, id }
     config['_inputs']['color_group']['options']['values'].push(obj)
     
-    css_string += `&--${color_set.id} {\n`
-    css_string += `--main-background-color: var(--${color_set.id}__background);\n`
-    css_string += `--main-text-color: var(--${color_set.id}__foreground);\n`
-    css_string += `--interaction-color: var(--${color_set.id}__interaction);\n`
-    css_string += `}\n`
+    css_string_root += `--${id}__background : ${background};\n`
+    css_string_root += `--${id}__foreground : ${foreground};\n`
+    css_string_root += `--${id}__interaction : ${interaction};\n`
+    
+    css_string_component = addColorDefinitions(css_string_component, id)      
+    css_string_nav = addColorDefinitions(css_string_nav, id)      
+    css_string_footer = addColorDefinitions(css_string_footer, id)        
 })
-css_string += `}\n\n`
-
-css_string += `.c-navigation{\n`
-
-let nav_color_group_background = color_groups.filter(x => x.id === dataFile.nav_color_group)[0]?.background
-let nav_color_group_foreground = color_groups.filter(x => x.id === dataFile.nav_color_group)[0]?.foreground
-
-css_string += `--main-background-color: ${nav_color_group_background};\n`
-css_string += `--main-text-color: ${nav_color_group_foreground};\n`
-
-css_string += `}\n`
+css_string_root += `}\n\n`
+css_string_component += `}\n\n`
+css_string_nav += `}\n\n`
+css_string_footer += `}\n\n`
 
 // adjust options for nav_color_group and footer_color_group
 config['_inputs']['nav_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
@@ -93,6 +84,7 @@ config['_inputs']['footer_color_group']['options']['values'] = Array.from(config
 
 fs.writeFileSync(configFileLocation, yaml.dump(config))
 
+let css_string = `${css_string_root}${css_string_component}${css_string_nav}${css_string_footer}`
 fs.appendFileSync(colorsFileLocation, css_string)
 
 const variableFileLocation = './src/assets/styles/variables.scss'

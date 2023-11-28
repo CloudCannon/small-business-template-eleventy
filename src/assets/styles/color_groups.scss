@@ -12,6 +12,7 @@
 --fourth_theme3__foreground : #345368;
 --fourth_theme3__interaction : #2566f2;
 }
+
 .component {
 --main-background-color: #000000;
 --main-text-color: #ffffff;
@@ -40,7 +41,53 @@ color: var(--main-text-color);
 }
 }
 
-.c-navigation{
---main-background-color: #cec926;
---main-text-color: #345368;
+.c-navigation {
+--main-background-color: #000000;
+--main-text-color: #ffffff;
+&--primary_theme0 {
+--main-background-color: var(--primary_theme0__background);
+--main-text-color: var(--primary_theme0__foreground);
+--interaction-color: var(--primary_theme0__interaction);
 }
+&--adon_s_theme1 {
+--main-background-color: var(--adon_s_theme1__background);
+--main-text-color: var(--adon_s_theme1__foreground);
+--interaction-color: var(--adon_s_theme1__interaction);
+}
+&--nice_theme2 {
+--main-background-color: var(--nice_theme2__background);
+--main-text-color: var(--nice_theme2__foreground);
+--interaction-color: var(--nice_theme2__interaction);
+}
+&--fourth_theme3 {
+--main-background-color: var(--fourth_theme3__background);
+--main-text-color: var(--fourth_theme3__foreground);
+--interaction-color: var(--fourth_theme3__interaction);
+}
+}
+
+.c-footer {
+--main-background-color: #000000;
+--main-text-color: #ffffff;
+&--primary_theme0 {
+--main-background-color: var(--primary_theme0__background);
+--main-text-color: var(--primary_theme0__foreground);
+--interaction-color: var(--primary_theme0__interaction);
+}
+&--adon_s_theme1 {
+--main-background-color: var(--adon_s_theme1__background);
+--main-text-color: var(--adon_s_theme1__foreground);
+--interaction-color: var(--adon_s_theme1__interaction);
+}
+&--nice_theme2 {
+--main-background-color: var(--nice_theme2__background);
+--main-text-color: var(--nice_theme2__foreground);
+--interaction-color: var(--nice_theme2__interaction);
+}
+&--fourth_theme3 {
+--main-background-color: var(--fourth_theme3__background);
+--main-text-color: var(--fourth_theme3__foreground);
+--interaction-color: var(--fourth_theme3__interaction);
+}
+}
+
