@@ -440,8 +440,9 @@ _inputs:
       structures: _structures.hero_blocks
   show_note:
     type: switch
-    comment: Hide/Show the note that contains helpful information about the live editing of this component
-
+    comment: >-
+      Hide/Show the note that contains helpful information about the live
+      editing of this component
   skipnav_text:
     comment: >-
       A hidden link at the top of the page that, when activated, jumps the user
