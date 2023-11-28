@@ -27,21 +27,4 @@
             {% include 'partials/map/map-initialisation.html' %}
         {% endif %}
     {% endif %}
-
-    <script>
-
-        function onLiveEditorLoad(CloudCannon) {
-            CloudCannon.enableEvents();
-        }
-
-        document.addEventListener('cloudcannon:load', function (e) {
-            onLiveEditorLoad(e.detail.CloudCannon);
-        });         
-
-        document.addEventListener('cloudcannon:update', async function (e) {
-            console.log(e, e.detail, e.detail.CloudCannon)
-        });
-          
-
-    </script>
 </html>
