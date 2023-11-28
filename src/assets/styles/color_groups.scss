@@ -1,32 +1,41 @@
 :root {
 --primary_theme0__background : #000000;
 --primary_theme0__foreground : #ffffff;
+--primary_theme0__interaction : #2566f2;
 --adon_s_theme1__background : #d94fe9;
 --adon_s_theme1__foreground : #5ad819;
+--adon_s_theme1__interaction : #2566f2;
 --nice_theme2__background : #001947;
 --nice_theme2__foreground : #c8ffff;
+--nice_theme2__interaction : #2566f2;
 --fourth_theme3__background : #cec926;
 --fourth_theme3__foreground : #345368;
+--fourth_theme3__interaction : #2566f2;
 }
 .component {
 --main-background-color: #000000;
 --main-text-color: #ffffff;
+--interaction-color: #2566f2;
 background-color: var(--main-background-color);
 color: var(--main-text-color);
 &--primary_theme0 {
 --main-background-color: var(--primary_theme0__background);
 --main-text-color: var(--primary_theme0__foreground);
+--interaction-color: var(--primary_theme0__interaction);
 }
 &--adon_s_theme1 {
 --main-background-color: var(--adon_s_theme1__background);
 --main-text-color: var(--adon_s_theme1__foreground);
+--interaction-color: var(--adon_s_theme1__interaction);
 }
 &--nice_theme2 {
 --main-background-color: var(--nice_theme2__background);
 --main-text-color: var(--nice_theme2__foreground);
+--interaction-color: var(--nice_theme2__interaction);
 }
 &--fourth_theme3 {
 --main-background-color: var(--fourth_theme3__background);
 --main-text-color: var(--fourth_theme3__foreground);
+--interaction-color: var(--fourth_theme3__interaction);
 }
 }

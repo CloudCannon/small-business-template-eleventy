@@ -33,9 +33,11 @@ color_groups.forEach((color_set, i) => {
     let name = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
     let background = color_set.background_color
     let foreground = color_set.foreground_color
+    let interaction = color_set.interaction_color
     
     css_string += `--${name}__background : ${background};\n`
     css_string += `--${name}__foreground : ${foreground};\n`
+    css_string += `--${name}__interaction : ${interaction};\n`
 })
 
 css_string += `}\n` // end of :root
@@ -44,6 +46,7 @@ css_string += `}\n` // end of :root
 css_string += `.component {\n`
 css_string += `--main-background-color: #000000;\n`
 css_string += `--main-text-color: #ffffff;\n`
+css_string += `--interaction-color: #2566f2;\n`
 css_string += `background-color: var(--main-background-color);\n`
 css_string += `color: var(--main-text-color);\n`
 
@@ -60,6 +63,7 @@ color_groups.forEach((color_set, i) => {
     css_string += `&--${name} {\n`
     css_string += `--main-background-color: var(--${name}__background);\n`
     css_string += `--main-text-color: var(--${name}__foreground);\n`
+    css_string += `--interaction-color: var(--${name}__interaction);\n`
     css_string += `}\n`
 })
 css_string += `}\n`
