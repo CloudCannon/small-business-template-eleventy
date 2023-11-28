@@ -22,7 +22,7 @@
         {% endif %}
         <div class="{{ c }}__contact-details">          
           {% if content.heading %}
-            {% bookshop "generic/component-heading" primary_heading:content.heading primary_heading_hierarchy:"h2" %}
+            {% bookshop "generic/heading" primary_heading:content.heading primary_heading_hierarchy:"h2" %}
           {% endif %}
         
           <div class="{{ c }}__contact-details--content">
@@ -32,13 +32,14 @@
 
             {% for detail in content.contact_details %}
               {% capture icon_styles %}
+                _bookshop_name: "generic/hero-icon"
                 icon_size: "small"
                 icon_type: "outline"
                 hero_icon_name: {{ detail.hero_icon_name }}
                 rounded_border: true        
                 color:  "var(--main-text-color)"
               {% endcapture %}
-              {% assign icon_styles = icon_styles | ymlify %}
+              {% assign_local icon_styles = icon_styles | ymlify %}
               {% bookshop "generic/labelled-icon"
                 text:detail.text 
                 arrangement:'inline' 

@@ -10,7 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:generic/component-heading!
+    heading: bookshop:generic/heading!
     description: Description text to compliment the block
     lists:
       - list_heading: List heading
@@ -26,7 +26,7 @@ blueprint:
 preview:
   content:
     heading:
-      _bookshop_name: generic/component-heading
+      _bookshop_name: generic/heading
       eyebrow_headline: EYEBROW HEADLINE
       primary_heading: List your services and products
     description: >-

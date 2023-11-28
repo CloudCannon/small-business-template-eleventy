@@ -2,7 +2,7 @@
 spec:
   structures:
   label: "Google Map Embed"
-  description:
+  description: Google map embed with custom center point to mark a location
   icon: explore
   tags: []
 

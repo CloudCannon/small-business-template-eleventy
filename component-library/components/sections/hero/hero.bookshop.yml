@@ -10,7 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:generic/component-heading!
+    heading: bookshop:generic/heading!
     description: Description text to compliment the block
     button: bookshop:generic/button!
     image: bookshop:generic/image!
@@ -26,7 +26,7 @@ preview:
     color_group: primary
   content:
     heading:
-      _bookshop_name: generic/component-heading
+      _bookshop_name: generic/heading
       eyebrow_headline: a small business template
       eyebrow_headline_hierarchy: h3
       primary_heading: Empower Your Business with This Brilliant Template

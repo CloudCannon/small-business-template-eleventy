@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: "Left/Right - Testimonial"
   description: A short statement where people share feedback or recommendations
-  icon: side_navigation
+  icon: art_track
   tags: []
 
 # Defines the structure of this component, as well as the default values
