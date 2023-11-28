@@ -1,6 +1,6 @@
 {% assign_local c = "c-left-right-block" %}
 
-<div class="{{ c }} component component--full-height {% if styles.image_alignment == "Right" %}{{ c }}--right{% endif %} {% if styles.background_variant == "secondary" %} 
+<div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {% if styles.image_alignment == "Right" %}{{ c }}--right{% endif %} {% if styles.background_variant == "secondary" %} 
   component--secondary
 {% endif %}">
   <div class="{{ c }}__content">
@@ -9,17 +9,17 @@
         {% bookshop "generic/social-icons" bind: social_icons %}
       {% endif %}
       {% if heading %}
-        {% bookshop "generic/component-heading" bind: heading %}
+        {% bookshop "generic/heading" bind: heading %}
       {% endif %}
       {% if contact_details %}
         <div class="{{ c }}__content-text">
           {{ contact_details | markdownify }}
         </div>
       {% endif %}
-      {% if author_name %}
-        <p class="{{ c }}__content-text">
-          {{ author_name }}
-        </p>
+      {% if text %}
+        <div class="{{ c }}__content-text">
+          {% bookshop "generic/text-block" bind:text %}
+        </div>
       {% endif %}
       {% if icons %}
         <div class="{{ c }}__icons">
@@ -37,7 +37,7 @@
       {% endif %}
     </div>
   </div>
-  <div class="{{ c }}__media">
+  <div class="{{ c }}__media {% if image_padding %}{{ c }}__media--auto-height{% endif %}">
     {% if image %}
       {% bookshop "generic/image" bind: image %}
     {% endif %}

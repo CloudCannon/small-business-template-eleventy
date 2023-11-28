@@ -4,7 +4,7 @@ spec:
     - asset_blocks
     - card_imagery_blocks
   label: "Image"
-  description:
+  description: An image that will be optimised
   icon: image
   tags: []
 

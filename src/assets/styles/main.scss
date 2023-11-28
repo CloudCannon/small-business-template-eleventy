@@ -36,10 +36,10 @@ main {
   color: var(--main-text-color);
 
   &--secondary {
-    --main-background-color: var(--secondary-background-color, #1B1B1D);
-    --main-text-color: var(--secondary-foreground-color, #D9D9DC);
-    --alt-background-color: var(--primary-background-color, #3B3B3D);
-    --alt-text-color: var(--primary-foreground-color, #F9F9FB);
+    --main-background-color: var(--secondary-background-color, #1b1b1d);
+    --main-text-color: var(--secondary-foreground-color, #d9d9dc);
+    --alt-background-color: var(--primary-background-color, #3b3b3d);
+    --alt-text-color: var(--primary-foreground-color, #f9f9fb);
   }
 
   &--full-height {

@@ -240,11 +240,11 @@
     <option value="Zambia">Zambia</option>
     <option value="Zimbabwe">Zimbabwe</option>
   </select>
-  <div class="{{ c }}__dropdown-arrow">{% bookshop "generic/icon" hero_icon_name:"chevron-down" icon_type:"solid" icon_size:'extra-small' rounded_border:false color:'white' %}</div>
+  <div class="{{ c }}__dropdown-arrow">{% bookshop "generic/hero-icon" hero_icon_name:"chevron-down" icon_type:"solid" icon_size:'extra-small' rounded_border:false color:'white' %}</div>
 
     {% if helper_text %}
         <div class="{{ c }}__helper">
-            {% bookshop "generic/icon" hero_icon_name:"information-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--primary-foreground-color, #F9F9FB)' %}
+            {% bookshop "generic/hero-icon" hero_icon_name:"information-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--primary-foreground-color, #F9F9FB)' %}
             <p class="{{ c }}__helper__text" id="{{ id }}--helper" role="tooltip">{{ helper_text }}<p>
         </div>
     {% endif %}

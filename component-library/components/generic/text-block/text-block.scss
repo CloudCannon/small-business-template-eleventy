@@ -11,7 +11,7 @@
     h3{ font-size:var(--medium-heading) }
     h4{ font-size:var(--small-heading) }
 
-    p{
+    p, li{
         font-size:var(--paragraph);
         line-height: var(--line-height);
         max-width: 75ch;

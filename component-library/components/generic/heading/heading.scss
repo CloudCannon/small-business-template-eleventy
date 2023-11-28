@@ -1,4 +1,4 @@
-.c-component-heading {
+.c-heading {
   display: grid;
   gap: 0.5rem;
   font-family: var(--font-family);
@@ -22,13 +22,13 @@
     letter-spacing: var(--letter-spacing);
   }
 
-  h1.c-component-heading__primary_heading {
+  h1.c-heading__primary_heading {
     font-size: var(--extra-large-heading);
   }
-  h3.c-component-heading__primary_heading {
+  h3.c-heading__primary_heading {
     font-size: var(--medium-heading);
   }
-  h4.c-component-heading__primary_heading {
+  h4.c-heading__primary_heading {
     font-size: var(--small-heading);
   }
 

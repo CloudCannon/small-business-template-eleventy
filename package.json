@@ -29,7 +29,7 @@
   "homepage": "https://github.com/CloudCannon/small-business-template-eleventy#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-img": "^3.1.0",
+    "@11ty/eleventy-img": "^3.1.8",
     "@bookshop/sass": "^3.6.5",
     "eleventy-plugin-svg-contents": "^0.7.0",
     "outdent": "^0.8.0"
@@ -37,13 +37,14 @@
   "dependencies": {
     "@bookshop/browser": "3.6.5",
     "@bookshop/eleventy-bookshop": "3.6.5",
-    "@bookshop/eleventy-engine": "3.6.5",
+    "@bookshop/eleventy-engine": "^3.8.1",
     "@bookshop/generate": "3.6.5",
     "body-scroll-lock": "^4.0.0-beta.0",
     "esbuild": "^0.19.4",
     "js-yaml": "^4.1.0",
     "markdown-it": "^13.0.1",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.66.1"
+    "sass": "^1.66.1",
+    "sharp": "^0.32.6"
   }
 }
