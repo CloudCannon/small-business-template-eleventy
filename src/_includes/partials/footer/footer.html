@@ -12,7 +12,7 @@
             {% capture social_icon_styles %}
                 icon_background_hover_color: "var(--main-text-color)"
                 icon_color: "var(--main-text-color)"
-                icon_hover_color: "var(--main-text-color)"
+                icon_hover_color: "var(--main-background-color)"
             {% endcapture %}
             {% assign_local social_icons_style = social_icon_styles | ymlify %}
             {% bookshop "generic/social-icons" social_media_links:site.social_media_links style:social_icons_style _liveRender:false %}

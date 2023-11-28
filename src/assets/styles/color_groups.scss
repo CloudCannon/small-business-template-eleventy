@@ -11,6 +11,9 @@
 --fourth_theme3__background : #cec926;
 --fourth_theme3__foreground : #345368;
 --fourth_theme3__interaction : #2566f2;
+--another_one4__background : #504444;
+--another_one4__foreground : #e7e0e0;
+--another_one4__interaction : #83b81b;
 }
 
 .component {
@@ -39,6 +42,11 @@ color: var(--main-text-color);
 --main-text-color: var(--fourth_theme3__foreground);
 --interaction-color: var(--fourth_theme3__interaction);
 }
+&--another_one4 {
+--main-background-color: var(--another_one4__background);
+--main-text-color: var(--another_one4__foreground);
+--interaction-color: var(--another_one4__interaction);
+}
 }
 
 .c-navigation {
@@ -64,6 +72,11 @@ color: var(--main-text-color);
 --main-text-color: var(--fourth_theme3__foreground);
 --interaction-color: var(--fourth_theme3__interaction);
 }
+&--another_one4 {
+--main-background-color: var(--another_one4__background);
+--main-text-color: var(--another_one4__foreground);
+--interaction-color: var(--another_one4__interaction);
+}
 }
 
 .c-footer {
@@ -88,6 +101,11 @@ color: var(--main-text-color);
 --main-background-color: var(--fourth_theme3__background);
 --main-text-color: var(--fourth_theme3__foreground);
 --interaction-color: var(--fourth_theme3__interaction);
+}
+&--another_one4 {
+--main-background-color: var(--another_one4__background);
+--main-text-color: var(--another_one4__foreground);
+--interaction-color: var(--another_one4__interaction);
 }
 }
 
