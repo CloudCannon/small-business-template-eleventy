@@ -30,15 +30,24 @@ fs.writeFileSync(colorsFileLocation, "")
 
 let css_string = `:root {\n`
 
-color_groups.forEach((color_set, i) => {
-    let name = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
+color_groups = color_groups.map((color_set, i) => {
+    let name = color_set.name
+    let id = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
     let background = color_set.background_color
     let foreground = color_set.foreground_color
     let interaction = color_set.interaction_color
     
-    css_string += `--${name}__background : ${background};\n`
-    css_string += `--${name}__foreground : ${foreground};\n`
-    css_string += `--${name}__interaction : ${interaction};\n`
+    css_string += `--${id}__background : ${background};\n`
+    css_string += `--${id}__foreground : ${foreground};\n`
+    css_string += `--${id}__interaction : ${interaction};\n`
+
+    return {
+        id,
+        name,
+        background,
+        foreground,
+        interaction
+    }
 })
 
 css_string += `}\n` // end of :root
@@ -51,31 +60,32 @@ css_string += `--interaction-color: #2566f2;\n`
 css_string += `background-color: var(--main-background-color);\n`
 css_string += `color: var(--main-text-color);\n`
 
-color_groups.forEach((color_set, i) => {
-    let name = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
 
+color_groups.forEach((color_set, i) => {
     let obj = {
         "name" : color_set.name,
-        "id" : name
+        "id" : color_set.id
     }
 
     config['_inputs']['color_group']['options']['values'].push(obj)
     
-    css_string += `&--${name} {\n`
-    css_string += `--main-background-color: var(--${name}__background);\n`
-    css_string += `--main-text-color: var(--${name}__foreground);\n`
-    css_string += `--interaction-color: var(--${name}__interaction);\n`
+    css_string += `&--${color_set.id} {\n`
+    css_string += `--main-background-color: var(--${color_set.id}__background);\n`
+    css_string += `--main-text-color: var(--${color_set.id}__foreground);\n`
+    css_string += `--interaction-color: var(--${color_set.id}__interaction);\n`
     css_string += `}\n`
 })
 css_string += `}\n\n`
 
 css_string += `.c-navigation{\n`
 
-let nav_color_group_background = color_groups.filter(x => x.name === dataFile.nav_color_group)[0].background_color
-let nav_color_group_foreground = color_groups.filter(x => x.name === dataFile.nav_color_group)[0].foreground_color
+console.log(color_groups,dataFile.nav_color_group)
 
-css_string += `--main-background-color: ${nav_color_group_background};`
-css_string += `--main-text-color: ${nav_color_group_foreground};`
+let nav_color_group_background = color_groups.filter(x => x.id === dataFile.nav_color_group)[0]?.background
+let nav_color_group_foreground = color_groups.filter(x => x.id === dataFile.nav_color_group)[0]?.foreground
+
+css_string += `--main-background-color: ${nav_color_group_background};\n`
+css_string += `--main-text-color: ${nav_color_group_foreground};\n`
 
 css_string += `}\n`
 
