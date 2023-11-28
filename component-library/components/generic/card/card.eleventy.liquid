@@ -2,7 +2,7 @@
 <div class="{{c}} component--full-height
             {% if content.imagery._bookshop_name == 'generic/image' %} 
                 {{ c }}--image 
-            {% elsif content.imagery._bookshop_name == 'generic/icon' %} 
+            {% elsif content.imagery._bookshop_name == 'generic/hero-icon' %} 
                 {{ c }}--icon 
             {% endif %}">
 
@@ -14,7 +14,7 @@
 
     <div class="{{ c }}__content-wrapper">
         {% if content.heading %}
-            {% bookshop "generic/component-heading" bind:content.heading %}
+            {% bookshop "generic/heading" bind:content.heading %}
         {% endif %}
 
         <div class="{{c}}__content">{% bookshop "generic/text-block" text:content.text %}</div>

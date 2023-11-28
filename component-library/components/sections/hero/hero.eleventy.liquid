@@ -14,7 +14,7 @@
         {% endcapture %}
         {% assign_local heading = heading | ymlify %}
         {% if content.heading or content.description or content.button %}
-            {% if content.heading %}{% bookshop "generic/component-heading" bind:heading %}{% endif %}
+            {% if content.heading %}{% bookshop "generic/heading" bind:heading %}{% endif %}
             {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
             {% if content.button %}
                 <div class="{{ c }}__content__button">

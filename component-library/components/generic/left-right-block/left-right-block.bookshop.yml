@@ -3,12 +3,12 @@ spec:
   structures:
   label: "Left/Right block"
   description: Content that can be arranged left-right or right-left
-  icon: side_navigation
+  icon: art_track
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  heading: bookshop:generic/component-heading
+  heading: bookshop:generic/heading
   social_icons: bookshop:generic/social-icons 
   contact_details:
   text:
@@ -24,7 +24,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   heading:
-    _bookshop_name: generic/component-heading
+    _bookshop_name: generic/heading
     eyebrow_headline: Let your features shine
     primary_heading: A featured icons left right block
   social_icons:
@@ -48,7 +48,7 @@ preview:
       arrangement: inline
       text: Great customer service
       icon:
-        _bookshop_name: generic/icon
+        _bookshop_name: generic/hero-icon
         hero_icon_name: academic-cap
         icon_size: small
         icon_type: solid

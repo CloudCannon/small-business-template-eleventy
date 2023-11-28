@@ -2,19 +2,19 @@
 spec:
   structures:
     - content_blocks
-  label: "Icon Card Grid"
-  description: "Create a grid of cards displaying an icon, text content and a button"
+  label: "Grid - Image Cards"
+  description: "Create a grid of cards displaying an image, text content and a button"
   icon: table_chart
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    heading: bookshop:generic/component-heading!
+    heading: bookshop:generic/heading!
     description:
     grid_items:
-      - hero_icon_name:
-        heading: bookshop:generic/component-heading!
+      - image: bookshop:generic/image!
+        heading:  bookshop:generic/heading!
         text:
         button: bookshop:generic/button!
     buttons: [bookshop:generic/button]
@@ -24,24 +24,25 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    heading: bookshop:generic/component-heading
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: Eyebrow Heading
+      primary_heading: Primary Heading
     description: Card Grid Description
     grid_items:
-      - hero_icon_name: adjustments-horizontal
+      - image: bookshop:generic/image
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-      - hero_icon_name: adjustments-horizontal
-        eyebrow_headline: Eyebrow Heading
-        primary_heading: Primary Heading
+      - image: bookshop:generic/image
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-      - hero_icon_name: adjustments-horizontal
+      - image: bookshop:generic/image
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
