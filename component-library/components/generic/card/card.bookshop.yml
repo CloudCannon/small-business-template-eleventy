@@ -2,7 +2,7 @@
 spec:
   structures:
   label: "Card"
-  description: Image/icon and a description in a card format
+  description: "A reusable card that uses abn icon or an image as the card header"
   icon: perm_media
   tags: []
 
@@ -10,14 +10,12 @@ spec:
 blueprint:
   content:
     imagery: bookshop:structure:card_imagery_blocks
-    heading: bookshop:generic/component-heading
+    heading: bookshop:generic/heading
     text: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience. They come with an action link to get your users into the journey you’ve crafted for them.
     button: 
       url: ""
       text: "Button text"
       open_in_new_tab: false
-  styles:
-    background_variant: secondary
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -26,3 +24,4 @@ preview:
 _inputs:
   text:
     type: textarea
+

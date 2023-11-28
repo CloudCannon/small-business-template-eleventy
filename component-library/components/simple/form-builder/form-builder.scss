@@ -8,11 +8,11 @@
         text-align: center;
     }
 
-    .c-icon__image, .c-icon__svg {
-        --c-icon-color: var(--main-text-color);
+    .c-hero-icon__image, .c-hero-icon__svg {
+        --c-hero-icon-color: var(--main-text-color);
     }
 
-    & .error .c-icon__svg {
-        --c-icon-color: var(--error-color);
+    & .error .c-hero-icon__svg {
+        --c-hero-icon-color: var(--error-color);
     }
 }

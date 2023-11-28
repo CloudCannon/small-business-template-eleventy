@@ -3,12 +3,12 @@ spec:
   structures:
   label: "Left/Right block"
   description: Content that can be arranged left-right or right-left
-  icon: side_navigation
+  icon: art_track
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  heading: bookshop:generic/component-heading
+  heading: bookshop:generic/heading
   display_social_icons: true 
   text:
   buttons: [bookshop:generic/button]
@@ -23,37 +23,39 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   heading:
-    bookshop: generic/component-heading
+    _bookshop_name: generic/heading
     eyebrow_headline: Let your features shine
     primary_heading: A featured icons left right block
   display_social_icons: true
-  text: John Smith
+  text: >-
+    This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
   buttons:
-    url: "#"
-    open_in_new_tab: false
-    text: "Button text"
-    variant: "primary"
-    disabled: false
-    arrow: "right"
-    onclick: 
+    - url: "#"
+      open_in_new_tab: false
+      text: "Button text"
+      variant: "primary"
+      disabled: false
+      arrow: "right"
+      onclick: 
   icons:
-    - bookshop: generic/labelled-icon
+    - _bookshop_name: generic/labelled-icon
       arrangement: inline
-      text: Icon text
+      text: Great customer service
       icon:
-        bookshop: generic/icon
+        _bookshop_name: generic/hero-icon
         hero_icon_name: academic-cap
         icon_size: small
-        rounded_border: true
         icon_type: solid
+        rounded_border: true
+        theme_color: true
   image_alignment: Left
   background_variant: primary
   image: 
-    bookshop: generic/image
+    _bookshop_name: generic/image
     image_path: https://placekitten.com/300/500
     image_alt: A cute kitten
   map:
-    bookshop: simple/google-map-embed
+    _bookshop_name: simple/google-map-embed
     latitude: 37.782046
     longitude: -122.4514212
     zoom_level: 9
