@@ -1,23 +1,22 @@
-
 color_groups:
-  - name: "Primary theme"
-    background_color: "#000000"
-    foreground_color: "#ffffff"
-    interaction_color: "#2566f2"
-  - name: "Adon's theme"
-    background_color: "#d94fe9"
-    foreground_color: "#5ad819"
-    interaction_color: "#2566f2"
-  - name: "Nice theme"
-    background_color: "#001947"
-    foreground_color: "#c8ffff"
-    interaction_color: "#2566f2"
-  - name: "Fourth theme"
-    background_color: "#cec926"
-    foreground_color: "#345368"
-    interaction_color: "#2566f2"
-nav_color_group: "Primary theme"
-footer_color_group: "Primary theme"
-heading_font: "Lato"
-content_font: "Lato"
-logo_font: "Birthstone Bounce"
+  - name: Primary theme
+    background_color: '#000000'
+    foreground_color: '#ffffff'
+    interaction_color: '#2566f2'
+  - name: Adon's theme
+    background_color: '#d94fe9'
+    foreground_color: '#5ad819'
+    interaction_color: '#2566f2'
+  - name: Nice theme
+    background_color: '#001947'
+    foreground_color: '#c8ffff'
+    interaction_color: '#2566f2'
+  - name: Fourth theme
+    background_color: '#cec926'
+    foreground_color: '#345368'
+    interaction_color: '#2566f2'
+nav_color_group: fourth_theme3
+footer_color_group: nice_theme2
+heading_font: Lato
+content_font: Lato
+logo_font: Birthstone Bounce
