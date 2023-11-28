@@ -27,4 +27,18 @@
             {% include 'partials/map/map-initialisation.html' %}
         {% endif %}
     {% endif %}
+
+    <script>
+
+        if (!window.CloudCannon) {
+            document.addEventListener('cloudcannon:load', function (e) {
+                console.log('1',e.detail.CloudCannon)
+              //onLiveEditorLoad(e.detail.CloudCannon);
+            });
+          } else {
+            console.log('2', window.CloudCannon)
+            //onLiveEditorLoad(window.CloudCannon);
+          }
+
+    </script>
 </html>
