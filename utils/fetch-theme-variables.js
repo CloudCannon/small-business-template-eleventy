@@ -27,6 +27,7 @@ if(fs.existsSync(colorsFileLocation))
     fs.unlinkSync(colorsFileLocation)
 fs.writeFileSync(colorsFileLocation, "")
 
+
 let css_string = `:root {\n`
 
 color_groups.forEach((color_set, i) => {
@@ -67,6 +68,10 @@ color_groups.forEach((color_set, i) => {
     css_string += `}\n`
 })
 css_string += `}\n`
+
+// adjust options for nav_color_group and footer_color_group
+config['_inputs']['nav_color_group']['options']['values'] = [...config['_inputs']['color_group']['options']['values']]
+config['_inputs']['footer_color_group']['options']['values'] = [...config['_inputs']['color_group']['options']['values']]
 
 fs.writeFileSync(configFileLocation, yaml.dump(config))
 
