@@ -79,8 +79,6 @@ css_string += `}\n\n`
 
 css_string += `.c-navigation{\n`
 
-console.log(color_groups,dataFile.nav_color_group)
-
 let nav_color_group_background = color_groups.filter(x => x.id === dataFile.nav_color_group)[0]?.background
 let nav_color_group_foreground = color_groups.filter(x => x.id === dataFile.nav_color_group)[0]?.foreground
 
