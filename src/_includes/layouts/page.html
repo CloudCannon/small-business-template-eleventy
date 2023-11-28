@@ -30,15 +30,18 @@
 
     <script>
 
-        if (!window.CloudCannon) {
-            document.addEventListener('cloudcannon:load', function (e) {
-                console.log('1',e.detail.CloudCannon)
-              //onLiveEditorLoad(e.detail.CloudCannon);
-            });
-          } else {
-            console.log('2', window.CloudCannon)
-            //onLiveEditorLoad(window.CloudCannon);
-          }
+        function onLiveEditorLoad(CloudCannon) {
+            CloudCannon.enableEvents();
+        }
+
+        document.addEventListener('cloudcannon:load', function (e) {
+            onLiveEditorLoad(e.detail.CloudCannon);
+        });         
+
+        document.addEventListener('cloudcannon:update', async function (e) {
+            console.log(e.detail.CloudCannon)
+        });
+          
 
     </script>
 </html>
