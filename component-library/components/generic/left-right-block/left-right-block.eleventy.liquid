@@ -30,7 +30,7 @@
           {% endfor %}
         </div>
       {% endif %}
-      {% if buttons %}
+      {% if buttons and buttons.size > 0 %}
         <div class="{{ c }}__buttons">
           {% for button in buttons %}
             {% bookshop "generic/button" bind:button %}
