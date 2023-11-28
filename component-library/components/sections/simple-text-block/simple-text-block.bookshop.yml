@@ -13,7 +13,7 @@ blueprint:
     heading: bookshop:generic/component-heading!
     text: bookshop:generic/text-block!
   styles:
-    background_variant: primary
+    color_group: primary
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

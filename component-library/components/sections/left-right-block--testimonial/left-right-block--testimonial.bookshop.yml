@@ -17,7 +17,7 @@ blueprint:
     image: bookshop:generic/image
   styles:
     image_alignment: Left
-    background_variant: primary
+    color_group: primary
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -41,7 +41,7 @@ preview:
       image_alt: A cute kitten
   styles:
     image_alignment: Left
-    background_variant: primary
+    color_group: primary
 
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint

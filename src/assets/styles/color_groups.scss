@@ -5,6 +5,8 @@
 --adon_s_theme1__foreground : #5ad819;
 --nice_theme2__background : #001947;
 --nice_theme2__foreground : #c8ffff;
+--fourth_theme3__background : #cec926;
+--fourth_theme3__foreground : #ffffff;
 }
 .component {
 &--primary_theme0 {
@@ -18,5 +20,9 @@ color: var(--adon_s_theme1__foreground);
 &--nice_theme2 {
 background-color: var(--nice_theme2__background);
 color: var(--nice_theme2__foreground);
+}
+&--fourth_theme3 {
+background-color: var(--fourth_theme3__background);
+color: var(--fourth_theme3__foreground);
 }
 }
