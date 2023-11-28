@@ -26,8 +26,19 @@ content_blocks:
         - _type: Hours
           text: 'Opening hours: 9-5pm, Monday to Friday'
           hero_icon_name: clock
-      map: []
-      buttons: []
+      map:
+        _bookshop_name: generic/button
+        latitude: 37.782046
+        longitude: -122.4514212
+        zoom_level: 9
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Book Now
+          variant: primary
+          arrow: right
+          onclick:
     styles:
       map_alignment: Right
       background_variant: secondary
