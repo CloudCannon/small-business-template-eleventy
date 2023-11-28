@@ -16,7 +16,7 @@
         {% bookshop "generic/social-icons" social_media_links:site.social_media_links style:social_icons_style show_note:show_social_icons_note %}
       {% endif %}
       {% if heading %}
-        {% bookshop "generic/heading" bind: heading %}
+        {% bookshop "generic/heading" bind:heading %}
       {% endif %}
       {% if text %}
         <div class="{{ c }}__content-text">
@@ -26,14 +26,14 @@
       {% if icons %}
         <div class="{{ c }}__icons">
           {% for icon in icons %}
-            {% bookshop "generic/labelled-icon" bind: icon %}
+            {% bookshop "generic/labelled-icon" bind:icon %}
           {% endfor %}
         </div>
       {% endif %}
       {% if buttons %}
         <div class="{{ c }}__buttons">
           {% for button in buttons %}
-            {% bookshop "generic/button" bind: button %}
+            {% bookshop "generic/button" bind:button %}
           {% endfor %}
         </div>
       {% endif %}
@@ -41,7 +41,7 @@
   </div>
   <div class="{{ c }}__media {% if image_padding %}{{ c }}__media--auto-height{% endif %}">
     {% if image %}
-      {% bookshop "generic/image" bind: image %}
+      {% bookshop "generic/image" bind:image %}
     {% endif %}
     {% if map %}
       {% bookshop "simple/google-map-embed" bind:map %}
