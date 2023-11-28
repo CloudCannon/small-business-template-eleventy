@@ -1,8 +1,24 @@
 ---
 title: Home
 layout: layouts/page.html
+page_description:
+featured_image:
+  image_path:
+  image_alt:
 permalink: /
 draft: false
+hero:
+  _bookshop_name: sections/hero--simple
+  content:
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: Eyebrow Heading
+      eyebrow_headline_hierarchy: h3
+      primary_heading: Primary Heading
+      primary_heading_hierarchy: h2
+  styles:
+    content_alignment: left
+    color_group: fourth_theme3
 eleventyExcludeFromCollections: false
 nav_color_group: another_one4
 footer_color_group: another_one4
@@ -17,6 +33,13 @@ content_blocks:
         primary_heading_hierarchy: h2
       description: Description text to compliment the block
       asset:
+        _bookshop_name: generic/video
+        video_source: YouTube
+        video_url: https://www.youtube.com/watch?v=n61ULEU7CO0
+        fallback_image:
+          _bookshop_name: generic/image
+          image_path:
+          image_alt:
       button:
         _bookshop_name: generic/button
         url: '#'
