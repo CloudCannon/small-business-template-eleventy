@@ -10,15 +10,29 @@
 {% endif %}
 
 {% for item in content.grid_items %}
+    {% if item.icon.hero_icon_name %}
+        {% capture imagery %}
+            _bookshop_name: generic/hero-icon
+            hero_icon_name: {{ item.icon.hero_icon_name }}
+            icon_size: small
+            icon_type: {{ item.icon.icon_type }}
+            rounded_border: false
+            theme_color: true
+        {% endcapture %}
+    {% else %}
+        {% capture imagery %}
+            _bookshop_name: generic/custom-icon
+            icon_path: {{ item.icon.icon_path }}
+            icon_size: small
+            icon_type: {{ item.icon.icon_type }}
+            rounded_border: false
+            theme_color: true
+        {% endcapture %}
+    {% endif %}
+    {% assign imagery = imagery | ymlify %}
     {% capture card %}
         - content:
-            imagery: 
-                _bookshop_name: generic/hero-icon
-                hero_icon_name: {{ item.hero_icon_name }}
-                icon_size: small
-                icon_type: solid
-                rounded_border: false
-                theme_color: true
+            imagery: {{ imagery | json }}
             heading: 
                 eyebrow_headline: {{item.heading.eyebrow_headline}}
                 eyebrow_headline_hierarchy: {{ card_eyebrow_headline_hierarchy }}

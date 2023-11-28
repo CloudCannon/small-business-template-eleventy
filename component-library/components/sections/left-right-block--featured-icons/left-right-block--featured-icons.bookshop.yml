@@ -72,7 +72,7 @@ _inputs:
 _structures:
   icon_types:
     values:
-      - label: Standard Icon
+      - label: Hero Icon
         value:
           hero_icon_name:
           icon_type:
