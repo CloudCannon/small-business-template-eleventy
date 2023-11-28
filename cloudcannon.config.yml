@@ -24,6 +24,14 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
 _inputs:
+  arrow:
+    type: select
+    options:
+      values:
+        - up
+        - right
+        - down
+        - left
   layout:
     hidden: true
   eleventyExcludeFromCollections:
