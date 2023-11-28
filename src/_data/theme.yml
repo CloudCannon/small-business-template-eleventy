@@ -15,7 +15,7 @@ color_groups:
   - name: "Fourth theme"
     background_color: "#cec926"
     foreground_color: "#ffffff"
-    interaction_color": "#2566f2"
+    interaction_color: "#2566f2"
 heading_font: "Lato"
 content_font: "Lato"
 logo_font: "Birthstone Bounce"
