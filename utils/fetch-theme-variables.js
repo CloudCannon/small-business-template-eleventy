@@ -67,11 +67,21 @@ color_groups.forEach((color_set, i) => {
     css_string += `--interaction-color: var(--${name}__interaction);\n`
     css_string += `}\n`
 })
+css_string += `}\n\n`
+
+css_string += `.c-navigation{\n`
+
+let nav_color_group_background = color_groups.filter(x => x.name === dataFile.nav_color_group)[0].background_color
+let nav_color_group_foreground = color_groups.filter(x => x.name === dataFile.nav_color_group)[0].foreground_color
+
+css_string += `--main-background-color: ${nav_color_group_background};`
+css_string += `--main-text-color: ${nav_color_group_foreground};`
+
 css_string += `}\n`
 
 // adjust options for nav_color_group and footer_color_group
-config['_inputs']['nav_color_group']['options']['values'] = [...config['_inputs']['color_group']['options']['values']]
-config['_inputs']['footer_color_group']['options']['values'] = [...config['_inputs']['color_group']['options']['values']]
+config['_inputs']['nav_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
+config['_inputs']['footer_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 
 fs.writeFileSync(configFileLocation, yaml.dump(config))
 

@@ -82,24 +82,36 @@ _inputs:
         icon:
           - key: icon
       values:
-        - name: Primary theme
+        - &ref_0
+          name: Primary theme
           id: primary_theme0
-        - name: Adon's theme
+        - &ref_1
+          name: Adon's theme
           id: adon_s_theme1
-        - name: Nice theme
+        - &ref_2
+          name: Nice theme
           id: nice_theme2
-        - name: Fourth theme
+        - &ref_3
+          name: Fourth theme
           id: fourth_theme3
   nav_color_group:
     comment: Choose the color group for the navigation header
     type: select
     options:
-      values: []
+      values:
+        - *ref_0
+        - *ref_1
+        - *ref_2
+        - *ref_3
   footer_color_group:
     comment: Choose the color group for the footer
     type: select
     options:
-      values: []
+      values:
+        - *ref_0
+        - *ref_1
+        - *ref_2
+        - *ref_3
   color_groups:
     comment: Define different color groups here to easily style site components
   color_groups[*].name:
