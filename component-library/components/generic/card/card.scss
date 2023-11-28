@@ -21,6 +21,7 @@
     .c-image,
     .c-image--live-editing,
     picture {
+      max-height: 210px;
       height: 100%;
       width: 100%;
       object-fit: cover;
