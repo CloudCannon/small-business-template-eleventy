@@ -16,14 +16,14 @@ blueprint:
     image: bookshop:generic/image!
   styles:
     image_alignment: left
-    color_group: 
+    color_group: "" 
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   styles:
     image_alignment: left
-    color_group: 
+    color_group: "" 
   content:
     heading:
       _bookshop_name: generic/heading
@@ -53,5 +53,5 @@ _inputs:
         - left
         - right
         - full-background
-  color_group:
+  color_group: 
     comment: This is not used for the full-background image alignment

@@ -4,9 +4,7 @@
               {{c}}--image-cards
             {% endif %}
             component 
-            {% if styles.background_variant == 'secondary' %} 
-                component--secondary
-            {% endif %}">
+            component--{{ styles.color_group }}">
 
     {% if content.heading or content.description %}
         <div class="{{ c }}__heading">

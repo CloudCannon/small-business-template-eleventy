@@ -19,7 +19,7 @@ blueprint:
         button: bookshop:generic/button!
     buttons: [bookshop:generic/button]
   styles:
-    background_variant: secondary
+    background_variant: 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -56,7 +56,7 @@ preview:
         variant: primary
         arrow: right
   styles:
-    background_variant: secondary
+    background_variant: 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   text:

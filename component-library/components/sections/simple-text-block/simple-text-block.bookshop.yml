@@ -13,7 +13,7 @@ blueprint:
     heading: bookshop:generic/heading!
     text: bookshop:generic/text-block!
   styles:
-    color_group: 
+    color_group: "" 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
