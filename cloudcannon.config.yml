@@ -82,6 +82,8 @@ _inputs:
         - name: Secondary
           id: secondary
           icon: star_outline
+  id:
+    comment: An optional unique identifier for this component that can be used as a link (with page#id)
   heading_font:
     comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
   content_font:

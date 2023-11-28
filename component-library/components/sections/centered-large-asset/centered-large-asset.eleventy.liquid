@@ -1,5 +1,5 @@
 {% assign_local c = "c-centered-large-asset" %}
-<section class="{{ c }} component 
+<section {% if content.id %}id="{{ content.id }}"{% endif %} class="{{ c }} component 
             {% if styles.background_variant == 'secondary' %} 
                 component--secondary
             {% endif %}">

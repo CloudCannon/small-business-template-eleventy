@@ -1,5 +1,5 @@
 {% assign_local c = "c-card-grid" %}
-<div class="{{c}} 
+<section {% if content.id %}id="{{ content.id }}"{% endif %} class="{{c}} 
             {% if _bookshop_name contains 'grid--image-cards' %}
               {{c}}--image-cards
             {% endif %}
@@ -30,4 +30,4 @@
         {% endfor % %}
       </div>
     {% endif %}
-</div>
+</section>

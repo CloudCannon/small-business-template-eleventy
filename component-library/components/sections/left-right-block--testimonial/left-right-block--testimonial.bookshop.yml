@@ -10,6 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
+    id:
     headline:
     quote: 
     author_name:

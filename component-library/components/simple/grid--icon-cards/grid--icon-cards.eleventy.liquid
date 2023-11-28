@@ -12,6 +12,7 @@
 {% for item in content.grid_items %}
     {% capture card %}
         - content:
+            id: {{ content.id }}
             imagery: 
                 _bookshop_name: generic/hero-icon
                 hero_icon_name: {{ item.hero_icon_name }}
