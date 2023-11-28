@@ -41,6 +41,7 @@ Changes in the data files require the site to be rebuilt to see your changes.
 
 - Reused around the site to save multiple editing locations.
 - Set in the *Data* / *Nav* and *Data* / *Footer* sections
+- Changes in these files are not reflected in live editing - you must save to see the changes in page building
 
 ### SEO details and favicon
 
@@ -101,9 +102,11 @@ All options in the above list (except Youtube Videos) requires you to use the "e
 
 We have made efforts to prioritize accessibility in our design, but we acknowledge that it may not be perfect. Your feedback is valuable to us, so please feel free to share any suggestions or concerns to help us improve accessibility further.
 
-## Services Block and Nav Link
+## Component links
 
-(TBC) This uses an anchor tag
+All blocks have an id field that can be set and then used as a link to that component. 
+
+This is helpful (for example) if you want to link to information about your services from the nav without having a fully seperate page for it. You can set the id field in the services block to be `services` and then in *data/nav* you can have a link to `#services`.
 
 ## Development
 
