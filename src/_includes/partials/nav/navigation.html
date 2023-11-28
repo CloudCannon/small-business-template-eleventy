@@ -1,7 +1,7 @@
 {% assign_local c = "c-navigation" %}
 {% assign skipnav_text = nav.skipnav_text | default: "Skip to contents" %}
 <header>
-    <nav class="{{c}} {{c}}--{{nav_color_group}}" aria-label="Main menu" id="main-menu">
+    <nav class="{{c}} {{c}}--{{nav.nav_color_group}}" aria-label="Main menu" id="main-menu">
         <div class="{{c}}__skip-to-content-link" >
             {% bookshop "generic/button"
                 url: '#main'
