@@ -26,9 +26,3 @@ preview:
 _inputs:
   images:
     comment: The images should be square in shape
-  variant:
-    type: select
-    options:
-      values:
-        - primary
-        - secondary

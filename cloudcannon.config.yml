@@ -32,6 +32,12 @@ _inputs:
         - right
         - down
         - left
+  variant:
+    type: select
+    options:
+      values:
+        - primary
+        - secondary
   layout:
     hidden: true
   eleventyExcludeFromCollections:

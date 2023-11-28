@@ -150,9 +150,3 @@ _inputs:
     comment: The key that you configured for your cloudcannon inbox. If not set it will go to the default inbox you set up.
   subject:
     comment: The subject line for the form submission emails
-  variant:
-    type: select
-    options:
-      values:
-        - primary
-        - secondary
