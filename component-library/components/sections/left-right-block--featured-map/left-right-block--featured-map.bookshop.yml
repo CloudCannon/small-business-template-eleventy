@@ -11,6 +11,7 @@ spec:
 blueprint:
   content:
     display_social_icons: true
+    show_note: true
     heading: A contact block
     description: This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
     contact_details:
@@ -27,6 +28,7 @@ blueprint:
 preview:
   content:
     display_social_icons: true
+    show_note: false
     heading: A contact block
     content: Content
     contact_details:

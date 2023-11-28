@@ -9,7 +9,8 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   heading: bookshop:generic/heading
-  display_social_icons: true 
+  display_social_icons: true
+  show_social_icons_note: true
   text:
   buttons: [bookshop:generic/button]
   icons: [bookshop:generic/labelled-icon]
