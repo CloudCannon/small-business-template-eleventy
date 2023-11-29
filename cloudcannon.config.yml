@@ -11,7 +11,7 @@ collections_config:
   data:
     path: _data
     output: false
-    icon: notes
+    icon: insert_chart_outlined
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -19,7 +19,7 @@ collections_config:
     path: pages
     output: true
     filter: strict
-    icon: notes
+    icon: description
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
