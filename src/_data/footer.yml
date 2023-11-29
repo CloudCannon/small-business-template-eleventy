@@ -1,4 +1,4 @@
-logo_image: ''
+logo_image: /assets/images/Hero--background-feature-4.png
 logo_text: Primera Mesa
 navigation_items:
   - label: About Us
@@ -13,5 +13,33 @@ navigation_items:
   - label: Contact Us
     link_url: /contact
     open_in_new_tab: false
-footer_content: ©Enter your copyright and terms and conditions.
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+footer_content: >-
+  ©Enter your copyright and terms and conditions. ©Enter your copyright and
+  terms and conditions. ©Enter your copyright and terms and conditions. ©Enter
+  your copyright and terms and conditions. ©Enter your copyright and terms and
+  conditions. ©Enter your copyright and terms and conditions. ©Enter your
+  copyright and terms and conditions. ©Enter your copyright and terms and
+  conditions. ©Enter your copyright and terms and conditions. ©Enter your
+  copyright and terms and conditions. ©Enter your copyright and terms and
+  conditions. ©Enter your copyright and terms and conditions. ©Enter your
+  copyright and terms and conditions. ©Enter your copyright and terms and
+  conditions. ©Enter your copyright and terms and conditions.&nbsp;
 footer_color_group: nice_theme2
