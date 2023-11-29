@@ -6,7 +6,7 @@
   padding-bottom: 0;
 
   .c-heading {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 
   &__content {
@@ -32,6 +32,7 @@
 
   & .c-social-icons {
     justify-content: flex-start;
+    margin-bottom: 1rem;
   }
 
   &__icons {
@@ -39,7 +40,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 2.18rem;
+    gap: 1.5rem;
     margin-bottom: 1.5rem;
   }
 
@@ -52,8 +53,10 @@
   }
 
   &__media {
+    aspect-ratio: 1 / 1;
     grid-column: 1 / -1;
     max-height: 700px;
+    width: 100%;
   }
 
   & .c-image,
@@ -84,7 +87,7 @@
       grid-row: 1;
       justify-self: end;
       max-width: 700px;
-      max-height: unset;
+      height: 100%;
       align-self: center;
 
       &--auto-height {

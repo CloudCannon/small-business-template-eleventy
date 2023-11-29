@@ -19,6 +19,7 @@ blueprint:
       icon_path: /assets/images/icons/social/x.svg
     - link_url: https://www.instagram.com/
       icon_path: /assets/images/icons/social/instagram.svg
+  show_note: true
   style:
     icon_background_hover_color: "#7d7f7c"
     icon_color: "#7d7f7c"
