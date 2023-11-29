@@ -4,8 +4,8 @@ color_groups:
     foreground_color: '#F9F9FB'
     interaction_color: '#2566f2'
   - name: Secondary
-    background_color: '#1B1B1D'
-    foreground_color: '#D9D9DC'
+    background_color: '#1b1b1d'
+    foreground_color: '#eb720a'
     interation_color: '#2566f2'
 heading_font: Lato
 content_font: Lato
