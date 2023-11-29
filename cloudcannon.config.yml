@@ -60,6 +60,13 @@ _inputs:
       values:
         - primary
         - secondary
+  arrangement:
+    type: select
+    comment: The layout of the icon and text together
+    options:
+      values:
+        - inline
+        - stacked
   layout:
     hidden: true
   eleventyExcludeFromCollections:
