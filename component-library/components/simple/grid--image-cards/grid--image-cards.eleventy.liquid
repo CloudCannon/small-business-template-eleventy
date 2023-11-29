@@ -12,6 +12,7 @@
 {% for item in content.grid_items %}
     {% capture card %}
         - content:
+            id: {{ content.id }}
             imagery: {{ item.image | json }}
             heading: 
                 eyebrow_headline: {{item.heading.eyebrow_headline}}

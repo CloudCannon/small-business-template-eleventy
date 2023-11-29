@@ -19,6 +19,10 @@
     white-space: normal;
     word-break: break-word;
     text-align: center;
+    padding: 0 1rem;
+    .c-image {
+      max-width: 24rem;
+    }
   }
   &__navlist {
     display: flex;
