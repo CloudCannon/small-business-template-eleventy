@@ -33,17 +33,17 @@ let css_string_component = `.component {\n`
 let css_string_nav = `.c-navigation {\n`
 let css_string_footer = `.c-footer {\n`
 
-css_string_component += `--main-background-color: #000000;\n`
-css_string_component += `--main-text-color: #ffffff;\n`
+css_string_component += `--main-background-color: #3B3B3D;\n`
+css_string_component += `--main-text-color: #F9F9FB;\n`
 css_string_component += `--interaction-color: #2566f2;\n`
 css_string_component += `background-color: var(--main-background-color);\n`
 css_string_component += `color: var(--main-text-color);\n`
 
-css_string_nav += `--main-background-color: #000000;\n`
-css_string_nav += `--main-text-color: #ffffff;\n`
+css_string_nav += `--main-background-color: #1B1B1D;\n`
+css_string_nav += `--main-text-color: #D9D9DC;\n`
 
-css_string_footer += `--main-background-color: #000000;\n`
-css_string_footer += `--main-text-color: #ffffff;\n`
+css_string_footer += `--main-background-color: #1B1B1D;\n`
+css_string_footer += `--main-text-color: #D9D9DC;\n`
 
 
 let addColorDefinitions = (str, id) => {

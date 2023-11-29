@@ -83,20 +83,11 @@ _inputs:
           - key: icon
       values:
         - &ref_0
-          name: Primary theme
-          id: primary_theme0
+          name: Primary
+          id: primary0
         - &ref_1
-          name: Adon's theme
-          id: adon_s_theme1
-        - &ref_2
-          name: Nice theme
-          id: nice_theme2
-        - &ref_3
-          name: Fourth theme
-          id: fourth_theme3
-        - &ref_4
-          name: Another one
-          id: another_one4
+          name: Secondary
+          id: secondary1
   nav_color_group:
     comment: Choose the color group for the navigation header
     type: select
@@ -104,9 +95,6 @@ _inputs:
       values:
         - *ref_0
         - *ref_1
-        - *ref_2
-        - *ref_3
-        - *ref_4
   footer_color_group:
     comment: Choose the color group for the footer
     type: select
@@ -114,9 +102,6 @@ _inputs:
       values:
         - *ref_0
         - *ref_1
-        - *ref_2
-        - *ref_3
-        - *ref_4
   color_groups:
     comment: Define different color groups here to easily style site components
   color_groups[*].name:
@@ -132,7 +117,9 @@ _inputs:
       The color for user interactions, for example focusing on text inputs or
       clicking buttons
   id:
-    comment: An optional unique identifier for this component that can be used as a link (with page#id)
+    comment: >-
+      An optional unique identifier for this component that can be used as a
+      link (with page#id)
   heading_font:
     comment: >-
       Write the name of any font from https://fonts.google.com/ in data/fonts to

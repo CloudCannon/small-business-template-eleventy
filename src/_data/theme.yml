@@ -1,24 +1,12 @@
 color_groups:
-  - name: Primary theme
-    background_color: '#000000'
-    foreground_color: '#ffffff'
+  - name: Primary
+    background_color: '#3B3B3D'
+    foreground_color: '#F9F9FB'
     interaction_color: '#2566f2'
-  - name: Adon's theme
-    background_color: '#d94fe9'
-    foreground_color: '#5ad819'
-    interaction_color: '#2566f2'
-  - name: Nice theme
-    background_color: '#001947'
-    foreground_color: '#c8ffff'
-    interaction_color: '#2566f2'
-  - name: Fourth theme
-    background_color: '#cec926'
-    foreground_color: '#345368'
-    interaction_color: '#2566f2'
-  - name: Another one
-    background_color: '#504444'
-    foreground_color: '#e7e0e0'
-    interaction_color: '#83b81b'
+  - name: Secondary
+    background_color: '#1B1B1D'
+    foreground_color: '#D9D9DC'
+    interation_color: '#2566f2'
 heading_font: Lato
 content_font: Lato
 logo_font: Birthstone Bounce
