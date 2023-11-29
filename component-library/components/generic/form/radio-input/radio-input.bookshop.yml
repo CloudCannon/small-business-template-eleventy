@@ -19,7 +19,3 @@ preview:
   label: "Radio button"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  group_name:
-    hidden: true
-    comment: This input should be hidden from editors and passed through from the radio-group component so that these inputs function correctly
