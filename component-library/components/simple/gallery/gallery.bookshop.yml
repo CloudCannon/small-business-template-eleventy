@@ -8,6 +8,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  show_note: true
   images: [bookshop:generic/image]
   button:
     text: Load More
