@@ -1,7 +1,7 @@
 {% assign_local c = "c-left-right-block" %}
 
 <div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {% if styles.image_alignment == "Right" %}{{ c }}--right{% endif %} 
-  component--{{ styles.color_group }}">
+  component--{{ color_group }}">
   <div class="{{ c }}__content">
     <div class="{{ c }}__content-wrapper">
       {% if social_icons %}
