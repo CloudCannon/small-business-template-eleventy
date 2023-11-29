@@ -139,9 +139,6 @@ preview:
 _inputs:
   form_submission_type:
     type: disabled
-  id:
-    hidden: true
-    instance_value: UUID
   success_page:
     type: url
     comment:  The page to redirect to after submission

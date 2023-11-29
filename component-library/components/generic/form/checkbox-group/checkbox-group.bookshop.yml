@@ -42,6 +42,3 @@ preview:
 _inputs:
   helper_text:
     comment: Helpful text for the user such as 'Do not select more than 2'
-  id:
-    hidden: true
-    instance_value: UUID

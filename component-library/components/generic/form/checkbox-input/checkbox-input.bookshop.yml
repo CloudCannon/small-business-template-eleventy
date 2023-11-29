@@ -25,6 +25,3 @@ _inputs:
   group_name:
     hidden: true
     comment: This input should be hidden from editors and passed through from the radio-group component so that these inputs function correctly
-  id:
-    hidden: true
-    instance_value: UUID
