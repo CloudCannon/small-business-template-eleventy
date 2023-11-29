@@ -1,7 +1,7 @@
 color_groups:
   - name: Primary
-    background_color: '#3B3B3D'
-    foreground_color: '#F9F9FB'
+    background_color: '#3b3b3d'
+    foreground_color: '#0c0ced'
     interaction_color: '#2566f2'
   - name: Secondary
     background_color: '#1B1B1D'
