@@ -9,5 +9,95 @@ permalink: /booking/
 draft: false
 eleventyExcludeFromCollections: false
 hero:
+  _bookshop_name: sections/hero
+  content:
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: TAG OR LABEL HEADLINE
+      eyebrow_headline_hierarchy: h3
+      primary_heading: A hero for a booking form page
+      primary_heading_hierarchy: h2
+    description: >-
+      We wanted you to have a couple of options to use above the fold, and give
+      you the customisation you need to display your product/service in the best
+      way possible.
+    button:
+      _bookshop_name: generic/button
+      url: '#'
+      open_in_new_tab: false
+      text: Book Now
+      variant: primary
+      arrow: right
+      onclick:
+    image:
+      _bookshop_name: generic/image
+      image_path: /assets/images/Hero--background-feature-3.png
+      image_alt:
+      image_sizes:
+  styles:
+    image_alignment: right
+    color_group: secondary1
 content_blocks:
+  - _bookshop_name: sections/form
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: EYEBROW HEADLINE
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Book or contact us
+        primary_heading_hierarchy: h2
+      description: >-
+        Whether your business is a restaurant, a barber shop, a gym, or a cafe,
+        our small business template has you covered. Add your services to the
+        list below, as many as you like, and let people contact you or book now.
+      form:
+        _bookshop_name: simple/form-builder
+        id: aa595855-d8ef-478e-a7ea-dc50a7e7ec7b
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        inputs:
+          - _bookshop_name: generic/form/text-input
+            label: Full name
+            placeholder: John Smith
+            id: 09cae25c-e506-49d6-b5fe-0002b61931e1
+            required: true
+            helper_text:
+          - _bookshop_name: generic/form/email-input
+            label: Email address
+            id: f89df432-eb96-4fa3-bd9b-270f3c4c208c
+            required: true
+            placeholder: mybusiness@business.com
+            helper_text:
+          - _bookshop_name: generic/form/phone-input
+            label: Phone number
+            placeholder: +64 123 4566
+            id: 40cba38f-237d-46d6-a341-702d5ed517a8
+            required: false
+            helper_text:
+          - _bookshop_name: generic/form/date-input
+            label: Choose a date
+            id: bfb874e3-13a5-48b0-b37e-ef8c6691d4e9
+            required: false
+            min_today: false
+            min: 2023-11-30T00:00:00Z
+            max_today: false
+            max: 2023-12-31T00:00:00Z
+            helper_text:
+          - _bookshop_name: generic/form/text-area-input
+            label: Comment
+            placeholder: ''
+            id: f3da6f9c-522b-4753-a900-43a266edb961
+            rows: 5
+            required: true
+            helper_text:
+        submit_button:
+          text: Book Now
+          variant: primary
+          arrow: right
+    styles:
+      color_group: primary0
+      content_alignment: center
 ---
