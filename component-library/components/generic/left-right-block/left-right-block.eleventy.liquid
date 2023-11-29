@@ -1,20 +1,22 @@
 {% assign_local c = "c-left-right-block" %}
 
-<div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {% if styles.image_alignment == "Right" %}{{ c }}--right{% endif %} {% if styles.background_variant == "secondary" %} 
-  component--secondary
-{% endif %}">
+{% capture social_icon_styles %}
+  icon_background_hover_color: "var(--main-text-color)"
+  icon_color: "var(--main-text-color)"
+  icon_hover_color: "var(--main-background-color)"
+{% endcapture %}
+{% assign_local social_icons_style = social_icon_styles | ymlify %}
+
+<div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {% if styles.image_alignment == "Right" %}{{ c }}--right{% endif %} 
+  component--{{ color_group }}">
+
   <div class="{{ c }}__content">
     <div class="{{ c }}__content-wrapper">
-      {% if social_icons %}
-        {% bookshop "generic/social-icons" bind: social_icons %}
+      {% if display_social_icons %}
+        {% bookshop "generic/social-icons" social_media_links:site.social_media_links style:social_icons_style show_note:show_social_icons_note %}
       {% endif %}
       {% if heading %}
-        {% bookshop "generic/heading" bind: heading %}
-      {% endif %}
-      {% if contact_details %}
-        <div class="{{ c }}__content-text">
-          {{ contact_details | markdownify }}
-        </div>
+        {% bookshop "generic/heading" bind:heading %}
       {% endif %}
       {% if text %}
         <div class="{{ c }}__content-text">
@@ -24,14 +26,14 @@
       {% if icons %}
         <div class="{{ c }}__icons">
           {% for icon in icons %}
-            {% bookshop "generic/labelled-icon" bind: icon %}
+            {% bookshop "generic/labelled-icon" bind:icon %}
           {% endfor %}
         </div>
       {% endif %}
-      {% if buttons %}
+      {% if buttons and buttons.size > 0 %}
         <div class="{{ c }}__buttons">
           {% for button in buttons %}
-            {% bookshop "generic/button" bind: button %}
+            {% bookshop "generic/button" bind:button %}
           {% endfor %}
         </div>
       {% endif %}
@@ -39,7 +41,7 @@
   </div>
   <div class="{{ c }}__media {% if image_padding %}{{ c }}__media--auto-height{% endif %}">
     {% if image %}
-      {% bookshop "generic/image" bind: image %}
+      {% bookshop "generic/image" bind:image %}
     {% endif %}
     {% if map %}
       {% bookshop "simple/google-map-embed" bind:map %}

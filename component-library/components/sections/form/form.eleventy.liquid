@@ -1,8 +1,5 @@
 {% assign_local c = "c-form" %}
-<section {% if content.id %}id="{{ content.id }}"{% endif %} class="{{ c }} {{ c }}--content-align-{{ styles.content_alignment }} component 
-            {% if styles.background_variant == 'secondary' %} 
-                component--secondary
-            {% endif %}" >
+<section {% if content.id %}id="{{ content.id }}"{% endif %} class="{{ c }} {{ c }}--content-align-{{ styles.content_alignment }} component component--{{ styles.color_group }}" >
 
     {% if content.heading or content.description %}
         <div class="{{ c }}__heading">

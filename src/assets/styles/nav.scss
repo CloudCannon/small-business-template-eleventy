@@ -2,12 +2,19 @@
   $c: &;
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
-  grid-template-rows: var(--nav-height) 1fr auto;
+  grid-template-rows: var(--nav-height) 1fr 140px;
   height: auto;
-  background: var(--alt-background-color);
+  background: var(--main-background-color);
+  color: var(--main-text-color);
+  position: absolute;
+  width: 100vw;
+  height: 60px;
+  z-index: 50;
   --nav-padding: 8px;
+  &__placeholder {
+    height: var(--nav-height);
+  }
   &__skip-to-content-link {
-    // background: var(--primary-foreground-color);
     .c-button {
       left: 45%;
       position: absolute;
@@ -22,33 +29,46 @@
   &__logo-link {
     grid-column: 2 / -3;
     text-decoration: none;
-    color: var(--alt-text-color);
     font-family: var(--logo-font), Lato, sans-serif;
     font-size: 2rem;
     line-height: 3.75rem;
     white-space: nowrap;
-    &__image {
-      height: 100%;
-      width: auto;
-      padding-top: var(--nav-padding);
-      padding-bottom: var(--nav-padding);
+    color:var(--main-text-color);    
+  
+    width: min-content;
+    img,
+    picture,
+    svg {
+      max-width: initial;
     }
+    .c-image {
+      padding-top: unset;
+      padding-bottom: unset;
+      max-height: 52px;
+      width: auto;
+    }
+  }
+
+  &__social-icons,
+  &__navlist {
+    visibility: hidden;
+    opacity: 0;
   }
 
   &__social-icons {
     grid-column: 2 / 14;
     justify-self: center;
-    display: none;
+    display: block;
   }
 
   &__navlist {
+    display: flex;
     list-style-type: none;
     padding: 0;
     grid-row: 2 / 3;
     grid-column: 2 / -2;
     justify-self: center;
     align-self: center;
-    display: none;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
@@ -56,19 +76,20 @@
     &__item {
       &__link {
         text-decoration: none;
-        color: var(--alt-text-color);
+        color: var(--main-text-color);
         white-space: nowrap;
+        padding: 0.5rem;
 
         &:hover,
         &:active {
-          border-bottom: 1px solid var(--alt-text-color);
-          color: var(--alt-text-color);
+          border-bottom: 1px solid var(--main-text-color);
+          color: var(--main-text-color);
         }
       }
       &--active {
         #{$c}__navlist__item__link {
-          border-bottom: 1px solid var(--alt-text-color);
-          color: var(--alt-text-color);
+          border-bottom: 1px solid var(--main-text-color);
+          color: var(--main-text-color);
         }
       }
     }
@@ -77,7 +98,7 @@
   &__burger-menu {
     grid-column: 13 / 14;
     background-color: unset;
-
+    padding: 1.5rem 0 1.5rem 1.5rem;
     display: flex;
     align-items: center;
     border: none;
@@ -99,7 +120,7 @@
       height: 3px;
       width: 30px;
       border-radius: 15px;
-      background-color: var(--alt-text-color);
+      background-color: var(--main-text-color);
 
       &::before {
         transition: all 0.18s;
@@ -110,7 +131,7 @@
         height: 3px;
         width: 30px;
         border-radius: 15px;
-        background-color: var(--alt-text-color);
+        background-color: var(--main-text-color);
       }
 
       &::after {
@@ -122,26 +143,60 @@
         height: 3px;
         width: 30px;
         border-radius: 15px;
-        background-color: var(--alt-text-color);
+        background-color: var(--main-text-color);
       }
     }
   }
 
-  // Mobile menu open state
+  @keyframes openMobileMenu {
+    from {
+      height: 6svh;
+    }
+    to {
+      height: 100svh;
+    }
+  }
+
+  @keyframes closeMobileMenu {
+    from {
+      height: 100svh;
+    }
+    to {
+      height: 6svh;
+    }
+  }
+
+  &--close {
+    animation-name: closeMobileMenu;
+    animation-duration: 0.5s;
+    #{$c}__navlist,
+    #{$c}__social-icons {
+      transition: visibility 0.2s, opacity 0.2s ease-in;
+    }
+  }
   &--open {
-    grid-template-rows: var(--nav-height) 1fr 140px;
     height: 100svh;
+    animation-name: openMobileMenu;
+    animation-duration: 0.5s;
+
+    #{$c}__navlist,
+    #{$c}__social-icons {
+      transition: visibility 1s, opacity 1s ease-out;
+      visibility: visible;
+      opacity: 1;
+    }
+
     #{$c}__burger-menu {
       &__burger {
         &::before {
           transform: rotate(45deg);
-          background-color: var(--alt-text-color);
+          background-color: var(--main-text-color);
           top: 0;
         }
 
         &::after {
           transform: rotate(-45deg);
-          background-color: var(--alt-text-color);
+          background-color: var(--main-text-color);
           top: 0;
         }
 
@@ -161,7 +216,9 @@
   @media screen and (min-width: 768px) {
     height: auto;
     grid-template-rows: var(--nav-height) var(--nav-height) auto;
-
+    &__placeholder {
+      height: calc(2 * var(--nav-height));
+    }
     &__social-icons {
       display: block;
       justify-self: flex-end;
@@ -180,13 +237,18 @@
       grid-column: 5 / -2;
       height: auto;
       display: flex;
-      gap: 1.5rem;
       justify-self: end;
       flex-direction: row;
+      gap: 0.5rem;
     }
 
     &__burger-menu {
       display: none;
+    }
+    &__social-icons,
+    &__navlist {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

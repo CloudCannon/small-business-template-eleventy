@@ -16,7 +16,7 @@ blueprint:
     asset: bookshop:structure:asset_blocks
     button: bookshop:generic/button
   styles:
-    background_variant: primary
+    color_group: "" 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -29,6 +29,6 @@ preview:
         Whether your business is a restaurant, a barber shop, a gym, or a café, our small business template has you covered. Add your services to the list below, as many as you like, and let people contact you or book now.
     button: bookshop:generic/button
   styles:
-    background_variant: primary
+    color_group: "" 
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint

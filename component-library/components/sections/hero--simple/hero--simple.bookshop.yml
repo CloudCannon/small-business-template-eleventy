@@ -13,14 +13,14 @@ blueprint:
     heading: bookshop:generic/heading!
   styles:
     content_alignment: center
-    background_variant: primary
+    color_group: "" 
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   styles:
     content_alignment: center
-    background_variant: primary
+    color_group: "" 
   content:
     heading:
       _bookshop_name: generic/heading

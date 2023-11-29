@@ -1,14 +1,15 @@
 .c-footer {
   $c: &;
-  background: var(--alt-background-color);
   padding: 3.5rem 1rem;
   display: grid;
   gap: 1rem;
   place-items: center;
+  background: var(--main-background-color);
+  color: var(--main-text-color);
 
   &__logo-link {
     text-decoration: none;
-    color: var(--alt-text-color);
+    color: var(--main-text-color);
     font-family: var(--logo-font), Lato, sans-serif;
     white-space: nowrap;
     font-size: 4.58025rem;
@@ -19,6 +20,10 @@
     white-space: normal;
     word-break: break-word;
     text-align: center;
+    padding: 0 1rem;
+    .c-image {
+      max-width: 24rem;
+    }
   }
   &__navlist {
     display: flex;
@@ -30,19 +35,19 @@
     &__item {
       &__link {
         text-decoration: none;
-        color: var(--alt-text-color);
+        color: var(--main-text-color);
         white-space: nowrap;
 
         &:hover,
         &:active {
-          border-bottom: 1px solid var(--alt-text-color);
-          color: var(--alt-text-color);
+          border-bottom: 1px solid var(--main-text-color);
+          color: var(--main-text-color);
         }
       }
       &--active {
         #{$c}__navlist__item__link {
-          border-bottom: 1px solid var(--alt-text-color);
-          color: var(--alt-text-color);
+          border-bottom: 1px solid var(--main-text-color);
+          color: var(--main-text-color);
         }
       }
     }
@@ -51,10 +56,10 @@
   &__content {
     padding-top: 7rem;
     text-align: center;
-    color: var(--alt-text-color);
+    color: var(--main-text-color);
 
     a {
-      color: var(--alt-text-color);
+      color: var(--main-text-color);
     }
   }
 }

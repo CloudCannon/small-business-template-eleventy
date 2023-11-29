@@ -142,8 +142,7 @@ _inputs:
   success_page:
     type: url
     comment:  The page to redirect to after submission
-  # TODO: add instructions here with link to docs
   inbox_key:
-    comment: The key that you configured for your cloudcannon inbox. If not set it will go to the default inbox you set up.
+    comment: The key that you configured for your cloudcannon inbox. If not set it will go to the default inbox you set up. Instructions for setting up an inbox key can be found [here](https://cloudcannon.com/documentation/articles/creating-an-inbox-to-receive-your-forms/).
   subject:
     comment: The subject line for the form submission emails

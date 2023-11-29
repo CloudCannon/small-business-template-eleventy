@@ -65,7 +65,7 @@ _inputs:
     options:
       values:
         - Left
-        - Right  
+        - Right
   arrangement:
     type: select
     comment: The layout of the icon and text together
@@ -84,9 +84,13 @@ _inputs:
   featured_image:
     comment: If empty, defaults to the image set in the SEO data file
   logo_image:
-    comment: If an image is uploaded it will be used over a name set in the logo text field
+    comment: >-
+      If an image is uploaded it will be used over a name set in the logo text
+      field
   logo_text:
-    comment: If an image is set in the logo image field, this value will not be used. You can change the font of a text based logo in data/theme.
+    comment: >-
+      If an image is set in the logo image field, this value will not be used.
+      You can change the font of a text based logo in data/theme.
   footer_content:
     type: markdown
     options:
@@ -96,7 +100,9 @@ _inputs:
       undo: true
       redo: true
   font:
-    comment: Write the name of any font from https://fonts.google.com/ in data/fonts to access it here
+    comment: >-
+      Write the name of any font from https://fonts.google.com/ in data/fonts to
+      access it here
   content_alignment:
     type: choice
     options:
@@ -114,8 +120,8 @@ _inputs:
         - name: Center
           id: center
           icon: format_align_center
-  background_variant:
-    type: choice
+  color_group:
+    type: select
     options:
       allow_empty: false
       value_key: id
@@ -125,25 +131,59 @@ _inputs:
         icon:
           - key: icon
       values:
-        - name: Primary
-          id: primary
+        - &ref_0
+          name: Primary
+          id: primary0
           icon: star
-        - name: Secondary
-          id: secondary
+        - &ref_1
+          name: Secondary
+          id: secondary1
           icon: star_outline
   group_name:
     hidden: true
     comment: This input should be hidden from editors and passed through from the radio-group component so that these inputs function correctly
   description:
     type: textarea
+  nav_color_group:
+    comment: Choose the color group for the navigation header
+    type: select
+    options:
+      values:
+        - *ref_0
+        - *ref_1
+  footer_color_group:
+    comment: Choose the color group for the footer
+    type: select
+    options:
+      values:
+        - *ref_0
+        - *ref_1
+  color_groups:
+    comment: Define different color groups here to easily style site components
+  color_groups[*].name:
+    comment: Give your color group a name to easily identify it later
+    label: Group Name
+  color_groups[*].background_color:
+    comment: The background color of site components
+  color_groups[*].foreground_color:
+    comment: The color of text, icons and borders
+    label: Text Color
+  color_groups[*].interaction_color:
+    comment: >-
+      The color for user interactions, for example focusing on text inputs or
+      clicking buttons
   id:
     hidden: true
     instance_value: UUID
     comment: An optional unique identifier for this component that can be used as a link (with page#id)
   heading_font:
-    comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
+    comment: >-
+      Write the name of any font from https://fonts.google.com/ in data/fonts to
+      access it here
   content_font:
-    comment: "Write the name of any font from https://fonts.google.com/ in data/fonts to access it here"
+    comment: >-
+      Write the name of any font from https://fonts.google.com/ in data/fonts to
+      access it here
   hero_icon_name:
     comment: Visit https://heroicons.com/ to see the full library
     type: select
@@ -442,23 +482,26 @@ _inputs:
         - x-circle
         - x-mark
   hero:
-    comment: If a hero is not explicitly included, the default is to display the page title
+    comment: >-
+      If a hero is not explicitly included, the default is to display the page
+      title
     type: object
     options:
       structures: _structures.hero_blocks
   show_note:
     type: switch
-    comment: Hide/Show the note that contains helpful information about the live editing of this component
-
+    comment: >-
+      Hide/Show the note that contains helpful information about the live
+      editing of this component
   skipnav_text:
-    comment: A hidden link at the top of the page that, when activated, jumps the user to the beginning of the main content area.
+    comment: >-
+      A hidden link at the top of the page that, when activated, jumps the user
+      to the beginning of the main content area.
 _select_data: {}
 _structures:
   content_blocks:
     style: modal
 _editables: {}
-
 data_config:
   fonts: true
-
 timezone: Etc/UTC

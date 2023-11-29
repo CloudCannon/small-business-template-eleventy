@@ -1,8 +1,5 @@
 {% assign_local c = "c-price-list" %}
-<section {% if content.id %}id="{{ content.id }}"{% endif %} class="{{ c }} {{ c }}--content-align-{{ styles.content_alignment }} component 
-            {% if styles.background_variant == 'secondary' %} 
-                component--secondary
-            {% endif %}">
+<section {% if content.id %}id="{{ content.id }}"{% endif %} class="{{ c }} {{ c }}--content-align-{{ styles.content_alignment }} component component--{{ styles.color_group }}">
 
     {% if content.heading or content.description %}
         <div class="{{ c }}__heading">
@@ -25,6 +22,9 @@
             </ul>
         {% endfor %}
     </div>
-
-    {% comment %} TODO: add button(s) subcomponent {% endcomment %}
+    {% if content.button %}
+        <div class="{{ c }}__button">
+            {% bookshop "generic/button" bind:content.button %}
+        </div>
+    {% endif %}
 </section>

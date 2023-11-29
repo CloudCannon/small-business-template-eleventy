@@ -18,7 +18,7 @@ blueprint:
   styles:
     image_padding: true
     image_alignment: Left
-    background_variant: primary
+    color_group: "" 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
