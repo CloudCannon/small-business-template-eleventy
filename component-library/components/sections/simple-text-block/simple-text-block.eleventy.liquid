@@ -1,7 +1,7 @@
 {%  assign_local c = 'c-simple-text-block' %}
 
 
-<section class='{{c}} component component--{{ styles.color_group }}'>
+<section {% if content.id %}id="{{ content.id }}"{% endif %} class='{{c}} component component--{{ styles.color_group }}'>
 
 {% if content.heading or content.text %}
     <div class='{{c}}__content'>

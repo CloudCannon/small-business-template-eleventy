@@ -1,6 +1,6 @@
 {% assign_local c = "c-left-right-block--featured-map" %}
 
-<section class='{{ c }} component {{ c }}
+<section {% if content.id %}id="{{ content.id }}"{% endif %} class='{{ c }} component {{ c }}
     {% if styles.map_alignment == "Left" %}
         {{ c }}--map-left
     {% endif %} component--{{ styles.color_group }}'>

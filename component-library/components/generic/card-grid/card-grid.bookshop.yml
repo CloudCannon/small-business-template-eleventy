@@ -9,6 +9,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
+    id:
     heading: bookshop:generic/heading
     description:
     grid_items: [bookshop:generic/card]

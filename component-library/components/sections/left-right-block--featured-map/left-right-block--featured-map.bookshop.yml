@@ -10,6 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
+    id:
     display_social_icons: true
     show_note: true
     heading: A contact block
