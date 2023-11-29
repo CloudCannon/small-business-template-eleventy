@@ -54,12 +54,6 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  image_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right 
   icons:
     type: array
     comment: Recommended to have no more than three icons here

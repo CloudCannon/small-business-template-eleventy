@@ -32,9 +32,3 @@ preview:
 _inputs:
   image_padding:
     type: switch
-  image_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right  
