@@ -2,7 +2,7 @@
 spec:
   structures:
     - content_blocks
-  label: "Left right block - Featured map"
+  label: "Left/Right - Featured map"
   description: Display your contact details and a map
   icon: contact_phone
   tags: ['contact', 'content-block', 'left-right']
@@ -18,7 +18,8 @@ blueprint:
     contact_details:
       - text: 'Email address: mybusiness@business.com'
         hero_icon_name: envelope
-    button: bookshop:generic/button!    
+    map: bookshop:simple/google-map-embed
+    buttons: [bookshop:generic/button]    
   styles:
     map_alignment: Left
     color_group: "" 
@@ -28,12 +29,14 @@ blueprint:
 preview:
   content:
     display_social_icons: true
+    show_note: false
     heading: A contact block
     content: Content
     contact_details:
       - text: 'Email address: mybusiness@business.com'
         hero_icon_name: envelope
-    button: bookshop:generic/button    
+    map: bookshop:simple/google-map-embed
+    buttons: [bookshop:generic/button]
   styles:
     map_alignment: Left
     color_group: "" 
@@ -82,5 +85,5 @@ _inputs:
         - Left
         - Right  
   description:
-    type: textarea  
+    type: markdown  
     
