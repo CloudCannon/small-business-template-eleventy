@@ -14,7 +14,7 @@ blueprint:
     heading: bookshop:generic/heading!
     description:
     grid_items:
-      - hero_icon_name:
+      - icon:
         heading: bookshop:generic/heading!
         text:
         button: bookshop:generic/button!
@@ -28,13 +28,17 @@ preview:
     heading: bookshop:generic/heading
     description: Card Grid Description
     grid_items:
-      - hero_icon_name: adjustments-horizontal
+      - icon:
+          hero_icon_name: academic-cap
+          icon_type: solid
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-      - hero_icon_name: adjustments-horizontal
+      - icon:
+          hero_icon_name: adjustments-horizontal
+          icon_type: outline
         eyebrow_headline: Eyebrow Heading
         primary_heading: Primary Heading
         text: >-
@@ -42,7 +46,9 @@ preview:
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
-      - hero_icon_name: adjustments-horizontal
+      - icon:
+          icon_path: /assets/images/icons/social/youtube.svg
+          icon_type: solid
         text: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -57,7 +63,43 @@ preview:
         arrow: right
   styles:
     background_variant: secondary
+
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   text:
     type: textarea
+  icon:
+    type: object
+    options:
+      structures: _structures.icon_types
+_structures:
+  icon_types:
+    values:
+      - label: Hero Icon
+        value:
+          hero_icon_name: academic-cap
+          icon_type:
+        _inputs:
+          icon_type:
+            comment: Choose outline if you want lines to be filled with color and solid if you want the whole image filled with color
+            type: choice
+            options:
+              allow_empty: false
+              values:
+                - solid
+                - outline
+      - label: Custom Icon
+        value:
+          icon_path:
+          icon_type:
+        _inputs:
+          icon_type:
+            comment: Choose outline if you want lines to be filled with color and solid if you want the whole image filled with color
+            type: choice
+            options:
+              allow_empty: false
+              values:
+                - solid
+                - outline
+          icon_path:
+            type: image

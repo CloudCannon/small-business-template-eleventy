@@ -11,10 +11,10 @@ spec:
 blueprint:
   content:
     id:
-    heading: bookshop:generic/heading
+    heading: bookshop:generic/heading!
     icons:
-    buttons: [bookshop:generic/button]
-    image: bookshop:generic/image
+    buttons: [bookshop:generic/button!]
+    image: bookshop:generic/image!
   styles:
     image_alignment: Left
     background_variant: primary
@@ -30,10 +30,13 @@ preview:
     icons:
       - hero_icon_name: face-smile
         icon_text: 100% Happy customer reviews
-      - hero_icon_name: heart
+        icon_type: outline
+      - icon_path: /assets/images/icons/social/youtube.svg
         icon_text: Great customer service
+        icon_type: outline
       - hero_icon_name: star
         icon_text: Outstanding product reviews
+        icon_type: solid
     buttons:
       - _bookshop_name: generic/button
         url: "#"
@@ -70,11 +73,33 @@ _inputs:
 _structures:
   icon_types:
     values:
-      - label: Standard Icon
+      - label: Hero Icon
         value:
-          hero_icon_name:
+          hero_icon_name: academic-cap
+          icon_type:
           icon_text:
+        _inputs:
+          icon_type:
+            comment: Choose outline if you want lines to be filled with color and solid if you want the whole image filled with color
+            type: choice
+            options:
+              allow_empty: false
+              values:
+                - solid
+                - outline
       - label: Custom Icon
         value:
           icon_path:
+          icon_type:
           icon_text:
+        _inputs:
+          icon_type:
+            comment: Choose outline if you want lines to be filled with color and solid if you want the whole image filled with color
+            type: choice
+            options:
+              allow_empty: false
+              values:
+                - solid
+                - outline
+          icon_path:
+            type: image
