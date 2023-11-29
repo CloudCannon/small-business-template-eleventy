@@ -134,11 +134,9 @@ _inputs:
         - &ref_0
           name: Primary
           id: primary0
-          icon: star
         - &ref_1
           name: Secondary
           id: secondary1
-          icon: star_outline
   group_name:
     hidden: true
     comment: This input should be hidden from editors and passed through from the radio-group component so that these inputs function correctly
