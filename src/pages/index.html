@@ -24,13 +24,42 @@ hero:
       onclick:
     image:
       _bookshop_name: generic/image
-      image_path: /assets/images/gallery/Gallery--image-5.png
+      image_path: /uploads/hero-background-feature.png
       image_alt: 'person sitting on a couch with their laptop open mid laughter '
       image_sizes:
   styles:
     image_alignment: full-background
     color_group: primary0
 content_blocks:
+  - _bookshop_name: sections/left-right-block--simple
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Second component
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Hello
+        primary_heading_hierarchy: h2
+      text:
+        _bookshop_name: generic/text-block
+        text: Where is the padding button
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Book Now
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+        _bookshop_name: generic/image
+        image_path: /assets/images/Hero--background-feature-2.png
+        image_alt: Person holding glow lights in the dark with eyes closed
+        image_sizes:
+    styles:
+      image_padding: false
+      image_alignment: Right
+      color_group: primary0
   - _bookshop_name: sections/price-list
     content:
       id:
