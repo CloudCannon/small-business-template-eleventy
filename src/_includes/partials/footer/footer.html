@@ -3,7 +3,7 @@
 <footer class="{{ c }}">
     <a class="{{c}}__logo-link" href="/" aria-label="Home" {% if page.url=="/" %}aria-current="page" {% endif %}>
         {% if footer.logo_image != '' %}
-            <img class="{{c}}__logo-link__image" src="{{footer.logo_image}}" alt="Site logo" />
+            {% bookshop "generic/image" image_path:footer.logo_image image_alt:"Site logo"   %}
         {% else %}
             <p class="{{c}}__logo-link__text">{{ footer.logo_text }}</p>
         {% endif %}
