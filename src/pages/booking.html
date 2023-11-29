@@ -98,6 +98,71 @@ content_blocks:
           variant: primary
           arrow: right
     styles:
-      color_group: primary0
+      color_group: secondary1
       content_alignment: center
+  - _bookshop_name: sections/simple-text-block
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: EYEBROW HEADING
+        eyebrow_headline_hierarchy: h3
+        primary_heading: A simple text block for your FAQs
+        primary_heading_hierarchy: h2
+      text:
+        _bookshop_name: generic/text-block
+        text: >-
+          #### How do I use the service?
+
+
+          Customers want to know all the information before making a final
+          decision. Make sure you provide it to them.
+
+
+          #### How do I pay for the service?
+
+
+          Let your customers know if they can pay by EFTPOS or credit card.
+
+
+          #### How awesome are you?
+
+
+          We're a pretty awesome business. <br>
+    styles:
+      color_group: primary0
+  - _bookshop_name: simple/grid--icon-cards
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: BITE SIZE INFORMATION
+        eyebrow_headline_hierarchy: h3
+        primary_heading: An image card grid
+        primary_heading_hierarchy: h2
+      description: >-
+        Sometimes you only need a small text and image section and a cards grid
+        is the best option to showcase your content.
+      grid_items:
+        - icon:
+            hero_icon_name: puzzle-piece
+            icon_type: solid
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+      buttons: []
+    styles:
+      color_group: ''
 ---
