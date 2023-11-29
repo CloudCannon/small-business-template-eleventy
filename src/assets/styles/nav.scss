@@ -2,11 +2,12 @@
   $c: &;
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
-  grid-template-rows: var(--nav-height) 1fr auto;
+  grid-template-rows: var(--nav-height) 1fr 140px;
   height: auto;
   background: var(--alt-background-color);
   position: absolute;
   width: 100vw;
+  height: 60px;
   z-index: 50;
   --nav-padding: 8px;
   &__placeholder {
@@ -25,7 +26,7 @@
     }
   }
   &__logo-link {
-    grid-column: 2 / -4;
+    grid-column: 2 / -3;
     text-decoration: none;
     color: var(--alt-text-color);
     font-family: var(--logo-font), Lato, sans-serif;
@@ -48,20 +49,26 @@
     }
   }
 
+  &__social-icons,
+  &__navlist {
+    visibility: hidden;
+    opacity: 0;
+  }
+
   &__social-icons {
     grid-column: 2 / 14;
     justify-self: center;
-    display: none;
+    display: block;
   }
 
   &__navlist {
+    display: flex;
     list-style-type: none;
     padding: 0;
     grid-row: 2 / 3;
     grid-column: 2 / -2;
     justify-self: center;
     align-self: center;
-    display: none;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
@@ -72,7 +79,6 @@
         color: var(--alt-text-color);
         white-space: nowrap;
         padding: 0.5rem;
-        animation: fadeIn 1s;
 
         &:hover,
         &:active {
@@ -90,8 +96,7 @@
   }
 
   &__burger-menu {
-    grid-column: -4 / -2;
-    grid-row: 1 / 2;
+    grid-column: 13 / 14;
     background-color: unset;
     padding: 1.5rem 0 1.5rem 1.5rem;
     display: flex;
@@ -151,6 +156,7 @@
       height: 100svh;
     }
   }
+
   @keyframes closeMobileMenu {
     from {
       height: 100svh;
@@ -160,41 +166,26 @@
     }
   }
 
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
   &--close {
-    animation: closeMobileMenu 1s;
+    animation-name: closeMobileMenu;
+    animation-duration: 0.5s;
+    #{$c}__navlist,
     #{$c}__social-icons {
-      animation: fadeIn 0.5s;
-    }
-    #{$c}__navlist {
-      &__item {
-        &__link {
-          animation: fadeOut 0.5s;
-        }
-      }
+      transition: visibility 0.2s, opacity 0.2s ease-in;
     }
   }
-  // Mobile menu open state
   &--open {
-    grid-template-rows: var(--nav-height) 1fr 140px;
     height: 100svh;
-    animation: openMobileMenu 0.5s;
-    animation-fill-mode: forwards;
+    animation-name: openMobileMenu;
+    animation-duration: 0.5s;
+
+    #{$c}__navlist,
+    #{$c}__social-icons {
+      transition: visibility 1s, opacity 1s ease-out;
+      visibility: visible;
+      opacity: 1;
+    }
+
     #{$c}__burger-menu {
       &__burger {
         &::before {
@@ -215,16 +206,10 @@
 
     #{$c}__social-icons {
       display: block;
-      animation: fadeIn 1.5s;
     }
 
     #{$c}__navlist {
       display: flex;
-      &__item {
-        &__link {
-          animation: fadeIn 1.5s;
-        }
-      }
     }
   }
 
@@ -259,6 +244,11 @@
 
     &__burger-menu {
       display: none;
+    }
+    &__social-icons,
+    &__navlist {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }
