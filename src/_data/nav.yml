@@ -1,4 +1,4 @@
-logo_image: ""
+logo_image: ''
 logo_text: Primera Mesa
 navigation_items:
   - label: About Us
@@ -8,10 +8,10 @@ navigation_items:
     link_url: '#services'
     open_in_new_tab: false
   - label: Book Now
-    link_url: /bookings
+    link_url: /booking
     open_in_new_tab: false
   - label: Contact Us
     link_url: /contact
     open_in_new_tab: false
-skipnav_text: "Skip to contents"
+skipnav_text: Skip to contents
 nav_color_group: another_one4
