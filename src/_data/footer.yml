@@ -31,6 +31,21 @@ navigation_items:
   - label: Contact Us
     link_url: /contact
     open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
 footer_content: >-
   ©Enter your copyright and terms and conditions. ©Enter your copyright and
   terms and conditions. ©Enter your copyright and terms and conditions. ©Enter
