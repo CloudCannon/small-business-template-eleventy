@@ -15,7 +15,7 @@ blueprint:
     description: Description text to compliment the block
     gallery: bookshop:simple/gallery!
   styles:
-    background_variant: primary
+    color_group: "" 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -30,7 +30,7 @@ preview:
       below, as many as you like, and let people contact you or book now.
     gallery: bookshop:simple/gallery
   styles:
-    background_variant: primary
+    color_group: "" 
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

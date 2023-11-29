@@ -20,7 +20,7 @@ blueprint:
             detail: $$
     button: bookshop:generic/button
   styles:
-    background_variant: primary
+    color_group: "" 
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -58,7 +58,7 @@ preview:
       variant: primary
       arrow: right
   styles:
-    background_variant: primary
+    color_group: "" 
     content_alignment: center
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint

@@ -22,7 +22,7 @@ blueprint:
     buttons: [bookshop:generic/button]    
   styles:
     map_alignment: Left
-    background_variant: secondary
+    color_group: "" 
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -39,7 +39,7 @@ preview:
     buttons: [bookshop:generic/button]
   styles:
     map_alignment: Left
-    background_variant: secondary
+    color_group: "" 
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
