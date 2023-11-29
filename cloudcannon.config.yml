@@ -32,6 +32,15 @@ _inputs:
         - right
         - down
         - left
+  color:
+    comment: Choose a custom icon color (if the icon is an svg) and rounded border color (if one is included)
+  icon_size:
+    type: choice
+    options:
+      allow_empty: false
+      values:
+        - small
+        - large
   variant:
     type: select
     options:
