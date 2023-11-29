@@ -4,7 +4,8 @@
   grid-template-columns: var(--twelve-column-grid);
   grid-template-rows: var(--nav-height) 1fr 140px;
   height: auto;
-  background: var(--alt-background-color);
+  background: var(--main-background-color);
+  color: var(--main-text-color);
   position: absolute;
   width: 100vw;
   height: 60px;
@@ -28,13 +29,12 @@
   &__logo-link {
     grid-column: 2 / -3;
     text-decoration: none;
-    color: var(--alt-text-color);
     font-family: var(--logo-font), Lato, sans-serif;
     font-size: 2rem;
     line-height: 3.75rem;
     white-space: nowrap;
-    padding-top: var(--nav-padding);
-    padding-bottom: var(--nav-padding);
+    color:var(--main-text-color);    
+  
     width: min-content;
     img,
     picture,
@@ -76,20 +76,20 @@
     &__item {
       &__link {
         text-decoration: none;
-        color: var(--alt-text-color);
+        color: var(--main-text-color);
         white-space: nowrap;
         padding: 0.5rem;
 
         &:hover,
         &:active {
-          border-bottom: 1px solid var(--alt-text-color);
-          color: var(--alt-text-color);
+          border-bottom: 1px solid var(--main-text-color);
+          color: var(--main-text-color);
         }
       }
       &--active {
         #{$c}__navlist__item__link {
-          border-bottom: 1px solid var(--alt-text-color);
-          color: var(--alt-text-color);
+          border-bottom: 1px solid var(--main-text-color);
+          color: var(--main-text-color);
         }
       }
     }
@@ -120,7 +120,7 @@
       height: 3px;
       width: 30px;
       border-radius: 15px;
-      background-color: var(--alt-text-color);
+      background-color: var(--main-text-color);
 
       &::before {
         transition: all 0.18s;
@@ -131,7 +131,7 @@
         height: 3px;
         width: 30px;
         border-radius: 15px;
-        background-color: var(--alt-text-color);
+        background-color: var(--main-text-color);
       }
 
       &::after {
@@ -143,7 +143,7 @@
         height: 3px;
         width: 30px;
         border-radius: 15px;
-        background-color: var(--alt-text-color);
+        background-color: var(--main-text-color);
       }
     }
   }
@@ -190,13 +190,13 @@
       &__burger {
         &::before {
           transform: rotate(45deg);
-          background-color: var(--alt-text-color);
+          background-color: var(--main-text-color);
           top: 0;
         }
 
         &::after {
           transform: rotate(-45deg);
-          background-color: var(--alt-text-color);
+          background-color: var(--main-text-color);
           top: 0;
         }
 

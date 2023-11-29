@@ -1,5 +1,4 @@
 .c-button {
-  color: var(--main-text-color);
   all: unset;
   padding: 1rem 0.75rem;
   color: inherit;
@@ -20,14 +19,14 @@
   }
 
   &--primary {
-    border: 2px solid var(--main-text-color);
+    border: 2px solid;
     &:hover {
-      color: var(--alt-text-color);
-      border: 2px solid var(--alt-text-color);
-      background: var(--alt-background-color);
+      color: var(--main-background-color);
+      border: 2px solid var(--main-background-color);
+      background: var(--main-text-color);
       
       .c-hero-icon__image, .c-hero-icon__svg {
-        --c-hero-icon-color: var(--alt-text-color);
+        --c-hero-icon-color: var(--main-background-color);
       }
     }
   }
