@@ -32,6 +32,7 @@
     {% assign imagery = imagery | ymlify %}
     {% capture card %}
         - content:
+            id: {{ content.id }}
             imagery: {{ imagery | json }}
             heading: 
                 eyebrow_headline: {{item.heading.eyebrow_headline}}
