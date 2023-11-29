@@ -5,7 +5,7 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
-  _bookshop_name: sections/hero
+  _bookshop_name: sections/hero--simple
   content:
     heading:
       _bookshop_name: generic/heading
@@ -13,18 +13,412 @@ hero:
       eyebrow_headline_hierarchy: h3
       primary_heading: Primary Heading
       primary_heading_hierarchy: h2
-    description: Description text to compliment the block
-    button:
-      _bookshop_name: generic/button
-      url: '#'
-      open_in_new_tab: false
-      text: Button text
-      variant: primary
-      arrow: right
-      onclick:
-    image:
   styles:
-    image_alignment: full-background
-    color_group: secondary1
-content_blocks: []
+    content_alignment: left
+    color_group: primary0
+content_blocks:
+  - _bookshop_name: sections/left-right-block--featured-map
+    content:
+      id:
+      display_social_icons: true
+      show_note: true
+      heading: A contact block
+      description: >-
+        This is a simple yet powerful block to display not only your location by
+        using Google Maps, but also any other contact details you wish to share
+        with your customers.
+      contact_details:
+        - _type: Email
+          text: 'Email address: mybusiness@business.com'
+          hero_icon_name: envelope
+      map:
+      buttons: []
+    styles:
+      map_alignment: Left
+      color_group: primary0
+  - _bookshop_name: sections/left-right-block--simple
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      text:
+        _bookshop_name: generic/text-block
+        text:
+      buttons: []
+      image:
+    styles:
+      image_padding: true
+      image_alignment: Left
+      color_group: primary0
+  - _bookshop_name: sections/left-right-block--testimonial
+    content:
+      id:
+      headline:
+      quote:
+      author_name:
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Button text
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+    styles:
+      image_alignment: Left
+      color_group: primary0
+  - _bookshop_name: sections/grid--gallery-images
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      gallery:
+        _bookshop_name: simple/gallery
+        show_note: true
+        images:
+          - _bookshop_name: generic/image
+            image_path:
+            image_alt:
+            image_sizes:
+        button:
+          text: Load More
+          variant: primary
+    styles:
+      color_group: primary0
+  - _bookshop_name: sections/left-right-block--featured-icons
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      icons:
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Button text
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+        _bookshop_name: generic/image
+        image_path:
+        image_alt:
+        image_sizes:
+    styles:
+      image_alignment: Left
+      color_group: ''
+  - _bookshop_name: sections/price-list
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      lists:
+        - list_heading: List heading
+          list_items:
+            - label: List item
+              detail: $$
+        - list_heading: List heading
+          list_items: []
+      button:
+    styles:
+      color_group: ''
+      content_alignment: center
+  - _bookshop_name: sections/simple-text-block
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      text:
+        _bookshop_name: generic/text-block
+        text: yutuytuy
+    styles:
+      color_group: primary0
+  - _bookshop_name: simple/grid--icon-cards
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description:
+      grid_items:
+        - icon:
+            hero_icon_name: academic-cap
+            icon_type: outline
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text: >-
+            ertetetetetetber ert erterte ett ert erterterte rtertert erte rte
+            rtert ertert ert er
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - icon:
+            hero_icon_name: academic-cap
+            icon_type: outline
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text: >-
+            ertetetetetetber ert erterte ett ert erterterte rtertert erte rte
+            rtert ertert ert er rtyd gd. hdy drydrydydtyfty ftydtrtrty r
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - icon:
+            hero_icon_name: academic-cap
+            icon_type: outline
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text: hgg
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - icon:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+      buttons: []
+    styles:
+      color_group: ''
+  - _bookshop_name: simple/grid--image-cards
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description:
+      grid_items:
+        - image:
+            _bookshop_name: generic/image
+            image_path:
+            image_alt:
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text: >-
+            sdfgkj dgidj igjdi jgoidjg odijg odijg djg odijgoi djg oidjfg oidjg
+            oidjg oidjgio jdofigj dgjdoi jfg odjg oidjf oigdfg
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - image:
+            _bookshop_name: generic/image
+            image_path:
+            image_alt:
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - image:
+            _bookshop_name: generic/image
+            image_path:
+            image_alt:
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+      buttons: []
+    styles:
+      color_group: primary0
+  - _bookshop_name: sections/embed
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      embed:
+        _bookshop_name: generic/custom-embed
+        embed:
+        ratio: default
+      button:
+      show_note: true
+    styles:
+      color_group: primary0
+      content_alignment: left
+  - _bookshop_name: sections/form
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      form:
+        _bookshop_name: simple/form-builder
+        id: 186c2b45-5e10-461c-b6cb-0c4e329cb437
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        inputs:
+          - _bookshop_name: generic/form/checkbox-group
+            label: What do we have here
+            id: 4ee4dca9-319a-46cb-8c24-e17d228f293c
+            checkboxes:
+              - label: What's this?
+                id: 882a6b8a-c147-4381-b97b-cd24b64c1cd8
+                checked: false
+                required: false
+              - label: another
+                id: d68e30cd-75fb-4e71-8ba9-6728ed0a1c5c
+                checked: false
+                required: true
+              - label: werwrwerwerwerwerwerwerwerwerwerwrwr
+                id: 4e12c90e-3ba0-4f12-acca-50c1d33589ed
+                checked: false
+                required: false
+              - label: rwerwrwerwerwerw
+                id: 0cb1c312-d8d3-438d-aa3c-509ac29d37e9
+                checked: false
+                required: true
+              - label: this
+                id: af9af933-f73e-49ae-b243-f8c111b4068a
+                checked: false
+                required: false
+              - label: ervwerwefrw5bhw4fw35g6
+                id: cf5f3bd8-9762-4fb2-b980-0587deabee38
+                checked: false
+                required: false
+            arrangement: stacked
+            helper_text: Do not select more than 2
+          - _bookshop_name: generic/form/country-select-input
+            label: werwrwrw
+            id: e04197c1-a2cf-4a25-bd56-e89e71389e5f
+            helper_text: etwetwetwte
+          - _bookshop_name: generic/form/phone-input
+            label: sdgsdgsdgs
+            placeholder: efsdfsdfsdfs
+            id: 81bbda75-2ad2-4bec-9ec4-423ce081e484
+            required: true
+            helper_text: sdgsdgsdgsdg
+          - _bookshop_name: generic/form/select-input
+            label: ''
+            id: 758100d3-0bdc-4151-ab7b-4c8373975e87
+            options:
+              - name: Adon
+              - name: Adon
+              - name:
+            helper_text:
+          - _bookshop_name: generic/form/radio-button-group
+            label: ''
+            id: e0879370-28d7-4f29-a887-c6fa09023df8
+            required: false
+            radio_buttons:
+              - label: ssgdsgsdgrgdfg
+                checked: false
+            arrangement: inline
+            helper_text:
+        submit_button:
+          text: Button text
+          variant: primary
+          arrow: right
+    styles:
+      color_group: primary0
+      content_alignment: center
 ---
