@@ -22,17 +22,6 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  default_color:
-    comment: Use the original colors of the icon without overriding them (does not apply to the border if one is included)
-    type: checkbox
   theme_color:
     comment: Use your theme color for the icon color and the rounded border color (if one is included)
     type: checkbox
-  icon_type:
-    type: choice
-    options:
-      allow_empty: false
-      values:
-        - solid
-        - outline
-  
