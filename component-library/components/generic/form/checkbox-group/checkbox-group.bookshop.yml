@@ -44,7 +44,7 @@ _inputs:
     comment: Helpful text for the user such as 'Do not select more than 2'
   arrangement:
     type: select
-    comment: The layout of the icon and text together
+    comment: The layout of multiple checkboxes and how they align to each other
     options:
       values:
         - inline
