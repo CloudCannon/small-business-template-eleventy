@@ -8,7 +8,8 @@
   color: var(--main-text-color);
   position: absolute;
   width: 100vw;
-  height: 60px;
+  --_mobile-nav-height: 60px;
+  height: var(--_mobile-nav-height);
   z-index: 50;
   --nav-padding: 8px;
   &__placeholder {
@@ -33,8 +34,8 @@
     font-size: 2rem;
     line-height: 3.75rem;
     white-space: nowrap;
-    color:var(--main-text-color);    
-  
+    color: var(--main-text-color);
+
     width: min-content;
     img,
     picture,
@@ -150,7 +151,7 @@
 
   @keyframes openMobileMenu {
     from {
-      height: 6svh;
+      height: var(--_mobile-nav-height);
     }
     to {
       height: 100svh;
@@ -162,7 +163,7 @@
       height: 100svh;
     }
     to {
-      height: 6svh;
+      height: var(--_mobile-nav-height);
     }
   }
 
