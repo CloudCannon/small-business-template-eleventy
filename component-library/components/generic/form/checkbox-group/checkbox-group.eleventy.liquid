@@ -1,7 +1,9 @@
 {% assign_local c = "c-checkbox-group" %}
 <div class="{{ c }}">
     <fieldset class="{{ c }}__group" onClick="validateInputGroup(this)" {% if helper_text %}aria-describedby="{{ id }}--helper"{% endif %}>
-        <legend class="{{ c }}__group__label">{{ label }}</legend>
+        {% if label %}
+            <legend class="{{ c }}__group__label">{{ label }}</legend>
+        {% endif %}
         <div class="{{ c }}__group__inputs {{ c }}__group__inputs--arrangement-{{ arrangement }}">
             {% assign_local group_name = label | append: "-" | append: id %}
             {% for item in checkboxes %}
