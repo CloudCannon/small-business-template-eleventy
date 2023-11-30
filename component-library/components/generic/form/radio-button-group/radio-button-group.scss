@@ -17,9 +17,10 @@
         &__inputs {
             &--arrangement-inline {
                 display: flex;
-                gap: 10px;
+                gap: 1.5rem;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: flex-start;
+                align-items: flex-start;
             }
         }
     }
