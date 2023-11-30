@@ -24,12 +24,16 @@ preview:
   radio_buttons:
     - label: Radio button 1
       checked: false
+      id: 0bb9d85c-017e-483c-bcb6-3cf842ba0468
     - label: Radio button 2
       checked: false
+      id: bd126f91-44da-4de0-a371-fd08a711efb4
     - label: Radio button 3
       checked: false
+      id: fa24b997-f0c0-46eb-b7d0-02b4b5aa2e1e
     - label: Radio button 4
       checked: false
+      id: ha24b997-f0c0-46eb-b7d0-02b4b5aa2e1r
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
