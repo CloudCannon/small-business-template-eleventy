@@ -1,8 +1,8 @@
 color_groups:
   - name: Primary
-    background_color: '#3B3B3D'
-    foreground_color: '#F9F9FB'
-    interaction_color: '#2566f2'
+    background_color: '#e1d8db'
+    foreground_color: '#1c1115'
+    interaction_color: '#daa7b8'
   - name: Secondary
     background_color: '#1B1B1D'
     foreground_color: '#D9D9DC'
