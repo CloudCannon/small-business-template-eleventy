@@ -4,8 +4,8 @@ color_groups:
     foreground_color: '#1c1115'
     interaction_color: '#daa7b8'
   - name: Secondary
-    background_color: '#f7f7f7'
-    foreground_color: '#1c1115'
+    background_color: '#1c1115'
+    foreground_color: '#e1d8db'
     interation_color: '#daa7b8'
 heading_font: Arapey
 content_font: Work Sans
