@@ -4,9 +4,9 @@ color_groups:
     foreground_color: '#1c1115'
     interaction_color: '#daa7b8'
   - name: Secondary
-    background_color: '#1B1B1D'
-    foreground_color: '#D9D9DC'
-    interation_color: '#2566f2'
+    background_color: '#f7f7f7'
+    foreground_color: '#1c1115'
+    interation_color: '#daa7b8'
 heading_font: Arapey
 content_font: Work Sans
 logo_font: Birthstone Bounce
