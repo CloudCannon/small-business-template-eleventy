@@ -5,57 +5,7 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
-  _bookshop_name: sections/hero--simple
-  content:
-    heading:
-      _bookshop_name: generic/heading
-      eyebrow_headline: Eyebrow Heading
-      eyebrow_headline_hierarchy: h3
-      primary_heading: Primary Heading
-      primary_heading_hierarchy: h2
-  styles:
-    content_alignment: left
-    color_group: primary0
 content_blocks:
-  - _bookshop_name: sections/left-right-block--testimonial
-    content:
-      id:
-      headline:
-      quote:
-      author_name:
-      buttons:
-        - _bookshop_name: generic/button
-          url: '#'
-          open_in_new_tab: false
-          text: Button text
-          variant: primary
-          arrow: right
-          onclick:
-      image:
-    styles:
-      image_alignment: Left
-      color_group: primary0
-  - _bookshop_name: sections/price-list
-    content:
-      id:
-      heading:
-        _bookshop_name: generic/heading
-        eyebrow_headline:
-        eyebrow_headline_hierarchy: h3
-        primary_heading:
-        primary_heading_hierarchy: h2
-      description:
-      lists:
-        - list_heading:
-          list_items:
-            - label:
-              detail:
-        - list_heading: List heading
-          list_items: []
-      button:
-    styles:
-      color_group: ''
-      content_alignment: center
   - _bookshop_name: sections/embed
     content:
       id:
@@ -164,6 +114,78 @@ content_blocks:
             id: 018b00cd-5c17-48f1-99d3-eb6c86e1cb8e
             rows: 10
             required: true
+            helper_text:
+        submit_button:
+          text: Button text
+          variant: primary
+          arrow: right
+    styles:
+      color_group: primary0
+      content_alignment: left
+  - _bookshop_name: sections/grid--gallery-images
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      gallery:
+        _bookshop_name: simple/gallery
+        show_note: true
+        images: []
+        button:
+          text: Load More
+          variant: primary
+    styles:
+      color_group: primary0
+  - _bookshop_name: sections/left-right-block--simple
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      text:
+        _bookshop_name: generic/text-block
+        text:
+      buttons: []
+      image:
+        _bookshop_name: generic/image
+        image_path:
+        image_alt:
+        image_sizes:
+    styles:
+      image_padding: true
+      image_alignment: Left
+      color_group: primary0
+  - _bookshop_name: sections/form
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      form:
+        _bookshop_name: simple/form-builder
+        id: 23de81c2-cd03-4aee-a5c8-0f7edeefd63d
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        inputs:
+          - _bookshop_name: generic/form/phone-input
+            label: ''
+            placeholder: ''
+            id: 9b496392-f603-4661-a2bd-628f22e2fc31
+            required: false
             helper_text:
         submit_button:
           text: Button text
