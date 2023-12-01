@@ -5,30 +5,70 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
-  _bookshop_name: sections/hero
+  _bookshop_name: sections/hero--simple
   content:
     heading:
       _bookshop_name: generic/heading
-      eyebrow_headline: Eyebrow Heading
+      eyebrow_headline: Welcome to
       eyebrow_headline_hierarchy: h3
-      primary_heading: Primary Heading
+      primary_heading: Terrace Acres
       primary_heading_hierarchy: h2
-    description: Description text to compliment the block
-    button:
-      _bookshop_name: generic/button
-      url: '#'
-      open_in_new_tab: false
-      text: Button text
-      variant: primary
-      arrow: right
-      onclick:
-    image:
-      _bookshop_name: generic/image
-      image_path:
-      image_alt:
-      image_sizes:
   styles:
-    image_alignment: left
+    content_alignment: center
     color_group: primary0
-content_blocks: []
+content_blocks:
+  - _bookshop_name: simple/grid--image-cards
+    content:
+      id:
+      heading:
+      description:
+      grid_items:
+        - image:
+            _bookshop_name: generic/image
+            image_path: /uploads/white-flower-bouqet.jpeg
+            image_alt: White Flower Bouquet
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline:
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Flowers
+            primary_heading_hierarchy: h2
+          text: >-
+            Seasonal flowers, grown locally with love. Sprayfree, healthier for
+            you and your home.
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Buy now
+            variant: primary
+            arrow: right
+            onclick:
+        - image:
+            _bookshop_name: generic/image
+            image_path: /uploads/berries.webp
+            image_alt: Close up image of Raspberries
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline:
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Berries
+            primary_heading_hierarchy: h2
+          text: >+
+            Our berries are all grown in the most sustainable way possible.
+            Always spray free, always tasty.
+
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: 'Buy now '
+            variant: primary
+            arrow: right
+            onclick:
+      buttons: []
+    styles:
+      color_group: primary0
 ---
