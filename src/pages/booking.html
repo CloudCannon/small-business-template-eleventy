@@ -9,5 +9,79 @@ permalink: /booking/
 draft: false
 eleventyExcludeFromCollections: false
 hero:
+  _bookshop_name: sections/hero
+  content:
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: Tag or label headline
+      eyebrow_headline_hierarchy: h3
+      primary_heading: A hero for a booking form page
+      primary_heading_hierarchy: h2
+    description: >-
+      We wanted you to have a couple of options to use above the fold, and give
+      you the customisation you need to display your product/service in the best
+      way possible.
+    button:
+      _bookshop_name: generic/button
+      url: '#'
+      open_in_new_tab: false
+      text: Book Now
+      variant: primary
+      arrow: right
+      onclick:
+    image:
+      _bookshop_name: generic/image
+      image_path: /assets/images/Hero--background-feature-3.png
+      image_alt: Happy person mid laugh
+      image_sizes:
+  styles:
+    image_alignment: right
+    color_group: primary0
 content_blocks:
+  - _bookshop_name: sections/form
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Book or call us
+        primary_heading_hierarchy: h2
+      description: >-
+        Whether your business is a restaurant, a barber shop, a gym, or a café,
+        our small business template has you covered. Add your services to the
+        list below, as many as you like, and let people contact you or book now.
+      form:
+        _bookshop_name: simple/form-builder
+        id: 711bc4e7-9aa8-447f-b9bd-ceee999565b8
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject: Thanks for booking with us!
+        success_page: ''
+        inputs:
+          - _bookshop_name: generic/form/text-input
+            label: Full name
+            placeholder: John Smith
+            id: 25e6f678-51c6-4207-8372-b939bcedb512
+            required: false
+            helper_text:
+          - _bookshop_name: generic/form/email-input
+            label: Email address
+            id: 2a36ee88-d7ef-42ab-8eab-4ba95b32527f
+            required: false
+            placeholder: mybuisness@smallbuisness.com
+            helper_text:
+          - _bookshop_name: generic/form/phone-input
+            label: Phone number
+            placeholder: +64 21 859292
+            id: 687fd1b5-1b87-4eb5-9b34-5258c96a8463
+            required: false
+            helper_text:
+        submit_button:
+          text: Book Now
+          variant: primary
+          arrow: right
+    styles:
+      color_group: secondary1
+      content_alignment: center
 ---
