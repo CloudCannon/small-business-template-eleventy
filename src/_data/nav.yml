@@ -1,5 +1,5 @@
-logo_image: /uploads/terrace-acres-logo-1.png
-logo_text: Primera Mesa
+logo_image: ''
+logo_text: TERRACE ACRES
 navigation_items:
   - label: Shop
     link_url:
@@ -14,4 +14,4 @@ navigation_items:
     link_url: /contact
     open_in_new_tab: false
 skipnav_text: Skip to contents
-nav_color_group: primary0
+nav_color_group: secondary1
