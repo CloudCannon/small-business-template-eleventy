@@ -1,4 +1,5 @@
 .c-navigation {
+  position:absolute;
   $c: &;
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
@@ -230,7 +231,13 @@
     }
   }
 
+  &__placeholder{
+    height:60px;
+    display:block;
+  }
+
   @media screen and (min-width: 769px) {
+    position:static;
     &__contents{
       grid-template-columns:2fr 3fr;
       grid-template-rows: auto auto;
@@ -288,6 +295,10 @@
     &__navlist {
       transition:none;
       opacity: 1;
-    }    
+    }
+    
+    &__placeholder{
+      display:none;
+    }
   }
 }
