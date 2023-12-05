@@ -1,6 +1,8 @@
 {% assign_local c = "c-hero" %}
 <section class="{{ c }} {% if styles.image_alignment =='left' %}{{ c }}--left-right-variant {{ c }}--image-left{% elsif styles.image_alignment =='right' %}{{ c }}--left-right-variant {{ c }}--image-right{% endif %} component component--full-height component--{{ styles.color_group }}">
-    {% bookshop "generic/image" bind:content.image %}
+    {% if content.image %}
+        {% bookshop "generic/image" bind:content.image %}
+    {% endif %}
     <div class="{{ c }}__cover"></div>
     <div class="{{ c }}__content">
         {% capture heading %}
