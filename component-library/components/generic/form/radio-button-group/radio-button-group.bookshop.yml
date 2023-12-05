@@ -12,9 +12,7 @@ blueprint:
   label: ""
   id:
   required: false
-  radio_buttons: 
-    - label:
-      checked: false
+  radio_buttons: [bookshop:generic/form/radio-input]
   arrangement: inline
   helper_text:
 
