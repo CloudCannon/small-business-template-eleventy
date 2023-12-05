@@ -85,5 +85,5 @@ _inputs:
         - Left
         - Right  
   description:
-    type: markdown  
+    type: textarea  
     
