@@ -11,9 +11,9 @@ spec:
 blueprint:
   content:
     id:
-    headline:
-    quote: 
-    author_name:
+    headline: WHAT YOUR CUSTOMERS SAY
+    quote: Their customer service is second to none.
+    author_name: John Smith
     buttons: [bookshop:generic/button]
     image: bookshop:generic/image
   styles:
@@ -47,6 +47,10 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  headline:
+    label: Eyebrow Headline
+  quote:
+    type: textarea
   image_alignment:
     type: select
     options:
