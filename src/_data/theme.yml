@@ -1,12 +1,12 @@
 color_groups:
   - name: Primary
-    background_color: '#bc0606'
-    foreground_color: '#1111b1'
-    interaction_color: '#2566f2'
+    background_color: '#3b3b3d'
+    foreground_color: '#ffffff'
+    interaction_color: '#6e6e70'
   - name: Secondary
     background_color: '#1b1b1d'
-    foreground_color: '#d9d9dc'
-    interation_color: '#2566f2'
+    foreground_color: '#f9f9fb'
+    interation_color: '#6e6e70'
 heading_font: Lato
 content_font: Lato
 logo_font: Birthstone Bounce

@@ -70,17 +70,140 @@ content_blocks:
         arrow: right
         onclick:
     styles:
-      color_group: ''
+      color_group: secondary1
       content_alignment: center
   - _bookshop_name: sections/left-right-block--testimonial
     content:
       id:
-      headline:
-      quote:
-      author_name:
+      headline: What your customers say
+      quote: Their customer service is second to none
+      author_name: John Smith
       buttons: []
       image:
+        _bookshop_name: generic/image
+        image_path: /assets/images/Testimonial--background-feature.png
+        image_alt: Woman holding a template and smiling
+        image_sizes:
     styles:
       image_alignment: Left
-      color_group: ''
+      color_group: primary0
+  - _bookshop_name: sections/grid--gallery-images
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: A simple gallery
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Image Gallery
+        primary_heading_hierarchy: h2
+      description: >-
+        Share your beautiful product or service images with your potential
+        customers. 
+      gallery:
+        _bookshop_name: simple/gallery
+        show_note: true
+        images:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-1.png
+            image_alt: Three people laughing around laptops
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-2.png
+            image_alt: Busy cafe with people sitting at tables
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-3.png
+            image_alt: Blurry street view with lights at night time
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-4.png
+            image_alt: Woman wearing glasses with a coloured light reflection
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-5.png
+            image_alt: Person sitting on couch with laptop
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-6.png
+            image_alt: Three people posing for a photo at a mountain view
+            image_sizes:
+        button:
+          text: Load More
+          variant: primary
+    styles:
+      color_group: secondary1
+  - _bookshop_name: sections/left-right-block--featured-icons
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Let your features shine
+        eyebrow_headline_hierarchy: h3
+        primary_heading: A featured icons block
+        primary_heading_hierarchy: h2
+      icons:
+        - hero_icon_name: face-smile
+          icon_type: outline
+          icon_text: Happy customers
+        - hero_icon_name: heart
+          icon_type: outline
+          icon_text: Great service
+        - hero_icon_name: sparkles
+          icon_type: solid
+          icon_text: Brilliant product reviews
+      buttons:
+        - _bookshop_name: generic/button
+          url: /booking/
+          open_in_new_tab: false
+          text: Book now
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+        _bookshop_name: generic/image
+        image_path: /assets/images/Left-Right--featured-image.png
+        image_alt: Barber shop bench with mirror
+        image_sizes:
+    styles:
+      image_alignment: Left
+      color_group: primary0
+  - _bookshop_name: sections/left-right-block--featured-map
+    content:
+      id:
+      display_social_icons: true
+      show_note: true
+      heading: A contact block
+      description: >-
+        This is a simple yet powerful block to display not only your location by
+        using Google Maps, but also any other contact details you wish to share
+        with your customers.
+      contact_details:
+        - _type: Email
+          text: 'Email address: mybusiness@business.com'
+          hero_icon_name: envelope
+        - _type: Phone
+          text: 'Phone number: 312 325 326'
+          hero_icon_name: phone
+        - _type: Address
+          text: 'Address: 1 Fake St, Faketown'
+          hero_icon_name: map-pin
+        - _type: Hours
+          text: 'Opening hours: 9-5pm, Monday to Friday'
+          hero_icon_name: clock
+      map:
+        _bookshop_name: simple/google-map-embed
+        latitude:
+        longitude:
+        zoom_level: 9
+      buttons:
+        - _bookshop_name: generic/button
+          url: /contact/
+          open_in_new_tab: false
+          text: Contact us
+          variant: primary
+          arrow: right
+          onclick:
+    styles:
+      map_alignment: Left
+      color_group: secondary1
 ---
