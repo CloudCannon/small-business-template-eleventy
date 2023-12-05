@@ -60,9 +60,9 @@ _inputs:
         - name: Left
           id: left
           icon: format_align_left
-        - name: Center
-          id: center
-          icon: format_align_center
-        - name: Full Background
+        - name: Right
+          id: right
+          icon: format_align_right
+        - name: Full
           id: full-background
           icon: open_in_full
