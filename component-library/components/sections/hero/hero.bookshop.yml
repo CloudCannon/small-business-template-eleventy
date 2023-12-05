@@ -13,7 +13,7 @@ blueprint:
     heading: bookshop:generic/heading!
     description: Description text to compliment the block
     button: bookshop:generic/button!
-    image: bookshop:generic/image!
+    image: bookshop:generic/image
   styles:
     image_alignment: left
     color_group: "" 
