@@ -40,6 +40,8 @@ _inputs:
   id:
     hidden: true
     instance_value: UUID
+  label:
+    comment: It is recommended to provide a label for this input group
   arrangement:
     type: select
     comment: The layout of multiple radio buttons and how they align to each other
@@ -48,6 +50,6 @@ _inputs:
         - inline
         - stacked
   radio_buttons:
-    comment: It is recommended to have one option checked as a default for radio button groups.
+    comment: It is recommended to have one option checked as a default for radio button groups
   helper_text:
     comment: Helpful text for the user such as 'Option 1 is only available on weekends'
