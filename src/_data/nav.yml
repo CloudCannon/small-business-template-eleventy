@@ -1,9 +1,6 @@
 logo_image: ''
 logo_text: Primera Mesa
 navigation_items:
-  - label: About Us
-    link_url: /about
-    open_in_new_tab: false
   - label: Our Services
     link_url: '#services'
     open_in_new_tab: false
