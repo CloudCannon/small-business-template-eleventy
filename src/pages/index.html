@@ -20,7 +20,7 @@ content_blocks:
         text: 🐢
     styles:
       color_group: primary0
-  - _bookshop_name: sections/left-right-block--simple
+  - _bookshop_name: sections/form
     content:
       id:
       heading:
@@ -29,17 +29,23 @@ content_blocks:
         eyebrow_headline_hierarchy: h3
         primary_heading: Primary Heading
         primary_heading_hierarchy: h2
-      text:
-        _bookshop_name: generic/text-block
-        text: 
-      buttons: []
-      image:
-        _bookshop_name: generic/image
-        image_path:
-        image_alt:
-        image_sizes:
-    styles:
-      image_padding: true
-      image_alignment: Left
-      color_group: ''
+      description: Description text to compliment the block
+      form:
+        _bookshop_name: simple/form-builder
+        id: aa2a1e16-4477-4d03-a785-2eb085aec5d4
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        inputs:
+        - _bookshop_name: generic/form/phone-input
+          label: ''
+          placeholder: ''
+          id: 364f581c-c2b2-46a5-82da-f78f5d7b0c53
+          required: true
+          helper_text:
+        submit_button:
+        text: Button text
+        variant: primary
+        arrow: right
 ---
