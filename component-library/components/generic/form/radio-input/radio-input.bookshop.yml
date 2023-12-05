@@ -12,18 +12,18 @@ blueprint:
   group_name:
   checked: false
   required: false
-  ratio_id:
+  id:
   
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   label: "Radio button"
-  ratio_id: ee000804-eaa8-4801-b5aa-94935e37e823
+  id: ee000804-eaa8-4801-b5aa-94935e37e823
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   group_name:
     # hidden: true
     comment: This input should be hidden from editors and passed through from the radio-group component so that these inputs function correctly
-  ratio_id:
+  id:
     # hidden: true
     instance_value: UUID
