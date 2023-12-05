@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Grid - Gallery Images"
+  label: "Gallery Images"
   description: A grid layout of images with supporting information
   icon: collections
-  tags: []
+  tags: ['grid', 'image']
 
 # Defines the structure of this component, as well as the default values
 blueprint:

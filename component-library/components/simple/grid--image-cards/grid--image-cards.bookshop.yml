@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Grid - Image Cards"
+  label: "Image Cards"
   description: "Create a grid of cards displaying an image, text content and a button"
   icon: table_chart
-  tags: []
+  tags: ['grid', 'image']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
