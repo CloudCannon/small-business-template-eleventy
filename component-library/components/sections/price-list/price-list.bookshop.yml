@@ -14,7 +14,10 @@ blueprint:
     heading: bookshop:generic/heading!
     description: Description text to compliment the block
     lists:
-      - list_detail
+      - list_heading: List heading
+        list_items:
+          - label: List item
+            detail: $$
     button: bookshop:generic/button
   styles:
     color_group: "" 
@@ -62,15 +65,3 @@ preview:
 _inputs:
   description:
     type: textarea
-
-_structures:
-  list_details:
-    values:
-      - id: list_detail
-        label: List
-        icon: list
-        value:
-          list_heading: List heading
-          list_items:
-            - label: List item
-              detail: $$
