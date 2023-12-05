@@ -6,7 +6,7 @@
 {% if content.heading or content.text %}
     <div class='{{c}}__content'>
         {% bookshop "generic/heading" bind:content.heading %}
-        {% if content.text %}{% bookshop "generic/text-block" bind:content.text %}{% endif %}
+        {% if content.text %}{% bookshop "generic/text-block" text:content.text %}{% endif %}
     </div>
 {% endif %}
 </section>

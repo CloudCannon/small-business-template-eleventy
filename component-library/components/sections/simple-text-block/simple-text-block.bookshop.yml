@@ -12,7 +12,7 @@ blueprint:
   content:
     id:
     heading: bookshop:generic/heading!
-    text: bookshop:generic/text-block!
+    text: Description text to compliment the block
   styles:
     color_group: "" 
 
@@ -21,3 +21,5 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  text:
+    type: textarea

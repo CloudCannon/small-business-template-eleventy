@@ -11,7 +11,7 @@ spec:
 blueprint:
   content:
     id:
-    headline: WHAT YOUR CUSTOMERS SAY
+    headline: What your customers say
     quote: Their customer service is second to none.
     author_name: John Smith
     buttons: [bookshop:generic/button]
@@ -24,7 +24,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    headline: What your customers says
+    headline: What your customers say
     quote: "Their customer service is second to none."
     author_name: John Smith
     buttons:
