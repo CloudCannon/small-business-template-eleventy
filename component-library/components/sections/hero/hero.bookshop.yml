@@ -47,6 +47,7 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   image_alignment:
+    comment: "If an image is provided, determines how the image will display: on the left, the right, or covering the full background of the hero"
     type: choice
     options:
       allow_empty: false
