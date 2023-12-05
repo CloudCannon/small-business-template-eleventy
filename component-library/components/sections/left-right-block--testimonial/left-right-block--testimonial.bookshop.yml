@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Testimonial"
-  description: A short statement, feedback or recommendation
+  description: Short statement, feedback or recommendation
   icon: format_quote
   tags: ['two column', 'image']
 
