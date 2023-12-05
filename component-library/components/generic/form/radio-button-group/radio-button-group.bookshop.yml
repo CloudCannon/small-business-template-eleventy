@@ -42,7 +42,7 @@ _inputs:
     instance_value: UUID
   arrangement:
     type: select
-    comment: The layout of multiple ratios and how they align to each other
+    comment: The layout of multiple radio buttons and how they align to each other
     options:
       values:
         - inline
