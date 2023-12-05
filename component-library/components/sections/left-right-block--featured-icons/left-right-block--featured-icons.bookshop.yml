@@ -16,12 +16,12 @@ blueprint:
       - hero_icon_name: face-smile
         icon_text: 100% Happy customer reviews
         icon_type: outline
-      - icon_path: /assets/images/icons/social/youtube.svg
+      - hero_icon_name: heart
         icon_text: Great customer service
         icon_type: outline
-      - hero_icon_name: star
+      - hero_icon_name: sparkles
         icon_text: Outstanding product reviews
-        icon_type: solid
+        icon_type: outline
     buttons: [bookshop:generic/button!]
     image: bookshop:generic/image!
   styles:
