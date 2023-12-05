@@ -5,5 +5,82 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
-content_blocks: []
+  _bookshop_name: sections/hero
+  content:
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: A small business template
+      eyebrow_headline_hierarchy: h3
+      primary_heading: Empower your business with this template
+      primary_heading_hierarchy: h2
+    description:
+    button:
+      _bookshop_name: generic/button
+      url: /booking/
+      open_in_new_tab: false
+      text: Book now
+      variant: primary
+      arrow: right
+      onclick:
+    image:
+      _bookshop_name: generic/image
+      image_path: /assets/images/Hero--background-feature-2.png
+      image_alt:
+      image_sizes:
+  styles:
+    image_alignment: full-background
+    color_group: primary0
+content_blocks:
+  - _bookshop_name: sections/price-list
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: List your services
+        primary_heading_hierarchy: h2
+      description: >-
+        Whether your business is a restaurant, a barber shop, a gym, or a café,
+        our small business template has you covered. Add your services to the
+        list below, as many as you like.
+      lists:
+        - list_heading: Subheadings available
+          list_items:
+            - label: List item 1
+              detail: $10
+            - label: List item 2
+              detail: $20
+            - label: List item 3
+              detail: $30
+            - label: List item 4
+              detail: $100,000
+        - list_heading: Subheadings available
+          list_items:
+            - label: List item 5
+              detail: $70.80
+            - label: List item 6
+              detail: $100.99
+      button:
+        _bookshop_name: generic/button
+        url: /booking/
+        open_in_new_tab: false
+        text: Book now
+        variant: primary
+        arrow: right
+        onclick:
+    styles:
+      color_group: ''
+      content_alignment: center
+  - _bookshop_name: sections/left-right-block--testimonial
+    content:
+      id:
+      headline:
+      quote:
+      author_name:
+      buttons: []
+      image:
+    styles:
+      image_alignment: Left
+      color_group: ''
 ---
