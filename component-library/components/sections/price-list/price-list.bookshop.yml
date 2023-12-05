@@ -65,3 +65,12 @@ preview:
 _inputs:
   description:
     type: textarea
+  lists:
+    type: array
+    options:
+      structures:
+        values:
+          - list_heading: List heading
+            list_items:
+              - label: List item
+                detail: $$
