@@ -2,7 +2,7 @@ logo_image: ''
 logo_text: Primera Mesa
 navigation_items:
   - label: Our Services
-    link_url: '#services'
+    link_url: /#services
     open_in_new_tab: false
   - label: Book Now
     link_url: /booking
