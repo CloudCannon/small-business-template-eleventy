@@ -15,7 +15,7 @@ blueprint:
     quote: Their customer service is second to none.
     author_name: John Smith
     buttons: [bookshop:generic/button]
-    image: bookshop:generic/image
+    image: bookshop:generic/image!
   styles:
     image_alignment: Left
     color_group: "" 
