@@ -5,5 +5,43 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
-content_blocks: []
+content_blocks:
+  - _bookshop_name: sections/form
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      form:
+        _bookshop_name: simple/form-builder
+        id: d4d67e41-8ad1-436c-82af-f7c1f587e331
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        inputs:
+          - _bookshop_name: generic/form/radio-button-group
+            label:
+            id: 2751317f-308d-4946-b5d3-e97c575ec6dd
+            required: false
+            radio_buttons: []
+            arrangement: inline
+            helper_text:
+          - _bookshop_name: generic/form/checkbox-group
+            label: ''
+            id: c062bba9-76bb-46be-987d-ad75a7a5c753
+            checkboxes: []
+            arrangement: inline
+            helper_text:
+        submit_button:
+          text: Button text
+          variant: primary
+          arrow: right
+    styles:
+      color_group: ''
+      content_alignment: center
 ---
