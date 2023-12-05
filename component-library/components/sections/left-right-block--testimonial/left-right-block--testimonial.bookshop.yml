@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Left/Right - Testimonial"
+  label: "Testimonial"
   description: A short statement where people share feedback or recommendations
-  icon: art_track
-  tags: []
+  icon: format_quote
+  tags: ['two column', 'image']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
