@@ -2,10 +2,10 @@
 <div class="{{ c }}">
     <input class="{{ c }}__input" 
         type="radio" 
-        id="{{ id }}" 
+        id="{{ ratio_id }}" 
         name="{{ group_name }}"
         value="{{ label }}"
         {% if checked %}checked{% endif %} 
         {% if required %}required{% endif %}>
-    <label class="{{ c }}__label" for="{{ id }}">{{ label }}</label>
+    <label class="{{ c }}__label" for="{{ ratio_id }}">{{ label }}</label>
 </div>
