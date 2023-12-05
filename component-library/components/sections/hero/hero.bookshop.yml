@@ -50,8 +50,9 @@ _inputs:
     type: select
     options:
       values:
-        - left
-        - right
-        - full-background
-  color_group: 
-    comment: This is not used for the full-background image alignment
+        - name: Left
+          id: left
+        - name: Right
+          id: right
+        - name: Full Background
+          id: full-background
