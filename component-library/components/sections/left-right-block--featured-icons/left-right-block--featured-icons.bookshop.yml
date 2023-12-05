@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Labelled Icons"
-  description: Represents key features or services in a nice iconed layout
+  description: Key features/services with an iconed layout
   icon: insert_emoticon
   tags: ['two column', 'icon', 'image']
 

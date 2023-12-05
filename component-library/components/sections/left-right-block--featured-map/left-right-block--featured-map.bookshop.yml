@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Contact"
-  description: Display your contact details and a map
+  description: Contact information with a map
   icon: contact_phone
   tags: ['two column', 'contact', 'map']
 

@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Price List"
-  description: List prices of products or services that you offer along with any extra information
+  description: List products or services with prices
   icon: format_list_numbered_rtl
   tags: ['price list', 'services', 'list']
 

@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Image Cards"
-  description: "Create a grid of cards displaying an image, text content and a button"
+  description: A grid layout of cards with images
   icon: table_chart
   tags: ['grid', 'image']
 
