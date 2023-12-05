@@ -5,7 +5,7 @@ spec:
   label: "Form"
   description: A CloudCannon form with a heading
   icon: dynamic_form
-  tags: []
+  tags: ['form']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
