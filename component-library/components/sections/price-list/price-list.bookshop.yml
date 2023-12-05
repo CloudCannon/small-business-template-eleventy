@@ -73,7 +73,7 @@ _inputs:
 _structures:
   list_details:
     values:    
-      - label: List detail
+      - label: List
         value:
           list_heading: List heading
           list_items:
