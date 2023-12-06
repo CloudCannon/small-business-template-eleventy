@@ -74,7 +74,7 @@ _inputs:
   image_alignment:
     type: choice
     options:
-    allow_empty: false
+      allow_empty: false
       values:
         - name: Left
           id: left
