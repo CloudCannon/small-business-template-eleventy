@@ -8,15 +8,12 @@
                 <div class="c-gallery__tiles__tile">{% bookshop "generic/image" bind:image %}</div>
             {% endfor %}
         </div>
-        <div class="c-gallery__button">{% bookshop "generic/button" text:"Load More" variant:"primary" arrow:"down" %}</div>
-
     {% else %}
         <div class="c-gallery__tiles">
             {% for image in images %}
                 <div class="c-gallery__tiles__tile c-gallery__tiles__tile--hidden">{% bookshop "generic/image" bind:image %}</div>
             {% endfor %}
         </div>
-
-        <div class="c-gallery__button">{% bookshop "generic/button" text:"Load More" variant:"primary" arrow:"down" %}</div>
     {% endif %}
+    <div class="c-gallery__button">{% bookshop "generic/button" text:"Load More" variant:"primary" arrow:"down" %}</div>
 </div>
