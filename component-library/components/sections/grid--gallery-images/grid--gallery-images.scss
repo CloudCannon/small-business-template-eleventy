@@ -42,10 +42,6 @@
     @media screen and (min-width: 1025px) {
         &__heading {
             grid-column: 4 / -4;
-
-            .c-text-block {
-                max-width: 36rem;
-            }
         }
     }
 }
