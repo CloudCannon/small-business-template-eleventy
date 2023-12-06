@@ -1,0 +1,10 @@
+.c-form-section-break {
+    hr{
+        margin:2rem 0;
+        border: 1px solid var(--main-text-color);
+
+        &__no-line{
+            border: 1px solid transparent;
+        }
+    }
+}
