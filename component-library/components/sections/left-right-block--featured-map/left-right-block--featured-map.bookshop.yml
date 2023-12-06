@@ -21,8 +21,8 @@ blueprint:
     map: bookshop:simple/google-map-embed
     buttons: [bookshop:generic/button]    
   styles:
-    map_alignment: Left
     color_group: "" 
+    map_alignment: left
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -38,8 +38,8 @@ preview:
     map: bookshop:simple/google-map-embed
     buttons: [bookshop:generic/button]
   styles:
-    map_alignment: Left
     color_group: "" 
+    map_alignment: left
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
@@ -79,11 +79,15 @@ _inputs:
               text: ''
               hero_icon_name: ''
   map_alignment:
-    type: select
+    type: choice
     options:
       values:
-        - Left
-        - Right  
+        - name: Left
+          id: left
+          icon: align_horizontal_left
+        - name: Right 
+          id: right
+          icon: align_horizontal_right 
   description:
     type: markdown  
     
