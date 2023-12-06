@@ -88,6 +88,15 @@ _inputs:
         - &ref_1
           name: Secondary
           id: secondary1
+  card_color_group:
+    comment: Choose the color group for the cards in this grid
+    type: select
+    options:
+      values:
+        - name: Primary
+          id: primary0
+        - name: Secondary
+          id: secondary1
   nav_color_group:
     comment: Choose the color group for the navigation header
     type: select

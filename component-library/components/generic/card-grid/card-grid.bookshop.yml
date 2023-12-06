@@ -13,6 +13,7 @@ blueprint:
     heading: bookshop:generic/heading
     description:
     grid_items: [bookshop:generic/card]
+    card_color_group: ""
     buttons: [bookshop:generic/button]
   styles:
     color_group: ""
