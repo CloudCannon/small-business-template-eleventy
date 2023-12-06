@@ -6,4 +6,42 @@ draft: false
 eleventyExcludeFromCollections: false
 hero:
 content_blocks:
+  - _bookshop_name: sections/form
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      form:
+        _bookshop_name: simple/form-builder
+        id: 2416e277-2ce5-462f-9753-10c9e0978774
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        inputs:
+          - _bookshop_name: generic/form/radio-button-group
+            label: ''
+            id: 71e744d9-93a9-4faa-a046-0546242dd687
+            required: false
+            radio_buttons:
+              - label: Hello
+                checked: false
+                ratio_id:
+              - label: Hello 2
+                checked: false
+                ratio_id:
+            arrangement: inline
+            helper_text:
+        submit_button:
+          text: Button text
+          variant: primary
+          arrow: right
+    styles:
+      color_group: ''
+      content_alignment: center
 ---
