@@ -34,12 +34,79 @@ content_blocks:
         eyebrow_headline_hierarchy: h3
         primary_heading: Primary Heading
         primary_heading_hierarchy: h2
-      description: Description text to compliment the block
+      description: >-
+        Sometimes you only need a small text and image section and a cards grid
+        is the best option to showcase your content.
       form:
     styles:
       color_group: primary0
-      content_alignment: center
-  - _bookshop_name: sections/grid--gallery-images
+      content_alignment: left
+  - _bookshop_name: simple/grid--icon-cards
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: a bite size information
+        eyebrow_headline_hierarchy: h3
+        primary_heading: An image card grid
+        primary_heading_hierarchy: h2
+      description: >-
+        Sometimes you only need a small text and timage section and a cards grid
+        is the best option to showcase your content.
+      grid_items:
+        - icon:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - icon:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - icon:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+      buttons: []
+    styles:
+      color_group: primary0
+      content_alignment: left
+  - _bookshop_name: sections/embed
     content:
       id:
       heading:
@@ -49,29 +116,16 @@ content_blocks:
         primary_heading: Primary Heading
         primary_heading_hierarchy: h2
       description: Description text to compliment the block
-      gallery:
-        _bookshop_name: simple/gallery
-        show_note: true
-        images:
-          - _bookshop_name: generic/image
-            image_path: /assets/images/Left-Right--featured-image.png
-            image_alt:
-            image_sizes:
-          - _bookshop_name: generic/image
-            image_path: /assets/images/Left-Right--featured-image.png
-            image_alt:
-            image_sizes:
-          - _bookshop_name: generic/image
-            image_path: /assets/images/Left-Right--featured-image.png
-            image_alt:
-            image_sizes:
-        button:
-          text: Load More
-          variant: primary
+      embed:
+        _bookshop_name: generic/custom-embed
+        embed:
+        ratio: default
+      button:
+      show_note: true
     styles:
       color_group: primary0
       content_alignment: center
-  - _bookshop_name: sections/left-right-block--simple
+  - _bookshop_name: sections/simple-text-block
     content:
       id:
       heading:
@@ -82,34 +136,14 @@ content_blocks:
         primary_heading_hierarchy: h2
       text:
         _bookshop_name: generic/text-block
-        text:
-      buttons: []
-      image:
-        _bookshop_name: generic/image
-        image_path:
-        image_alt:
-        image_sizes:
+        text: >-
+          There are many reasons a website should have a terms of use agreement.
+          For example, a terms of use page would show the website is a
+          legitimate operation and increase user confidence. However, the most
+          important reasons a business should have a terms and conditions page
+          are to limit the business's liability, prevent users from abusing the
+          service, protect the site's intellectual property, and ensure that the
+          users comply with the site's terms.
     styles:
-      image_padding: true
       color_group: primary0
-      image_alignment: right
-  - _bookshop_name: sections/left-right-block--featured-map
-    content:
-      id:
-      display_social_icons: true
-      show_note: true
-      heading: A contact block
-      description: >-
-        This is a simple yet powerful block to display not only your location by
-        using Google Maps, but also any other contact details you wish to share
-        with your customers.
-      contact_details:
-        - _type: Email
-          text: 'Email address: mybusiness@business.com'
-          hero_icon_name: envelope
-      map:
-      buttons: []
-    styles:
-      color_group: secondary1
-      map_alignment: right
 ---

@@ -79,7 +79,7 @@ _inputs:
         - name: Left
           id: left
           icon: align_horizontal_left
-        - name: Right 
+        - name: Right
           id: right
           icon: align_horizontal_right
   color_group:
