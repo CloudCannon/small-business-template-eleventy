@@ -52,7 +52,7 @@ _inputs:
       redo: true
   font:
     comment: >-
-      Write the name of any font from https://fonts.google.com/ in data/fonts to
+      Write the name of any font from [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
   content_alignment:
     type: choice
@@ -122,14 +122,14 @@ _inputs:
       link (with page#id)
   heading_font:
     comment: >-
-      Write the name of any font from https://fonts.google.com/ in data/fonts to
+      Write the name of any font from [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
   content_font:
     comment: >-
-      Write the name of any font from https://fonts.google.com/ in data/fonts to
+      Write the name of any font from [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
   hero_icon_name:
-    comment: Visit https://heroicons.com/ to see the full library
+    comment: Visit [https://heroicons.com/](https://heroicons.com/) to see the full library
     type: select
     options:
       values:
