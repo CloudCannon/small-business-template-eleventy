@@ -40,15 +40,39 @@ content_blocks:
         form_elements:
           - _bookshop_name: generic/form/section-heading
             text: personal information
-            id:          
+            id:
+          - _bookshop_name: generic/form/simple-text
+            text: Please provide as much information as possible.
+          - _bookshop_name: generic/form/text-input
+            label: Name
+            placeholder: ''
+            id: a007c912-7309-4ce7-a991-c788de31317e
+            required: false
+            helper_text:
           - _bookshop_name: generic/form/phone-input
-            label: ''
+            label: Phone
             placeholder: ''
             id: 364f581c-c2b2-46a5-82da-f78f5d7b0c53
-            required: true
+            required: false
             helper_text:
+          - _bookshop_name: generic/form/section-break
+            line: false
+          - _bookshop_name: generic/form/section-heading
+            text: Declaration
+          - _bookshop_name: generic/form/simple-text
+            text: >-
+              By submitting the form I confirm that I have read and agree to the
+              conditions of the form.
+          - _bookshop_name: generic/form/section-break
+            line: false
         submit_button:
+          text: Button text
+          variant: primary
+          arrow: right
         text: Button text
         variant: primary
         arrow: right
+    styles:
+      color_group: ''
+      content_alignment: center
 ---
