@@ -16,6 +16,8 @@ blueprint:
       url: ""
       text: "Button text"
       open_in_new_tab: false
+  card_color_group: ""
+
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -24,4 +26,6 @@ preview:
 _inputs:
   text:
     type: textarea
+  card_color_group: 
+    hidden: true
 
