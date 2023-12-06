@@ -74,7 +74,7 @@ _inputs:
 _structures:
   icon_types:
     values:
-      - label: Hero Icon
+      - label: Hero Library Icon
         value:
           hero_library_icon_name: academic-cap
           icon_type:
