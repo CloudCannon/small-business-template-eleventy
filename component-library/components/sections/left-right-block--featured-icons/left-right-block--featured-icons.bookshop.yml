@@ -59,16 +59,6 @@ preview:
 _inputs:
   icon_path:
     type: image
-  image_alignment:
-    type: choice
-    options:
-      values:
-        - name: Left
-          id: left
-          icon: align_horizontal_left
-        - name: Right 
-          id: right
-          icon: align_horizontal_right
   icons:
     type: array
     comment: Recommended to have no more than three icons here

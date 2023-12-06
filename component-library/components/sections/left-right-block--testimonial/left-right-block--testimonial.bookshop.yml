@@ -47,13 +47,3 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  image_alignment:
-    type: choice
-    options:
-      values:
-        - name: Left
-          id: left
-          icon: align_horizontal_left
-        - name: Right 
-          id: right
-          icon: align_horizontal_right
