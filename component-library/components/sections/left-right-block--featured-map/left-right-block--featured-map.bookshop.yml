@@ -17,7 +17,7 @@ blueprint:
     description: This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
     contact_details:
       - text: 'Email address: mybusiness@business.com'
-        hero_icon_name: envelope
+        hero_library_icon_name: envelope
     map: bookshop:simple/google-map-embed
     buttons: [bookshop:generic/button]    
   styles:
@@ -34,7 +34,7 @@ preview:
     content: Content
     contact_details:
       - text: 'Email address: mybusiness@business.com'
-        hero_icon_name: envelope
+        hero_library_icon_name: envelope
     map: bookshop:simple/google-map-embed
     buttons: [bookshop:generic/button]
   styles:
@@ -53,31 +53,31 @@ _inputs:
             value:
               _type: Email
               text: 'Email address: mybusiness@business.com'
-              hero_icon_name: envelope
+              hero_library_icon_name: envelope
           - label: Phone
             icon: call
             value:
               _type: Phone
               text: 'Phone number: 312 325 326'
-              hero_icon_name: phone
+              hero_library_icon_name: phone
           - label: Address 
             icon: location_on        
             value:
               _type: Address
               text: 'Address: 1 Fake St, Faketown'
-              hero_icon_name: map-pin
+              hero_library_icon_name: map-pin
           - label: Opening hours
             icon: schedule
             value:
               _type: Hours
               text: 'Opening hours: 9-5pm, Monday to Friday'
-              hero_icon_name: clock
+              hero_library_icon_name: clock
           - label: Custom
             icon: person
             value:
               _type: Custom
               text: ''
-              hero_icon_name: ''
+              hero_library_icon_name: ''
   map_alignment:
     type: select
     options:

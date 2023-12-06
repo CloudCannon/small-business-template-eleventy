@@ -128,7 +128,7 @@ _inputs:
     comment: >-
       Write the name of any font from https://fonts.google.com/ in data/fonts to
       access it here
-  hero_icon_name:
+  hero_library_icon_name:
     comment: Visit https://heroicons.com/ to see the full library
     type: select
     options:

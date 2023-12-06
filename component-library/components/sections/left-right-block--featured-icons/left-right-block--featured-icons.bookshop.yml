@@ -28,13 +28,13 @@ preview:
       eyebrow_headline: Let your features shine
       primary_heading: A featured icons left right block
     icons:
-      - hero_icon_name: face-smile
+      - hero_library_icon_name: face-smile
         icon_text: 100% Happy customer reviews
         icon_type: outline
       - icon_path: /assets/images/icons/social/youtube.svg
         icon_text: Great customer service
         icon_type: outline
-      - hero_icon_name: star
+      - hero_library_icon_name: star
         icon_text: Outstanding product reviews
         icon_type: solid
     buttons:
@@ -75,7 +75,7 @@ _structures:
     values:
       - label: Hero Icon
         value:
-          hero_icon_name: academic-cap
+          hero_library_icon_name: academic-cap
           icon_type:
           icon_text:
         _inputs:
