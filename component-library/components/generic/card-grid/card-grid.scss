@@ -12,7 +12,7 @@
       grid-column: 2 / -2;
   }
   &__grid, &__buttons {
-    grid-column: 3 / -3;
+    grid-column: 2 / -2;
   }
 
   &__heading {
@@ -35,10 +35,10 @@
 
   @media screen and (min-width: 768px) {
     &__heading {
-      grid-column: 3 / -3;
+      grid-column: 2 / -2;
     }
     &__grid, &__buttons {
-      grid-column: 5 / -5;
+      grid-column: 4 / -4;
     }
   }
 
