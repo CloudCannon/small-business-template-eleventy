@@ -89,7 +89,7 @@ _inputs:
           name: Secondary
           id: secondary1
   card_color_group:
-    comment: Choose the color group for the cards in this grid
+    comment: Choose the color group for the cards in this grid. It is recommended to choose a color group different than that of the whole component.
     type: select
     options:
       values:
