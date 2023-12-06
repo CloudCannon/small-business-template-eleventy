@@ -18,6 +18,7 @@ blueprint:
         heading: bookshop:generic/heading!
         text:
         button: bookshop:generic/button!
+    card_color_group: ""
     buttons: [bookshop:generic/button]
   styles:
     color_group: ""
