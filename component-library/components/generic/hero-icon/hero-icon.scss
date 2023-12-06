@@ -11,6 +11,10 @@
         border-style: solid;
     }
 
+    &--no-border{
+        border-style:none;
+    }
+
     &--round.c-hero-icon--large {
         padding: 0.95rem;
         border-width: 0.125rem;

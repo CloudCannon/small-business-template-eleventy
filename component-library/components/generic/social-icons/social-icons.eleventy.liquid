@@ -24,7 +24,7 @@
     {% endif %}
     {% for item in social_media_links %}
           <a class="{{ c }}__icon" href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">
-              {% bookshop "generic/custom-icon" icon_path:item.icon_path icon_size:'small' icon_type:'solid' rounded_border:true color:style.icon_color %}
+              {% bookshop "generic/custom-icon" icon_path:item.icon_path icon_size:'small' icon_type:'solid' rounded_border:true no_border:true color:style.icon_color %}
           </a>
     {% endfor %}
 </div>
