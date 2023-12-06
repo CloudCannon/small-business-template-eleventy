@@ -31,5 +31,7 @@ _inputs:
     type: select
     options:
       values:
-        - primary
-        - secondary
+        - name: Primary
+          id: primary
+        - name: Secondary
+          id: secondary
