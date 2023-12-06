@@ -32,23 +32,47 @@ content_blocks:
       description: Description text to compliment the block
       form:
         _bookshop_name: simple/form-builder
-        id: aa2a1e16-4477-4d03-a785-2eb085aec5d4
+        id: ea9c9049-e97d-4546-bfbf-4e3655b3b7d9
         form_submission_type: email/cloudcannon
         inbox_key:
         subject:
         success_page: ''
         form_elements:
           - _bookshop_name: generic/form/section-heading
-            text: personal information
-            id:          
-          - _bookshop_name: generic/form/phone-input
+            text: Shipping address
+          - _bookshop_name: generic/form/simple-text
+            text: Please provide as much information as possible.
+          - _bookshop_name: generic/form/text-area-input
             label: ''
             placeholder: ''
-            id: 364f581c-c2b2-46a5-82da-f78f5d7b0c53
-            required: true
+            id: b3d98f3a-4628-445f-8f0e-29708f668310
+            rows: 2
+            required: false
             helper_text:
+          - _bookshop_name: generic/form/section-break
+            line: false
+          - _bookshop_name: generic/form/section-heading
+            text: Billing address
+          - _bookshop_name: generic/form/text-area-input
+            label: ''
+            placeholder: ''
+            id: d82d5c6f-19cc-4ee4-9131-b266cf3d2236
+            rows: 2
+            required: false
+            helper_text:
+          - _bookshop_name: generic/form/section-break
+            line: false
+          - _bookshop_name: generic/form/section-heading
+            text: Declaration
+          - _bookshop_name: generic/form/simple-text
+            text: >-
+              By submitting this for you give us all sorts of permission to use
+              your personal data and stuff in ways to make us mad profits.
         submit_button:
-        text: Button text
-        variant: primary
-        arrow: right
+          text: Button text
+          variant: primary
+          arrow: right
+    styles:
+      color_group: ''
+      content_alignment: center
 ---
