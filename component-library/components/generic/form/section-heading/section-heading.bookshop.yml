@@ -2,25 +2,19 @@
 spec:
   structures:
     - form_blocks
-  label: "Text Input"
-  description: Simple text input
-  icon: create
+  label: "Section Heading"
+  description: A heading for form sections
+  icon: title
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  label: ""
-  placeholder: ""
-  id:
-  required: false
-  helper_text:
+  text: Form section
+  
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  label: Full name
-  placeholder: John Smith
+  text: Form section
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  helper_text:
-    comment: Helpful text for the user such as 'You do not need to enter your middle name(s)'

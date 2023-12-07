@@ -12,10 +12,10 @@ blueprint:
   label: ""
   id:
   required: false
-  radio_buttons: 
+  radio_buttons:
     - label:
       checked: false
-      radio_id: 
+      radio_id:
   arrangement: inline
   helper_text:
 
@@ -38,18 +38,8 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  id:
-    hidden: true
-    instance_value: UUID
   label:
     comment: It is recommended to provide a label for this input group
-  arrangement:
-    type: select
-    comment: The layout of multiple radio buttons and how they align to each other
-    options:
-      values:
-        - inline
-        - stacked
   radio_buttons:
     comment: It is recommended to have one option checked as a default for radio button groups
   radio_id:
