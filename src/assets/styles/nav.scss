@@ -11,7 +11,7 @@
 
   &__contents{
     max-height:100vh;
-    overflow:hidden;
+    
     grid-column:2 / 14;
     display:grid;
     grid-template-columns:1fr;
@@ -28,6 +28,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items:flex-start;
   }
 
   &__skip-to-content-link {
@@ -49,8 +50,8 @@
     font-size: 2rem;
     line-height: 3.75rem;
     white-space: nowrap;
-    color:var(--main-text-color);    
-  
+    color: var(--main-text-color);
+
     width: min-content;
     img,
     picture,
@@ -68,6 +69,8 @@
   &__social-icons,
   &__navlist {
     opacity: 0;
+
+    
   }
 
   &__social-icons--overflow{
@@ -229,6 +232,10 @@
         background-color: transparent;
       }
     }
+
+    #{$c}__social-icons--overflow{
+      overflow:visible;
+    }
   }
 
   &__placeholder{
@@ -264,6 +271,7 @@
     }
 
     &__navlist--wrapper{
+      overflow:visible;
       transition:none;
       grid-template-rows:1fr;
       grid-column:2/3;
@@ -274,10 +282,12 @@
     }
 
     &__navlist--overflow{
+      overflow:visible;
       justify-content:flex-end;
     }
 
-    &__navlist {      
+    &__navlist {
+      overflow:visible;      
       margin:0;
       display: flex;      
       flex-direction: row;
@@ -295,6 +305,10 @@
     &__navlist {
       transition:none;
       opacity: 1;
+    }
+
+    &__social-icons--overflow{
+      overflow:visible;
     }
     
     &__placeholder{
