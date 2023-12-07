@@ -25,7 +25,7 @@
   &__buttons {
     display: flex;
     justify-content: center;
-    grid-gap: 1.5rem;
+    grid-gap: 24px;
   }
 
   @media screen and (min-width: 768px) {
@@ -50,7 +50,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: auto;
-    grid-gap: 1.5rem;
+    grid-gap: 24px;
     justify-items: center;
 
     @media screen and (min-width: 1279px) {

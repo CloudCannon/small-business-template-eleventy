@@ -24,7 +24,7 @@
   &__content {
     z-index:1;
     display: grid;
-    gap: 1.5rem;
+    gap: 24px;
     grid-row: 1 / -1;
     grid-column: 2 / -2;
     align-self: center;
@@ -44,12 +44,12 @@
 
   &--left-right-variant {
     grid-template-rows: auto minmax(0, 1fr);
-    row-gap: 3rem;
+    row-gap: 48px;
     #{$c}__content {
-      margin-top: 3rem;
+      margin-top: 48px;
       grid-row: 1 / 2;
       border-left: solid 2px;
-      padding-left: 1.5rem;
+      padding-left: 24px;
     }
     #{$c}__cover {
       grid-row: 2 / 3;

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
 
   --dynamic-fill-color: var(--fill-color, var(--main-text-color));
   --dynamic-hover-color: var(--hover-color, var(--main-text-color));

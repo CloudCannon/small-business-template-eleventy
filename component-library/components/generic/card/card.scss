@@ -3,16 +3,16 @@
   flex-direction: column;    
   color: var(--main-text-color);
   background-color: var(--main-background-color);
-  gap:1.5rem;    
+  gap: 24px;    
   text-align: left;
   width: 100%;
 
   &--icon{
-    gap:1rem;
+    gap: 16px;
   }
 
   &--icon &__imagery{
-    padding:1.5rem 1.5rem 0;
+    padding: 24px 24px 0;
   }
 
   &--image &__imagery {
@@ -32,12 +32,12 @@
   &__content-wrapper{
     display: flex;
     flex-direction: column;  
-    gap: 1rem;
-    padding:1.5rem;
+    gap: 16px;
+    padding: 24px;
   }
 
   &--image &__content-wrapper, &--icon &__content-wrapper{
-    padding:0 1.5rem 1.5rem;
+    padding:0 24px 24px;
   }
 
   &__content {

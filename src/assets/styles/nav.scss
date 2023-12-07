@@ -21,7 +21,7 @@
       position: absolute;
       transform: translateY(-100%);
       transition: transform 0.3s;
-      border-radius: 0 0 1rem 1rem;
+      border-radius: 0 0 16px 16px;
       &:focus {
         transform: translateY(0%);
       }
@@ -72,14 +72,14 @@
     align-self: center;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 48px;
 
     &__item {
       &__link {
         text-decoration: none;
         color: var(--main-text-color);
         white-space: nowrap;
-        padding: 0.5rem;
+        padding: 8px;
 
         &:hover,
         &:active {
@@ -99,7 +99,7 @@
   &__burger-menu {
     grid-column: 13 / 14;
     background-color: unset;
-    padding: 1.5rem 0 1.5rem 1.5rem;
+    padding: 24px 0 24px 24px;
     display: flex;
     align-items: center;
     border: none;
@@ -240,7 +240,7 @@
       display: flex;
       justify-self: end;
       flex-direction: row;
-      gap: 0.5rem;
+      gap: 8px;
     }
 
     &__burger-menu {

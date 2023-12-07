@@ -1,12 +1,12 @@
 .c-button-temp {
   all: unset;
-  padding: 1rem 0.75rem;
+  padding: 16px 12px;
   color: inherit;
   font-size: var(--button);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height);
   display: inline-flex;
-  gap: 0.5rem;
+  gap: 8px;
   align-items: center;
 
   &:focus {

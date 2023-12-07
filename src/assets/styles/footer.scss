@@ -1,8 +1,8 @@
 .c-footer {
   $c: &;
-  padding: 3.5rem 1rem;
+  padding: 56px 16px;
   display: grid;
-  gap: 1rem;
+  gap: 16px;
   place-items: center;
   background: var(--main-background-color);
   color: var(--main-text-color);
@@ -20,14 +20,14 @@
     white-space: normal;
     word-break: break-word;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 16px;
     .c-image {
       max-width: 24rem;
     }
   }
   &__navlist {
     display: flex;
-    gap: 1.5rem;
+    gap: 24px;
     list-style-type: none;
     padding: 0;
     flex-wrap: wrap;
@@ -54,7 +54,7 @@
   }
 
   &__content {
-    padding-top: 7rem;
+    padding-top: 112px;
     text-align: center;
     color: var(--main-text-color);
 
