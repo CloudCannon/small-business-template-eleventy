@@ -33,6 +33,7 @@
       max-width: 20ch;
     }
     .c-text-block {
+      font-size: var(--paragraph-large);
       text-wrap: balance;
       max-width: 60ch; //recommended characters per line
     }
