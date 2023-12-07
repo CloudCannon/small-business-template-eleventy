@@ -20,8 +20,6 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  $:
-    comment: Trying it out
   zoom_level:
     type: range
     options:
