@@ -7,7 +7,7 @@
         <div class="{{ c }}__group__inputs {{ c }}__group__inputs--arrangement-{{ arrangement }}">
             {% assign_local group_name = label | append: "-" | append: id %}
             {% for item in radio_buttons %}
-                {% bookshop "generic/form/radio-input" bind:item required:required group_name:group_name id:ratio_id %}
+                {% bookshop "generic/form/radio-input" bind:item required:required group_name:group_name id:radio_id %}
             {% endfor %}
         </div>
 
