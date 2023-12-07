@@ -5,7 +5,7 @@ spec:
   label: "Embed"
   description: A custom embed along with any extra information
   icon: web_asset
-  tags: ['embed', 'twitter', 'document']
+  tags: ['embed', 'media', 'document']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
