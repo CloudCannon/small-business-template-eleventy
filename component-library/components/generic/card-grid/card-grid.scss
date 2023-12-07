@@ -20,6 +20,10 @@
       flex-direction: column;
       gap: 24px;
       align-items: center;
+
+      .c-text-block > p{
+        font-size: var(--paragraph-large);
+    }
   }
 
   &__buttons {
