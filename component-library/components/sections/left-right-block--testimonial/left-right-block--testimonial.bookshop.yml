@@ -17,8 +17,8 @@ blueprint:
     buttons: [bookshop:generic/button]
     image: bookshop:generic/image!
   styles:
-    image_alignment: Left
     color_group: "" 
+    image_alignment: left
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -41,17 +41,9 @@ preview:
       image_path: https://placekitten.com/300/500
       image_alt: A cute kitten
   styles:
-    image_alignment: Left
     color_group: "" 
+    image_alignment: left
 
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  quote:
-    type: textarea
-  image_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right  

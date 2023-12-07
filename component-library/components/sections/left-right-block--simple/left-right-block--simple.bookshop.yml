@@ -17,8 +17,8 @@ blueprint:
     image: bookshop:generic/image!
   styles:
     image_padding: true
-    image_alignment: Left
     color_group: "" 
+    image_alignment: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
