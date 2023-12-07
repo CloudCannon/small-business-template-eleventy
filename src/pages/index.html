@@ -5,8 +5,19 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
+  _bookshop_name: sections/hero--simple
+  content:
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: Eyebrow Heading
+      eyebrow_headline_hierarchy: h3
+      primary_heading: Primary Heading
+      primary_heading_hierarchy: h2
+  styles:
+    content_alignment: center
+    color_group: primary0
 content_blocks:
-  - _bookshop_name: sections/simple-text-block
+  - _bookshop_name: sections/centered-large-asset
     content:
       id:
       heading:
@@ -15,11 +26,151 @@ content_blocks:
         eyebrow_headline_hierarchy: h3
         primary_heading: Primary Heading
         primary_heading_hierarchy: h2
-      text:
-        _bookshop_name: generic/text-block
-        text: 🐢
+      description: Description text to compliment the block
+      asset:
+        _bookshop_name: generic/image
+        image_path: /assets/images/Hero--background-feature-4.png
+        image_alt:
+        image_sizes:
+      button:
     styles:
-      color_group: primary0
+      color_group: ''
+  - _bookshop_name: sections/embed
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      embed:
+        _bookshop_name: generic/custom-embed
+        embed:
+        ratio: default
+      button:
+      show_note: true
+    styles:
+      color_group: ''
+      content_alignment: center
+  - _bookshop_name: sections/form
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      form:
+        _bookshop_name: simple/form-builder
+        id: 39f2372e-aa35-41d8-abf9-7e26c90a6cf4
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        inputs:
+          - _bookshop_name: generic/form/date-input
+            label: ''
+            id: e83b3d39-717f-4edc-9f90-91b60f3172dd
+            required: false
+            min_today: false
+            min:
+            max_today: false
+            max:
+            helper_text:
+          - _bookshop_name: generic/form/text-area-input
+            label: ''
+            placeholder: ''
+            id: 282de245-75dd-49c1-bfd3-7190408a4b82
+            rows: 2
+            required: false
+            helper_text:
+        submit_button:
+          text: Button text
+          variant: primary
+          arrow: right
+    styles:
+      color_group: ''
+      content_alignment: center
+  - _bookshop_name: sections/grid--gallery-images
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      gallery:
+        _bookshop_name: simple/gallery
+        show_note: true
+        images:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/Hero--background-feature-2.png
+            image_alt:
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/Hero--background-feature-2.png
+            image_alt:
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/Hero--background-feature-2.png
+            image_alt:
+            image_sizes:
+        button:
+          text: Load More
+          variant: primary
+    styles:
+      color_group: ''
+  - _bookshop_name: sections/left-right-block--featured-icons
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      icons:
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Button text
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+        _bookshop_name: generic/image
+        image_path: /assets/images/Hero--background-feature-3.png
+        image_alt:
+        image_sizes:
+    styles:
+      image_alignment: Left
+      color_group: ''
+  - _bookshop_name: sections/left-right-block--featured-map
+    content:
+      id:
+      display_social_icons: true
+      show_note: true
+      heading: A contact block
+      description: >-
+        This is a simple yet powerful block to display not only your location by
+        using Google Maps, but also any other contact details you wish to share
+        with your customers.
+      contact_details:
+        - _type: Email
+          text: 'Email address: mybusiness@business.com'
+          hero_icon_name: envelope
+      map:
+      buttons: []
+    styles:
+      map_alignment: Left
+      color_group: ''
   - _bookshop_name: sections/left-right-block--simple
     content:
       id:
@@ -31,7 +182,7 @@ content_blocks:
         primary_heading_hierarchy: h2
       text:
         _bookshop_name: generic/text-block
-        text: 
+        text:
       buttons: []
       image:
         _bookshop_name: generic/image
@@ -41,5 +192,181 @@ content_blocks:
     styles:
       image_padding: true
       image_alignment: Left
+      color_group: ''
+  - _bookshop_name: sections/left-right-block--testimonial
+    content:
+      id:
+      headline:
+      quote:
+      author_name:
+      buttons: []
+      image:
+    styles:
+      image_alignment: Left
+      color_group: ''
+  - _bookshop_name: sections/price-list
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      lists: []
+      button:
+    styles:
+      color_group: ''
+      content_alignment: center
+  - _bookshop_name: sections/simple-text-block
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      text:
+        _bookshop_name: generic/text-block
+        text:
+    styles:
+      color_group: ''
+  - _bookshop_name: simple/grid--icon-cards
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description:
+      grid_items:
+        - icon:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - icon:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - icon:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+      buttons: []
+    styles:
+      color_group: ''
+  - _bookshop_name: simple/grid--image-cards
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description:
+      grid_items:
+        - image:
+            _bookshop_name: generic/image
+            image_path:
+            image_alt:
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - image:
+            _bookshop_name: generic/image
+            image_path:
+            image_alt:
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+        - image:
+            _bookshop_name: generic/image
+            image_path:
+            image_alt:
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          text:
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+      buttons: []
+    styles:
       color_group: ''
 ---
