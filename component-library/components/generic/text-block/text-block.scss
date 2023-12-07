@@ -1,6 +1,7 @@
 .c-text-block {
     display: grid;
     gap: 1rem;
+    width:100%;
 
     a {
         color: inherit;
@@ -14,5 +15,9 @@
     p, li{
         font-size:var(--paragraph);
         line-height: var(--line-height);
+    }
+
+    p{
+        max-width:80ch;
     }
 }

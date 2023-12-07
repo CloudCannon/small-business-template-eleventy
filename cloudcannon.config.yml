@@ -120,6 +120,17 @@ _inputs:
         - name: Center
           id: center
           icon: format_align_center
+  image_alignment:
+    type: choice
+    options:
+      allow_empty: false
+      values:
+        - name: Left
+          id: left
+          icon: align_horizontal_left
+        - name: Right
+          id: right
+          icon: align_horizontal_right
   color_group:
     type: select
     options:

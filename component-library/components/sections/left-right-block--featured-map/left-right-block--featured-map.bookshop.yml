@@ -18,11 +18,11 @@ blueprint:
     contact_details:
       - text: "Email address: mybusiness@business.com"
         hero_icon_name: envelope
-    map: bookshop:simple/google-map-embed
+    map: bookshop:simple/google-map-embed!
     buttons: [bookshop:generic/button]
   styles:
-    map_alignment: Left
     color_group: ""
+    image_alignment: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -34,11 +34,11 @@ preview:
     contact_details:
       - text: "Email address: mybusiness@business.com"
         hero_icon_name: envelope
-    map: bookshop:simple/google-map-embed
+    map: bookshop:simple/google-map-embed!
     buttons: [bookshop:generic/button]
   styles:
-    map_alignment: Left
     color_group: ""
+    image_alignment: left
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
@@ -77,11 +77,5 @@ _inputs:
               _type: Custom
               text: ""
               hero_icon_name: ""
-  map_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right
-  description:
-    type: markdown
+  image_alignment:
+    label: Map Alignment
