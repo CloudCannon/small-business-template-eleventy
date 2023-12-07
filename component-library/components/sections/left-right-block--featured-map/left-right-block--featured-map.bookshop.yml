@@ -78,6 +78,12 @@ _inputs:
               _type: Custom
               text: ''
               hero_icon_name: ''
+  contact_details[*].text:
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true      
   image_alignment:
     label: Map Alignment
   description:
