@@ -11,14 +11,19 @@ blueprint:
   social_media_links:
     - link_url: https://www.youtube.com/
       icon_path: /assets/images/icons/social/youtube.svg
+      label: Youtube
     - link_url: https://www.facebook.com/
       icon_path: /assets/images/icons/social/facebook.svg
+      label: Facebook
     - link_url: https://www.linkedin.com/
       icon_path: /assets/images/icons/social/linkedin.svg
+      label: LinekdIn
     - link_url: https://www.twitter.com/
       icon_path: /assets/images/icons/social/x.svg
+      label: Twitter
     - link_url: https://www.instagram.com/
       icon_path: /assets/images/icons/social/instagram.svg
+      label: Instagram
   show_note: true
   style:
     icon_background_hover_color: "#7d7f7c"
@@ -30,17 +35,24 @@ preview:
   social_media_links:
     - link_url: https://www.youtube.com/
       icon_path: /assets/images/icons/social/youtube.svg
+      label: Youtube
     - link_url: https://www.facebook.com/
       icon_path: /assets/images/icons/social/facebook.svg
+      label: Facebook
     - link_url: https://www.linkedin.com/
       icon_path: /assets/images/icons/social/linkedin.svg
+      label: LinekdIn
     - link_url: https://www.twitter.com/
       icon_path: /assets/images/icons/social/x.svg
+      label: Twitter
     - link_url: https://www.instagram.com/
       icon_path: /assets/images/icons/social/instagram.svg
+      label: Instagram
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  label:
+    comment: This is a hidden accesibility label used by screen readers to describe what the link is
   social_media_links:
     type: array
     options:
