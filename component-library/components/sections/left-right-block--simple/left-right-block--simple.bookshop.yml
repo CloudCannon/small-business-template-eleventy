@@ -33,6 +33,8 @@ _inputs:
   text:
     type: textarea
   image_padding:
+    label: Content block padding
+    comment: Adds padding on the top and bottom of this content block
     type: switch
   image_alignment:
     type: select
