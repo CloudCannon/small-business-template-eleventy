@@ -11,11 +11,11 @@ spec:
 blueprint:
   content:
     id:
-    headline:
-    quote: 
-    author_name:
+    eyebrow_headline: What your customers say
+    quote: Their customer service is second to none.
+    author_name: John Smith
     buttons: [bookshop:generic/button]
-    image: bookshop:generic/image
+    image: bookshop:generic/image!
   styles:
     image_alignment: Left
     color_group: "" 
@@ -24,7 +24,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    headline: What your customers says
+    eyebrow_headline: What your customers say
     quote: "Their customer service is second to none."
     author_name: John Smith
     buttons:
@@ -47,6 +47,8 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  quote:
+    type: textarea
   image_alignment:
     type: select
     options:
