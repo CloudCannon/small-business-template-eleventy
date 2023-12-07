@@ -66,8 +66,8 @@
     object-fit: cover;
   }
 
-  // Desktop styles
-  @media screen and (min-width: 1279px) {
+  /* Desktop view */
+  @media screen and (min-width: 769px) {
     padding-bottom: 6rem;
 
     &__content {

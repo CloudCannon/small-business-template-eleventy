@@ -25,7 +25,8 @@
         grid-column: 2 / -2;
     }
 
-    @media screen and (min-width: 769px) {
+    /* Tablet view */
+    @media screen and (min-width: 480px) {
         &__heading {
             grid-column: 3 / -3;
         }
@@ -35,7 +36,8 @@
         }
     }
 
-    @media screen and (min-width: 1025px) {
+    /* Desktop view */
+    @media screen and (min-width: 769px) {
         &__heading {
             grid-column: 4 / -4;
 

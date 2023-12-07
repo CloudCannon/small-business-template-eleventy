@@ -15,11 +15,13 @@
             width: 100%;
             box-shadow: 0px 0px 0px 1px var(--main-text-color) inset;
 
-            @media screen and (min-width: 769px) {
+            /* Tablet view */
+            @media screen and (min-width: 480px) {
                 width: calc((100% - 24px) / 2);
             }
     
-            @media screen and (min-width: 1024px) {
+            /* Desktop view */
+            @media screen and (min-width: 769px) {
                 width: calc((100% - 48px) / 3);
             }
 

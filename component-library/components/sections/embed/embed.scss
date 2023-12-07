@@ -26,7 +26,8 @@
         text-align: center;
     }
 
-    @media screen and (min-width: 1279px) {
+    /* Desktop view */
+    @media screen and (min-width: 769px) {
         &__heading, &__embed, &__button, &__note {
             grid-column: 4 / -4;
         }

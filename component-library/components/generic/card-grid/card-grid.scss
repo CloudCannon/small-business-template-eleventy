@@ -28,7 +28,8 @@
     grid-gap: 1.5rem;
   }
 
-  @media screen and (min-width: 768px) {
+  /* Tablet view */
+  @media screen and (min-width: 480px) {
     &__heading {
       grid-column: 3 / -3;
     }
@@ -37,7 +38,8 @@
     }
   }
 
-  @media screen and (min-width: 1279px) {
+  /* Desktop view */
+  @media screen and (min-width: 769px) {
     &__heading {
       grid-column: 5 / -5;
     }
@@ -53,7 +55,7 @@
     grid-gap: 1.5rem;
     justify-items: center;
 
-    @media screen and (min-width: 1279px) {
+    @media screen and (min-width: 769px) {
       grid-template-columns: repeat(3, 1fr);
     }
   }

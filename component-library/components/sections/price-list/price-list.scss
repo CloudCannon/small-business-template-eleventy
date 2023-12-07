@@ -67,7 +67,8 @@
         }
     }
 
-    @media screen and (min-width: 1279px) {
+    /* Desktop view */
+    @media screen and (min-width: 769px) {
         &__heading, &__lists {
             grid-column: 4 / -4;
         }

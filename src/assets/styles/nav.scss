@@ -214,7 +214,8 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  /* Desktop view */
+  @media screen and (min-width: 769px) {
     height: auto;
     grid-template-rows: var(--nav-height) var(--nav-height) auto;
     &__placeholder {

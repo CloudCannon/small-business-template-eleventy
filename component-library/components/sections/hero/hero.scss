@@ -38,7 +38,8 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  /* Tablet view */
+  @media screen and (min-width: 480px) {
     height: calc(100svh - (var(--nav-height) * 2));
   }
 
@@ -60,7 +61,8 @@
       grid-row: 2 / 3;
     }
 
-    @media screen and (min-width: 1023px) {
+    /* Desktop view */
+    @media screen and (min-width: 769px) {
       grid-template-rows: minmax(0, 1fr);
       #{$c}__content {
         grid-row: 1 / 2;
@@ -80,7 +82,8 @@
   }
 
   &--image-left {
-    @media screen and (min-width: 1023px) {
+    /* Desktop view */
+    @media screen and (min-width: 769px) {
       grid-template-rows: minmax(0, 1fr);
       #{$c}__content {
         grid-column: 9 / -2;
