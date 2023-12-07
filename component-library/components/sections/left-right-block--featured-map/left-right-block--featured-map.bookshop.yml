@@ -46,6 +46,13 @@ _inputs:
   contact_details:
     type: array
     options:
+      _inputs:
+        text:
+          type: markdown
+          options:
+            link: true
+            bold: true
+            italic: true      
       structures:        
         values:
           - label: Email    
@@ -59,11 +66,6 @@ _inputs:
             value:
               _type: Phone
               text: 'Phone number: 312 325 326'
-              type: markdown
-              options:
-                link: true
-                bold: true
-                italic: true      
               hero_icon_name: phone
           - label: Address 
             icon: location_on        
@@ -82,7 +84,7 @@ _inputs:
             value:
               _type: Custom
               text: ''
-              hero_icon_name: ''   
+              hero_icon_name: ''    
   image_alignment:
     label: Map Alignment
   description:
