@@ -13,7 +13,7 @@ blueprint:
   inbox_key: 
   subject:
   success_page: ""
-  inputs: [bookshop:structure:form_blocks]
+  form_elements: [bookshop:structure:form_blocks]
   submit_button:
     text: "Button text"
     variant: "primary"
@@ -23,7 +23,7 @@ blueprint:
 preview:
   id: 727a56cc-0bfc-4ab4-901e-144f407cd1ae
   success_page: /
-  inputs:
+  form_elements:
     - _bookshop_name: generic/form/text-input
       label: Full name
       placeholder: John Smith
