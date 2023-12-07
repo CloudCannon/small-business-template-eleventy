@@ -14,6 +14,7 @@ blueprint:
     heading: bookshop:generic/heading!
     description: Description text to compliment the block
     gallery: bookshop:simple/gallery!
+    show_note: true
   styles:
     color_group: "" 
     content_alignment: center
@@ -30,6 +31,7 @@ preview:
       small business template has you covered. Add your services to the list
       below, as many as you like, and let people contact you or book now.
     gallery: bookshop:simple/gallery
+    show_note: false
   styles:
     color_group: "" 
     content_alignment: center
