@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: var(--twelve-column-grid);
     row-gap: 48px;
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
     &__button {
         grid-column: 2 / -2;
@@ -25,7 +25,7 @@
     }
 
     &__lists {
-        align-items: left;
+        align-items: flex-start;
         text-align: left;
         display: flex;
         flex-direction: column;
