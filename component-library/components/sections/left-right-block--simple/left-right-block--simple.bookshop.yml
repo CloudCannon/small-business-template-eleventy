@@ -12,13 +12,13 @@ blueprint:
   content:
     id:
     heading: bookshop:generic/heading!
-    text: bookshop:generic/text-block!
+    text: Description text to compliment the block
     buttons: [bookshop:generic/button]
     image: bookshop:generic/image!
   styles:
     image_padding: true
-    image_alignment: Left
     color_group: "" 
+    image_alignment: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -30,7 +30,11 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  text:
+    type: textarea
   image_padding:
+    label: Content block padding
+    comment: Adds padding on the top and bottom of this content block
     type: switch
   image_alignment:
     type: select
