@@ -139,9 +139,6 @@ preview:
 _inputs:
   form_submission_type:
     type: disabled
-  id:
-    hidden: true
-    instance_value: UUID
   success_page:
     type: url
     comment:  The page to redirect to after submission
@@ -149,17 +146,3 @@ _inputs:
     comment: The key that you configured for your cloudcannon inbox. If not set it will go to the default inbox you set up. Instructions for setting up an inbox key can be found [here](https://cloudcannon.com/documentation/articles/creating-an-inbox-to-receive-your-forms/).
   subject:
     comment: The subject line for the form submission emails
-  arrow:
-    type: select
-    options:
-      values:
-        - up
-        - right
-        - down
-        - left
-  variant:
-    type: select
-    options:
-      values:
-        - primary
-        - secondary

@@ -42,13 +42,3 @@ preview:
 _inputs:
   helper_text:
     comment: Helpful text for the user such as 'Do not select more than 2'
-  arrangement:
-    type: select
-    comment: The layout of the icon and text together
-    options:
-      values:
-        - inline
-        - stacked
-  id:
-    hidden: true
-    instance_value: UUID
