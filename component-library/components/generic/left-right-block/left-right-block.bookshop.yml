@@ -16,9 +16,9 @@ blueprint:
   icons: [bookshop:generic/labelled-icon]
   image: bookshop:generic/image
   map: bookshop:simple/google-map-embed
-  image_alignment: Left
-  image_padding: false
   color_group: "" 
+  image_alignment: left
+  image_padding: false
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -49,7 +49,7 @@ preview:
         icon_type: solid
         rounded_border: true
         theme_color: true
-  image_alignment: Left
+  image_alignment: left
   color_group: "" 
   image: 
     _bookshop_name: generic/image
@@ -65,9 +65,3 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  image_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right 
