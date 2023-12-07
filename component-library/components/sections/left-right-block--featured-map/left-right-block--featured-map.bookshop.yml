@@ -45,14 +45,7 @@ preview:
 _inputs:
   contact_details:
     type: array
-    options:
-      _inputs:
-        text:
-          type: markdown
-          options:
-            link: true
-            bold: true
-            italic: true      
+    options:         
       structures:        
         values:
           - label: Email    
@@ -61,6 +54,13 @@ _inputs:
               _type: Email
               text: 'Email address: mybusiness@business.com'
               hero_icon_name: envelope
+              _inputs:
+                text:
+                  type: markdown
+                  options:
+                    link: true
+                    bold: true
+                    italic: true   
           - label: Phone
             icon: call
             value:
