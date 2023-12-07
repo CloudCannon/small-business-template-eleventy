@@ -11,11 +11,11 @@ spec:
 blueprint:
   content:
     id:
-    headline:
-    quote: 
-    author_name:
+    eyebrow_headline: What your customers say
+    quote: Their customer service is second to none.
+    author_name: John Smith
     buttons: [bookshop:generic/button]
-    image: bookshop:generic/image
+    image: bookshop:generic/image!
   styles:
     color_group: "" 
     image_alignment: left
@@ -24,7 +24,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
-    headline: What your customers says
+    eyebrow_headline: What your customers say
     quote: "Their customer service is second to none."
     author_name: John Smith
     buttons:

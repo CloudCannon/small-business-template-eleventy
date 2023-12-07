@@ -12,7 +12,7 @@ blueprint:
   content:
     id:
     heading: bookshop:generic/heading!
-    description:
+    description: Description text to compliment the block
     grid_items:
       - image: bookshop:generic/image!
         heading:  bookshop:generic/heading!
