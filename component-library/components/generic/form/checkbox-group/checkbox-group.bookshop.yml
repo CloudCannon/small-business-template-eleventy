@@ -11,8 +11,8 @@ spec:
 blueprint:
   label: ""
   id:
-  checkboxes: 
-    - label: 
+  checkboxes:
+    - label:
       id:
       checked: false
       required: false
@@ -40,5 +40,7 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  label:
+    comment: It is recommended to provide a label for this input group
   helper_text:
     comment: Helpful text for the user such as 'Do not select more than 2'
