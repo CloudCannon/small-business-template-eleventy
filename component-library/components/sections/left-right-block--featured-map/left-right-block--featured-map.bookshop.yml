@@ -81,5 +81,9 @@ _inputs:
   image_alignment:
     label: Map Alignment
   description:
-    type: textarea  
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true      
     

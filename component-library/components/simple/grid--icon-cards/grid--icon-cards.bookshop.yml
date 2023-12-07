@@ -67,8 +67,18 @@ preview:
     content_alignment: center
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  description:
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true      
   text:
-    type: textarea
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true      
   icon:
     type: object
     options:
