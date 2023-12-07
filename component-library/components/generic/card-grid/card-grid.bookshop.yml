@@ -11,7 +11,7 @@ blueprint:
   content:
     id:
     heading: bookshop:generic/heading
-    description:
+    description: Description text to compliment the block
     grid_items: [bookshop:generic/card]
     buttons: [bookshop:generic/button]
   styles:

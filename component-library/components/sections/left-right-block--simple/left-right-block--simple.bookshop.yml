@@ -12,7 +12,7 @@ blueprint:
   content:
     id:
     heading: bookshop:generic/heading!
-    text: bookshop:generic/text-block!
+    text: Description text to compliment the block
     buttons: [bookshop:generic/button]
     image: bookshop:generic/image!
   styles:
@@ -30,6 +30,8 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  text:
+    type: textarea
   image_padding:
     label: Content block padding
     comment: Adds padding on the top and bottom of this content block
