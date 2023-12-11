@@ -47,17 +47,17 @@ let addColorDefinitions = (str, id) => {
 }
 
 // these are hardcoded default themes so the user always has at least these color_groups
-let css_string_primary_color_group = `.component--primary{`
-css_string_primary_color_group += `--primary__background : #3B3B3D;\n`
-css_string_primary_color_group += `--primary__foreground : #F9F9FB;\n`
-css_string_primary_color_group += `--primary__interaction : #2566f2;\n`
-css_string_primary_color_group += `}\n`
+css_string_component += `&--primary{`
+css_string_component += `--primary__background : #3B3B3D;\n`
+css_string_component += `--primary__foreground : #F9F9FB;\n`
+css_string_component += `--primary__interaction : #2566f2;\n`
+css_string_component += `}\n`
 
-css_string_primary_color_group += `.component--secondary{`
-css_string_primary_color_group += `--secondary__background : #1B1B1D;\n`
-css_string_primary_color_group += `--secondary__foreground : #D9D9DC;\n`
-css_string_primary_color_group += `--secondary__interaction : #2566f2;\n`
-css_string_primary_color_group += `}\n`
+css_string_component += `&--secondary{`
+css_string_component += `--secondary__background : #1B1B1D;\n`
+css_string_component += `--secondary__foreground : #D9D9DC;\n`
+css_string_component += `--secondary__interaction : #2566f2;\n`
+css_string_component += `}\n`
 
 config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: 'Primary'})
 config['_inputs']['color_group']['options']['values'].push({id: 'secondary', name: 'Secondary'})
@@ -91,7 +91,7 @@ config['_inputs']['footer_color_group']['options']['values'] = Array.from(config
 
 fs.writeFileSync(configFileLocation, yaml.dump(config))
 
-let css_string = `${css_string_root}${css_string_component}${css_string_primary_color_group}${css_string_nav}${css_string_footer}`
+let css_string = `${css_string_root}${css_string_component}${css_string_nav}${css_string_footer}`
 fs.appendFileSync(colorsFileLocation, css_string)
 
 const variableFileLocation = './src/assets/styles/variables.scss'
