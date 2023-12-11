@@ -59,13 +59,15 @@ _inputs:
     options:
       link: true
       bold: true
-      italic: true    
+      italic: true   
+      initial_height: 135 
   contact_details[*].text:
     type: markdown
     options:
       link: true
       bold: true
       italic: true   
+      initial_height: 135
   content_alignment:
     type: choice
     options:
