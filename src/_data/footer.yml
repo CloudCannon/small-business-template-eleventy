@@ -56,4 +56,4 @@ navigation_items:
     link_url: /contact
     open_in_new_tab: false
 footer_content: ©Enter your copyright and terms and conditions.
-footer_color_group: ""
+footer_color_group: "primary"

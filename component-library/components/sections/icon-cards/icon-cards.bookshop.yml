@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Grid - Icon Cards"
-  description: "Create a grid of cards displaying an icon, text content and a button"
+  label: "Icon Cards"
+  description: A grid layout of cards with icons
   icon: table_chart
-  tags: []
+  tags: ['grid', 'icon']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -18,7 +18,6 @@ blueprint:
         heading: bookshop:generic/heading!
         text:
         button: bookshop:generic/button!
-    card_color_group: "primary"
     buttons: [bookshop:generic/button]
   styles:
     color_group: "primary"

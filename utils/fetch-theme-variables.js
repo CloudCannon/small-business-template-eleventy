@@ -2,17 +2,8 @@ const fs = require('fs');
 const yaml = require('js-yaml')
 
 // read theme colors and fonts from data/theme.json
-//fs.readFile('src/_data/theme.json', 'utf8', (err, dataFile) => {
 let dataFile = yaml.load(fs.readFileSync('src/_data/theme.yml','utf-8'))
     
-/*if(err){
-    console.log(err);
-    return;
-}*/
-
-// parse file to JSON so that the variables can be accessed
-//dataFile = JSON.parse(dataFile);
-
 let color_groups = dataFile["color_groups"]
 delete dataFile["color_groups"]
 
@@ -55,6 +46,16 @@ let addColorDefinitions = (str, id) => {
     return str
 }
 
+// this is a hardcoded default theme so the user always has at least this one theme
+let css_string_primary_color_group = `.primary{`
+css_string_primary_color_group += `--primary__background : #3B3B3D;\n`
+css_string_primary_color_group += `--primary__foreground : #F9F9FB;\n`
+css_string_primary_color_group += `--primary__interaction : #2566f2;\n`
+css_string_primary_color_group += `}`
+
+config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: 'Primary'})
+
+
 color_groups = color_groups.forEach((color_set, i) => {
     let id = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
     let name = color_set.name
@@ -84,7 +85,7 @@ config['_inputs']['footer_color_group']['options']['values'] = Array.from(config
 
 fs.writeFileSync(configFileLocation, yaml.dump(config))
 
-let css_string = `${css_string_root}${css_string_component}${css_string_nav}${css_string_footer}`
+let css_string = `${css_string_root}${css_string_component}${css_string_primary_color_group}${css_string_nav}${css_string_footer}`
 fs.appendFileSync(colorsFileLocation, css_string)
 
 const variableFileLocation = './src/assets/styles/variables.scss'

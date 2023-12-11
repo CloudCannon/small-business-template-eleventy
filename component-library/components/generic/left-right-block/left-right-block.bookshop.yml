@@ -16,7 +16,7 @@ blueprint:
   icons: [bookshop:generic/labelled-icon]
   image: bookshop:generic/image
   map: bookshop:simple/google-map-embed
-  color_group: ""
+  color_group: "primary"
   image_alignment: left
   image_padding: false
 
@@ -49,7 +49,7 @@ preview:
         rounded_border: true
         theme_color: true
   image_alignment: left
-  color_group: ""
+  color_group: "primary"
   image:
     _bookshop_name: generic/image
     image_path: https://placekitten.com/300/500

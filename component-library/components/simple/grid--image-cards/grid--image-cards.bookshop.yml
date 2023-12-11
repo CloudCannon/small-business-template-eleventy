@@ -18,10 +18,10 @@ blueprint:
         heading:  bookshop:generic/heading!
         text:
         button: bookshop:generic/button!
-    card_color_group: ""
+    card_color_group: "primary"
     buttons: [bookshop:generic/button]
   styles:
-    color_group: ""
+    color_group: "primary"
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -59,7 +59,7 @@ preview:
         variant: primary
         arrow: right
   styles:
-    color_group: ""
+    color_group: "primary"
     content_alignment: center
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
