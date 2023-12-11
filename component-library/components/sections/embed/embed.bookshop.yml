@@ -27,9 +27,3 @@ preview:
 _inputs:
   embed:
     comment: Copy the embed code from the chosen provider here. This approach is not recommended for youtube/vimeo (use the centered large asset component instead)
-  description:
-    type: markdown
-    options:
-      link: true
-      bold: true
-      italic: true      

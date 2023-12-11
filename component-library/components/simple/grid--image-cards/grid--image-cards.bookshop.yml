@@ -67,10 +67,4 @@ _inputs:
     options:
       link: true
       bold: true
-      italic: true      
-  description:
-    type: markdown
-    options:
-      link: true
-      bold: true
-      italic: true      
+      italic: true       

@@ -66,13 +66,7 @@ preview:
     color_group: ""
     content_alignment: center
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  description:
-    type: markdown
-    options:
-      link: true
-      bold: true
-      italic: true      
+_inputs:    
   text:
     type: markdown
     options:

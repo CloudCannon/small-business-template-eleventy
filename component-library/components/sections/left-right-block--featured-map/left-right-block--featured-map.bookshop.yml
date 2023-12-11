@@ -53,14 +53,7 @@ _inputs:
             value:
               _type: Email
               text: 'Email address: mybusiness@business.com'
-              hero_icon_name: envelope
-              _inputs:
-                text:
-                  type: markdown
-                  options:
-                    link: true
-                    bold: true
-                    italic: true   
+              hero_icon_name: envelope 
           - label: Phone
             icon: call
             value:
@@ -86,11 +79,5 @@ _inputs:
               text: ''
               hero_icon_name: ''    
   image_alignment:
-    label: Map Alignment
-  description:
-    type: markdown
-    options:
-      link: true
-      bold: true
-      italic: true      
+    label: Map Alignment  
     
