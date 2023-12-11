@@ -2,17 +2,8 @@ const fs = require('fs');
 const yaml = require('js-yaml')
 
 // read theme colors and fonts from data/theme.json
-//fs.readFile('src/_data/theme.json', 'utf8', (err, dataFile) => {
 let dataFile = yaml.load(fs.readFileSync('src/_data/theme.yml','utf-8'))
     
-/*if(err){
-    console.log(err);
-    return;
-}*/
-
-// parse file to JSON so that the variables can be accessed
-//dataFile = JSON.parse(dataFile);
-
 let color_groups = dataFile["color_groups"]
 delete dataFile["color_groups"]
 
@@ -55,6 +46,22 @@ let addColorDefinitions = (str, id) => {
     return str
 }
 
+// these are hardcoded default themes so the user always has at least these color_groups
+css_string_component += `&--primary{`
+css_string_component += `--main-background-color : #3B3B3D;\n`
+css_string_component += `--main-text-color : #F9F9FB;\n`
+css_string_component += `--interaction-color : #2566f2;\n`
+css_string_component += `}\n`
+
+css_string_component += `&--secondary{`
+css_string_component += `--main-background-color : #1B1B1D;\n`
+css_string_component += `--main-text-color : #D9D9DC;\n`
+css_string_component += `--interaction-color : #2566f2;\n`
+css_string_component += `}\n`
+
+config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: 'Primary'})
+config['_inputs']['color_group']['options']['values'].push({id: 'secondary', name: 'Secondary'})
+
 color_groups = color_groups.forEach((color_set, i) => {
     let id = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
     let name = color_set.name
@@ -79,6 +86,7 @@ css_string_nav += `}\n\n`
 css_string_footer += `}\n\n`
 
 // adjust options for nav_color_group and footer_color_group
+config['_inputs']['card_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 config['_inputs']['nav_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 config['_inputs']['footer_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 

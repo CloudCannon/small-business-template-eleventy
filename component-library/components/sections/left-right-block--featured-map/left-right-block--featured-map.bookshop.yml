@@ -21,7 +21,7 @@ blueprint:
     map: bookshop:simple/google-map-embed!
     buttons: [bookshop:generic/button]
   styles:
-    color_group: ""
+    color_group: "primary"
     image_alignment: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -37,7 +37,7 @@ preview:
     map: bookshop:simple/google-map-embed!
     buttons: [bookshop:generic/button]
   styles:
-    color_group: ""
+    color_group: "primary"
     image_alignment: left
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint

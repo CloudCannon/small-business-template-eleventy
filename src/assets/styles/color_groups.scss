@@ -25,6 +25,14 @@ color: var(--main-text-color);
 }
 }
 
+.primary{--primary__background : #3B3B3D;
+--primary__foreground : #F9F9FB;
+--primary__interaction : #2566f2;
+}
+.secondary{--primary__background : #1B1B1D;
+--primary__foreground : #D9D9DC;
+--primary__interaction : #2566f2;
+}
 .c-navigation {
 --main-background-color: #1B1B1D;
 --main-text-color: #D9D9DC;
