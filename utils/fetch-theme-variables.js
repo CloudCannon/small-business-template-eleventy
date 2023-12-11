@@ -46,15 +46,21 @@ let addColorDefinitions = (str, id) => {
     return str
 }
 
-// this is a hardcoded default theme so the user always has at least this one theme
+// these are hardcoded default themes so the user always has at least these color_groups
 let css_string_primary_color_group = `.primary{`
 css_string_primary_color_group += `--primary__background : #3B3B3D;\n`
 css_string_primary_color_group += `--primary__foreground : #F9F9FB;\n`
 css_string_primary_color_group += `--primary__interaction : #2566f2;\n`
 css_string_primary_color_group += `}`
 
-config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: 'Primary'})
+css_string_primary_color_group += `.secondary{`
+css_string_primary_color_group += `--primary__background : #1B1B1D;\n`
+css_string_primary_color_group += `--primary__foreground : #D9D9DC;\n`
+css_string_primary_color_group += `--primary__interaction : #2566f2;\n`
+css_string_primary_color_group += `}`
 
+config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: 'Primary'})
+config['_inputs']['color_group']['options']['values'].push({id: 'secondary', name: 'Secondary'})
 
 color_groups = color_groups.forEach((color_set, i) => {
     let id = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
