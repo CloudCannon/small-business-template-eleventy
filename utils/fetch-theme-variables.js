@@ -86,6 +86,7 @@ css_string_nav += `}\n\n`
 css_string_footer += `}\n\n`
 
 // adjust options for nav_color_group and footer_color_group
+config['_inputs']['card_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 config['_inputs']['nav_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 config['_inputs']['footer_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 
