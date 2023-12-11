@@ -60,6 +60,12 @@ _inputs:
       link: true
       bold: true
       italic: true    
+  contact_details[*].text:
+    type: markdown
+      options:
+        link: true
+        bold: true
+        italic: true   
   content_alignment:
     type: choice
     options:
