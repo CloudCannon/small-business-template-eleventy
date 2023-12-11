@@ -11,12 +11,13 @@ blueprint:
   content:
     id:
     heading: bookshop:generic/heading
-    description:
+    description: Description text to compliment the block
     grid_items: [bookshop:generic/card]
     card_color_group: ""
     buttons: [bookshop:generic/button]
   styles:
     color_group: ""
+    content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -39,4 +40,5 @@ preview:
         arrow: right
   styles:
     color_group: ""
+    content_alignment: center 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
