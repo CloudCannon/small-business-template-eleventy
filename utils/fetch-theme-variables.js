@@ -1,24 +1,42 @@
 const fs = require('fs');
 const yaml = require('js-yaml')
 
-// read theme colors and fonts from data/theme.json
+// read theme colors and fonts from _data/theme.yml
 let dataFile = yaml.load(fs.readFileSync('src/_data/theme.yml','utf-8'))
     
+/* 
+    color_groups get processed differently than other user variables - so
+    extract the color_groups and then delete them from the dataFile object so
+    they don't get twice processed when we iterate through the dataFile object
+*/
 let color_groups = dataFile["color_groups"]
 delete dataFile["color_groups"]
 
-//change cloudcannon.config
 const configFileLocation = './cloudcannon.config.yml'
 
+// load the cloudcannon config and reset the color_group values
 let config = yaml.load(fs.readFileSync(configFileLocation,'utf-8'))
 config['_inputs']['color_group']['options']['values'] = []
 
+/* 
+    remove any existing color_groups.scss file and create a new one
+    easier to overwrite the file entirely each time than figure out
+    what changed and update only those parts
+*/
 const colorsFileLocation = './src/assets/styles/color_groups.scss'
 if(fs.existsSync(colorsFileLocation))
     fs.unlinkSync(colorsFileLocation)
 fs.writeFileSync(colorsFileLocation, "")
 
-
+/*
+    We have to do a few things to make the user colors usable and show up in the 
+    CloudCannon config. 
+    
+    - We need to define all the variables in the :root element of the CSS (css_string_root)
+    - We need to assign background, text and interaction colors to components (css_string_component)
+    - We need to assign the background, text and interaction colors to the nav (css_string_nav)
+    - We need to assign the background, text and interaction colors to the footer (css_string_footer)
+*/
 let css_string_root = `:root {\n`
 let css_string_component = `.component {\n`
 let css_string_nav = `.c-navigation {\n`
@@ -36,7 +54,11 @@ css_string_nav += `--main-text-color: #D9D9DC;\n`
 css_string_footer += `--main-background-color: #1B1B1D;\n`
 css_string_footer += `--main-text-color: #D9D9DC;\n`
 
-
+/*
+    Function to build the CSS rules:
+    - str - the css_string to append values to
+    - id - the id value of the color_group
+*/
 let addColorDefinitions = (str, id) => {
     str += `&--${id} {\n`
     str += `--main-background-color: var(--${id}__background);\n`
@@ -62,7 +84,17 @@ css_string_component += `}\n`
 config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: 'Primary'})
 config['_inputs']['color_group']['options']['values'].push({id: 'secondary', name: 'Secondary'})
 
+/* 
+    iterate through all the user defined color_groups and:
+    - create CSS variables for them
+    - add them into the cloudcannon config as options for the dropdowns
+*/
 color_groups = color_groups.forEach((color_set, i) => {
+    /* 
+        generate an id for the user defined color_group to be used in CSS class and variable names
+        - replace illegal characters
+        - append index to end for auto-increment unique ids
+    */
     let id = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
     let name = color_set.name
     let background = color_set.background_color
@@ -85,18 +117,21 @@ css_string_component += `}\n\n`
 css_string_nav += `}\n\n`
 css_string_footer += `}\n\n`
 
-// adjust options for nav_color_group and footer_color_group
+// adjust options for card_color_group, nav_color_group and footer_color_group
 config['_inputs']['card_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 config['_inputs']['nav_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 config['_inputs']['footer_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 
+// write the config file with the new options
 fs.writeFileSync(configFileLocation, yaml.dump(config))
 
+// write the css strings into a single file
 let css_string = `${css_string_root}${css_string_component}${css_string_nav}${css_string_footer}`
 fs.appendFileSync(colorsFileLocation, css_string)
 
-const variableFileLocation = './src/assets/styles/variables.scss'
 
+// Process all other user defined varaibles, such as fonts
+const variableFileLocation = './src/assets/styles/variables.scss'
 fs.readFile(variableFileLocation, 'utf-8', (err, cssFile) => {
 
     if(err){
@@ -113,7 +148,7 @@ fs.readFile(variableFileLocation, 'utf-8', (err, cssFile) => {
         replaced = replaced.replace(re,`--${k}: ${v};`)
     })
 
-    // Write result back to variables.css
+    // Write result back to variables.scss
     fs.writeFile(variableFileLocation, replaced, 'utf-8', err => {
         if(err)
             console.log(err);
