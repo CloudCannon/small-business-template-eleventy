@@ -16,7 +16,7 @@ blueprint:
       url: ""
       text: "Button text"
       open_in_new_tab: false
-    card_color_group: "secondary"
+  card_color_group: "secondary"
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
