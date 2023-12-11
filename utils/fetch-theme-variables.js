@@ -54,9 +54,9 @@ css_string_primary_color_group += `--primary__interaction : #2566f2;\n`
 css_string_primary_color_group += `}\n`
 
 css_string_primary_color_group += `.secondary{`
-css_string_primary_color_group += `--primary__background : #1B1B1D;\n`
-css_string_primary_color_group += `--primary__foreground : #D9D9DC;\n`
-css_string_primary_color_group += `--primary__interaction : #2566f2;\n`
+css_string_primary_color_group += `--secondary__background : #1B1B1D;\n`
+css_string_primary_color_group += `--secondary__foreground : #D9D9DC;\n`
+css_string_primary_color_group += `--secondary__interaction : #2566f2;\n`
 css_string_primary_color_group += `}\n`
 
 config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: 'Primary'})
