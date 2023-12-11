@@ -17,7 +17,7 @@ blueprint:
       - list_heading: List heading
         list_items:
           - label: List item
-            detail: $$
+            detail: $
     button: bookshop:generic/button
   styles:
     color_group: ""
@@ -76,4 +76,4 @@ _structures:
           list_heading: List heading
           list_items:
             - label: List item
-              detail: $$
+              detail: $
