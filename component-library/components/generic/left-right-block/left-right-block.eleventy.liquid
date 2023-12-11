@@ -7,7 +7,7 @@
 {% endcapture %}
 {% assign_local social_icons_style = social_icon_styles | ymlify %}
 
-<div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {% if styles.image_alignment == "Right" %}{{ c }}--right{% endif %} 
+<div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {{ c }}--{{ image_alignment }} 
   component--{{ color_group }}">
 
   <div class="{{ c }}__content">

@@ -5,7 +5,7 @@ spec:
   label: "Left/Right - Featured map"
   description: Display your contact details and a map
   icon: contact_phone
-  tags: ['contact', 'content-block', 'left-right']
+  tags: ["contact", "content-block", "left-right"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -21,9 +21,8 @@ blueprint:
     map: bookshop:simple/google-map-embed
     buttons: [bookshop:generic/button]    
   styles:
-    map_alignment: Left
-    color_group: "" 
-
+    color_group: ""
+    image_alignment: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -38,18 +37,18 @@ preview:
     map: bookshop:simple/google-map-embed
     buttons: [bookshop:generic/button]
   styles:
-    map_alignment: Left
-    color_group: "" 
+    color_group: ""
+    image_alignment: left
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   contact_details:
     type: array
     options:
-      structures:        
+      structures:
         values:
-          - label: Email    
-            icon: mail_outline      
+          - label: Email
+            icon: mail_outline
             value:
               _type: Email
               text: 'Email address: mybusiness@business.com'
@@ -85,5 +84,4 @@ _inputs:
         - Left
         - Right  
   description:
-    type: markdown  
-    
+    type: markdown

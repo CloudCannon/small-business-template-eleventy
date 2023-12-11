@@ -7,8 +7,7 @@
         placeholder="{{ placeholder }}"
         {% if required %}required{% endif %}
         onblur="validateInput(this)"
-        oninput="validateInputTyping(this)"
-        pattern="^[0-9+\(\)#\.\s\-\*]+$"
+        oninput="validateInputTyping(this)"        
         {% if helper_text %}aria-describedby="{{ id }}--helper"{% endif %}>
 
     {% if helper_text %}

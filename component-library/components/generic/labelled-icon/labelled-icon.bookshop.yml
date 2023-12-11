@@ -17,11 +17,3 @@ preview:
   text: Great customer service
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  arrangement:
-    type: select
-    comment: The layout of the icon and text together
-    options:
-      values:
-        - inline
-        - stacked
