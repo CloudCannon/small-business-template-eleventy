@@ -48,15 +48,15 @@ let addColorDefinitions = (str, id) => {
 
 // these are hardcoded default themes so the user always has at least these color_groups
 css_string_component += `&--primary{`
-css_string_component += `--primary__background : #3B3B3D;\n`
-css_string_component += `--primary__foreground : #F9F9FB;\n`
-css_string_component += `--primary__interaction : #2566f2;\n`
+css_string_component += `--main-background-color : #3B3B3D;\n`
+css_string_component += `--main-text-color : #F9F9FB;\n`
+css_string_component += `--interaction-color : #2566f2;\n`
 css_string_component += `}\n`
 
 css_string_component += `&--secondary{`
-css_string_component += `--secondary__background : #1B1B1D;\n`
-css_string_component += `--secondary__foreground : #D9D9DC;\n`
-css_string_component += `--secondary__interaction : #2566f2;\n`
+css_string_component += `--main-background-color : #1B1B1D;\n`
+css_string_component += `--main-text-color : #D9D9DC;\n`
+css_string_component += `--interaction-color : #2566f2;\n`
 css_string_component += `}\n`
 
 config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: 'Primary'})
