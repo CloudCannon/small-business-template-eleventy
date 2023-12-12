@@ -9,6 +9,6 @@
     {% endif %}
 
     <div class="{{ c }}__gallery">
-        {% bookshop "simple/gallery" bind:content.gallery %}
+        {% bookshop "simple/gallery" bind:content.gallery image_sizes:"(min-width: 1024px) 368px, (min-width: 769px) 46vw, 78vw" %}
     </div>
 </section>

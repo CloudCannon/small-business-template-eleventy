@@ -1,12 +1,12 @@
 source: src
 paths:
   data: _data
-  collections: ""
+  collections: ''
   layouts: _includes
-  static: ""
+  static: ''
   uploads: uploads
   includes: _includes
-  pages: ""
+  pages: ''
 collections_config:
   data:
     path: _data
@@ -33,19 +33,25 @@ _inputs:
         - down
         - left
   color:
-    comment: Choose a custom icon color (if the icon is an svg) and rounded border color (if one is included)
+    comment: >-
+      Choose a custom icon color (if the icon is an svg) and rounded border
+      color (if one is included)
   icon_size:
     type: choice
     options:
       allow_empty: false
       values:
-        - small
+        - smalls
         - large
   default_color:
-    comment: Use the original colors of the icon without overriding them (does not apply to the border if one is included)
+    comment: >-
+      Use the original colors of the icon without overriding them (does not
+      apply to the border if one is included)
     type: checkbox
   icon_type:
-    comment: Choose outline if you want lines to be filled with color and solid if you want the whole image filled with color
+    comment: >-
+      Choose outline if you want lines to be filled with color and solid if you
+      want the whole image filled with color
     type: choice
     options:
       allow_empty: false
@@ -60,12 +66,6 @@ _inputs:
       values:
         - primary
         - secondary
-  image_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right
   arrangement:
     type: select
     comment: The layout of the icon and text together
@@ -101,7 +101,8 @@ _inputs:
       redo: true
   font:
     comment: >-
-      Write the name of any font from [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
+      Write the name of any font from
+      [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
   content_alignment:
     type: choice
@@ -150,7 +151,9 @@ _inputs:
           id: secondary1
   group_name:
     hidden: true
-    comment: This input should be hidden from editors and passed through from the radio-group component so that these inputs function correctly
+    comment: >-
+      This input should be hidden from editors and passed through from the
+      radio-group component so that these inputs function correctly
   description:
     type: textarea
   nav_color_group:
@@ -184,17 +187,23 @@ _inputs:
   id:
     hidden: true
     instance_value: UUID
-    comment: An optional unique identifier for this component that can be used as a link (with page#id)
+    comment: >-
+      An optional unique identifier for this component that can be used as a
+      link (with page#id)
   heading_font:
     comment: >-
-      Write the name of any font from [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
+      Write the name of any font from
+      [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
   content_font:
     comment: >-
-      Write the name of any font from [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
+      Write the name of any font from
+      [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
   hero_icon_name:
-    comment: Visit [https://heroicons.com/](https://heroicons.com/) to see the full library
+    comment: >-
+      Visit [https://heroicons.com/](https://heroicons.com/) to see the full
+      library
     type: select
     options:
       values:
