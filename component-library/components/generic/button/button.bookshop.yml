@@ -25,20 +25,6 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  arrow:
-    type: select
-    options:
-      values:
-        - up
-        - right
-        - down
-        - left
-  variant:
-    type: select
-    options:
-      values:
-        - primary
-        - secondary
   onclick:
     hidden: true
   open_in_new_tab:
