@@ -24,9 +24,7 @@ blueprint:
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
-preview:
-  gallery:
-    image: /assets/images/component-previews/price-list.jpg
+preview:  
   content:
     heading:
       _bookshop_name: generic/heading
