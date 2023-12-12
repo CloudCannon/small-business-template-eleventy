@@ -10,6 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
+    show_note: true
     id:
     heading: bookshop:generic/heading!
     description: Description text to compliment the block
@@ -21,6 +22,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
+    show_note: true
     heading:
       _bookshop_name: generic/heading
       eyebrow_headline: EYEBROW HEADLINE
