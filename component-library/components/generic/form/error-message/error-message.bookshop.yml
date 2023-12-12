@@ -8,7 +8,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  error_message:
+  error_message: Error message
   id:
 
 
