@@ -63,7 +63,7 @@ preview:
 
 picker_preview:
   gallery:
-    image: /assets/images/component-previews/price-list.preview.jpg
+    image: price-list.preview.jpg
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
