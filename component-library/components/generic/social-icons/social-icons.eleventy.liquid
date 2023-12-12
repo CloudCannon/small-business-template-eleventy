@@ -23,8 +23,8 @@
         {% bookshop "generic/notification" heading:"Social Icons" text:"This is where your social icons will appear in the live site, but will not show in live editing in CloudCannon <br> You can edit the icons and their details in /data/site <br> This note will only show in live editing" %}
     {% endif %}
     {% for item in social_media_links %}
-          <a class="{{ c }}__icon" href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer">
-              {% bookshop "generic/custom-icon" icon_path:item.icon_path icon_size:'small' icon_type:'solid' rounded_border:true no_border:true color:style.icon_color %}
+          <a class="{{ c }}__icon" href="{{ item.link_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.label | default: 'social media link' }}">
+              {% bookshop "generic/custom-icon" icon_path:item.icon_path icon_size:'small' icon_type:'solid' rounded_border:true color:'transparent' %}
           </a>
     {% endfor %}
 </div>

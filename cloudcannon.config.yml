@@ -160,11 +160,11 @@ _inputs:
           id: secondary
           name: Secondary
         - &ref_2
-          name: Primary
-          id: primary0
+          name: Adon
+          id: adon0
         - &ref_3
-          name: Secondary
-          id: secondary1
+          name: New
+          id: new1
   card_color_group:
     comment: >-
       Choose the color group for the cards in this grid. It is recommended to
@@ -172,10 +172,10 @@ _inputs:
     type: select
     options:
       values:
-        - name: Primary
-          id: primary0
-        - name: Secondary
-          id: secondary1
+        - *ref_0
+        - *ref_1
+        - *ref_2
+        - *ref_3
   group_name:
     hidden: true
     comment: >-
