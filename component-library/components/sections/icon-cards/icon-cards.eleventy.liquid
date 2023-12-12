@@ -40,7 +40,7 @@
                 primary_heading: {{item.heading.primary_heading}}
                 primary_heading_hierarchy: {{ card_primary_heading_hierarchy }}
             description: {{ item.description }}
-            button: {{ item.button | json }}
+            buttons: {{ item.buttons | json }}
     {% endcapture %}
     {% assign grid_items = grid_items | append: card %}
 {% endfor %}
