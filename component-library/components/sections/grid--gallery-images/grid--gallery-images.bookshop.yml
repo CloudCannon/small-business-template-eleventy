@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Gallery"
-  description: A grid layout of images
+  label: "Grid - Gallery Images"
+  description: A grid layout of images with supporting information
   icon: collections
-  tags: ['grid', 'image']
+  tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -35,3 +35,4 @@ preview:
     content_alignment: center
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:    
