@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: "Centered Large Asset"
-  description: An asset (such as image or video) with optional supporting content
+  description: A centred asset (such as image or video)
   icon: web_asset
   tags: ['video', 'image']
 

@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Left/Right - Featured map"
-  description: Display your contact details and a map
+  label: "Contact"
+  description: Contact information with a map
   icon: contact_phone
-  tags: ["contact", "content-block", "left-right"]
+  tags: ['two column', 'contact', 'map']
 
 # Defines the structure of this component, as well as the default values
 blueprint:

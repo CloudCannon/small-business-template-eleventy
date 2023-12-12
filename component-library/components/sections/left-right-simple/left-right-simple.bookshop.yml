@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Left/Right - Simple"
+  label: "Text block with image"
   description: Heading, text and buttons with supporting image
   icon: art_track
-  tags: []
+  tags: ['two column', 'image']
 
 # Defines the structure of this component, as well as the default values
 blueprint:

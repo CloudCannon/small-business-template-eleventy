@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Left/Right - Featured icons"
-  description: Represents key features or services in a nice iconed layout
-  icon: art_track
-  tags: []
+  label: "Labelled Icons"
+  description: Key features/services with an iconed layout
+  icon: insert_emoticon
+  tags: ['two column', 'icon', 'image']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
