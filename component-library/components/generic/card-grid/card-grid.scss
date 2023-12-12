@@ -5,14 +5,14 @@
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
   row-gap: 48px;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
 
   &__heading {
       grid-column: 2 / -2;
   }
   &__grid, &__buttons {
-    grid-column: 3 / -3;
+    grid-column: 2 / -2;
   }
 
   &__heading {
@@ -28,18 +28,23 @@
     grid-gap: 1.5rem;
   }
 
+  &--content-align-center {
+    place-items: center;
+    text-align: center;
+  }
+
   @media screen and (min-width: 768px) {
     &__heading {
-      grid-column: 3 / -3;
+      grid-column: 2 / -2;
     }
     &__grid, &__buttons {
-      grid-column: 5 / -5;
+      grid-column: 4 / -4;
     }
   }
 
   @media screen and (min-width: 1279px) {
     &__heading {
-      grid-column: 5 / -5;
+      grid-column: 4 / -4;
     }
     &__grid, &__buttons {
       grid-column: 2 / -2;

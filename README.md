@@ -110,9 +110,13 @@ This is helpful (for example) if you want to link to information about your serv
 
 ## Development
 
-### Postprocessing
+### Prebuild
 
-(TBC) This template uses PostCSS
+There is a prebuild step with this template to process the user-defined theme variables (such as `color_groups` or `fonts`, defined in `src/_data/theme.yml`) and create associated CSS variables. The file which does this processing is located at `utils/fetch-theme-variables.js`.
+
+When developing locally, you can run `$ npm run fetch-theme-variables` to execute the preprocessing. This command also runs automatically as part of `$ npm run start`.
+
+Deploying your site to CloudCannon, there is a file located at `.cloudcannon/prebuild` which contains necessary commands to run before the build step, including `$ npm run fetch-theme-variables`.
 
 ### Design decisions
 
