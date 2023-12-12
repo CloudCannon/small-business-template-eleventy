@@ -8,6 +8,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  show_note: true
   social_media_links:
     - link_url: https://www.youtube.com/
       icon_path: /assets/images/icons/social/youtube.svg
@@ -24,7 +25,6 @@ blueprint:
     - link_url: https://www.instagram.com/
       icon_path: /assets/images/icons/social/instagram.svg
       label: Instagram
-  show_note: true
   style:
     icon_background_hover_color: "#7d7f7c"
     icon_color: "#7d7f7c"
@@ -32,6 +32,7 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  show_note: true
   social_media_links:
     - link_url: https://www.youtube.com/
       icon_path: /assets/images/icons/social/youtube.svg

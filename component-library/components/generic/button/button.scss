@@ -25,8 +25,8 @@
       border: 2px solid var(--main-background-color);
       background: var(--main-text-color);
       
-      .c-hero-icon__image, .c-hero-icon__svg {
-        --c-hero-icon-color: var(--main-background-color);
+      .c-hero-library-icon__image, .c-hero-library-icon__svg {
+        --c-hero-library-icon-color: var(--main-background-color);
       }
     }
   }
@@ -37,7 +37,7 @@
     }
   }
 
-  .c-hero-icon__image, .c-hero-icon__svg {
-      --c-hero-icon-color: var(--main-text-color);
+  .c-hero-library-icon__image, .c-hero-library-icon__svg {
+      --c-hero-library-icon-color: var(--main-text-color);
   }
 }
