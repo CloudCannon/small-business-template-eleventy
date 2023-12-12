@@ -22,7 +22,7 @@
         {% if content.buttons and content.buttons.size > 0 %}
             {% for button in content.buttons %}
                 <div class="{{ c }}__button">
-                    {% bookshop "generic/button" url:button.url text:button.text open_in_new_tab:button.open_in_new_tab variant:"secondary" arrow:"right"%}
+                    {% bookshop "generic/button" bind:button %}
                 </div>
             {% endfor %}            
         {% endif %}
