@@ -8,4 +8,5 @@
         {% endcapture %}
         {% assign_local heading = heading | ymlify %}
         {% if content.heading %}{% bookshop "generic/heading" bind:heading %}{% endif %}
+        {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
 </section>

@@ -1,4 +1,4 @@
-.c-hero-icon {
+.c-hero-library-icon {
     border: none;
     flex-shrink: 0;
     display: flex;
@@ -7,7 +7,7 @@
     
     &--round {
         border-radius: 50%;
-        border-color: var(--c-hero-icon-color, #F9F9FB);
+        border-color: var(--c-hero-library-icon-color, #F9F9FB);
         border-style: solid;
     }
 
@@ -15,12 +15,12 @@
         border-style:none;
     }
 
-    &--round.c-hero-icon--large {
+    &--round.c-hero-library-icon--large {
         padding: 0.95rem;
         border-width: 0.125rem;
     }
 
-    &--round.c-hero-icon--small {
+    &--round.c-hero-library-icon--small {
         padding: 0.4rem;
         border-width: 0.063rem;
     }
@@ -41,13 +41,13 @@
     }
 
     &--outline {
-        .c-hero-icon__svg, * {
-            stroke: var(--c-hero-icon-color, #F9F9FB);
+        .c-hero-library-icon__svg, * {
+            stroke: var(--c-hero-library-icon-color, #F9F9FB);
         }
     }
     &--solid {
-        .c-hero-icon__svg, *{
-            fill: var(--c-hero-icon-color, #F9F9FB);
+        .c-hero-library-icon__svg, *{
+            fill: var(--c-hero-library-icon-color, #F9F9FB);
         }
     }
 
@@ -57,7 +57,7 @@
     }
 
     &--outline &__image, &--solid &__image {
-        background: var(--c-hero-icon-color, #F9F9FB);
+        background: var(--c-hero-library-icon-color, #F9F9FB);
         width: 100%;
         height: 100%;
         mask: var(--url);

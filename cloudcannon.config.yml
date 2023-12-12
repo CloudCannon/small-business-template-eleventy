@@ -62,8 +62,10 @@ _inputs:
     options:
       allow_empty: false
       values:
-        - solid
-        - outline
+        - name: Solid
+          id: solid
+        - name: Outline
+          id: outline
   icon_path:
     type: image
   variant:
@@ -104,16 +106,35 @@ _inputs:
   footer_content:
     type: markdown
     options:
-      bold: true
-      italic: true
       link: true
+      bold: true
+      italic: true   
       undo: true
       redo: true
+      initial_height: 135
   font:
     comment: >-
       Write the name of any font from
       [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
+  description:
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true   
+      undo: true
+      redo: true
+      initial_height: 135
+  contact_details[*].text:
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true   
+      undo: true
+      redo: true
+      initial_height: 135
   content_alignment:
     type: choice
     options:
@@ -131,17 +152,6 @@ _inputs:
         - name: Center
           id: center
           icon: format_align_center
-  image_alignment:
-    type: choice
-    options:
-      allow_empty: false
-      values:
-        - name: Left
-          id: left
-          icon: align_horizontal_left
-        - name: Right
-          id: right
-          icon: align_horizontal_right
   color_group:
     type: select
     options:
@@ -218,9 +228,7 @@ _inputs:
   id:
     hidden: true
     instance_value: UUID
-    comment: >-
-      An optional unique identifier for this component that can be used as a
-      link (with page#id)
+    comment: An optional unique identifier to link to this component (with page#id where id is what you set in this field)
   heading_font:
     comment: >-
       Write the name of any font from
@@ -231,10 +239,8 @@ _inputs:
       Write the name of any font from
       [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
-  hero_icon_name:
-    comment: >-
-      Visit [https://heroicons.com/](https://heroicons.com/) to see the full
-      library
+  hero_library_icon_name:
+    comment: Visit https://heroicons.com/ to see the full library
     type: select
     options:
       values:
@@ -542,10 +548,6 @@ _inputs:
     comment: >-
       Hide/Show the note that contains helpful information about the live
       editing of this component
-  skipnav_text:
-    comment: >-
-      A hidden link at the top of the page that, when activated, jumps the user
-      to the beginning of the main content area.
 _select_data: {}
 _structures:
   content_blocks:

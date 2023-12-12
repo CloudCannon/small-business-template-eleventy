@@ -2,14 +2,14 @@
 {%  assign block_icons = "" %}
 
 {% for icon_data in content.icons %}
-  {% if icon_data.hero_icon_name %}
+  {% if icon_data.hero_library_icon_name %}
     {% capture labelled-icon %}
       - _bookshop_name: generic/labelled-icon
         arrangement: stacked
         text: "{{ icon_data.icon_text }}"
         icon:
-          _bookshop_name: generic/hero-icon
-          hero_icon_name: {{ icon_data.hero_icon_name }}
+          _bookshop_name: generic/hero-library-icon
+          hero_library_icon_name: {{ icon_data.hero_library_icon_name }}
           icon_size: large
           icon_type: {{ icon_data.icon_type }}
           rounded_border: true

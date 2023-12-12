@@ -2,7 +2,7 @@
 spec:
   structures:
   label: "Card"
-  description: "A reusable card that uses abn icon or an image as the card header"
+  description: "A reusable card that uses an icon or an image as the card header"
   icon: perm_media
   tags: []
 
@@ -11,7 +11,7 @@ blueprint:
   content:
     imagery: bookshop:structure:card_imagery_blocks
     heading: bookshop:generic/heading
-    text: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience. They come with an action link to get your users into the journey you’ve crafted for them.
+    description: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience. They come with an action link to get your users into the journey you’ve crafted for them.
     button: 
       url: ""
       text: "Button text"
@@ -24,8 +24,5 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  text:
-    type: textarea
   card_color_group: 
     hidden: true
-

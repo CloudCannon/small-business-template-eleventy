@@ -19,7 +19,7 @@
                 eyebrow_headline_hierarchy: {{ card_eyebrow_headline_hierarchy }}
                 primary_heading: {{item.heading.primary_heading}}
                 primary_heading_hierarchy: {{ card_primary_heading_hierarchy }}
-            text: {{ item.text }}
+            description: {{ item.description }}
             button: {{ item.button | json }}
     {% endcapture %}
     {% assign grid_items = grid_items | append: card %}
