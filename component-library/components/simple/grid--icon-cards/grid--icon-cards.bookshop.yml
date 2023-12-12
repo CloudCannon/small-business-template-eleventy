@@ -32,7 +32,7 @@ preview:
       - icon:
           hero_icon_name: academic-cap
           icon_type: solid
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -42,7 +42,7 @@ preview:
           icon_type: outline
         eyebrow_headline: Eyebrow Heading
         primary_heading: Primary Heading
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -50,7 +50,7 @@ preview:
       - icon:
           icon_path: /assets/images/icons/social/youtube.svg
           icon_type: solid
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -66,13 +66,7 @@ preview:
     color_group: ""
     content_alignment: center
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:    
-  text:
-    type: markdown
-    options:
-      link: true
-      bold: true
-      italic: true      
+_inputs:     
   icon:
     type: object
     options:

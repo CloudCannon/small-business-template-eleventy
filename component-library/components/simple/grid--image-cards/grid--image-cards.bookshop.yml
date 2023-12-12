@@ -33,19 +33,19 @@ preview:
     description: Card Grid Description
     grid_items:
       - image: bookshop:generic/image
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
       - image: bookshop:generic/image
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
       - image: bookshop:generic/image
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -61,10 +61,4 @@ preview:
     color_group: ""
     content_alignment: center
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  text:
-    type: markdown
-    options:
-      link: true
-      bold: true
-      italic: true       
+_inputs:   

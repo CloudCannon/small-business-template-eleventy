@@ -2,7 +2,7 @@
 spec:
   structures:
   label: "Card"
-  description: "A reusable card that uses abn icon or an image as the card header"
+  description: "A reusable card that uses an icon or an image as the card header"
   icon: perm_media
   tags: []
 
