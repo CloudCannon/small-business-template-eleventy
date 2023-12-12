@@ -203,15 +203,15 @@ _inputs:
         - *ref_3
   primary_color_group:
     comment: The default color group for styling site components
-  primary_color_group[*].name:
+  primary_color_group.name:
     comment: Change the name of the default color group to easily identify it later
     label: Group Name
-  primary_color_group[*].background_color:
+  primary_color_group.background_color:
     comment: The background color of site components
-  primary_color_group[*].foreground_color:
+  primary_color_group.foreground_color:
     comment: The color of text, icons and borders
     label: Text Color
-  primary_color_group[*].interaction_color:
+  primary_color_group.interaction_color:
     comment: >-
       The color for user interactions, for example focusing on text inputs or
       clicking buttons
