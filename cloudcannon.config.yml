@@ -70,10 +70,8 @@ _inputs:
     type: select
     options:
       values:
-        - name: Primary
-          id: primary
-        - name: Secondary
-          id: secondary
+        - primary
+        - secondary
   arrangement:
     type: select
     comment: The layout of the icon and text together
@@ -104,16 +102,35 @@ _inputs:
   footer_content:
     type: markdown
     options:
+      link: true
       bold: true
       italic: true
-      link: true
       undo: true
       redo: true
+      initial_height: 135
   font:
     comment: >-
       Write the name of any font from
       [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
+  description:
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true
+      undo: true
+      redo: true
+      initial_height: 135
+  contact_details[*].text:
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true
+      undo: true
+      redo: true
+      initial_height: 135
   content_alignment:
     type: choice
     options:
@@ -131,17 +148,6 @@ _inputs:
         - name: Center
           id: center
           icon: format_align_center
-  image_alignment:
-    type: choice
-    options:
-      allow_empty: false
-      values:
-        - name: Left
-          id: left
-          icon: align_horizontal_left
-        - name: Right
-          id: right
-          icon: align_horizontal_right
   color_group:
     type: select
     options:
@@ -173,8 +179,6 @@ _inputs:
     comment: >-
       This input should be hidden from editors and passed through from the
       radio-group component so that these inputs function correctly
-  description:
-    type: textarea
   nav_color_group:
     comment: Choose the color group for the navigation header
     type: select
@@ -544,10 +548,6 @@ _inputs:
     comment: >-
       Hide/Show the note that contains helpful information about the live
       editing of this component
-  skipnav_text:
-    comment: >-
-      A hidden link at the top of the page that, when activated, jumps the user
-      to the beginning of the main content area.
 _select_data: {}
 _structures:
   content_blocks:

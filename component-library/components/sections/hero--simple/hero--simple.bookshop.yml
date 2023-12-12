@@ -11,6 +11,7 @@ spec:
 blueprint:
   content:
     heading: bookshop:generic/heading!
+    description: Description text to compliment the block
   styles:
     content_alignment: center
     color_group: "primary"

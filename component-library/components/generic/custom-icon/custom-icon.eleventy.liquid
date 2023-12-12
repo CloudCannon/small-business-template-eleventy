@@ -1,4 +1,4 @@
-{% assign_local c = "c-hero-icon" %}
+{% assign_local c = "c-hero-library-icon" %}
 {% assign_local this_c = "c-custom-icon" %}
 
 <span class="{{ this_c }} {{ c }} {{ c }}--{{ icon_size }} 
@@ -20,7 +20,7 @@
     {% if icon_path contains '.svg' and env_bookshop_live %}
         <span class="{{ c }}__image {{ this_c }}__image" style="--url: url('{{ icon_path }}')"></span>
     {% elsif icon_path contains '.svg' %}
-         {{ '/src' | append: icon_path  | svgContents: "c-hero-icon__svg" }}
+         {{ '/src' | append: icon_path  | svgContents: "c-hero-library-icon__svg" }}
     {% else %}
         {% bookshop "generic/image" image_path:icon_path image_alt:'' %}
     {% endif %}

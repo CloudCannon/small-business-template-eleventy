@@ -3,14 +3,14 @@ spec:
   structures:
     - card_imagery_blocks
     - icon_blocks
-  label: "Icon"
+  label: "Hero Library Icon"
   description: A icon (from https://heroicons.com/) with an optional border and customisable color
   icon: bolt
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  hero_icon_name: academic-cap
+  hero_library_icon_name: academic-cap
   icon_size: small
   icon_type: solid
   rounded_border: false

@@ -2,7 +2,7 @@
 <div class="{{c}} component component--full-height
     {% if content.imagery._bookshop_name == 'generic/image' %} 
         {{ c }}--image 
-    {% elsif content.imagery._bookshop_name == 'generic/hero-icon' or content.imagery._bookshop_name == 'generic/custom-icon' %} 
+    {% elsif content.imagery._bookshop_name == 'generic/hero-library-icon' or content.imagery._bookshop_name == 'generic/custom-icon' %} 
         {{ c }}--icon 
     {% endif %}
     component--{{ card_color_group }}">
@@ -18,7 +18,7 @@
             {% bookshop "generic/heading" bind:content.heading %}
         {% endif %}
 
-        {% if content.text %}<div class="{{c}}__content">{% bookshop "generic/text-block" text:content.text %}</div>{% endif %}
+        {% if content.description %}<div class="{{c}}__content">{% bookshop "generic/text-block" text:content.description %}</div>{% endif %}
         {% if content.button %}
             <div class="{{ c }}__button">
                 {% bookshop "generic/button" url:content.button.url text:content.button.text open_in_new_tab:content.button.open_in_new_tab variant:"secondary" arrow:"right"%}
