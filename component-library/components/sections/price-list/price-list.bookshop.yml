@@ -75,8 +75,5 @@ _structures:
         value:
           list_heading: List heading
           list_items:
-            values:              
-              - label: List item
-                value:
-                  label: List item
-                  detail: $
+            - label: List item
+              detail: $
