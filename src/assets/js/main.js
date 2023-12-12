@@ -31,7 +31,7 @@ const debounce = (func, delay) => {
 
 // Check if on desktop view
 const checkViewportSize = () => {
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth >= 769) {
     enableBodyScroll(document.getElementById("main-menu"));
     nav.classList.remove(closeClass);
     nav.classList.remove(openClass);
