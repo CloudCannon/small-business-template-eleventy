@@ -17,6 +17,7 @@
         resize: vertical;
         background-color: transparent;
         color: var(--main-text-color);
+        min-height: 4.7rem;
 
         &::placeholder {
             opacity: 1;

@@ -13,7 +13,7 @@ blueprint:
     id:
     heading: bookshop:generic/heading!
     description: Description text to compliment the block
-    form: bookshop:simple/form-builder
+    form: bookshop:simple/form-builder!
   styles:
     color_group: "" 
     content_alignment: center
@@ -22,6 +22,3 @@ blueprint:
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  description:
-    type: textarea

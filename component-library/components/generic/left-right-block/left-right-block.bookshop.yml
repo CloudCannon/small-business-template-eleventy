@@ -16,10 +16,9 @@ blueprint:
   icons: [bookshop:generic/labelled-icon]
   image: bookshop:generic/image
   map: bookshop:simple/google-map-embed
-  image_alignment: Left
+  color_group: ""
+  image_alignment: left
   image_padding: false
-  color_group: "" 
-
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -37,7 +36,7 @@ preview:
       variant: "primary"
       disabled: false
       arrow: "right"
-      onclick: 
+      onclick:
   icons:
     - _bookshop_name: generic/labelled-icon
       arrangement: inline
@@ -49,25 +48,8 @@ preview:
         icon_type: solid
         rounded_border: true
         theme_color: true
-  image_alignment: Left
-  color_group: "" 
-  image: 
-    _bookshop_name: generic/image
-    image_path: https://placekitten.com/300/500
-    image_alt: A cute kitten
-  map:
-    _bookshop_name: simple/google-map-embed
-    latitude: 37.782046
-    longitude: -122.4514212
-    zoom_level: 9
-
-
+  image_alignment: left
+  color_group: ""
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  image_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right 
