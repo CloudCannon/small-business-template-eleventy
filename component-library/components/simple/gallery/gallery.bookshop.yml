@@ -10,9 +10,11 @@ spec:
 blueprint:
   show_note: true
   images: [bookshop:generic/image]
-  button:
-    text: Load More
+  button: 
+    _bookshop_name: generic/button
+    text: Load more
     variant: primary
+    arrow: down
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -27,11 +29,3 @@ preview:
 _inputs:
   images:
     comment: The images should be square in shape
-  variant:
-    type: select
-    options:
-      values:
-        - name: Primary
-          id: primary
-        - name: Secondary
-          id: secondary
