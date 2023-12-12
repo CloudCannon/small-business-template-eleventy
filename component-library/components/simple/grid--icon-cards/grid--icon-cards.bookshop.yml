@@ -16,7 +16,7 @@ blueprint:
     grid_items:
       - icon:
         heading: bookshop:generic/heading!
-        text:
+        description: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience. They come with an action link to get your users into the journey you’ve crafted for them.
         button: bookshop:generic/button!
     buttons: [bookshop:generic/button]
   styles:
