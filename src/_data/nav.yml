@@ -19,4 +19,4 @@ navigation_items:
   - label: Contact Us
     link_url: /contact
     open_in_new_tab: false
-nav_color_group: ""
+nav_color_group: "primary"

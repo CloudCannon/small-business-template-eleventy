@@ -2,19 +2,12 @@ const fs = require('fs');
 const yaml = require('js-yaml')
 
 // read theme colors and fonts from data/theme.json
-//fs.readFile('src/_data/theme.json', 'utf8', (err, dataFile) => {
 let dataFile = yaml.load(fs.readFileSync('src/_data/theme.yml','utf-8'))
     
-/*if(err){
-    console.log(err);
-    return;
-}*/
-
-// parse file to JSON so that the variables can be accessed
-//dataFile = JSON.parse(dataFile);
-
-let color_groups = dataFile["color_groups"]
-delete dataFile["color_groups"]
+let color_groups = dataFile["custom_color_groups"]
+let primary_color = dataFile["primary_color_group"]
+delete dataFile["custom_color_groups"]
+delete dataFile["primary_color_group"]
 
 //change cloudcannon.config
 const configFileLocation = './cloudcannon.config.yml'
@@ -55,6 +48,15 @@ let addColorDefinitions = (str, id) => {
     return str
 }
 
+// these are hardcoded default themes so the user always has at least these color_groups
+css_string_component += `&--primary{`
+css_string_component += `--main-background-color : ${primary_color.background_color};\n`
+css_string_component += `--main-text-color : ${primary_color.foreground_color};\n`
+css_string_component += `--interaction-color : ${primary_color.interaction_color};\n`
+css_string_component += `}\n`
+
+config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: primary_color.name})
+
 color_groups = color_groups.forEach((color_set, i) => {
     let id = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`
     let name = color_set.name
@@ -79,6 +81,7 @@ css_string_nav += `}\n\n`
 css_string_footer += `}\n\n`
 
 // adjust options for nav_color_group and footer_color_group
+config['_inputs']['card_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 config['_inputs']['nav_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 config['_inputs']['footer_color_group']['options']['values'] = Array.from(config['_inputs']['color_group']['options']['values'])
 
