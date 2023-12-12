@@ -16,11 +16,12 @@ blueprint:
     grid_items:
       - image: bookshop:generic/image!
         heading:  bookshop:generic/heading!
-        text:
+        description: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience. They come with an action link to get your users into the journey you’ve crafted for them.
         button: bookshop:generic/button!
+    card_color_group: "primary"
     buttons: [bookshop:generic/button]
   styles:
-    color_group: ""
+    color_group: "primary"
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -33,19 +34,19 @@ preview:
     description: Card Grid Description
     grid_items:
       - image: bookshop:generic/image
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
       - image: bookshop:generic/image
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
       - image: bookshop:generic/image
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -58,9 +59,7 @@ preview:
         variant: primary
         arrow: right
   styles:
-    color_group: ""
+    color_group: "primary"
     content_alignment: center
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  text:
-    type: textarea
+_inputs:   

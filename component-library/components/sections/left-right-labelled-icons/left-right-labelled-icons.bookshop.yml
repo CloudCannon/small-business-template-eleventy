@@ -25,7 +25,7 @@ blueprint:
     buttons: [bookshop:generic/button!]
     image: bookshop:generic/image!
   styles:
-    color_group: ""
+    color_group: "primary"
     image_alignment: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -36,13 +36,13 @@ preview:
       eyebrow_headline: Let your features shine
       primary_heading: A featured icons left right block
     icons:
-      - hero_icon_name: face-smile
+      - hero_library_icon_name: face-smile
         icon_text: 100% Happy customer reviews
         icon_type: outline
       - icon_path: /assets/images/icons/social/youtube.svg
         icon_text: Great customer service
         icon_type: outline
-      - hero_icon_name: star
+      - hero_library_icon_name: star
         icon_text: Outstanding product reviews
         icon_type: solid
     buttons:
@@ -59,11 +59,11 @@ preview:
       image_path: https://placekitten.com/300/500
       image_alt: A cute kitten
   styles:
-    color_group: ""
+    color_group: "primary"
     image_alignment: left
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
+_inputs:   
   icon_path:
     type: image
   icons:
@@ -74,9 +74,9 @@ _inputs:
 _structures:
   icon_types:
     values:
-      - label: Hero Icon
+      - label: Hero Library Icon
         value:
-          hero_icon_name: academic-cap
+          hero_library_icon_name: academic-cap
           icon_type:
           icon_text:
         _inputs:

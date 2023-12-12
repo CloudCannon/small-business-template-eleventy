@@ -10,17 +10,19 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
+    show_note: true
     id:
     heading: bookshop:generic/heading!
     description: Description text to compliment the block
     gallery: bookshop:simple/image-gallery!
   styles:
-    color_group: "" 
+    color_group: "primary"
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
+    show_note: true
     heading:
       _bookshop_name: generic/heading
       eyebrow_headline: EYEBROW HEADLINE
@@ -31,7 +33,8 @@ preview:
       below, as many as you like, and let people contact you or book now.
     gallery: bookshop:simple/image-gallery
   styles:
-    color_group: "" 
+    color_group: "primary"
     content_alignment: center
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:    

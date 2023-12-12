@@ -16,8 +16,8 @@
 
     {% if content.grid_items %}
       <div class="{{c}}__grid">
-        {% for item in content.grid_items %}
-          {% bookshop "generic/card" bind:item %}
+        {% for item in content.grid_items %}          
+          {% bookshop "generic/card" bind:item card_color_group:content.card_color_group %}
         {% endfor %}
       </div>
     {% endif %}

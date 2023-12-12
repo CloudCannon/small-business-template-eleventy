@@ -16,11 +16,12 @@ blueprint:
     grid_items:
       - icon:
         heading: bookshop:generic/heading!
-        text:
+        description: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience. They come with an action link to get your users into the journey you’ve crafted for them.
         button: bookshop:generic/button!
+    card_color_group: "primary"
     buttons: [bookshop:generic/button]
   styles:
-    color_group: ""
+    color_group: "primary"
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -30,19 +31,19 @@ preview:
     description: Card Grid Description
     grid_items:
       - icon:
-          hero_icon_name: academic-cap
+          hero_library_icon_name: academic-cap
           icon_type: solid
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
       - icon:
-          hero_icon_name: adjustments-horizontal
+          hero_library_icon_name: adjustments-horizontal
           icon_type: outline
         eyebrow_headline: Eyebrow Heading
         primary_heading: Primary Heading
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -50,7 +51,7 @@ preview:
       - icon:
           icon_path: /assets/images/icons/social/youtube.svg
           icon_type: solid
-        text: >-
+        description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -63,12 +64,10 @@ preview:
         variant: primary
         arrow: right
   styles:
-    color_group: ""
+    color_group: "primary"
     content_alignment: center
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  text:
-    type: textarea
+_inputs:     
   icon:
     type: object
     options:
@@ -76,9 +75,9 @@ _inputs:
 _structures:
   icon_types:
     values:
-      - label: Hero Icon
+      - label: Hero Library Icon
         value:
-          hero_icon_name: academic-cap
+          hero_library_icon_name: academic-cap
           icon_type:
         _inputs:
           icon_type:

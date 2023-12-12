@@ -1,13 +1,14 @@
 .c-hero--simple {
     display: grid;
     grid-template-columns: var(--twelve-column-grid);
+    row-gap: 3rem;
 
     &--content-align-center {
-        align-items: center;
+        place-items: center;
         text-align: center;
     }
 
-    .c-heading {
+    .c-heading, .c-text-block {
         grid-column: 2 / -2;
     }
 }
