@@ -50,15 +50,6 @@ preview:
         theme_color: true
   image_alignment: left
   color_group: ""
-  image:
-    _bookshop_name: generic/image
-    image_path: https://placekitten.com/300/500
-    image_alt: A cute kitten
-  map:
-    _bookshop_name: simple/google-map-embed
-    latitude: 37.782046
-    longitude: -122.4514212
-    zoom_level: 9
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
