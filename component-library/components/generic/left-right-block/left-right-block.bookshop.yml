@@ -49,7 +49,7 @@ preview:
         rounded_border: true
         theme_color: true
   image_alignment: left
-  color_group: ""
+  color_group: "primary"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

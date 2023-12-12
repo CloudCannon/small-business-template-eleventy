@@ -1,10 +1,7 @@
 :root {
---adon0__background : #3b3b3d;
---adon0__foreground : #f9f9fb;
---adon0__interaction : #2566f2;
---new1__background : #1b1b1d;
---new1__foreground : #d9d9dc;
---new1__interaction : undefined;
+--secondary0__background : #1b1b1d;
+--secondary0__foreground : #d9d9dc;
+--secondary0__interaction : undefined;
 }
 
 .component {
@@ -13,53 +10,34 @@
 --interaction-color: #2566f2;
 background-color: var(--main-background-color);
 color: var(--main-text-color);
-&--primary{--main-background-color : #3B3B3D;
---main-text-color : #F9F9FB;
+&--primary{--main-background-color : #3b3b3d;
+--main-text-color : #f9f9fb;
 --interaction-color : #2566f2;
 }
-&--secondary{--main-background-color : #1B1B1D;
---main-text-color : #D9D9DC;
---interaction-color : #2566f2;
-}
-&--adon0 {
---main-background-color: var(--adon0__background);
---main-text-color: var(--adon0__foreground);
---interaction-color: var(--adon0__interaction);
-}
-&--new1 {
---main-background-color: var(--new1__background);
---main-text-color: var(--new1__foreground);
---interaction-color: var(--new1__interaction);
+&--secondary0 {
+--main-background-color: var(--secondary0__background);
+--main-text-color: var(--secondary0__foreground);
+--interaction-color: var(--secondary0__interaction);
 }
 }
 
 .c-navigation {
 --main-background-color: #1B1B1D;
 --main-text-color: #D9D9DC;
-&--adon0 {
---main-background-color: var(--adon0__background);
---main-text-color: var(--adon0__foreground);
---interaction-color: var(--adon0__interaction);
-}
-&--new1 {
---main-background-color: var(--new1__background);
---main-text-color: var(--new1__foreground);
---interaction-color: var(--new1__interaction);
+&--secondary0 {
+--main-background-color: var(--secondary0__background);
+--main-text-color: var(--secondary0__foreground);
+--interaction-color: var(--secondary0__interaction);
 }
 }
 
 .c-footer {
 --main-background-color: #1B1B1D;
 --main-text-color: #D9D9DC;
-&--adon0 {
---main-background-color: var(--adon0__background);
---main-text-color: var(--adon0__foreground);
---interaction-color: var(--adon0__interaction);
-}
-&--new1 {
---main-background-color: var(--new1__background);
---main-text-color: var(--new1__foreground);
---interaction-color: var(--new1__interaction);
+&--secondary0 {
+--main-background-color: var(--secondary0__background);
+--main-text-color: var(--secondary0__foreground);
+--interaction-color: var(--secondary0__interaction);
 }
 }
 
