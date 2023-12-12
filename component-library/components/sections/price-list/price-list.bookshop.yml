@@ -63,7 +63,7 @@ preview:
 
 picker_preview:
   gallery:
-    image: price-list.preview.jpg
+    image: https://placehold.co/600x400
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
