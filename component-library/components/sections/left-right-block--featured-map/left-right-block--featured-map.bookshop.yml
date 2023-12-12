@@ -5,40 +5,39 @@ spec:
   label: "Left/Right - Featured map"
   description: Display your contact details and a map
   icon: contact_phone
-  tags: ['contact', 'content-block', 'left-right']
+  tags: ["contact", "content-block", "left-right"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
+    show_note: true
     id:
     display_social_icons: true
-    show_note: true
     heading: A contact block
     description: This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
     contact_details:
       - text: 'Email address: mybusiness@business.com'
-        hero_icon_name: envelope
-    map: bookshop:simple/google-map-embed!
+        hero_library_icon_name: envelope
+    map: bookshop:simple/google-map-embed
     buttons: [bookshop:generic/button]    
   styles:
-    color_group: "" 
+    color_group: ""
     image_alignment: left
-
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   content:
+    show_note: true
     display_social_icons: true
-    show_note: false
     heading: A contact block
     content: Content
     contact_details:
       - text: 'Email address: mybusiness@business.com'
-        hero_icon_name: envelope
-    map: bookshop:simple/google-map-embed!
+        hero_library_icon_name: envelope
+    map: bookshop:simple/google-map-embed
     buttons: [bookshop:generic/button]
   styles:
-    color_group: "" 
+    color_group: ""
     image_alignment: left
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
@@ -48,36 +47,35 @@ _inputs:
     options:         
       structures:        
         values:
-          - label: Email    
-            icon: mail_outline      
+          - label: Email
+            icon: mail_outline
             value:
               _type: Email
               text: 'Email address: mybusiness@business.com'
-              hero_icon_name: envelope 
+              hero_library_icon_name: envelope
           - label: Phone
             icon: call
             value:
               _type: Phone
               text: 'Phone number: 312 325 326'
-              hero_icon_name: phone
+              hero_library_icon_name: phone
           - label: Address 
             icon: location_on        
             value:
               _type: Address
               text: 'Address: 1 Fake St, Faketown'
-              hero_icon_name: map-pin
+              hero_library_icon_name: map-pin
           - label: Opening hours
             icon: schedule
             value:
               _type: Hours
               text: 'Opening hours: 9-5pm, Monday to Friday'
-              hero_icon_name: clock
+              hero_library_icon_name: clock
           - label: Custom
             icon: person
             value:
               _type: Custom
               text: ''
-              hero_icon_name: ''    
+              hero_library_icon_name: ''    
   image_alignment:
-    label: Map Alignment  
-    
+    label: Map Alignment

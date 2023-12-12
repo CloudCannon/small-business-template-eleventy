@@ -26,3 +26,5 @@ _inputs:
       step: 1
       max: 13
       min: 0
+  latitude:
+    comment: "Note: you will have to provide the latitude and longitude coordinates of the location you want to show. See [this guide](https://support.google.com/maps/answer/18539?hl=en&co=GENIE.Platform%3DDesktop) for info on how to find the coordinates in Google Maps."

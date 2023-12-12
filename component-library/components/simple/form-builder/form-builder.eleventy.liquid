@@ -6,8 +6,8 @@
     novalidate
     onsubmit="return validateFormSubmit(event, this)">
 
-    {% for input in inputs %}
-        {% bookshop "{{input._bookshop_name}}" bind: input %}
+    {% for element in form_elements %}
+        {% bookshop "{{element._bookshop_name}}" bind: element %}
     {% endfor %}
 
     <input type="text" name="_gotcha" style="display: none;">

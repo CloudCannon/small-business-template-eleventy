@@ -20,7 +20,7 @@ blueprint:
             detail: $$
     button: bookshop:generic/button
   styles:
-    color_group: "" 
+    color_group: ""
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -52,13 +52,13 @@ preview:
           - label: Service 3
             detail: $40
     button:
-      url: '#'
+      url: "#"
       open_in_new_tab: false
       text: Book Now
       variant: primary
       arrow: right
   styles:
-    color_group: "" 
+    color_group: ""
     content_alignment: center
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
@@ -70,7 +70,7 @@ _inputs:
 
 _structures:
   list_details:
-    values:    
+    values:
       - label: List
         value:
           list_heading: List heading
