@@ -60,12 +60,6 @@ _inputs:
       values:
         - primary
         - secondary
-  image_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right
   arrangement:
     type: select
     comment: The layout of the icon and text together
@@ -193,8 +187,8 @@ _inputs:
     comment: >-
       Write the name of any font from [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
-  hero_icon_name:
-    comment: Visit [https://heroicons.com/](https://heroicons.com/) to see the full library
+  hero_library_icon_name:
+    comment: Visit https://heroicons.com/ to see the full library
     type: select
     options:
       values:
