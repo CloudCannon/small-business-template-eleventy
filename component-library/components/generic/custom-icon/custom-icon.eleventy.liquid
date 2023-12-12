@@ -16,7 +16,7 @@
         {{c}}--no-border
     {% endif %}" 
     
-    style="--c-hero-icon-color: {% if theme_color %}var(--main-text-color, #F9F9FB){% elsif color %}{{ color }}{% else %}var(--dynamic-fill-color, #F9F9FB);{% endif %}">
+    style="--c-hero-library-icon-color: {% if theme_color %}var(--main-text-color, #F9F9FB){% elsif color %}{{ color }}{% else %}var(--dynamic-fill-color, #F9F9FB);{% endif %}">
     {% if icon_path contains '.svg' and env_bookshop_live %}
         <span class="{{ c }}__image {{ this_c }}__image" style="--url: url('{{ icon_path }}')"></span>
     {% elsif icon_path contains '.svg' %}

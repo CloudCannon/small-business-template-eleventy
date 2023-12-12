@@ -62,16 +62,20 @@ _inputs:
     options:
       allow_empty: false
       values:
-        - solid
-        - outline
+        - name: Solid
+          id: solid
+        - name: Outline
+          id: outline
   icon_path:
     type: image
   variant:
     type: select
     options:
       values:
-        - primary
-        - secondary
+        - name: Primary
+          id: primary
+        - name: Secondary
+          id: secondary
   arrangement:
     type: select
     comment: The layout of the icon and text together
@@ -225,8 +229,8 @@ _inputs:
     hidden: true
     instance_value: UUID
     comment: >-
-      An optional unique identifier for this component that can be used as a
-      link (with page#id)
+      An optional unique identifier to link to this component (with page#id
+      where id is what you set in this field)
   heading_font:
     comment: >-
       Write the name of any font from
