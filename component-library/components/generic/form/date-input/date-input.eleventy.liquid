@@ -21,8 +21,5 @@
         </div>
     {% endif %}
 
-    <div class="{{ c }}__error error">
-        {% bookshop "generic/hero-library-icon" hero_library_icon_name:"x-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--error-color, #BF2323)' %}
-        <p class="{{ c }}__error__text error__text" id="{{ id }}--error">Error Message<p>
-    </div>
+    {% bookshop "generic/form/error-message" id={{ id }} %}
 </div>
