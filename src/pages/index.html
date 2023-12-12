@@ -1,9 +1,9 @@
 ---
 title: Home
-page_description: 
-featured_image: 
+page_description:
+featured_image:
   image_path:
-  image_alt: 
+  image_alt:
 layout: layouts/page.html
 permalink: /
 draft: false
@@ -12,6 +12,7 @@ hero:
 content_blocks:
   - _bookshop_name: sections/gallery
     content:
+      show_note: true
       id: 392b0999-b739-4327-821f-b8a9dcad6a97
       heading:
         _bookshop_name: generic/heading
@@ -37,5 +38,45 @@ content_blocks:
           variant: primary
     styles:
       color_group: ''
+      content_alignment: center
+  - _bookshop_name: sections/image-cards
+    content:
+      id: b10faade-97ef-419e-a5b5-ad109dee07f0
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      grid_items:
+        - image:
+            _bookshop_name: generic/image
+            image_path: /assets/images/Hero--background-feature-3.png
+            image_alt:
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading: Primary Heading
+            primary_heading_hierarchy: h2
+          description: >-
+            These versatile cards can be used to talk about your services or
+            products, or anything else you are keen to share with your audience.
+            They come with an action link to get your users into the journey
+            you’ve crafted for them.
+          button:
+            _bookshop_name: generic/button
+            url: '#'
+            open_in_new_tab: false
+            text: Button text
+            variant: primary
+            arrow: right
+            onclick:
+      card_color_group: primary
+      buttons: []
+    styles:
+      color_group: primary
       content_alignment: center
 ---
