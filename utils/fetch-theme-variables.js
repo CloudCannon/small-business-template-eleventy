@@ -5,7 +5,9 @@ const yaml = require('js-yaml')
 let dataFile = yaml.load(fs.readFileSync('src/_data/theme.yml','utf-8'))
     
 let color_groups = dataFile["color_groups"]
+let primary_color = dataFile["primary_color"]
 delete dataFile["color_groups"]
+delete dataFile["primary_color"]
 
 //change cloudcannon.config
 const configFileLocation = './cloudcannon.config.yml'
@@ -48,19 +50,12 @@ let addColorDefinitions = (str, id) => {
 
 // these are hardcoded default themes so the user always has at least these color_groups
 css_string_component += `&--primary{`
-css_string_component += `--main-background-color : #3B3B3D;\n`
-css_string_component += `--main-text-color : #F9F9FB;\n`
-css_string_component += `--interaction-color : #2566f2;\n`
+css_string_component += `--main-background-color : ${primary_color.background_color};\n`
+css_string_component += `--main-text-color : ${primary_color.foreground_color};\n`
+css_string_component += `--interaction-color : ${primary_color.interaction_color};\n`
 css_string_component += `}\n`
 
-css_string_component += `&--secondary{`
-css_string_component += `--main-background-color : #1B1B1D;\n`
-css_string_component += `--main-text-color : #D9D9DC;\n`
-css_string_component += `--interaction-color : #2566f2;\n`
-css_string_component += `}\n`
-
-config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: 'Primary'})
-config['_inputs']['color_group']['options']['values'].push({id: 'secondary', name: 'Secondary'})
+config['_inputs']['color_group']['options']['values'].push({id: 'primary', name: primary_color.name})
 
 color_groups = color_groups.forEach((color_set, i) => {
     let id = `${color_set.name.toLowerCase().replace(/[\s|&;$%@'"<>()+,]/g, "_")}${i}`

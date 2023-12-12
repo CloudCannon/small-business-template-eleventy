@@ -1,3 +1,8 @@
+primary_color:
+  name: Primary
+  background_color: '#3b3b3d'
+  foreground_color: '#f9f9fb'
+  interaction_color: '#2566f2'
 color_groups:
   - name: Adon
     background_color: '#3b3b3d'
