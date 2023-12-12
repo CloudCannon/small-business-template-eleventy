@@ -4,10 +4,10 @@ const yaml = require('js-yaml')
 // read theme colors and fonts from data/theme.json
 let dataFile = yaml.load(fs.readFileSync('src/_data/theme.yml','utf-8'))
     
-let color_groups = dataFile["color_groups"]
-let primary_color = dataFile["primary_color"]
-delete dataFile["color_groups"]
-delete dataFile["primary_color"]
+let color_groups = dataFile["custom_color_groups"]
+let primary_color = dataFile["primary_color_group"]
+delete dataFile["custom_color_groups"]
+delete dataFile["primary_color_group"]
 
 //change cloudcannon.config
 const configFileLocation = './cloudcannon.config.yml'
