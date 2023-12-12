@@ -61,6 +61,10 @@ preview:
     color_group: "primary"
     content_alignment: center
 
+picker_preview:
+  gallery:
+    image: /assets/images/component-previews/price-list.preview.jpg
+
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   lists:
