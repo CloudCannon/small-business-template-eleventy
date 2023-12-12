@@ -44,8 +44,8 @@ preview:
 _inputs:
   contact_details:
     type: array
-    options:
-      structures:
+    options:         
+      structures:        
         values:
           - label: Email
             icon: mail_outline
@@ -76,12 +76,6 @@ _inputs:
             value:
               _type: Custom
               text: ''
-              hero_library_icon_name: ''
-  map_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right  
-  description:
-    type: markdown
+              hero_library_icon_name: ''    
+  image_alignment:
+    label: Map Alignment

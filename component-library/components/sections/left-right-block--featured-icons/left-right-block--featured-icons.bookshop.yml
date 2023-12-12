@@ -63,7 +63,7 @@ preview:
     image_alignment: left
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
+_inputs:   
   icon_path:
     type: image
   icons:
