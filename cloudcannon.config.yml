@@ -60,12 +60,6 @@ _inputs:
       values:
         - primary
         - secondary
-  image_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right
   arrangement:
     type: select
     comment: The layout of the icon and text together
