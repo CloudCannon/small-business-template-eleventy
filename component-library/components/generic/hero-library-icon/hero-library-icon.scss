@@ -7,8 +7,12 @@
     
     &--round {
         border-radius: 50%;
-        border-color: var(--c-hero-library-icon-color, #FFF);
+        border-color: var(--c-hero-library-icon-color, #F9F9FB);
         border-style: solid;
+    }
+
+    &--no-border{
+        border-style:none;
     }
 
     &--round.c-hero-library-icon--large {
@@ -38,12 +42,12 @@
 
     &--outline {
         .c-hero-library-icon__svg, * {
-            stroke: var(--c-hero-library-icon-color, #FFF);
+            stroke: var(--c-hero-library-icon-color, #F9F9FB);
         }
     }
     &--solid {
         .c-hero-library-icon__svg, *{
-            fill: var(--c-hero-library-icon-color, #FFF);
+            fill: var(--c-hero-library-icon-color, #F9F9FB);
         }
     }
 
@@ -53,7 +57,7 @@
     }
 
     &--outline &__image, &--solid &__image {
-        background: var(--c-hero-library-icon-color);
+        background: var(--c-hero-library-icon-color, #F9F9FB);
         width: 100%;
         height: 100%;
         mask: var(--url);

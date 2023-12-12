@@ -2,10 +2,10 @@
 spec:
   structures:
     - content_blocks
-  label: "Left/Right - Featured icons"
-  description: Represents key features or services in a nice iconed layout
-  icon: art_track
-  tags: []
+  label: "Labelled Icons"
+  description: Key features/services with an iconed layout
+  icon: insert_emoticon
+  tags: ['two column', 'icon', 'image']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -25,7 +25,7 @@ blueprint:
     buttons: [bookshop:generic/button!]
     image: bookshop:generic/image!
   styles:
-    color_group: ""
+    color_group: "primary"
     image_alignment: left
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -59,11 +59,11 @@ preview:
       image_path: https://placekitten.com/300/500
       image_alt: A cute kitten
   styles:
-    color_group: ""
+    color_group: "primary"
     image_alignment: left
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
+_inputs:   
   icon_path:
     type: image
   icons:

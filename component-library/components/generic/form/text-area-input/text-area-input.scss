@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    color: var(--main-text-color);
+    color: var(--main-text-color, #F9F9FB);
 
     &__label {
         font-size: var(--label);
@@ -16,7 +16,7 @@
         width: 100%;
         resize: vertical;
         background-color: transparent;
-        color: var(--main-text-color);
+        color: var(--main-text-color, #F9F9FB);
         min-height: 4.7rem;
 
         &::placeholder {
@@ -35,7 +35,7 @@
         gap: 8px;
         font-size: var(--paragraph-small);
         line-height: var(--line-height);
-        color: var(--main-text-color);
+        color: var(--main-text-color, #F9F9FB);
     }
         
     &__error {
