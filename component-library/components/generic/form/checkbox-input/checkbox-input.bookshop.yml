@@ -21,10 +21,3 @@ preview:
   id: cd105250-17cd-4303-85d0-2cdf2e83e1e1
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  group_name:
-    hidden: true
-    comment: This input should be hidden from editors and passed through from the radio-group component so that these inputs function correctly
-  id:
-    hidden: true
-    instance_value: UUID

@@ -11,8 +11,9 @@ body {
   min-height: 100svh;
   grid-template-rows: auto 1fr auto;
   font-family: var(--content-font), Lato, sans-serif;
-  color: var(--main-text-color);
-  background-color: var(--alt-background-color);
+  color: var(--main-text-color, #F9F9FB);
+  background-color: var(--main-background-color, #3B3B3D);
+
 
   h1,
   h2,

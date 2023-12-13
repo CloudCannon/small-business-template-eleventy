@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: var(--twelve-column-grid);
     row-gap: 48px;
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
 
     &__heading, &__embed, &__button, &__note {
@@ -26,7 +26,7 @@
     }
 
     &--content-align-center {
-        align-items: center;
+        place-items: center;
         text-align: center;
     }
 

@@ -13,17 +13,17 @@ blueprint:
     heading: bookshop:generic/heading!
     description: Description text to compliment the block
     button: bookshop:generic/button!
-    image: bookshop:generic/image!
+    image: bookshop:generic/image
   styles:
     image_alignment: left
-    color_group: "" 
+    color_group: "primary"
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   styles:
     image_alignment: left
-    color_group: "" 
+    color_group: "primary"
   content:
     heading:
       _bookshop_name: generic/heading
@@ -47,11 +47,23 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   image_alignment:
-    type: select
+    comment: "If an image is provided, determines how the image will display: on the left, the right, or covering the full background of the hero"
+    type: choice
     options:
+      allow_empty: false
+      value_key: id
+      preview:
+        text:
+          - key: name
+        icon:
+          - key: icon
       values:
-        - left
-        - right
-        - full-background
-  color_group: 
-    comment: This is not used for the full-background image alignment
+        - name: Left
+          id: left
+          icon: format_align_left
+        - name: Right
+          id: right
+          icon: format_align_right
+        - name: Full
+          id: full-background
+          icon: open_in_full

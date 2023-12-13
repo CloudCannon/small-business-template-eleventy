@@ -1,7 +1,7 @@
 .c-select-input {
     display: grid;
     gap: 4px;
-    color: var(--main-text-color);
+    color: var(--main-text-color, #F9F9FB);
 
     &__label {
         font-size: var(--label);
@@ -20,7 +20,7 @@
         appearance: none;
 
         background-color: transparent;
-        color: var(--main-text-color);
+        color: var(--main-text-color, #F9F9FB);
 
         &:focus {
             border: 2px solid var(--interaction-color, #2566F2);
@@ -42,6 +42,6 @@
         gap: 8px;
         font-size: var(--paragraph-small);
         line-height: var(--line-height);
-        color: var(--main-text-color);
+        color: var(--main-text-color, #F9F9FB);
     }
 }

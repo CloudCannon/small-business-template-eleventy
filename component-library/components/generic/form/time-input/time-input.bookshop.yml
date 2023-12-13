@@ -25,9 +25,6 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  id:
-    hidden: true
-    instance_value: UUID
   helper_text:
     comment: Helpful text for the user such as 'Pick a time between 9:00 and 17:00'
   min:

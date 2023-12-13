@@ -14,25 +14,17 @@
 {% comment %} meta tags for open graph and twitter {% endcomment %}
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="og:type" content="website" />
-{% if page.url == "/" %}
-    <meta name="og:title" content="{{ seo.title }}" />
+<meta name="og:title" content="{{ title }}{% if seo.title %} | {{ seo.title }}{% endif %}" />
+<meta name="twitter:title" content="{{ title }}{% if seo.title %} | {{ seo.title }}{% endif %}" />
+
+{% if .featured_image.image_path %}
+    <meta name="og:image" content="{{ .featured_image.image_path }}" />
+    <meta name="twitter:image" content="{{ .featured_image.image_path }}" />
+    {% if .featured_image.image_alt %}<meta name="twitter:image:alt" content="{{ .featured_image.image_alt }}" />{% endif %}
+{% else %}
     <meta name="og:image" content="{{ seo.image.image_path }}" />
-    <meta name="twitter:title" content="{{ seo.title }}" />
     <meta name="twitter:image" content="{{ seo.image.image_path }}" />
     {% if seo.image.image_alt %}<meta name="twitter:image:alt" content="{{ seo.image.image_alt }}" />{% endif %}
-{% else %}
-    <meta name="og:title" content="{{ title }}{% if seo.title %} | {{ seo.title }}{% endif %}" />
-    <meta name="twitter:title" content="{{ title }}{% if seo.title %} | {{ seo.title }}{% endif %}" />
-
-    {% if .featured_image.image_path %}
-        <meta name="og:image" content="{{ .featured_image.image_path }}" />
-        <meta name="twitter:image" content="{{ .featured_image.image_path }}" />
-        {% if .featured_image.image_alt %}<meta name="twitter:image:alt" content="{{ .featured_image.image_alt }}" />{% endif %}
-    {% else %}
-        <meta name="og:image" content="{{ seo.image.image_path }}" />
-        <meta name="twitter:image" content="{{ seo.image.image_path }}" />
-        {% if seo.image.image_alt %}<meta name="twitter:image:alt" content="{{ seo.image.image_alt }}" />{% endif %}
-    {% endif %}
 {% endif %}
 
 {%- comment -%} Canonical URL for SEO {%- endcomment -%}
