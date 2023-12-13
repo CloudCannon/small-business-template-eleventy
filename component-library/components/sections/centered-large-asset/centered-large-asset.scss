@@ -21,7 +21,8 @@
         grid-column: 2 / -2;
     }
 
-    @media screen and (min-width: 1279px) {
+    /* Desktop view */
+    @media screen and (min-width: 769px) {
         &__heading {
             grid-column: 4 / -4;
 

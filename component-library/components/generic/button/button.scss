@@ -1,7 +1,8 @@
 .c-button-temp {
   all: unset;
   padding: 16px 12px;
-  color: inherit;
+  color: var(--main-text-color, #F9F9FB);
+  background: var(--main-background-color, #3B3B3D);
   font-size: var(--button);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height);
@@ -19,14 +20,14 @@
   }
 
   &--primary {
-    border: 2px solid;
+    border: 2px solid var(--main-text-color, #F9F9FB);
     &:hover {
-      color: var(--main-background-color);
-      border: 2px solid var(--main-background-color);
-      background: var(--main-text-color);
+      color: var(--main-background-color, #3B3B3D);
+      border: 2px solid var(--main-background-color, #3B3B3D);
+      background: var(--main-text-color, #F9F9FB);
       
-      .c-hero-icon__image, .c-hero-icon__svg {
-        --c-hero-icon-color: var(--main-background-color);
+      .c-hero-library-icon__image, .c-hero-library-icon__svg {
+        --c-hero-library-icon-color: var(--main-background-color, #3B3B3D);
       }
     }
   }
@@ -37,7 +38,7 @@
     }
   }
 
-  .c-hero-icon__image, .c-hero-icon__svg {
-      --c-hero-icon-color: var(--main-text-color);
+  .c-hero-library-icon__image, .c-hero-library-icon__svg {
+      --c-hero-library-icon-color: var(--main-text-color, #F9F9FB);
   }
 }

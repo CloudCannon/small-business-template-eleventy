@@ -11,16 +11,17 @@ spec:
 blueprint:
   content:
     heading: bookshop:generic/heading!
+    description: Description text to compliment the block
   styles:
     content_alignment: center
-    color_group: "" 
+    color_group: "primary"
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   styles:
     content_alignment: center
-    color_group: "" 
+    color_group: "primary"
   content:
     heading:
       _bookshop_name: generic/heading
