@@ -251,6 +251,7 @@
 
   @media screen and (min-width: 769px) {
     position: static;
+    height: auto;
     &__contents {
       grid-template-columns: 2fr 3fr;
       grid-template-rows: auto auto;
