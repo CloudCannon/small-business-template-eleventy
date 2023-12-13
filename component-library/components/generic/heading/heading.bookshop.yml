@@ -8,10 +8,10 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  eyebrow_headline: Eyebrow Heading
-  eyebrow_headline_hierarchy: h3
   primary_heading: Primary Heading
   primary_heading_hierarchy: h2
+  eyebrow_headline: Eyebrow Heading
+  eyebrow_headline_hierarchy: h3
 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
