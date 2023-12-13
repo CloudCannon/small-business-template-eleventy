@@ -15,7 +15,7 @@
         _bookshop_name: {{ item.image._bookshop_name }}
         image_path: {{ item.image.image_path }}
         image_alt: {{ item.image.image_alt }}
-        image_sizes: "(min-width: 1279px) 368px, (min-width: 769px) 63vw, 94vw"
+        image_sizes: "(min-width: 769px) 368px, (min-width: 480px) 63vw, 94vw"
     {% endcapture %}
     {% assign image = image | ymlify %}
     {% capture card %}
