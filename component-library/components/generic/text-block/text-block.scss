@@ -8,10 +8,10 @@
         color: inherit;
     }
 
-    h1{ font-size:var(--extra-large-heading) }
-    h2{ font-size:var(--large-heading) }
-    h3{ font-size:var(--medium-heading) }
-    h4{ font-size:var(--small-heading) }
+    h1{ font-size:var(--heading-extra-large) }
+    h2{ font-size:var(--heading-large) }
+    h3{ font-size:var(--heading-medium) }
+    h4{ font-size:var(--heading-small) }
 
     p, li{
         font-size:var(--paragraph);
