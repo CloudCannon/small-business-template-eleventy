@@ -44,12 +44,11 @@ preview:
       image_path: /assets/images/Testimonial--background-feature.png
       image_alt: A woman laughing
   text:
-    - "Hero"
+    - key: content.heading.eyebrow_headline
+    - Fallback text
   subtext:
     - heading.primary_heading
     - heading.eyebrow_headline
-    - description
-    - "Description text duplicating the component description"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
