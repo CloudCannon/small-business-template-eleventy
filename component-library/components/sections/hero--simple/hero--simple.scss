@@ -1,7 +1,7 @@
 .c-hero--simple {
     display: grid;
     grid-template-columns: var(--twelve-column-grid);
-    row-gap: 3rem;
+    row-gap: var(--gap-extra-large);
 
     &--content-align-center {
         place-items: center;

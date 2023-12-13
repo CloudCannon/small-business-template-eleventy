@@ -2,7 +2,7 @@
   $c: &;
   padding: 3.5rem 1rem;
   display: grid;
-  gap: 1rem;
+  gap: var(--gap-normal);
   place-items: center;
   background: var(--main-background-color);
   color: var(--main-text-color);
@@ -32,7 +32,7 @@
   &__navlist {    
     grid-column:2 / 14;
     display: flex;
-    gap: 1.5rem;
+    gap: var(--gap-large);
     list-style-type: none;
     padding: 0;
     flex-wrap: wrap;

@@ -2,7 +2,7 @@
     color: var(--main-text-color, #F9F9FB);
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: var(--gap-extra-small);
 
     &__group {
         padding: 12px 16px;
@@ -26,7 +26,7 @@
 
     &__helper {
         display: flex;
-        gap: 8px;
+        gap: var(--gap-small);
         font-size: var(--paragraph-small);
         line-height: var(--line-height);
         color: var(--main-text-color, #F9F9FB);
@@ -35,7 +35,7 @@
     &__error {
         display: none;
         color: var(--error-color, #BF2323);
-        gap: 8px;
+        gap: var(--gap-small);
         font-size: var(--paragraph-small);
         line-height: var(--line-height);
     }

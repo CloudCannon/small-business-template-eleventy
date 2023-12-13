@@ -1,6 +1,6 @@
 .c-country-select-input {
     display: grid;
-    gap: 4px;
+    gap: var(--gap-extra-small);
     color: var(--main-text-color, #F9F9FB);
 
     &__label {
@@ -45,7 +45,7 @@
 
     &__helper {
         display: flex;
-        gap: 8px;
+        gap: var(--gap-small);
         font-size: var(--paragraph-small);
         line-height: var(--line-height);
         color: var(--main-text-color, #F9F9FB);

@@ -22,11 +22,11 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: var(--gap-normal);
 
         &__warning {
             display: flex;
-            gap: 8px;
+            gap: var(--gap-small);
             align-items: center;
             justify-content: center;
         }

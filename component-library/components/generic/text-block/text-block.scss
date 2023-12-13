@@ -1,6 +1,6 @@
 .c-text-block {
     display: grid;
-    gap: 1rem;
+    gap: var(--gap-normal);
     width:100%;
     place-items: inherit;
 
