@@ -67,7 +67,7 @@ _inputs:
     type: array
     options:
       structures: _structures.list_details
-  list_items:
+  lists[*].list_items:
     type: array
     options:
       structures: _structures.list_items
