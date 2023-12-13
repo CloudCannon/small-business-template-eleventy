@@ -79,9 +79,8 @@ _structures:
         value:
           list_heading: List heading
           list_items: 
-            type: array
-            options:
-              structures: _structures.list_item_details
+            - label:
+              detail:
 
   list_item_details:
     values:
