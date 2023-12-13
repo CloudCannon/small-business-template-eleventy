@@ -18,7 +18,10 @@ collections_config:
   pages:
     path: pages
     output: true
-    filter: strict
+    filter:
+      base: strict
+      exclude:
+        - components.html
     icon: description
     disable_add: false
     disable_add_folder: false
