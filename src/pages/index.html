@@ -9,5 +9,65 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
-content_blocks: []
+content_blocks:
+  - _bookshop_name: sections/form
+    content:
+      id: a5ad739e-93a9-488e-bb86-0d3f0af1e862
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      form:
+        _bookshop_name: simple/form-builder
+        id: 91ea1ce8-4d12-4df9-b0d9-9f34079bf675
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        form_elements: []
+        submit_button:
+          text: Button text
+          variant: secondary
+          arrow: left
+    styles:
+      color_group: primary
+      content_alignment: center
+  - _bookshop_name: sections/left-right-labelled-icons
+    content:
+      id: 5925188d-5211-40ab-ae3a-849a3ca6f55f
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading: Primary Heading
+        primary_heading_hierarchy: h2
+      icons:
+        - hero_icon_name: face-smile
+          icon_text: 100% Happy customer reviews
+          icon_type: outline
+        - hero_icon_name: heart
+          icon_text: Great customer service
+          icon_type: outline
+        - hero_icon_name: sparkles
+          icon_text: Outstanding product reviews
+          icon_type: outline
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Button text
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+        _bookshop_name: generic/image
+        image_path: /assets/images/Hero--background-feature-4.png
+        image_alt:
+        image_sizes:
+    styles:
+      color_group: primary
+      image_alignment: left
 ---
