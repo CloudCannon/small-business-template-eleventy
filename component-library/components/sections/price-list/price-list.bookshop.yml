@@ -6,7 +6,8 @@ spec:
   description: List products or services with prices
   icon: format_list_numbered_rtl
   tags: ['price list', 'services', 'list']
-  preview:
+  picker_preview:
+    text: ""
     gallery:
       image: https://placehold.co/600x400.png
       fit: cover
