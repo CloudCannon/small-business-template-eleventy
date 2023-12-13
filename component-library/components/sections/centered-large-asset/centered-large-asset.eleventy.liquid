@@ -10,7 +10,7 @@
 
     {% if content.asset %}
         <div class="{{ c }}__asset">
-            {% bookshop "{{content.asset._bookshop_name}}" bind:content.asset %}
+            {% bookshop "{{content.asset._bookshop_name}}" bind:content.asset image_sizes:"(min-width: 1279px) 960px, 91vw" %}
         </div>
     {% endif %}
 
