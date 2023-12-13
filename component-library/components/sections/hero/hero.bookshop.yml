@@ -43,12 +43,6 @@ preview:
       _bookshop_name: generic/image
       image_path: /assets/images/Testimonial--background-feature.png
       image_alt: A woman laughing
-  text:
-    - key: content.heading.eyebrow_headline
-    - Fallback text
-  subtext:
-    - heading.primary_heading
-    - heading.eyebrow_headline
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
@@ -73,3 +67,9 @@ _inputs:
         - name: Full
           id: full-background
           icon: open_in_full
+  eyebrow_headline:
+    type: text
+    options:
+      preview:
+        subtext:
+          - key: description
