@@ -67,7 +67,7 @@ _inputs:
     type: array
     options:
       structures: _structures.list_details
-  lists[*].list_items:
+  list_items:
     type: array
     options:
       structures: _structures.list_items
@@ -79,11 +79,8 @@ _structures:
         value:
           list_heading: List heading
           list_items:
-            - label: List item
-              detail: $
-  list_items:
-    values:
-      - label: List item
-        value:
-          label: List item
-          detail: $
+            values:
+              - label: List item
+                value:
+                  label: List item
+                  detail: $
