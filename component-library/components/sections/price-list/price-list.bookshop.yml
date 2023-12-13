@@ -9,6 +9,7 @@ spec:
   preview:
     text: Hello there!
   picker_preview:
+    text: Hello there??
     gallery:
       image: https://placehold.co/600x400.png
 
