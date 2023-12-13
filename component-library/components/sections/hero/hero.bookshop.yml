@@ -67,3 +67,11 @@ _inputs:
         - name: Full
           id: full-background
           icon: open_in_full
+preview:
+  text:
+    - "Hero"
+  subtext:
+    - heading.primary_heading
+    - heading.eyebrow_headline
+    - description
+    - "Description text duplicating the component description"
