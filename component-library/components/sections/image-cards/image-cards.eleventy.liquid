@@ -8,12 +8,20 @@
     {% assign card_primary_heading_hierarchy = "h3" %}
     {% assign card_eyebrow_headline_hierarchy = "h4" %}
 {% endif %}
+
     
 {% for item in content.grid_items %}
+    {% capture image %}
+        _bookshop_name: {{ item.image._bookshop_name }}
+        image_path: {{ item.image.image_path }}
+        image_alt: {{ item.image.image_alt }}
+        image_sizes: "(min-width: 1279px) 368px, (min-width: 769px) 63vw, 94vw"
+    {% endcapture %}
+    {% assign image = image | ymlify %}
     {% capture card %}
         - content:
             id: {{ content.id }}
-            imagery: {{ item.image | json }}
+            imagery: {{ image | json }}
             heading: 
                 eyebrow_headline: {{item.heading.eyebrow_headline}}
                 eyebrow_headline_hierarchy: {{ card_eyebrow_headline_hierarchy }}
