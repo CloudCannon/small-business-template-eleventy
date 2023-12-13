@@ -1,7 +1,7 @@
 .c-time-input {
     display: grid;
     gap: 4px;
-    color: var(--main-text-color);
+    color: var(--main-text-color, #F9F9FB);
 
     &__label {
         font-size: var(--label);
@@ -13,7 +13,7 @@
         border-radius: 4px;
         border: 2px solid;
         position: relative;
-        color: var(--main-text-color);
+        color: var(--main-text-color, #F9F9FB);
         background-color: transparent;
 
         &::placeholder {
@@ -63,7 +63,7 @@
         gap: 8px;
         font-size: var(--paragraph-small);
         line-height: var(--line-height);
-        color: var(--main-text-color);
+        color: var(--main-text-color, #F9F9FB);
     }
     
     &__error {

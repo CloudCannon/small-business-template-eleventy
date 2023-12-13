@@ -28,10 +28,14 @@ _inputs:
     type: select
     options:
       values:
-        - up
-        - right
-        - down
-        - left
+        - name: Up
+          id: up
+        - name: Right
+          id: right
+        - name: Down
+          id: down
+        - name: Left
+          id: left
   color:
     comment: >-
       Choose a custom icon color (if the icon is an svg) and rounded border
@@ -41,8 +45,10 @@ _inputs:
     options:
       allow_empty: false
       values:
-        - small
-        - large
+        - name: Small
+          id: small
+        - name: Large
+          id: large
   default_color:
     comment: >-
       Use the original colors of the icon without overriding them (does not
@@ -56,23 +62,29 @@ _inputs:
     options:
       allow_empty: false
       values:
-        - solid
-        - outline
+        - name: Solid
+          id: solid
+        - name: Outline
+          id: outline
   icon_path:
     type: image
   variant:
     type: select
     options:
       values:
-        - primary
-        - secondary
+        - name: Primary
+          id: primary
+        - name: Secondary
+          id: secondary
   arrangement:
     type: select
     comment: The layout of the icon and text together
     options:
       values:
-        - inline
-        - stacked
+        - name: Inline
+          id: inline
+        - name: Stacked
+          id: stacked
   layout:
     hidden: true
   eleventyExcludeFromCollections:
@@ -94,16 +106,35 @@ _inputs:
   footer_content:
     type: markdown
     options:
+      link: true
       bold: true
       italic: true
-      link: true
       undo: true
       redo: true
+      initial_height: 135
   font:
     comment: >-
       Write the name of any font from
       [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
+  description:
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true
+      undo: true
+      redo: true
+      initial_height: 135
+  contact_details[*].text:
+    type: markdown
+    options:
+      link: true
+      bold: true
+      italic: true
+      undo: true
+      redo: true
+      initial_height: 135
   content_alignment:
     type: choice
     options:
@@ -121,17 +152,6 @@ _inputs:
         - name: Center
           id: center
           icon: format_align_center
-  image_alignment:
-    type: choice
-    options:
-      allow_empty: false
-      values:
-        - name: Left
-          id: left
-          icon: align_horizontal_left
-        - name: Right
-          id: right
-          icon: align_horizontal_right
   color_group:
     type: select
     options:
@@ -144,18 +164,25 @@ _inputs:
           - key: icon
       values:
         - &ref_0
+          id: primary
           name: Primary
-          id: primary0
         - &ref_1
           name: Secondary
-          id: secondary1
+          id: secondary0
+  card_color_group:
+    comment: >-
+      Choose the color group for the cards in this grid. It is recommended to
+      choose a color group different than that of the whole component.
+    type: select
+    options:
+      values:
+        - *ref_0
+        - *ref_1
   group_name:
     hidden: true
     comment: >-
       This input should be hidden from editors and passed through from the
       radio-group component so that these inputs function correctly
-  description:
-    type: textarea
   nav_color_group:
     comment: Choose the color group for the navigation header
     type: select
@@ -170,17 +197,31 @@ _inputs:
       values:
         - *ref_0
         - *ref_1
-  color_groups:
-    comment: Define different color groups here to easily style site components
-  color_groups[*].name:
-    comment: Give your color group a name to easily identify it later
+  primary_color_group:
+    comment: The default color group for styling site components
+  primary_color_group.name:
+    comment: Change the name of the default color group to easily identify it later
     label: Group Name
-  color_groups[*].background_color:
+  primary_color_group.background_color:
     comment: The background color of site components
-  color_groups[*].foreground_color:
+  primary_color_group.foreground_color:
     comment: The color of text, icons and borders
     label: Text Color
-  color_groups[*].interaction_color:
+  primary_color_group.interaction_color:
+    comment: >-
+      The color for user interactions, for example focusing on text inputs or
+      clicking buttons
+  custom_color_groups:
+    comment: Define different color groups here to easily style site components
+  custom_color_groups[*].name:
+    comment: Give your color group a name to easily identify it later
+    label: Group Name
+  custom_color_groups[*].background_color:
+    comment: The background color of site components
+  custom_color_groups[*].foreground_color:
+    comment: The color of text, icons and borders
+    label: Text Color
+  custom_color_groups[*].interaction_color:
     comment: >-
       The color for user interactions, for example focusing on text inputs or
       clicking buttons
@@ -188,8 +229,8 @@ _inputs:
     hidden: true
     instance_value: UUID
     comment: >-
-      An optional unique identifier for this component that can be used as a
-      link (with page#id)
+      An optional unique identifier to link to this component (with page#id
+      where id is what you set in this field)
   heading_font:
     comment: >-
       Write the name of any font from
@@ -511,10 +552,6 @@ _inputs:
     comment: >-
       Hide/Show the note that contains helpful information about the live
       editing of this component
-  skipnav_text:
-    comment: >-
-      A hidden link at the top of the page that, when activated, jumps the user
-      to the beginning of the main content area.
 _select_data: {}
 _structures:
   content_blocks:

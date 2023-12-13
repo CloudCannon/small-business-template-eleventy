@@ -16,7 +16,7 @@ blueprint:
   icons: [bookshop:generic/labelled-icon]
   image: bookshop:generic/image
   map: bookshop:simple/google-map-embed
-  color_group: ""
+  color_group: "primary"
   image_alignment: left
   image_padding: false
 
@@ -42,14 +42,14 @@ preview:
       arrangement: inline
       text: Great customer service
       icon:
-        _bookshop_name: generic/hero-icon
-        hero_icon_name: academic-cap
+        _bookshop_name: generic/hero-library-icon
+        hero_library_icon_name: academic-cap
         icon_size: small
         icon_type: solid
         rounded_border: true
         theme_color: true
   image_alignment: left
-  color_group: ""
+  color_group: "primary"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

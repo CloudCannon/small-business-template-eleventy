@@ -10,10 +10,10 @@
 {% endif %}
 
 {% for item in content.grid_items %}
-    {% if item.icon.hero_icon_name %}
+    {% if item.icon.hero_library_icon_name %}
         {% capture imagery %}
-            _bookshop_name: generic/hero-icon
-            hero_icon_name: {{ item.icon.hero_icon_name }}
+            _bookshop_name: generic/hero-library-icon
+            hero_library_icon_name: {{ item.icon.hero_library_icon_name }}
             icon_size: small
             icon_type: {{ item.icon.icon_type }}
             rounded_border: false
@@ -39,8 +39,8 @@
                 eyebrow_headline_hierarchy: {{ card_eyebrow_headline_hierarchy }}
                 primary_heading: {{item.heading.primary_heading}}
                 primary_heading_hierarchy: {{ card_primary_heading_hierarchy }}
-            text: {{ item.text }}
-            button: {{ item.button | json }}
+            description: {{ item.description }}
+            buttons: {{ item.buttons | json }}
     {% endcapture %}
     {% assign grid_items = grid_items | append: card %}
 {% endfor %}
@@ -49,6 +49,7 @@
     heading: {{ content.heading | json }}
     description: {{ content.description }}
     grid_items: {{ grid_items }}
+    card_color_group: {{ content.card_color_group }}
     buttons: {{ content.buttons | json }}
 {% endcapture %}
 {% assign_local card_grid_content = card_grid_content | ymlify %}
