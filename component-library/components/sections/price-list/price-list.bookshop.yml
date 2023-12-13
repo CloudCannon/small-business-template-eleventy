@@ -7,9 +7,10 @@ spec:
   icon: format_list_numbered_rtl
   tags: ['price list', 'services', 'list']
   preview:
+    text: Hello there!
+  picker_preview:
     gallery:
       image: https://placehold.co/600x400.png
-      fit: cover
 
 
 # Defines the structure of this component, as well as the default values
