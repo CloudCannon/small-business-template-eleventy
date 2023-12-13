@@ -83,6 +83,6 @@ _structures:
               detail: $
   list_item_details:
     values:
-        value:
-          label: List item
-          detail: $
+        - value:
+            label: List item
+            detail: $
