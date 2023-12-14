@@ -96,7 +96,7 @@ This will mean that only new/updated images get optimised on build.
     - Lottie files
     - PDFs
 
-All options in the above list (except Youtube Videos) requires you to use the "embed" component.
+All options in the above list (except YouTube videos) requires you to use the "embed" component.
 
 ## Accessibility
 
