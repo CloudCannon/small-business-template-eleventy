@@ -11,10 +11,10 @@
   {% capture labelled-icon %}
     - _bookshop_name: generic/labelled-icon
       arrangement: inline
-      text: "{{ detail.text }}"
+      text: '{{ detail.text | markdownify }}'
       icon:
         _bookshop_name: generic/hero-library-icon
-        hero_library_icon_name: "{{ detail.hero_library_icon_name }}"
+        hero_library_icon_name: {{ detail.hero_library_icon_name }}
         icon_size: small
         icon_type: outline
         rounded_border: true
