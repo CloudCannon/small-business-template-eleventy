@@ -37,11 +37,4 @@
         margin-right: 16px;
     }
 
-    &__helper {
-        display: flex;
-        gap: var(--gap-small);
-        font-size: var(--paragraph-small);
-        line-height: var(--line-height);
-        color: var(--main-text-color, #F9F9FB);
-    }
 }

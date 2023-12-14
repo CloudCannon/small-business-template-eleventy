@@ -1,12 +1,12 @@
 source: src
 paths:
   data: _data
-  collections: ''
+  collections: ""
   layouts: _includes
-  static: ''
-  uploads: uploads
+  static: ""
+  uploads: assets/uploads
   includes: _includes
-  pages: ''
+  pages: ""
 collections_config:
   data:
     path: _data
@@ -18,7 +18,10 @@ collections_config:
   pages:
     path: pages
     output: true
-    filter: strict
+    filter:
+      base: strict
+      exclude:
+        - components.html
     icon: description
     disable_add: false
     disable_add_folder: false
