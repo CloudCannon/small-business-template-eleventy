@@ -1,8 +1,8 @@
 .c-email-input {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    color: var(--main-text-color);
+    gap: var(--gap-extra-small);
+    color: var(--main-text-color, #F9F9FB);
 
     &__label {
         font-size: var(--label);
@@ -14,11 +14,11 @@
         border-radius: 4px;
         border: 2px solid;
         background-color: transparent;
-        color: var(--main-text-color);
+        color: var(--main-text-color, #F9F9FB);
 
         &::placeholder {
             opacity: 1;
-            color: var(--brand-grey-400, #B6B6B8);
+            color: #B6B6B8;
         }
 
         &:focus {
@@ -27,19 +27,4 @@
         }
     }
 
-    &__helper {
-        display: flex;
-        gap: 8px;
-        font-size: var(--paragraph-small);
-        line-height: var(--line-height);
-        color: var(--main-text-color);
-    }
-        
-    &__error {
-        display: none;
-        color: var(--error-color, #BF2323);
-        gap: 8px;
-        font-size: var(--paragraph-small);
-        line-height: var(--line-height);
-    }
 }

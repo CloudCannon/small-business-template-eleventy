@@ -7,7 +7,7 @@
 {% endcapture %}
 {% assign_local social_icons_style = social_icon_styles | ymlify %}
 
-<div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {% if styles.image_alignment == "Right" %}{{ c }}--right{% endif %} 
+<div class="{{ c }} component {% if image_padding != true %}component--full-height{% endif %} {{ c }}--{{ image_alignment }} 
   component--{{ color_group }}">
 
   <div class="{{ c }}__content">
@@ -41,7 +41,7 @@
   </div>
   <div class="{{ c }}__media {% if image_padding %}{{ c }}__media--auto-height{% endif %}">
     {% if image %}
-      {% bookshop "generic/image" bind:image %}
+      {% bookshop "generic/image" bind:image image_sizes:"(min-width: 1279px) 700px, 100vw" %}
     {% endif %}
     {% if map %}
       {% bookshop "simple/google-map-embed" bind:map %}

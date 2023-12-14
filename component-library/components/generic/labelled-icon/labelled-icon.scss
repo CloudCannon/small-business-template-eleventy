@@ -14,7 +14,7 @@
         text-align: center;
         #{$c}__text {
             max-width: 5rem;
-            font-size: .8rem;
+            font-size: var(--paragraph-small);
         }
     }
 

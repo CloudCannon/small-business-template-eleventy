@@ -9,7 +9,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   styles:
-    color_group: "" 
+    color_group: "primary"
   heading: "Hello World!"
   text: "Hello World!"
 
@@ -17,4 +17,3 @@ blueprint:
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:

@@ -3,11 +3,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: var(--gap-normal);
 
-  --dynamic-fill-color: var(--fill-color, var(--main-text-color));
-  --dynamic-hover-color: var(--hover-color, var(--main-text-color));
-  --dynamic-fill-color-hover: var(--fill-color-hover, var(--main-background-color));
+  --dynamic-fill-color: var(--fill-color, var(--main-text-color, #F9F9FB));
+  --dynamic-hover-color: var(--hover-color, var(--main-text-color, #F9F9FB));
+  --dynamic-fill-color-hover: var(--fill-color-hover, var(--main-background-color, #3B3B3D));
 
   &__icon {
     transition: background-color 300ms ease-out, fill 300ms ease-out;
