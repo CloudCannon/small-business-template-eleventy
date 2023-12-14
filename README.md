@@ -81,7 +81,7 @@ To keep build times short you can set preserved paths for your image optimisatio
 
 This will mean that only new/updated images get optimised on build.
 
-## embedding content
+## Embedding content
 
 - The "Embed" component is built to be generic and support any embed, however we cannot guarantee it will work seemlessly with all embeddable content.
 - We recommend using other components to check if they can meet your requirements first.
