@@ -45,5 +45,9 @@ main {
     flex-direction: column;
     gap: 24px;
     align-items: inherit;
+
+    .c-text-block > p{
+      font-size: var(--paragraph-large);
+    }
   }
 }
