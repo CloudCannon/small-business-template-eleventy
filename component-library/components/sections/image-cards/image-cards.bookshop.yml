@@ -21,8 +21,8 @@ blueprint:
     buttons: [bookshop:generic/button]
   styles:
     color_group: "primary"
-    content_alignment: center
     card_color_group: "primary"
+    content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
