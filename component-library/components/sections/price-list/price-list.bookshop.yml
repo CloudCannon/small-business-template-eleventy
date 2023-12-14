@@ -17,7 +17,7 @@ blueprint:
       - list_heading: List heading
         list_items:
           - label: List item
-            detail: $$
+            detail: $
     button: bookshop:generic/button
   styles:
     color_group: "primary"
@@ -67,13 +67,24 @@ _inputs:
     type: array
     options:
       structures: _structures.list_details
+  
 
 _structures:
   list_details:
     values:
       - label: List
+        _inputs:
+          list_items:
+            type: array
+            options:
+              structures: 
+                values:
+                  - label: List item
+                    value:
+                      label: List item
+                      detail: $
         value:
           list_heading: List heading
-          list_items:
+          list_items: 
             - label: List item
-              detail: $$
+              detail: $
