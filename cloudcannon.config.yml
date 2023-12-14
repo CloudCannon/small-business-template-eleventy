@@ -240,8 +240,6 @@ _inputs:
       The color for user interactions, for example focusing on text inputs or
       clicking buttons
   id:
-    hidden: true
-    instance_value: UUID
     comment: >-
       An optional unique identifier to link to this component (with page#id
       where id is what you set in this field)

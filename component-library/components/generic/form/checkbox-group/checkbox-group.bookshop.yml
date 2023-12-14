@@ -40,6 +40,9 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  id:
+    _instance_value: UUID
+    hidden: true
   label:
     comment: It is recommended to provide a label for this input group
   helper_text:
