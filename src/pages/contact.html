@@ -14,8 +14,8 @@ hero:
     heading:
       _bookshop_name: generic/heading
       eyebrow_headline: Eyebrow Heading
-      eyebrow_headline_hierarchy: h3
       primary_heading: A contact us page
+      eyebrow_headline_hierarchy: h3
       primary_heading_hierarchy: h2
     description: 'We wanted you to have a couple of options to use for the hero section. '
     button:
@@ -34,8 +34,8 @@ content_blocks:
       heading:
         _bookshop_name: generic/heading
         eyebrow_headline: Eyebrow Heading
-        eyebrow_headline_hierarchy: h3
         primary_heading: Contact us
+        eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       description: 'Complete the form and we''ll get right back to you. '
       form:
@@ -45,6 +45,11 @@ content_blocks:
         inbox_key:
         subject:
         success_page: ''
+        form_elements: []
+        submit_button:
+          text: Submit
+          variant: primary
+          arrow: right
         inputs:
           - _bookshop_name: generic/form/text-input
             label: Full name
@@ -65,10 +70,6 @@ content_blocks:
             rows: 4
             required: false
             helper_text:
-        submit_button:
-          text: Submit
-          variant: primary
-          arrow: right
     styles:
       color_group: ''
       content_alignment: center
@@ -78,8 +79,8 @@ content_blocks:
       heading:
         _bookshop_name: generic/heading
         eyebrow_headline: Bite sized information
-        eyebrow_headline_hierarchy: h3
         primary_heading: An image card grid
+        eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       description: >-
         Sometimes you only need a small text and image section and a cards grid
@@ -93,8 +94,8 @@ content_blocks:
           heading:
             _bookshop_name: generic/heading
             eyebrow_headline: Image card
-            eyebrow_headline_hierarchy: h3
             primary_heading: Primary Heading
+            eyebrow_headline_hierarchy: h3
             primary_heading_hierarchy: h2
           text: >-
             These versatile cards can be used to talk about your services or
@@ -117,8 +118,8 @@ content_blocks:
           heading:
             _bookshop_name: generic/heading
             eyebrow_headline: Image card
-            eyebrow_headline_hierarchy: h3
             primary_heading: Primary Heading
+            eyebrow_headline_hierarchy: h3
             primary_heading_hierarchy: h2
           text: >-
             These versatile cards can be used to talk about your services or
@@ -141,8 +142,8 @@ content_blocks:
           heading:
             _bookshop_name: generic/heading
             eyebrow_headline: Image card
-            eyebrow_headline_hierarchy: h3
             primary_heading: Primary Heading
+            eyebrow_headline_hierarchy: h3
             primary_heading_hierarchy: h2
           text: >-
             These versatile cards can be used to talk about your services or
@@ -157,20 +158,25 @@ content_blocks:
             variant: primary
             arrow: right
             onclick:
+      card_color_group: secondary0
       buttons: []
     styles:
       color_group: secondary1
+      content_alignment: center
   - _bookshop_name: sections/left-right-contact
     content:
+      show_note: true
       id:
       display_social_icons: true
-      show_note: true
       heading: A contact block
       description: >-
         This is a simple yet powerful block to display not only your location by
         using Google Maps, but also any other contact details you wish to share
         with your customers.
       contact_details:
+        - _type: Email
+          text: 'Email address: [mybusiness@business.com](cloudcannon.com)'
+          hero_library_icon_name: envelope
       map:
         _bookshop_name: simple/google-map-embed
         latitude:
@@ -178,6 +184,7 @@ content_blocks:
         zoom_level: 9
       buttons: []
     styles:
-      map_alignment: Left
       color_group: primary0
+      image_alignment: left
+      map_alignment: Left
 ---
