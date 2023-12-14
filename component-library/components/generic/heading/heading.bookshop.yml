@@ -5,8 +5,6 @@ spec:
   description: Header text for your content
   icon: view_headline
   tags: []
-  preview:
-    text: Testing the preview
 
 # Defines the structure of this component, as well as the default values
 blueprint:
