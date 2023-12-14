@@ -4,7 +4,7 @@ paths:
   collections: ''
   layouts: _includes
   static: ''
-  uploads: uploads
+  uploads: assets/uploads
   includes: _includes
   pages: ''
 collections_config:
@@ -18,7 +18,10 @@ collections_config:
   pages:
     path: pages
     output: true
-    filter: strict
+    filter:
+      base: strict
+      exclude:
+        - components.html
     icon: description
     disable_add: false
     disable_add_folder: false
@@ -88,6 +91,7 @@ _inputs:
   image_alignment:
     type: choice
     options:
+      allow_empty: false
       values:
         - name: Left
           id: left
@@ -251,7 +255,7 @@ _inputs:
       Write the name of any font from
       [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
-  hero_icon_name:
+  hero_library_icon_name:
     comment: >-
       Visit [https://heroicons.com/](https://heroicons.com/) to see the full
       library

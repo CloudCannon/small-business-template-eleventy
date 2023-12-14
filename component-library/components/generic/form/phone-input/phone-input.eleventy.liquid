@@ -11,14 +11,8 @@
         {% if helper_text %}aria-describedby="{{ id }}--helper"{% endif %}>
 
     {% if helper_text %}
-        <div class="{{ c }}__helper">
-            {% bookshop "generic/hero-library-icon" hero_library_icon_name:"information-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--primary-foreground-color, #F9F9FB)' %}
-            <p class="{{ c }}__helper__text" id="{{ id }}--helper" role="tooltip">{{ helper_text }}<p>
-        </div>
+        {% bookshop "generic/form/helper-text" id={{ id }} helper_text={{ helper_text }} %}
     {% endif %}
 
-    <div class="{{ c }}__error error">
-        {% bookshop "generic/hero-library-icon" hero_library_icon_name:"x-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--error-color, #BF2323)' %}
-        <p class="{{ c }}__error__text error__text" id="{{ id }}--error">Error Message<p>
-    </div>
+    {% bookshop "generic/form/error-message" id={{ id }} %}
 </div>

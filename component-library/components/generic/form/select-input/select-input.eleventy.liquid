@@ -12,10 +12,7 @@
   <div class="{{ c }}__dropdown-arrow">{% bookshop "generic/hero-library-icon" hero_library_icon_name:"chevron-down" icon_type:"solid" icon_size:'extra-small' rounded_border:false color:'white' %}</div>
 
   {% if helper_text %}
-      <div class="{{ c }}__helper">
-          {% bookshop "generic/hero-library-icon" hero_library_icon_name:"information-circle" icon_type:"outline" icon_size:'extra-small' rounded_border:false color:'var(--primary-foreground-color, #F9F9FB)' %}
-          <p class="{{ c }}__helper__text" id="{{ id }}--helper" role="tooltip">{{ helper_text }}<p>
-      </div>
+    {% bookshop "generic/form/helper-text" id={{ id }} helper_text={{ helper_text }} %}
   {% endif %}
 
 </div>

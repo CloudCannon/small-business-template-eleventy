@@ -4,7 +4,7 @@
   color: var(--main-text-color);
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
-  row-gap: 48px;
+  row-gap: var(--gap-extra-large);
   align-items: flex-start;
   text-align: left;
 
@@ -18,7 +18,7 @@
   &__heading {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: var(--gap-large);
       align-items: center;
 
       .c-text-block > p{
@@ -29,7 +29,7 @@
   &__buttons {
     display: flex;
     justify-content: center;
-    grid-gap: 1.5rem;
+    grid-gap: var(--gap-large);
   }
 
   &--content-align-center {
@@ -61,7 +61,7 @@
     display: flex;
     flex-wrap:wrap;
     place-content:center;    
-    gap: 24px;
+    gap: var(--gap-large);
     width:100%;
 
     & .c-card{

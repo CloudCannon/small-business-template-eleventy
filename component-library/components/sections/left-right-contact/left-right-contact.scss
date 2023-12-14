@@ -3,6 +3,6 @@
     
     .c-left-right-block__icons {
         flex-direction: column;
-        gap: 1rem;
+        gap: var(--gap-normal);
     }
 }
