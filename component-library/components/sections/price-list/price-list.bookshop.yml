@@ -68,6 +68,7 @@ _inputs:
     options:
       structures: _structures.list_details
   list_items:
+    comment: Hello there
     type: array
     options:
       structures: _structures.list_item_details
