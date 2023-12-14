@@ -67,9 +67,3 @@ _inputs:
         - name: Full
           id: full-background
           icon: open_in_full
-  eyebrow_headline:
-    type: text
-    options:
-      preview:
-        subtext:
-          - key: description
