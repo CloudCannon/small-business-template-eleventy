@@ -3,9 +3,9 @@ spec:
   structures:
     - content_blocks
   label: "Price List"
-  description: List prices of products or services that you offer along with any extra information
+  description: List products or services with prices
   icon: format_list_numbered_rtl
-  tags: []
+  tags: ['price list', 'services', 'list']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -20,7 +20,7 @@ blueprint:
             detail: $
     button: bookshop:generic/button
   styles:
-    color_group: ""
+    color_group: "primary"
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -58,7 +58,7 @@ preview:
       variant: primary
       arrow: right
   styles:
-    color_group: ""
+    color_group: "primary"
     content_alignment: center
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint

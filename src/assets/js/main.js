@@ -6,18 +6,46 @@ const nav = document.getElementById("main-menu");
 const openClass = "c-navigation--open";
 const closeClass = "c-navigation--close";
 
+var focusableEls = nav.querySelectorAll('a[href]:not([disabled]), button:not([disabled])');
+var firstFocusableEl = focusableEls[1];  // 1 as 0 is the skip to content button
+var lastFocusableEl = focusableEls[focusableEls.length - 1];
+var KEYCODE_TAB = 9;
+
 const swapOpenState = () => {
   if (!nav) return;
   if (nav.classList.contains(openClass)) {
     nav.classList.remove(openClass);
     nav.classList.add(closeClass);
+    nav.removeEventListener('keydown', trapFocus)
     enableBodyScroll(nav);
   } else {
     nav.classList.add(openClass);
     nav.classList.remove(closeClass);
+    nav.addEventListener('keydown', trapFocus)
     disableBodyScroll(nav);
   }
 };
+
+function trapFocus(e) {
+  console.log(e)
+    var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+
+    if (!isTabPressed) { 
+      return; 
+    }
+
+    if ( e.shiftKey ) /* shift + tab */ {
+      if (document.activeElement === firstFocusableEl) {
+        lastFocusableEl.focus();
+          e.preventDefault();
+        }
+    } else /* tab */ {
+      if (document.activeElement === lastFocusableEl) {
+        firstFocusableEl.focus();
+          e.preventDefault();
+        }
+      }
+}
 
 const mainMenuToggle = document.getElementById("main-menu-toggle");
 mainMenuToggle.addEventListener("click", swapOpenState);
@@ -31,7 +59,7 @@ const debounce = (func, delay) => {
 
 // Check if on desktop view
 const checkViewportSize = () => {
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth >= 769) {
     enableBodyScroll(document.getElementById("main-menu"));
     nav.classList.remove(closeClass);
     nav.classList.remove(openClass);
