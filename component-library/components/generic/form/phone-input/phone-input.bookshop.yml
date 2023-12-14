@@ -24,3 +24,6 @@ preview:
 _inputs:
   helper_text:
     comment: Helpful text for the user such as 'Please use your personal phone number'
+  id:
+    _instance_value: UUID
+    hidden: true
