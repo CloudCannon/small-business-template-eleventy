@@ -27,7 +27,7 @@ Get a workflow going to see your site's output (with [CloudCannon](https://app.c
 ## Local Quickstart
 
 1. Run `npm i` to install the modules.
-2. Run `npm run start` to run the project. this will create a \_site folder, where all the developed file will remain.
+2. Run `npm run start` to run the project. this will create a \_site folder, where all the developed files will remain.
 
 By default the site will be at `http://localhost:8080`
 
