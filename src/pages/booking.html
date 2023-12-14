@@ -58,7 +58,19 @@ content_blocks:
         inbox_key:
         subject: Thanks for booking with us!
         success_page: /terms-and-conditions/
-        form_elements: []
+        form_elements:
+          - _bookshop_name: generic/form/text-input
+            label: 'Full Name '
+            placeholder: John Smith
+            id: e08ff4ca-b6ed-4d72-98ce-bcc2881baa47
+            required: false
+            helper_text:
+          - _bookshop_name: generic/form/email-input
+            label: Email address
+            id: 94cee4ae-312d-4d91-94cc-7a2d58050c9e
+            required: false
+            placeholder:
+            helper_text:
         submit_button:
           text: Book Now
           variant: primary
@@ -80,6 +92,12 @@ content_blocks:
             label: Phone number
             placeholder: +64 21 859292
             id: 687fd1b5-1b87-4eb5-9b34-5258c96a8463
+            required: false
+            helper_text:
+          - _bookshop_name: generic/form/phone-input
+            label: ''
+            placeholder: ''
+            id: 17f6c686-d550-4e29-9420-e836ed2ed853
             required: false
             helper_text:
     styles:
