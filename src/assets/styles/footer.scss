@@ -28,6 +28,7 @@
   &__navlist--wrapper{
     display:grid;
     grid-template-columns: var(--twelve-column-grid);
+    width:100%;
   }
   &__navlist {    
     grid-column:2 / 14;
