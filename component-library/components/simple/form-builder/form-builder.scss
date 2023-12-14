@@ -8,11 +8,4 @@
         text-align: center;
     }
 
-    .c-hero-library-icon__image, .c-hero-library-icon__svg {
-        --c-hero-library-icon-color: var(--main-text-color);
-    }
-
-    & .error .c-hero-library-icon__svg {
-        --c-hero-library-icon-color: var(--error-color);
-    }
 }
