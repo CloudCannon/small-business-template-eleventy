@@ -8,6 +8,10 @@ custom_color_groups:
     background_color: '#1b1b1d'
     foreground_color: '#d9d9dc'
     interation_color: '#2566f2'
+  - name: ''
+    background_color:
+    foreground_color:
+    interation_color:
 heading_font: Lato
 content_font: Lato
 logo_font: Birthstone Bounce

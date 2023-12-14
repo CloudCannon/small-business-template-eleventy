@@ -14,8 +14,8 @@ hero:
     heading:
       _bookshop_name: generic/heading
       eyebrow_headline: A small business template
-      eyebrow_headline_hierarchy: h3
       primary_heading: Empower your business with this template
+      eyebrow_headline_hierarchy: h3
       primary_heading_hierarchy: h2
     description:
     button:
@@ -41,8 +41,8 @@ content_blocks:
       heading:
         _bookshop_name: generic/heading
         eyebrow_headline: Eyebrow Heading
-        eyebrow_headline_hierarchy: h3
         primary_heading: List your services
+        eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       description: >-
         Whether your business is a restaurant, a barber shop, a gym, or a café,
@@ -79,7 +79,7 @@ content_blocks:
   - _bookshop_name: sections/left-right-testimonial
     content:
       id:
-      headline: What your customers say
+      eyebrow_headline: What your customers say
       quote: Their customer service is second to none
       author_name: John Smith
       buttons: []
@@ -88,17 +88,19 @@ content_blocks:
         image_path: /assets/images/Testimonial--background-feature.png
         image_alt: Woman holding a template and smiling
         image_sizes:
+      headline: What your customers say
     styles:
-      image_alignment: Left
       color_group: primary0
+      image_alignment: Left
   - _bookshop_name: sections/gallery
     content:
+      show_note: true
       id:
       heading:
         _bookshop_name: generic/heading
         eyebrow_headline: A simple gallery
-        eyebrow_headline_hierarchy: h3
         primary_heading: Image Gallery
+        eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       description: >-
         Share your beautiful product or service images with your potential
@@ -136,15 +138,26 @@ content_blocks:
           variant: primary
     styles:
       color_group: secondary1
+      content_alignment: center
   - _bookshop_name: sections/left-right-labelled-icons
     content:
       id:
       heading:
         _bookshop_name: generic/heading
         eyebrow_headline: Let your features shine
-        eyebrow_headline_hierarchy: h3
         primary_heading: A featured icons block
+        eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
+      icons:
+        - hero_icon_name: face-smile
+          icon_text: 100% Happy customer reviews
+          icon_type: outline
+        - hero_icon_name: heart
+          icon_text: Great customer service
+          icon_type: outline
+        - hero_icon_name: sparkles
+          icon_text: Outstanding product reviews
+          icon_type: outline
       buttons:
         - _bookshop_name: generic/button
           url: /booking/
@@ -159,13 +172,13 @@ content_blocks:
         image_alt: Barber shop bench with mirror
         image_sizes:
     styles:
+      color_group: primary
       image_alignment: Left
-      color_group: primary0
   - _bookshop_name: sections/left-right-contact
     content:
+      show_note: true
       id:
       display_social_icons: true
-      show_note: true
       heading: A contact block
       description: >-
         This is a simple yet powerful block to display not only your location by
@@ -186,6 +199,7 @@ content_blocks:
           arrow: right
           onclick:
     styles:
-      map_alignment: Left
       color_group: secondary1
+      image_alignment: right
+      map_alignment: Left
 ---
