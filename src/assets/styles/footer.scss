@@ -26,6 +26,7 @@
     }
   }
   &__navlist--wrapper{
+    width:100%;
     display:grid;
     grid-template-columns: var(--twelve-column-grid);
   }
