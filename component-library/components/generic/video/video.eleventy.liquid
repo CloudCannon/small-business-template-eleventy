@@ -2,7 +2,7 @@
 <div class="{{ c }}__video-aspect-wrapper">
   <div class="{{ c }}__video">
     {% if fallback_image.image_path %}
-      {% bookshop "generic/image" image_path:  fallback_image.image_path image_alt:  fallback_image.image_alt  %}
+      {% bookshop "generic/image" image_path:fallback_image.image_path image_alt:fallback_image.image_alt image_sizes:image_sizes  %}
     {% endif %}
 
     {% if video_url %}

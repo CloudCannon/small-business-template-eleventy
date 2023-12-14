@@ -24,7 +24,7 @@
   &__content {
     z-index:1;
     display: grid;
-    gap: 1.5rem;
+    gap: var(--gap-large);
     grid-row: 1 / -1;
     grid-column: 2 / -2;
     align-self: center;
@@ -38,13 +38,13 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     height: calc(100svh - (var(--nav-height) * 2));
   }
 
   &--left-right-variant {
     grid-template-rows: auto minmax(0, 1fr);
-    row-gap: 3rem;
+    row-gap: var(--gap-extra-large);
     #{$c}__content {
       margin-top: 3rem;
       grid-row: 1 / 2;

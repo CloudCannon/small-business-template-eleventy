@@ -1,7 +1,7 @@
 .c-country-select-input {
     display: grid;
-    gap: 4px;
-    color: var(--main-text-color);
+    gap: var(--gap-extra-small);
+    color: var(--main-text-color, #F9F9FB);
 
     &__label {
         font-size: var(--label);
@@ -21,11 +21,11 @@
         -webkit-appearance: none;
         appearance: none;
         background-color: transparent;
-        color: var(--main-text-color);
+        color: var(--main-text-color, #F9F9FB);
 
         &::placeholder {
             opacity: 1;
-            color: var(--brand-grey-400, #B6B6B8);
+            color: #B6B6B8;
         }
 
         &:focus {
@@ -43,11 +43,4 @@
         margin-right: 16px;
     }
 
-    &__helper {
-        display: flex;
-        gap: 8px;
-        font-size: var(--paragraph-small);
-        line-height: var(--line-height);
-        color: var(--main-text-color);
-    }
 }

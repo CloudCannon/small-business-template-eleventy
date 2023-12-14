@@ -5,7 +5,7 @@ spec:
   label: "Form"
   description: A CloudCannon form with a heading
   icon: dynamic_form
-  tags: []
+  tags: ['form']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -15,13 +15,11 @@ blueprint:
     description: Description text to compliment the block
     form: bookshop:simple/form-builder!
   styles:
-    color_group: "" 
+    color_group: "primary"
     content_alignment: center
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs:
-  description:
-    type: textarea
+_inputs:  

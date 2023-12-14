@@ -11,4 +11,4 @@ navigation_items:
     link_url: /contact
     open_in_new_tab: false
 footer_content: ©Enter your copyright and [terms and conditions](/terms-and-conditions/).
-footer_color_group: nice_theme2
+footer_color_group: primary

@@ -2,8 +2,8 @@
     color: var(--main-text-color);
     display: grid;
     grid-template-columns: var(--twelve-column-grid);
-    row-gap: 48px;
-    align-items: left;
+    row-gap: var(--gap-extra-large);
+    align-items: flex-start;
     text-align: left;
 
     &__heading, &__form {
@@ -13,11 +13,11 @@
     &__heading {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: var(--gap-large);
     }
 
     &--content-align-center {
-        align-items: center;
+        place-items: center;
         text-align: center;
     }
 

@@ -11,7 +11,7 @@ blueprint:
   text: >-
     ### Your rich text content
 
-    You can use **bold text** and ~~italic text~~ along with [links](http://google.com) and others options.
+    You can use **bold text** and *italic text* along with [links](http://google.com) and others options.
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
