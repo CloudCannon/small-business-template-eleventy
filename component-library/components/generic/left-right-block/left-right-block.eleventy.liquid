@@ -18,9 +18,9 @@
       {% if heading %}
         {% bookshop "generic/heading" bind:heading %}
       {% endif %}
-      {% if text %}
+      {% if description %}
         <div class="{{ c }}__content-text">
-          {% bookshop "generic/text-block" bind:text %}
+          {% bookshop "generic/text-block" bind:description %}
         </div>
       {% endif %}
       {% if icons %}
