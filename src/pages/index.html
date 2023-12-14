@@ -14,8 +14,8 @@ hero:
     heading:
       _bookshop_name: generic/heading
       eyebrow_headline: a small business template
-      eyebrow_headline_hierarchy: h3
       primary_heading: Empower Your Business with This Brilliant Template
+      eyebrow_headline_hierarchy: h3
       primary_heading_hierarchy: h2
     description:
     button:
@@ -40,13 +40,14 @@ content_blocks:
       id:
       heading:
         _bookshop_name: generic/heading
-        eyebrow_headline: Second component
+        eyebrow_headline: tag or label headline
+        primary_heading: A hero component to showcase your brand
         eyebrow_headline_hierarchy: h3
-        primary_heading: Hello
         primary_heading_hierarchy: h2
-      text:
-        _bookshop_name: generic/text-block
-        text: Where is the padding button
+      text: >-
+        We wanted you to have a couple of options to use above the fold, and
+        give you the customisation you need to display your product/service in
+        the best way possible.
       buttons:
         - _bookshop_name: generic/button
           url: '#'
@@ -62,16 +63,16 @@ content_blocks:
         image_sizes:
     styles:
       image_padding: false
-      image_alignment: Right
       color_group: secondary1
+      image_alignment: Right
   - _bookshop_name: sections/price-list
     content:
       id:
       heading:
         _bookshop_name: generic/heading
         eyebrow_headline: Eyebrow Heading
-        eyebrow_headline_hierarchy: h3
         primary_heading: List your services and products
+        eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       description: >-
         Whether your business is a restaurant, a barber shop, a gym, or a café,
@@ -108,9 +109,9 @@ content_blocks:
   - _bookshop_name: sections/left-right-testimonial
     content:
       id:
-      headline: WHAT YOUR CUSTOMERS SAY
+      eyebrow_headline: What your customers say
       quote: Their customer service is second to none.
-      author_name: Marlia is the best
+      author_name: John Smith
       buttons:
         - _bookshop_name: generic/button
           url: '#'
@@ -124,17 +125,19 @@ content_blocks:
         image_path: /assets/images/Testimonial--background-feature.png
         image_alt: 'A person sitting at a table with an ipad looking away mid laughter '
         image_sizes:
+      headline: WHAT YOUR CUSTOMERS SAY
     styles:
+      color_group: secondary0
       image_alignment: Left
-      color_group: secondary1
   - _bookshop_name: sections/gallery
     content:
+      show_note: true
       id:
       heading:
         _bookshop_name: generic/heading
         eyebrow_headline: a simple gallery
-        eyebrow_headline_hierarchy: h3
         primary_heading: Instagram or Custom Gallery
+        eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       description: >-
         Whether your business is a restaurant, a barber shop, a gym, or a café,
@@ -185,14 +188,15 @@ content_blocks:
           variant: primary
     styles:
       color_group: ''
+      content_alignment: center
   - _bookshop_name: sections/left-right-labelled-icons
     content:
       id:
       heading:
         _bookshop_name: generic/heading
         eyebrow_headline: let your features shine
-        eyebrow_headline_hierarchy: h3
         primary_heading: A featured icons left right block
+        eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       icons:
       buttons:
@@ -209,13 +213,13 @@ content_blocks:
         image_alt: 'View from the barbers chair of the mirror and shelf with products '
         image_sizes:
     styles:
-      image_alignment: Right
       color_group: secondary1
+      image_alignment: Right
   - _bookshop_name: sections/left-right-contact
     content:
+      show_note: true
       id:
       display_social_icons: true
-      show_note: true
       heading: A contact block
       description: >-
         This is a simple yet powerful block to display not only your location by
@@ -236,6 +240,7 @@ content_blocks:
           arrow: right
           onclick:
     styles:
-      map_alignment: Left
       color_group: primary0
+      image_alignment: left
+      map_alignment: Left
 ---
