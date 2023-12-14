@@ -1,13 +1,195 @@
 ---
 title: Contact
-page_description: 
-featured_image: 
-  image_path:
-  image_alt: 
+page_description:
+featured_image:
+  image_path: /assets/images/Hero--background-feature-4.png
+  image_alt: >-
+    Birds eye view of three people in conversation around a desk with someone on
+    a laptop at a desk in the background
 layout: layouts/page.html
-permalink: /contact/ 
+permalink: /contact/
 draft: false
 eleventyExcludeFromCollections: false
 hero:
+  _bookshop_name: sections/hero
+  content:
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: 'Tag or label headline '
+      primary_heading: A contact us page
+      eyebrow_headline_hierarchy: h3
+      primary_heading_hierarchy: h2
+    description: >-
+      We wanted you to have a couple of options to use above the fold, and give
+      you the customisation you need to display your product/service in the best
+      way possible.
+    button:
+      _bookshop_name: generic/button
+      url: '#'
+      open_in_new_tab: false
+      text: Book Now
+      variant: primary
+      arrow: right
+      onclick:
+    image:
+      _bookshop_name: generic/image
+      image_path: /assets/images/Hero--background-feature-4.png
+      image_alt: >-
+        A group of three people talking around a desk with a person on their
+        laptop at a desk in the background
+      image_sizes:
+  styles:
+    image_alignment: right
+    color_group: secondary0
 content_blocks:
+  - _bookshop_name: sections/form
+    content:
+      id: e7dcd562-1ad0-4372-8f0c-9099207b5118
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Book or contact us
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: >-
+        Whether your business is a restaurant, a barber shop, a gym, or a café,
+        our small business template has you covered. Add your services to the
+        list below, as many as you like, and let people contact you or book now.
+      form:
+        _bookshop_name: simple/form-builder
+        id: c4968f81-12d9-4f3c-a42b-ed5a2db0071e
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject: 'Thank you for contacting us! '
+        success_page: ''
+        form_elements:
+          - _bookshop_name: generic/form/text-input
+            label: Full Name
+            placeholder: John Smith
+            id: 3493b233-2aa7-4a0b-a910-8cf761b201bc
+            required: false
+            helper_text:
+          - _bookshop_name: generic/form/email-input
+            label: Email address
+            id: e35686a3-cacb-4045-a2ad-2c3ce754eec6
+            required: false
+            placeholder: mybuisness@smallbuisness.com
+            helper_text:
+          - _bookshop_name: generic/form/text-area-input
+            label: Comment
+            placeholder: Any helpful information we should know about
+            id: aba6c026-baea-4979-8b8b-d9871ff48dc4
+            rows: 2
+            required: false
+            helper_text:
+        submit_button:
+          text: Book Now
+          variant: primary
+          arrow: right
+    styles:
+      color_group: primary
+      content_alignment: center
+  - _bookshop_name: sections/image-cards
+    content:
+      id: 7e25396f-4180-4edd-8e3f-7987f2709a18
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: a bite size information
+        primary_heading: An image card grid
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: >-
+        Sometimes you only need a small text and image section and a cards grid
+        is the best option to showcase your content.
+      grid_items:
+        - image:
+            _bookshop_name: generic/image
+            image_path: /assets/uploads/brooke-cagle-g1kr4ozfoac-unsplash.jpg
+            image_alt: >-
+              Three people sitting around a desk with their laptops smiling and
+              talking to one another
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Image card
+            primary_heading: Your service, simplified
+            eyebrow_headline_hierarchy: h3
+            primary_heading_hierarchy: h2
+          description: >-
+            These versatile cards can be used to talk about your services or
+            products, or anything else you are keen to share with your audience.
+            They come with an action link to get your users into the journey
+            you’ve crafted for them.
+          buttons:
+            - _bookshop_name: generic/button
+              url: '#'
+              open_in_new_tab: false
+              text: Secondary
+              variant: secondary
+              arrow: right
+              onclick:
+        - image:
+            _bookshop_name: generic/image
+            image_path: /assets/uploads/brooke-cagle-g1kr4ozfoac-unsplash.jpg
+            image_alt: >-
+              Three people sitting around a desk with their laptops smiling and
+              talking to one another
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Image card
+            primary_heading: Your service, simplified
+            eyebrow_headline_hierarchy: h3
+            primary_heading_hierarchy: h2
+          description: >-
+            These versatile cards can be used to talk about your services or
+            products, or anything else you are keen to share with your audience.
+            They come with an action link to get your users into the journey
+            you’ve crafted for them.
+          buttons:
+            - _bookshop_name: generic/button
+              url: '#'
+              open_in_new_tab: false
+              text: Secondary
+              variant: secondary
+              arrow: right
+              onclick:
+        - image:
+            _bookshop_name: generic/image
+            image_path: /assets/uploads/brooke-cagle-g1kr4ozfoac-unsplash.jpg
+            image_alt: >-
+              Three people sitting around a desk with their laptops smiling and
+              talking to one another
+            image_sizes:
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Image card
+            primary_heading: Your service, simplified
+            eyebrow_headline_hierarchy: h3
+            primary_heading_hierarchy: h2
+          description: >-
+            These versatile cards can be used to talk about your services or
+            products, or anything else you are keen to share with your audience.
+            They come with an action link to get your users into the journey
+            you’ve crafted for them.
+          buttons:
+            - _bookshop_name: generic/button
+              url: '#'
+              open_in_new_tab: false
+              text: Secondary
+              variant: secondary
+              arrow: right
+              onclick:
+      card_color_group: primary
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Book Now
+          variant: primary
+          arrow: right
+          onclick:
+    styles:
+      color_group: secondary0
+      content_alignment: center
 ---
