@@ -69,7 +69,7 @@ The form component has validation and error messages build in.
 
 The site uses the [eleventy image plugin](https://www.11ty.dev/docs/plugins/image/) to optimise your images.
 
-To keep build times short you can set preserved paths for your image optimisations by setting preserved paths follwing the instructions below:
+To keep build times short you can set preserved paths for your image optimisations by setting preserved paths following the instructions below:
 
 1. Within your site on CloudCannon navigate to Site Settings (found at the bottom of the site sidebar)
 
