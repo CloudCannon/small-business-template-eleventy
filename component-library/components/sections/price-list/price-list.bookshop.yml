@@ -75,7 +75,6 @@ _structures:
       - label: List
         _inputs:
           list_items:
-            comment: Hello there
             type: array
             options:
               structures: 
