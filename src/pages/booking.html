@@ -71,6 +71,35 @@ content_blocks:
             required: false
             placeholder: mybusiness@smallbusiness.com
             helper_text:
+          - _bookshop_name: generic/form/phone-input
+            label: Phone Number
+            placeholder: +64 21 859292
+            id: 9dec4894-12be-4f21-9de1-19c31e5bc099
+            required: false
+            helper_text:
+          - _bookshop_name: generic/form/date-input
+            label: Choose Date
+            id: b5d29cf4-d207-4342-915c-46d011c1592d
+            required: false
+            min_today: true
+            min:
+            max_today: false
+            max:
+            helper_text:
+          - _bookshop_name: generic/form/time-input
+            label: Chose a time slot
+            placeholder: '15:00'
+            id: 396be97f-48ae-4601-a3f3-2461dca16307
+            helper_text:
+            min: 7:00 am
+            max: 6:00 pm
+          - _bookshop_name: generic/form/text-area-input
+            label: Comments
+            placeholder: Any helpful information we should know about
+            id: e262a6c7-b05b-446d-b7f8-1848d5ada841
+            rows: 2
+            required: false
+            helper_text:
         submit_button:
           text: Book Now
           variant: primary
@@ -103,4 +132,35 @@ content_blocks:
     styles:
       color_group: secondary1
       content_alignment: center
+  - _bookshop_name: sections/simple-text-block
+    content:
+      id: 90600857-e9ef-4eb6-a447-5aebaf554496
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: A simple text block for your FAQs
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      text:
+        _bookshop_name: generic/text-block
+        text: >-
+          ### How do I use the service?
+
+
+          <br>Customers want to know all the information before making a final
+          decision. Make sure you provide it to them.
+
+
+          ### <br>How do I pay for the service?
+
+
+          <br>Let your customers know if they can pay by EFTPOS or credit card.
+
+
+          ### <br>How awesome are you?<br>
+
+
+          <br>We’re pretty awesome.
+    styles:
+      color_group: secondary0
 ---
