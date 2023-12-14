@@ -10,10 +10,10 @@
   --mobile: 479px;
 
   /* Type scale */
-  --extra-large-heading: 3.052rem;
-  --large-heading: 2.441rem;
-  --medium-heading: 1.953rem;
-  --small-heading: 1.563rem;
+  --heading-extra-large: 3.052rem;
+  --heading-large: 2.441rem;
+  --heading-medium: 1.953rem;
+  --heading-small: 1.563rem;
   --eyebrow-heading: 1rem;
   --paragraph-large: 1.25rem;
   --paragraph: 1rem;
@@ -38,12 +38,13 @@
   // Blue - interaction
   --interaction-color: #2566f2;
 
-  // Green - success
-  --success-color: #0d8843;
+  // Gaps
+  --gap-extra-small: 4px;
+  --gap-small: 8px;
+  --gap-normal: 16px;
+  --gap-large: 24px;
+  --gap-extra-large: 48px;
 
+  // Misc
   --nav-height: 60px;
 }
-
-
-// User controlled variables such as fonts, colors etc. are defined
-// within src/_includes/partials/head/stylesheets.

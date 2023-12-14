@@ -2,7 +2,7 @@
     color: var(--main-text-color, #F9F9FB);
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: var(--gap-extra-small);
 
     &__group {
         padding: 12px 16px;
@@ -23,5 +23,4 @@
             }
         }
     }
-        
 }

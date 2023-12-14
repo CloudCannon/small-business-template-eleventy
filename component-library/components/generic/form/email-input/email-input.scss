@@ -1,7 +1,7 @@
 .c-email-input {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: var(--gap-extra-small);
     color: var(--main-text-color, #F9F9FB);
 
     &__label {
@@ -18,7 +18,7 @@
 
         &::placeholder {
             opacity: 1;
-            color: var(--brand-grey-400, #B6B6B8);
+            color: #B6B6B8;
         }
 
         &:focus {

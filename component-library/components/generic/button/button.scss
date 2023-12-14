@@ -8,7 +8,7 @@
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height);
   display: inline-flex;
-  gap: 0.5rem;
+  gap: var(--gap-small);
   align-items: center;
 
   &:focus {

@@ -1,13 +1,13 @@
 .c-gallery {
     display: grid;
-    gap: 48px;
+    gap: var(--gap-extra-large);
     place-items: center;
 
     &__tiles {
         display: flex;
         flex-wrap: wrap;
         place-content: center;
-        gap: 24px;
+        gap: var(--gap-large);
         width:100%;
 
         &__tile {
