@@ -34,3 +34,6 @@ _inputs:
     comment: Helpful text for the user such as 'You do not need to enter your middle name(s)'
   placeholder:
     type: textarea
+  id:
+    _instance_value: UUID
+    hidden: true

@@ -21,3 +21,6 @@ preview:
 _inputs:
   helper_text:
     comment: Helpful text for the user such as 'Your primary country of residence'
+  id:
+    _instance_value: UUID
+    hidden: true

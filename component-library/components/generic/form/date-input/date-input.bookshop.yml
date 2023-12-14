@@ -40,3 +40,6 @@ _inputs:
   max_today:
     type: switch
     comment: On if the latest date to be selected should always be the current date
+  id:
+    _instance_value: UUID
+    hidden: true
