@@ -14,8 +14,8 @@ hero:
     heading:
       _bookshop_name: generic/heading
       eyebrow_headline: Tag or label headline
-      eyebrow_headline_hierarchy: h3
       primary_heading: A hero for a booking form page
+      eyebrow_headline_hierarchy: h3
       primary_heading_hierarchy: h2
     description: >-
       We wanted you to have a couple of options to use above the fold, and give
@@ -36,7 +36,7 @@ hero:
       image_sizes:
   styles:
     image_alignment: right
-    color_group: primary0
+    color_group: secondary0
 content_blocks:
   - _bookshop_name: sections/form
     content:
@@ -44,8 +44,8 @@ content_blocks:
       heading:
         _bookshop_name: generic/heading
         eyebrow_headline: Eyebrow Heading
-        eyebrow_headline_hierarchy: h3
         primary_heading: Book or call us
+        eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       description: >-
         Whether your business is a restaurant, a barber shop, a gym, or a café,
@@ -57,7 +57,12 @@ content_blocks:
         form_submission_type: email/cloudcannon
         inbox_key:
         subject: Thanks for booking with us!
-        success_page: ''
+        success_page: /terms-and-conditions/
+        form_elements: []
+        submit_button:
+          text: Book Now
+          variant: primary
+          arrow: right
         inputs:
           - _bookshop_name: generic/form/text-input
             label: Full name
@@ -77,10 +82,6 @@ content_blocks:
             id: 687fd1b5-1b87-4eb5-9b34-5258c96a8463
             required: false
             helper_text:
-        submit_button:
-          text: Book Now
-          variant: primary
-          arrow: right
     styles:
       color_group: secondary1
       content_alignment: center
