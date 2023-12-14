@@ -86,9 +86,9 @@ This will mean that only new/updated images get optimised on build.
 - The "Embed" component is built to be generic and support any embed, however we cannot guarantee it will work seemlessly with all embeddable content.
 - We recommend using other components to check if they can meet your requirements first.
 - We have succesfully tested the following embeds:
-    - google forms
-    - hubspot forms
-    - instagram
+    - Google forms
+    - Hubspot forms
+    - Instagram
     - Spotify
     - X (formerly Twitter)
     - Google docs
