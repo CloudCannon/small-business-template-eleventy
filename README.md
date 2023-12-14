@@ -81,6 +81,8 @@ To keep build times short you can set preserved paths for your image optimizatio
 
 This will mean that only new/updated images get optimized on build.
 
+See [this blog](https://cloudcannon.com/blog/automatically-optimize-your-images-with-eleventy-image-and-cloudcannon/) for more on optimizing images with Eleventy and CloudCannon.
+
 ## Embedding content
 
 - The "Embed" component is built to be generic and support any embed, however we cannot guarantee it will work seemlessly with all embeddable content.
