@@ -65,11 +65,11 @@ You can use the form component to create a form with a range of inputs. This com
 
 The form component has validation and error messages build in.
 
-## Image optimisation
+## Image optimization
 
-The site uses the [eleventy image plugin](https://www.11ty.dev/docs/plugins/image/) to optimise your images.
+The site uses the [eleventy image plugin](https://www.11ty.dev/docs/plugins/image/) to optimize your images.
 
-To keep build times short you can set preserved paths for your image optimisations by setting preserved paths following the instructions below:
+To keep build times short you can set preserved paths for your image optimizations by setting preserved paths following the instructions below:
 
 1. Within your site on CloudCannon navigate to Site Settings (found at the bottom of the site sidebar)
 
@@ -79,7 +79,7 @@ To keep build times short you can set preserved paths for your image optimisatio
 
 4. Add `node_modules/,_site/optimized/` to the preserved paths section
 
-This will mean that only new/updated images get optimised on build.
+This will mean that only new/updated images get optimized on build.
 
 ## Embedding content
 
