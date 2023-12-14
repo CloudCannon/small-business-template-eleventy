@@ -13,13 +13,13 @@ blueprint:
     id:
     heading: bookshop:generic/heading!
     icons:
-      - hero_icon_name: face-smile
+      - hero_library_icon_name: face-smile
         icon_text: 100% Happy customer reviews
         icon_type: outline
-      - hero_icon_name: heart
+      - hero_library_icon_name: heart
         icon_text: Great customer service
         icon_type: outline
-      - hero_icon_name: sparkles
+      - hero_library_icon_name: sparkles
         icon_text: Outstanding product reviews
         icon_type: outline
     buttons: [bookshop:generic/button!]
