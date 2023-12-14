@@ -49,7 +49,6 @@
     row-gap: var(--gap-extra-large);
     
     #{$c}__content {
-      margin-top: 48px;
       grid-row: 1 / 2;
       border-left: solid 2px;
       padding-left: 24px;
