@@ -13,5 +13,7 @@ navigation_items:
   - label: Contact Us
     link_url: /contact
     open_in_new_tab: false
-footer_content: ©Enter your copyright and terms and conditions.
-footer_color_group: "primary"
+footer_content: >-
+  ©Enter your copyright and <a href="/terms-and-conditions/" target="_blank"
+  rel="noopener">terms and conditions.</a>
+footer_color_group: primary
