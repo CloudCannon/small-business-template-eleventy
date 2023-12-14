@@ -1,12 +1,12 @@
 source: src
 paths:
   data: _data
-  collections: ''
+  collections: ""
   layouts: _includes
-  static: ''
-  uploads: uploads
+  static: ""
+  uploads: assets/uploads
   includes: _includes
-  pages: ''
+  pages: ""
 collections_config:
   data:
     path: _data
