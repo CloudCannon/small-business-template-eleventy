@@ -17,7 +17,7 @@ Small Business Template Eleventy (TBC) is a polished, marketing website template
 - Generic Embed component for custom embeds
 - Configurable theme colors
 - Configurable fonts
-- Optimised for editing in CloudCannon
+- Optimized for editing in CloudCannon
 - Responsive layouts
 
 ## Setup
