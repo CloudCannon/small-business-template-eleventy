@@ -39,4 +39,11 @@ main {
   &--full-height {
     padding: 0;
   }
+
+  .component__heading{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: inherit;
+  }
 }

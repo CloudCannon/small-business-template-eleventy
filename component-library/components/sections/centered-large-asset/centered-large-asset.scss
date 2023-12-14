@@ -10,17 +10,6 @@
         grid-column: 2 / -2;
     }
 
-    &__heading {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap-large);
-        align-items: center;
-
-        .c-text-block > p{
-            font-size: var(--paragraph-large);
-        }
-    }
-
     &__button {
         grid-column: 2 / -2;
     }

@@ -14,14 +14,8 @@
         grid-column: 3 / -3;
     }
 
-    &__heading {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-
-        .c-text-block > p{
-            font-size: var(--paragraph-large);
-        }
+    &__button {
+        grid-column: 2 / -2;
     }
 
     &--content-align-center {

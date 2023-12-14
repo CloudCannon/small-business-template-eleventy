@@ -2,7 +2,7 @@
 <section {% if content.id %}id="{{ content.id }}"{% endif %} class="{{ c }} component component--{{ styles.color_group }}">
     
     {% if content.heading or content.description %}
-        <div class="{{ c }}__heading">
+        <div class="component__heading {{ c }}__heading">
             {% if content.heading %}{% bookshop "generic/heading" bind:content.heading %}{% endif %}
             {% if content.description %}{% bookshop "generic/text-block" text:content.description %}{% endif %}
         </div>
