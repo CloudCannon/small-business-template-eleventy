@@ -1,4 +1,5 @@
 .c-button-temp {
+  $c: &;
   all: unset;
   padding: 1rem 0.75rem;
   color: var(--main-text-color, #F9F9FB);
@@ -36,9 +37,58 @@
     &:hover {
       text-decoration: underline;
     }
+
+    .c-hero-library-icon{
+      transition:all 0.2s;
+    }
+
+    &#{$c}--arrow-up{
+      .c-hero-library-icon{
+        bottom:0;
+      }
+      &:hover{
+        .c-hero-library-icon{
+          bottom:3px;
+        }
+      }
+    }
+    &#{$c}--arrow-right{
+      .c-hero-library-icon{
+        left:0;
+      }
+      &:hover{
+        .c-hero-library-icon{
+          left:3px;
+        }
+      }
+    }
+    &#{$c}--arrow-down{
+      .c-hero-library-icon{
+        top:0;
+      }
+      &:hover{
+        .c-hero-library-icon{
+          top:3px;
+        }
+      }
+    }
+    &#{$c}--arrow-left{
+      .c-hero-library-icon{
+        right:0;
+      }
+      &:hover{
+        .c-hero-library-icon{
+          right:3px;
+        }
+      }
+    }
+  }
+
+  .c-hero-library-icon{
+    position:relative;
   }
 
   .c-hero-library-icon__image, .c-hero-library-icon__svg {
-      --c-hero-library-icon-color: var(--main-text-color, #F9F9FB);
+      --c-hero-library-icon-color: var(--main-text-color, #F9F9FB);          
   }
 }
