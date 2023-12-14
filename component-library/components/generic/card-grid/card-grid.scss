@@ -65,10 +65,13 @@
     width:100%;
 
     & .c-card{
+
+      /* Tablet view */
       @media screen and (min-width: 480px) {
           width: calc((100% - 24px) / 2);
       }
 
+      /* Desktop view */
       @media screen and (min-width: 769px) {
           width: calc((100% - 48px) / 3);
       }

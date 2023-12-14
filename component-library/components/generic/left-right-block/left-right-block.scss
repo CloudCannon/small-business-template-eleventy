@@ -6,33 +6,33 @@
   padding-bottom: 0;
 
   .c-heading {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
 
   &__content {
-    padding-bottom: 3rem;
+    padding-bottom: 48px;
     grid-column: 2 / -2;
   }
   &.component--full-height {
     #{$c}__content {
-      padding: 3rem 0;
+      padding: 48px 0;
     }
   }
 
   &__content-text {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     max-width: 32.0625rem;
     text-wrap: pretty;
   }
 
   &__content-wrapper {
-    border-left: 0.0625rem solid var(--main-text-color);
-    padding-left: 1.5rem;
+    border-left: 1px solid var(--main-text-color);
+    padding-left: 24px;
   }
 
   & .c-social-icons {
     justify-content: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
 
   &__icons {
@@ -41,7 +41,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: var(--gap-large);
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
 
   &__buttons {
@@ -69,7 +69,7 @@
 
   /* Desktop view */
   @media screen and (min-width: 769px) {
-    padding-bottom: 6rem;
+    padding-bottom: 96px;
 
     &__content {
       padding: 0;
@@ -79,7 +79,7 @@
     &.component--full-height {
       padding-bottom: 0;
       &__content {
-        padding: 6rem 0;
+        padding: 72px 0;
       }
     }
 
