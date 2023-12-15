@@ -31,3 +31,6 @@ _inputs:
     type: time
   max:
     type: time
+  id:
+    _instance_value: UUID
+    hidden: true

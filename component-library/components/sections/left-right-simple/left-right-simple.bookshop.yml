@@ -36,9 +36,3 @@ _inputs:
     label: Content block padding
     comment: Adds padding on the top and bottom of this content block
     type: switch
-  image_alignment:
-    type: select
-    options:
-      values:
-        - Left
-        - Right
