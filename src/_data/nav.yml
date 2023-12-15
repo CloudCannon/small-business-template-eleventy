@@ -10,10 +10,10 @@ navigation_items:
   - label: Village
     link_url: /village
     open_in_new_tab: false
-  - label: 'Te Moananui a Kiwa Community Concert '
+  - label: 'Te Moananui a Kiwa Concert '
     link_url: /tmak
     open_in_new_tab: false
-  - label: Contact Us
+  - label: Contact
     link_url: /contact
     open_in_new_tab: false
 nav_color_group: primary
