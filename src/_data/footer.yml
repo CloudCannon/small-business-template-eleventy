@@ -1,5 +1,5 @@
-logo_image: ''
-logo_text: Primera Mesa
+logo_image: /assets/uploads/venture-logo.svg
+logo_text: Venture
 navigation_items:
   - label: Our Services
     link_url: /#services
