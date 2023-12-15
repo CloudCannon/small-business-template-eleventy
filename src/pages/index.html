@@ -1,4 +1,5 @@
 ---
+_schema: default
 title: Home
 page_description:
 featured_image:
@@ -9,5 +10,30 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
+  _bookshop_name: sections/hero
+  content:
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: Eyebrow Heading
+      primary_heading: Primary Heading
+      eyebrow_headline_hierarchy: h3
+      primary_heading_hierarchy: h2
+    description: Description text to compliment the block
+    button:
+      _bookshop_name: generic/button
+      url: '#'
+      open_in_new_tab: false
+      text: Button text
+      variant: primary
+      arrow: right
+      onclick:
+    image:
+      _bookshop_name: generic/image
+      image_path: /assets/uploads/polyfest-2023-te-kura-kaupapa-maori-1-2.jpg
+      image_alt: 'Te Kura kaupapa Māori performing at the 2023 Otago Polyfest '
+      image_sizes:
+  styles:
+    image_alignment: left
+    color_group: primary
 content_blocks: []
 ---
