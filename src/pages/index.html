@@ -34,5 +34,211 @@ hero:
   styles:
     image_alignment: full-background
     color_group: primary
-content_blocks: []
+content_blocks:
+  - _bookshop_name: sections/left-right-simple
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: tag or label headline
+        primary_heading: A component to showcase your brand
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      text: >-
+        Here is a way to display your product/service and some text in the best
+        way possible. 
+      buttons:
+        - _bookshop_name: generic/button
+          url: /booking/
+          open_in_new_tab: false
+          text: Book now
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+        _bookshop_name: generic/image
+        image_path: /assets/images/Hero--background-feature-2.png
+        image_alt: Person wearing glasses and holding fairy lights
+        image_sizes:
+    styles:
+      image_padding: false
+      color_group: secondary0
+      image_alignment: Left
+  - _bookshop_name: sections/price-list
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: List your services or products
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: >-
+        Whether your business is a restaurant, a barber shop, a gym or a café,
+        our template has you covered. Add your services to the list below, as
+        many as you like.
+      lists:
+        - list_heading: Subheadings available
+          list_items:
+            - label: 'Product 1 '
+              detail: $40
+            - label: Product 2
+              detail: $75.99
+            - label: Product 3
+              detail: $100
+        - list_heading: Subheadings availavle
+          list_items:
+            - label: Service 1
+              detail: $34
+            - label: Service 2
+              detail: $95
+            - label: Service 3
+              detail: $79
+      button:
+        _bookshop_name: generic/button
+        url: /booking/
+        open_in_new_tab: false
+        text: Book Now
+        variant: primary
+        arrow: right
+        onclick:
+    styles:
+      color_group: primary
+      content_alignment: center
+  - _bookshop_name: sections/left-right-testimonial
+    content:
+      id:
+      eyebrow_headline: What your customers say
+      quote: Their customer service is second to none.
+      author_name: John Smith
+      buttons:
+        - _bookshop_name: generic/button
+          url: /booking/
+          open_in_new_tab: false
+          text: Book Now
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+        _bookshop_name: generic/image
+        image_path: /assets/images/Testimonial--background-feature.png
+        image_alt: Person holding notebook and pencil smiling
+        image_sizes:
+    styles:
+      color_group: secondary0
+      image_alignment: right
+  - _bookshop_name: sections/gallery
+    content:
+      show_note: true
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: a simple gallery
+        primary_heading: Image Gallery
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: ''
+      gallery:
+        _bookshop_name: simple/image-gallery
+        show_note: true
+        images:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-1.png
+            image_alt: three people laughing while working on laptops
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-2.png
+            image_alt: People in a busy café
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-3.png
+            image_alt: Blurry photo of lights and people in a street view
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-4.png
+            image_alt: Person smiling and wearing glasses with a light reflection
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-5.png
+            image_alt: Person sitting on a black couch with a laptop
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/images/gallery/Gallery--image-6.png
+            image_alt: Group of people sitting on a wall in front of mountain landscape
+            image_sizes:
+        button:
+          _bookshop_name: generic/button
+          text: Load more
+          variant: primary
+          arrow: down
+    styles:
+      color_group: primary
+      content_alignment: center
+  - _bookshop_name: sections/left-right-labelled-icons
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: let your features shine
+        primary_heading: A featured icons block
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      icons:
+        - hero_library_icon_name: face-smile
+          icon_type: outline
+          icon_text: 100% Happy customer reviews
+        - hero_library_icon_name: heart
+          icon_type: outline
+          icon_text: Great customer service
+        - hero_library_icon_name: sparkles
+          icon_type: outline
+          icon_text: Outstanding product reviews
+      buttons:
+        - _bookshop_name: generic/button
+          url: /booking/
+          open_in_new_tab: false
+          text: Book Now
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+        _bookshop_name: generic/image
+        image_path: /assets/images/Left-Right--featured-image.png
+        image_alt: Barber shop bench with many hairdresser tools sitting on it
+        image_sizes:
+    styles:
+      color_group: secondary0
+      image_alignment: right
+  - _bookshop_name: sections/left-right-contact
+    content:
+      show_note: true
+      id:
+      display_social_icons: true
+      heading: A contact block
+      description: >-
+        This is a simple yet powerful block to display not only your location by
+        using Google Maps, but also any other contact details you wish to share
+        with your customers.
+      contact_details:
+        - _type: Email
+          text: 'Email address: mybusiness@business.com'
+          hero_library_icon_name: envelope
+        - _type: Phone
+          text: 'Phone number: 312 325 326'
+          hero_library_icon_name: phone
+        - _type: Address
+          text: 'Address: 1 Fake St, Faketown'
+          hero_library_icon_name: map-pin
+        - _type: Hours
+          text: 'Opening hours: 9-5pm, Monday to Friday'
+          hero_library_icon_name: clock
+      map:
+        _bookshop_name: simple/google-map-embed
+        latitude: S 45° 52' 15.3316"
+        longitude: E  170° 30' 46.2537"
+        zoom_level: 9
+      buttons: []
+    styles:
+      color_group: primary
+      image_alignment: left
 ---
