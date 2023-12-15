@@ -105,6 +105,7 @@ _inputs:
     hidden: true
   draft:
     type: switch
+    comment: If this is switched on, this page will not appear on the live site
   page_description:
     comment: If empty, defaults to the description set in the SEO data file
   featured_image:
