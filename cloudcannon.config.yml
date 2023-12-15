@@ -28,7 +28,7 @@ collections_config:
     disable_file_actions: false
     schemas:
       default:
-        path: src/schemas/page.md
+        path: src/schemas/page.html
 _inputs:
   arrow:
     type: select
