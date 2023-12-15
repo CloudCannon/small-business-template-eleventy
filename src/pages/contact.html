@@ -9,17 +9,30 @@ permalink: /contact/
 draft: false
 eleventyExcludeFromCollections: false
 hero:
-  _bookshop_name: sections/hero--simple
+  _bookshop_name: sections/hero
   content:
     heading:
       _bookshop_name: generic/heading
-      eyebrow_headline: Tag or Label headline
-      primary_heading: Contact us title
+      eyebrow_headline: Eyebrow Heading
+      primary_heading: Contact us
       eyebrow_headline_hierarchy: h3
       primary_heading_hierarchy: h2
-    description: Text description to give more details about how to contact your business.
+    description: Description text to compliment the block
+    button:
+      _bookshop_name: generic/button
+      url: '#contact-form'
+      open_in_new_tab: false
+      text: Contact us
+      variant: primary
+      arrow: right
+      onclick:
+    image:
+      _bookshop_name: generic/image
+      image_path: /assets/images/Left-Right--featured-image.png
+      image_alt: Barber shop bench with tools sitting on it
+      image_sizes:
   styles:
-    content_alignment: left
+    image_alignment: right
     color_group: secondary0
 content_blocks:
   - _bookshop_name: sections/form
