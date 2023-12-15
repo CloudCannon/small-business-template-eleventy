@@ -1,16 +1,19 @@
-logo_image: ""
-logo_text: Primera Mesa
+logo_image: /assets/uploads/og-logo-fixed.png
+logo_text:
 navigation_items:
-  - label: About Us
-    link_url: /about
+  - label: Kaupapa
+    link_url: /kaupapa
     open_in_new_tab: false
-  - label: Our Services
-    link_url: /services
+  - label: Programme - 2023
+    link_url: /programme
     open_in_new_tab: false
-  - label: Book Now
-    link_url: /bookings
+  - label: Village
+    link_url: /village
+    open_in_new_tab: false
+  - label: 'Te Moananui a Kiwa Community Concert '
+    link_url: /tmak
     open_in_new_tab: false
   - label: Contact Us
     link_url: /contact
     open_in_new_tab: false
-nav_color_group: "primary"
+nav_color_group: primary

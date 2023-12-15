@@ -1,5 +1,5 @@
-logo_image: ''
-logo_text: Primera Mesa
+logo_image: /assets/uploads/og-logo-fixed-1.png
+logo_text:
 navigation_items:
   - label: About Us
     link_url: /about
@@ -14,4 +14,4 @@ navigation_items:
     link_url: /contact
     open_in_new_tab: false
 footer_content: ©Enter your copyright and terms and conditions.
-footer_color_group: "primary"
+footer_color_group: primary

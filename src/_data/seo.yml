@@ -1,6 +1,11 @@
 favicon: /assets/images/logos/favicon.png
-title: Primera Mesa
-image: 
-  image_path: /assets/images/card-grid/Card-grid--image-1.png
-  image_alt: People gathering around a table laughing
-description: An eleventy template targeted toward small businesses
+title: Otago Polyfest
+image:
+  image_path: /assets/uploads/polyfest-2023-te-kura-kaupapa-maori-1-2.jpg
+  image_alt: >-
+    Te Kura Kaupapa Māori o Ōtepoti performing on the Otago Polyfest stage
+    2023
+description: >-
+  Website for Otago Polyfest, an opportunity for children, young people and
+  whānau to participate in Māori and Pacific cultural experiences that broadens
+  and celebrates their individual and collective cultural identities
