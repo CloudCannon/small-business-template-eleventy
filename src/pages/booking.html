@@ -9,5 +9,85 @@ permalink: /booking/
 draft: false
 eleventyExcludeFromCollections: false
 hero:
+  _bookshop_name: sections/hero
+  content:
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: Tag or label headline
+      primary_heading: A hero for a booking form page
+      eyebrow_headline_hierarchy: h3
+      primary_heading_hierarchy: h2
+    description: >-
+      We wanted you to have a couple of options to use above the fold, and give
+      you the customisation you need to display your product/service in the best
+      way possible.
+    button:
+    image:
+      _bookshop_name: generic/image
+      image_path: /assets/images/Hero--background-feature-3.png
+      image_alt: Person wearing a black hat and smiling
+      image_sizes:
+  styles:
+    image_alignment: right
+    color_group: secondary0
 content_blocks:
+  - _bookshop_name: sections/form
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Booking form
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: ''
+      form:
+        _bookshop_name: simple/form-builder
+        id:
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        form_elements:
+          - _bookshop_name: generic/form/text-input
+            label: Full name
+            placeholder: John Smith
+            id:
+            required: true
+            helper_text:
+          - _bookshop_name: generic/form/email-input
+            label: Email address
+            id:
+            required: true
+            placeholder: mybusiness@mybusiness.com
+            helper_text:
+          - _bookshop_name: generic/form/phone-input
+            label: Phone number
+            placeholder: 123 456 78910
+            id:
+            required: false
+            helper_text:
+          - _bookshop_name: generic/form/date-input
+            label: Choose a date
+            id:
+            required: true
+            min_today: true
+            min:
+            max_today: false
+            max:
+            helper_text:
+          - _bookshop_name: generic/form/text-area-input
+            label: Message
+            placeholder: 'Any helpful information we should know about. '
+            id:
+            rows: 2
+            required: false
+            helper_text:
+        submit_button:
+          text: Book Now
+          variant: primary
+          arrow: right
+    styles:
+      color_group: primary
+      content_alignment: center
 ---
