@@ -38,7 +38,10 @@ module.exports = function (eleventyConfig) {
   }));
 
   // Filters
-  eleventyConfig.addFilter("markdownify", (markdown) => md.render(markdown));
+  eleventyConfig.addFilter("markdownify", (markdown) => {
+    markdown = markdown.toString();
+    return md.render(markdown)
+  });
   eleventyConfig.addFilter("ymlify", (yml) => yaml.load(yml));
   eleventyConfig.addFilter("militaryTime", military_time);
   eleventyConfig.addFilter('contains_block', contains_block_filter);
