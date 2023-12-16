@@ -11,7 +11,7 @@ blueprint:
   heading: bookshop:generic/heading
   display_social_icons: true
   show_social_icons_note: true
-  text:
+  description:
   buttons: [bookshop:generic/button]
   icons: [bookshop:generic/labelled-icon]
   image: bookshop:generic/image
@@ -27,7 +27,7 @@ preview:
     eyebrow_headline: Let your features shine
     primary_heading: A featured icons left right block
   display_social_icons: true
-  text: >-
+  description: >-
     This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
   buttons:
     - url: "#"

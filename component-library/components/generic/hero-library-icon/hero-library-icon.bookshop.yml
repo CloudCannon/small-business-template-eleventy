@@ -4,7 +4,7 @@ spec:
     - card_imagery_blocks
     - icon_blocks
   label: "Hero Library Icon"
-  description: A icon (from https://heroicons.com/) with an optional border and customisable color
+  description: An icon (from https://heroicons.com/) with an optional border and customisable color
   icon: bolt
   tags: []
 

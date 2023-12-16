@@ -6,18 +6,12 @@
     align-items: flex-start;
     text-align: left;
 
-    &__heading, &__form {
-        grid-column: 2 / -2;
-    }
-
     &__form{
         width:100%;
     }
 
-    &__heading {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap-large);
+    &__heading, &__form {
+        grid-column: 2 / -2;
     }
 
     &--content-align-center {
@@ -25,7 +19,8 @@
         text-align: center;
     }
 
-    @media screen and (min-width: 1279px) {
+    /* Desktop view */
+    @media screen and (min-width: 769px) {
         &__heading {
             grid-column: 4 / -4;
         }
