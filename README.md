@@ -1,6 +1,6 @@
 # Venture
 
-Venture is a polished, marketing website template for Eleventy. Browse through a [live demo]( https://plucky-lapwing.cloudvent.net).
+Venture is a polished, marketing website template for Eleventy. Browse through a [live demo](https://plucky-lapwing.cloudvent.net).
 
 
 (TBC) ![Small business template screenshot](/site/images/_screenshot.png)
