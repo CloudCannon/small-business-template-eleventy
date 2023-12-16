@@ -108,7 +108,7 @@ We have made efforts to prioritize accessibility in our design, but we acknowled
 
 All blocks have an id field that can be set and then used as a link to that component. 
 
-This is helpful (for example) if you want to link to information about your services from the nav without having a fully seperate page for it. You can set the id field in the services block to be `services` and then in *data/nav* you can have a link to `#services`.
+This is helpful (for example) if you want to link to information about your services from the nav without having a fully seperate page for it. You can set the id field in the services block to be `services` and then in *Data* / *Nav* you can have a link to `#services`.
 
 ## Development
 
