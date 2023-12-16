@@ -26,6 +26,9 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
+      default:
+        path: src/schemas/page.html
 _inputs:
   arrow:
     type: select

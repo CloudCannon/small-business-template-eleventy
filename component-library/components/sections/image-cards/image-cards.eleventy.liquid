@@ -37,7 +37,6 @@
     heading: {{ content.heading | json }}
     description: "{{ content.description }}"
     grid_items: {{ grid_items }}
-    card_color_group: {{ content.card_color_group }}
     buttons: {{ content.buttons | json }}
 {% endcapture %}
 {% assign_local card_grid_content = card_grid_content | ymlify %}

@@ -12,7 +12,7 @@
     &--stacked {
         flex-direction: column;
         text-align: center;
-        #{$c}__text {
+        .c-text-block {
             max-width: 5rem;
             font-size: var(--paragraph-small);
         }
