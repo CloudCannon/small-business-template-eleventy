@@ -39,11 +39,6 @@
     }
   }
 
-  /* Tablet view */
-  @media screen and (min-width: 480px) {
-    height: calc(100svh - (var(--nav-height) * 2));
-  }
-
   &--left-right-variant {
     grid-template-rows: auto minmax(0, 1fr);
     row-gap: var(--gap-extra-large);
