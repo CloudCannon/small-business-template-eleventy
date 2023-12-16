@@ -1,6 +1,6 @@
-# small-business-template-eleventy
+# Venture
 
-Small Business Template Eleventy (TBC) is a polished, marketing website template for Eleventy. Browse through a [live demo]( https://plucky-lapwing.cloudvent.net).
+Venture is a polished, marketing website template for Eleventy. Browse through a [live demo]( https://plucky-lapwing.cloudvent.net).
 
 
 (TBC) ![Small business template screenshot](/site/images/_screenshot.png)
@@ -14,7 +14,7 @@ Small Business Template Eleventy (TBC) is a polished, marketing website template
 - Configurable navigation and footer
 - Multiple hero options
 - Configurable form, gallery, image, video, pricing, left/right block, and more components
-- Generic Embed component for custom embeds
+- Generic "Embed" component for custom embeds
 - Configurable theme colors
 - Configurable fonts
 - Optimized for editing in CloudCannon
@@ -33,7 +33,7 @@ By default the site will be at `http://localhost:8080`
 
 ## Editing
 
-Small Business Template Eleventy (TBC) is set up for adding, updating and removing pages, components, posts, navigation and footer elements in [CloudCannon](https://app.cloudcannon.com/).
+Venture is set up for adding, updating and removing pages, components, posts, navigation and footer elements in [CloudCannon](https://app.cloudcannon.com/).
 
 Changes in the data files require the site to be rebuilt to see your changes.
 
@@ -54,16 +54,24 @@ Changes in the data files require the site to be rebuilt to see your changes.
 - The colors will update on the next build
 - More font options can be added in *Data* / *Fonts*
 
+## Components
+
+Venture is built using Bookshop components. Bookshop is a framework that allows you to use component architecture in your static site, and enables live editing in CloudCannon. You can read more about Bookshop and how it integrates with Eleventy [here](https://cloudcannon.com/documentation/guides/bookshop-eleventy-guide/).
+
+### /components page
+
+Within Venture, there is a `components.html` page that allows you to use a feature of Bookshop called Bookshop Browser. When developing locally, you can use `localhost:8080/components` to preview your Bookshop components in the context of your site. This `/components` page is for local development only, and will not show up in CloudCannon or on your live site.
+
 ## Forms
 
-You can use the form component to create a form with a range of inputs. This component is set up to submit to a CloudCannon inbox as long as you configure the inbox key following the instructions below. If you want to integrate your custom form with custom submission actions you can use the embed component.
+You can use the "Form" component to create a form with a range of inputs. This component is set up to submit to a CloudCannon inbox as long as you configure the inbox key following the instructions below. If you want to integrate your custom form with custom submission actions you can use the "Embed" component.
 
 - Create an inbox for your organisation/site following [these instructions](https://cloudcannon.com/documentation/articles/creating-an-inbox-to-receive-your-forms/) - note down the key that you use
 - Connect your site to your inbox following [these instructions](https://cloudcannon.com/documentation/articles/connecting-your-site-to-an-inbox/)
 - Add a "Form" and "Form Builder" component
 - Add your inbox key to the relevant field in the form builder
 
-The form component has validation and error messages build in.
+The "Form" component has validation and error messages build in.
 
 ## Image optimization
 
@@ -94,11 +102,11 @@ See [this blog](https://cloudcannon.com/blog/automatically-optimize-your-images-
     - Spotify
     - X (formerly Twitter)
     - Google docs
-    - YouTube video (although we would recommend using the Centered Large Asset component with a video instead)
+    - YouTube video (although we would recommend using the "Centered Large Asset" component with a video instead)
     - Lottie files
     - PDFs
 
-All options in the above list (except YouTube videos) requires you to use the "embed" component.
+All options in the above list (except YouTube videos) require you to use the "Embed" component.
 
 ## Accessibility
 
@@ -108,7 +116,7 @@ We have made efforts to prioritize accessibility in our design, but we acknowled
 
 All blocks have an id field that can be set and then used as a link to that component. 
 
-This is helpful (for example) if you want to link to information about your services from the nav without having a fully seperate page for it. You can set the id field in the services block to be `services` and then in *data/nav* you can have a link to `#services`.
+This is helpful (for example) if you want to link to information about your services from the nav without having a fully seperate page for it. You can set the id field in the services block to be `services` and then in *Data* / *Nav* you can have a link to `#services`.
 
 ## Development
 
@@ -119,8 +127,3 @@ There is a prebuild step with this template to process the user-defined theme va
 When developing locally, you can run `$ npm run fetch-theme-variables` to execute the preprocessing. This command also runs automatically as part of `$ npm run start`.
 
 Deploying your site to CloudCannon, there is a file located at `.cloudcannon/prebuild` which contains necessary commands to run before the build step, including `$ npm run fetch-theme-variables`.
-
-### Design decisions
-
-- Local CSS variable names are prefixed with `_`
-- Global variables have no prefix
