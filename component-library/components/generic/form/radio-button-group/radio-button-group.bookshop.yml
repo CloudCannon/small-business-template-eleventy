@@ -46,3 +46,6 @@ _inputs:
     instance_value: UUID
   helper_text:
     comment: Helpful text for the user such as 'Option 1 is only available on weekends'
+  id:
+    _instance_value: UUID
+    hidden: true

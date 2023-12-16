@@ -3,7 +3,7 @@ paths:
   data: _data
   collections: ''
   layouts: _includes
-  static: ""
+  static: ''
   uploads: assets/uploads
   includes: _includes
   pages: ''
@@ -26,6 +26,9 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
+      default:
+        path: src/schemas/page.html
 _inputs:
   arrow:
     type: select
@@ -240,8 +243,6 @@ _inputs:
       The color for user interactions, for example focusing on text inputs or
       clicking buttons
   id:
-    hidden: true
-    instance_value: UUID
     comment: >-
       An optional unique identifier to link to this component (with page#id
       where id is what you set in this field)
@@ -255,7 +256,7 @@ _inputs:
       Write the name of any font from
       [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here
-  hero_icon_name:
+  hero_library_icon_name:
     comment: >-
       Visit [https://heroicons.com/](https://heroicons.com/) to see the full
       library

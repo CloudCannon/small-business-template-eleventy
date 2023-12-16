@@ -4,5 +4,5 @@
     {% if icon %}        
       {% bookshop "{{icon._bookshop_name}}" bind:icon %}
     {% endif %}
-    <p class="{{ c }}__text">{{ text }}</p>
+    {% bookshop "generic/text-block" bind:text %}
 </div>

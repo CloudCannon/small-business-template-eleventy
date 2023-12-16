@@ -15,7 +15,7 @@
         _bookshop_name: {{ item.image._bookshop_name }}
         image_path: {{ item.image.image_path }}
         image_alt: {{ item.image.image_alt }}
-        image_sizes: "(min-width: 1279px) 368px, (min-width: 769px) 63vw, 94vw"
+        image_sizes: "(min-width: 769px) 368px, (min-width: 480px) 63vw, 94vw"
     {% endcapture %}
     {% assign image = image | ymlify %}
     {% capture card %}
@@ -27,7 +27,7 @@
                 eyebrow_headline_hierarchy: {{ card_eyebrow_headline_hierarchy }}
                 primary_heading: {{item.heading.primary_heading}}
                 primary_heading_hierarchy: {{ card_primary_heading_hierarchy }}
-            description: {{ item.description }}
+            description: "{{ item.description }}"
             buttons: {{ item.buttons | json }}
     {% endcapture %}
     {% assign grid_items = grid_items | append: card %}
@@ -35,9 +35,8 @@
 
 {% capture card_grid_content %}
     heading: {{ content.heading | json }}
-    description: {{ content.description }}
+    description: "{{ content.description }}"
     grid_items: {{ grid_items }}
-    card_color_group: {{ content.card_color_group }}
     buttons: {{ content.buttons | json }}
 {% endcapture %}
 {% assign_local card_grid_content = card_grid_content | ymlify %}

@@ -68,3 +68,20 @@ const checkViewportSize = () => {
 
 window.addEventListener("resize", () => debounce(checkViewportSize, 600));
 checkViewportSize(); // Trigger on initial page load
+
+
+
+// check header height
+function checkHeaderHeight() {
+  // select header element
+  const header = document.querySelector('header');
+  // get rendered styles
+  const styles = window.getComputedStyle(header);
+  // set header height rendered style
+  const headerHeight = styles.height;
+  // set CSS as a value
+  document.documentElement.style.setProperty("--nav-height", headerHeight);
+}
+addEventListener("resize", checkHeaderHeight);
+addEventListener("orientationchange", checkHeaderHeight);
+checkHeaderHeight();

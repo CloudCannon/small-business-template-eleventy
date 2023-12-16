@@ -39,7 +39,7 @@
                 eyebrow_headline_hierarchy: {{ card_eyebrow_headline_hierarchy }}
                 primary_heading: {{item.heading.primary_heading}}
                 primary_heading_hierarchy: {{ card_primary_heading_hierarchy }}
-            description: {{ item.description }}
+            description: "{{ item.description }}"
             buttons: {{ item.buttons | json }}
     {% endcapture %}
     {% assign grid_items = grid_items | append: card %}
@@ -47,9 +47,8 @@
 
 {% capture card_grid_content %}
     heading: {{ content.heading | json }}
-    description: {{ content.description }}
+    description: "{{ content.description }}"
     grid_items: {{ grid_items }}
-    card_color_group: {{ content.card_color_group }}
     buttons: {{ content.buttons | json }}
 {% endcapture %}
 {% assign_local card_grid_content = card_grid_content | ymlify %}
