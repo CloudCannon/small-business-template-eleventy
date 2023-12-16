@@ -1,4 +1,5 @@
 ---
+_schema: default
 title: Home
 page_description:
 featured_image:
@@ -9,5 +10,37 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
-content_blocks: []
+content_blocks:
+  - _bookshop_name: sections/icon-cards
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      grid_items: []
+      buttons: []
+    styles:
+      color_group: primary
+      card_color_group: primary
+      content_alignment: center
+  - _bookshop_name: sections/image-cards
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      grid_items: []
+      buttons: []
+    styles:
+      color_group: primary
+      card_color_group: primary
+      content_alignment: center
 ---
