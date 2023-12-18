@@ -1,5 +1,5 @@
 .c-hero {
-  $c: &;
+  $c: &;    
   height: calc(100svh - var(--nav-height));
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
@@ -39,7 +39,10 @@
     }
   }
 
-  &--left-right-variant {
+  &--left-right-variant {      
+    padding-top: 192px;
+    padding-bottom: 0;
+
     grid-template-rows: auto minmax(0, 1fr);
     row-gap: var(--gap-extra-large);
     
@@ -58,7 +61,8 @@
     }
 
     /* Desktop view */
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 769px) {      
+      padding: 0;
       grid-template-rows: minmax(0, 1fr);
       #{$c}__content {
         grid-row: 1 / 2;
