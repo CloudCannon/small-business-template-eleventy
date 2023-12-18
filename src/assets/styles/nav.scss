@@ -37,7 +37,7 @@
       position: absolute;
       transform: translateY(-100%);
       transition: transform 0.3s;
-      border-radius: 0 0 1rem 1rem;
+      border-radius: 0 0 16px 16px;
       &:focus {
         transform: translateY(0%);
       }
@@ -121,7 +121,7 @@
         text-decoration: none;
         color: var(--main-text-color);
         white-space: nowrap;
-        padding: 0.5rem;
+        padding: 8px;
 
         &:hover,
         &:active {
@@ -141,7 +141,7 @@
   &__burger-menu {
     grid-column: 13 / 14;
     background-color: unset;
-    padding: 1.5rem 0 1.5rem 1.5rem;
+    padding: 24px 0 24px 24px;
     display: flex;
     align-items: center;
     border: none;
@@ -247,8 +247,9 @@
     display: block;
   }
 
+  /* Desktop view */
   @media screen and (min-width: 769px) {
-    position: static;
+    position:static;
     height: auto;
     &__contents {
       grid-template-columns: 2fr 3fr;
@@ -261,7 +262,7 @@
       display: flex;
     }
     &__social-icons {
-      padding: 0.5rem 0;
+      padding: 8px 0;
       display: flex;
       justify-content: flex-end;
     }
@@ -297,7 +298,7 @@
       display: flex;
       flex-direction: row;
       gap: var(--gap-small);
-      padding: 0.5rem 0;
+      padding: 8px 0;
       flex-wrap: wrap;
       justify-content: flex-end;
     }
