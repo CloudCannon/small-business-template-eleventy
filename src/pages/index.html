@@ -1,4 +1,5 @@
 ---
+_schema: default
 title: Home
 page_description:
 featured_image:
@@ -9,5 +10,271 @@ permalink: /
 draft: false
 eleventyExcludeFromCollections: false
 hero:
-content_blocks: []
+  _bookshop_name: sections/hero
+  content:
+    heading:
+      _bookshop_name: generic/heading
+      eyebrow_headline: Eyebrow Heading
+      primary_heading: Primary Heading
+      eyebrow_headline_hierarchy: h3
+      primary_heading_hierarchy: h2
+    description: Description text to compliment the block
+    button:
+      _bookshop_name: generic/button
+      url: '#'
+      open_in_new_tab: false
+      text: Button text
+      variant: primary
+      arrow: right
+      onclick:
+    image:
+      _bookshop_name: generic/image
+      image_path: /assets/images/Hero--background-feature-3.png
+      image_alt:
+      image_sizes:
+  styles:
+    image_alignment: left
+    color_group: primary
+content_blocks:
+  - _bookshop_name: sections/gallery
+    content:
+      show_note: true
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      gallery:
+        _bookshop_name: simple/image-gallery
+        show_note: true
+        images:
+          - _bookshop_name: generic/image
+            image_path: /assets/uploads/image-copy-9.png
+            image_alt:
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/uploads/image-copy-9.png
+            image_alt:
+            image_sizes:
+          - _bookshop_name: generic/image
+            image_path: /assets/uploads/image-copy-9.png
+            image_alt:
+            image_sizes:
+        button:
+          _bookshop_name: generic/button
+          text: Load more
+          variant: primary
+          arrow: down
+    styles:
+      color_group: primary
+      content_alignment: center
+  - _bookshop_name: sections/simple-text-block
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      text:
+        _bookshop_name: generic/text-block
+        text: >-
+          ### Your rich text content
+
+          You can use **bold text** and *italic text* along with
+          [links](http://google.com) and others options.
+    styles:
+      color_group: primary
+  - _bookshop_name: sections/left-right-contact
+    content:
+      show_note: true
+      id:
+      display_social_icons: true
+      heading: A contact block
+      description: >-
+        This is a simple yet powerful block to display not only your location by
+        using Google Maps, but also any other contact details you wish to share
+        with your customers.
+      contact_details:
+        - _type: Email
+          text: 'Email address: mybusiness@business.com'
+          hero_library_icon_name: envelope
+      map:
+        _bookshop_name: simple/google-map-embed
+        latitude:
+        longitude:
+        zoom_level: 9
+      buttons: []
+    styles:
+      color_group: primary
+      image_alignment: left
+  - _bookshop_name: sections/form
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      form:
+        _bookshop_name: simple/form-builder
+        id:
+        form_submission_type: email/cloudcannon
+        inbox_key:
+        subject:
+        success_page: ''
+        form_elements: []
+        submit_button:
+          text: Button text
+          variant: primary
+          arrow: right
+    styles:
+      color_group: primary
+      content_alignment: center
+  - _bookshop_name: sections/left-right-labelled-icons
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      icons:
+        - hero_library_icon_name: face-smile
+          icon_type: outline
+          icon_text: 100% Happy customer reviews
+        - hero_library_icon_name: heart
+          icon_type: outline
+          icon_text: Great customer service
+        - hero_library_icon_name: sparkles
+          icon_type: outline
+          icon_text: Outstanding product reviews
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Button text
+          variant: primary
+          arrow: right
+          onclick:
+      image:
+        _bookshop_name: generic/image
+        image_path:
+        image_alt:
+        image_sizes:
+    styles:
+      color_group: primary
+      image_alignment: left
+  - _bookshop_name: sections/embed
+    content:
+      show_note: true
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      embed:
+        _bookshop_name: generic/custom-embed
+        embed:
+        ratio: default
+      button:
+    styles:
+      color_group: primary
+      content_alignment: center
+  - _bookshop_name: sections/centered-large-asset
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      asset:
+        _bookshop_name: generic/image
+        image_path: /assets/uploads/photo-2021-11-26-16-24-19.jpeg
+        image_alt:
+        image_sizes:
+      button:
+        _bookshop_name: generic/button
+        url: '#'
+        open_in_new_tab: false
+        text: Button text
+        variant: primary
+        arrow: right
+        onclick:
+    styles:
+      color_group: primary
+  - _bookshop_name: sections/icon-cards
+    content:
+      id:
+      heading:
+        _bookshop_name: generic/heading
+        eyebrow_headline: Eyebrow Heading
+        primary_heading: Primary Heading
+        eyebrow_headline_hierarchy: h3
+        primary_heading_hierarchy: h2
+      description: Description text to compliment the block
+      grid_items:
+        - icon:
+            hero_library_icon_name: academic-cap
+            icon_type: solid
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            primary_heading: Primary Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading_hierarchy: h2
+          description: >-
+            These versatile cards can be used to talk about your services or
+            products, or anything else you are keen to share with your audience.
+            They come with an action link to get your users into the journey
+            you’ve crafted for them.
+          buttons: []
+        - icon:
+            hero_library_icon_name: academic-cap
+            icon_type: solid
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            primary_heading: Primary Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading_hierarchy: h2
+          description: >-
+            These versatile cards can be used to talk about your services or
+            products, or anything else you are keen to share with your audience.
+            They come with an action link to get your users into the journey
+            you’ve crafted for them.
+          buttons: []
+        - icon:
+            hero_library_icon_name: academic-cap
+            icon_type: solid
+          heading:
+            _bookshop_name: generic/heading
+            eyebrow_headline: Eyebrow Heading
+            primary_heading: Primary Heading
+            eyebrow_headline_hierarchy: h3
+            primary_heading_hierarchy: h2
+          description: >-
+            These versatile cards can be used to talk about your services or
+            products, or anything else you are keen to share with your audience.
+            They come with an action link to get your users into the journey
+            you’ve crafted for them.
+          buttons: []
+      buttons: []
+    styles:
+      color_group: primary
+      card_color_group: primary
+      content_alignment: center
 ---
