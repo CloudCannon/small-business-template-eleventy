@@ -1,4 +1,5 @@
 ---
+_schema: default
 title: Booking
 page_description:
 featured_image:
@@ -18,10 +19,16 @@ hero:
       eyebrow_headline_hierarchy: h3
       primary_heading_hierarchy: h2
     description: >-
-      We wanted you to have a couple of options to use above the fold, and give
-      you the customisation you need to display your product/service in the best
-      way possible.
+      Here are a few options to use above the fold. Customize these elements to
+      display your products or services in the best way possible.
     button:
+      _bookshop_name: generic/button
+      url: '#'
+      open_in_new_tab: false
+      text: Add an optional button
+      variant: primary
+      arrow: right
+      onclick:
     image:
       _bookshop_name: generic/image
       image_path: /assets/images/Hero--background-feature-3.png
@@ -109,8 +116,6 @@ content_blocks:
           decision. Make sure you provide it to them.
 
 
-
-
           ### **How do I pay for the service?**
 
 
@@ -123,13 +128,13 @@ content_blocks:
       id:
       heading:
         _bookshop_name: generic/heading
-        eyebrow_headline: Bite size information
-        primary_heading: An image card grid
+        eyebrow_headline: Bite-sized information
+        primary_heading: An icon card grid
         eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       description: >-
-        Sometimes you only need a small text and icon section within a card grid
-        is the best option to showcase your content.
+        Sometimes you only need a small amount of text. An icon section within a
+        card grid is a great option to showcase your content.
       grid_items:
         - icon:
             hero_library_icon_name: puzzle-piece
@@ -170,7 +175,14 @@ content_blocks:
             These versatile cards can be used to talk about your services or
             products, or anything else you are keen to share with your audience.
           buttons: []
-      buttons: []
+      buttons:
+        - _bookshop_name: generic/button
+          url: '#'
+          open_in_new_tab: false
+          text: Another optional button!
+          variant: primary
+          arrow: right
+          onclick:
     styles:
       color_group: primary
       card_color_group: secondary0
@@ -185,8 +197,8 @@ content_blocks:
         eyebrow_headline_hierarchy: h3
         primary_heading_hierarchy: h2
       description: >-
-        Have a Youtube video you want to share? This component gives you the
-        flexibility to either add a Youtube video or an image.
+        Have a strong visual element you want to share? This component gives you
+        the flexibility to either add a YouTube video or an image.
       asset:
         _bookshop_name: generic/video
         video_source: YouTube
