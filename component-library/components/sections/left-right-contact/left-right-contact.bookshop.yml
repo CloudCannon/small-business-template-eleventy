@@ -18,7 +18,7 @@ blueprint:
     contact_details:
       - text: 'Email address: mybusiness@business.com'
         hero_library_icon_name: envelope
-    map: bookshop:simple/google-map-embed
+    map: bookshop:simple/google-map-embed!
     buttons: [bookshop:generic/button]    
   styles:
     color_group: "primary"
@@ -34,7 +34,7 @@ preview:
     contact_details:
       - text: 'Email address: mybusiness@business.com'
         hero_library_icon_name: envelope
-    map: bookshop:simple/google-map-embed
+    map: bookshop:simple/google-map-embed!
     buttons: [bookshop:generic/button]
   styles:
     color_group: "primary"

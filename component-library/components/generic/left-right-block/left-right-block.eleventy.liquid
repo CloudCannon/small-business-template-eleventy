@@ -20,7 +20,7 @@
       {% endif %}
       {% if text %}
         <div class="{{ c }}__content-text">
-          {% bookshop "generic/text-block" bind:text %}
+          {% bookshop "generic/text-block" bind:description %}
         </div>
       {% endif %}
       {% if icons %}
@@ -41,7 +41,7 @@
   </div>
   <div class="{{ c }}__media {% if image_padding %}{{ c }}__media--auto-height{% endif %}">
     {% if image %}
-      {% bookshop "generic/image" bind:image image_sizes:"(min-width: 1279px) 700px, 100vw" %}
+      {% bookshop "generic/image" bind:image image_sizes:"(min-width: 769px) 700px, 100vw" %}
     {% endif %}
     {% if map %}
       {% bookshop "simple/google-map-embed" bind:map %}

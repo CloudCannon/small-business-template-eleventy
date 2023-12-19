@@ -15,13 +15,6 @@
     grid-column: 2 / -2;
   }
 
-  &__heading {
-      display: flex;
-      flex-direction: column;
-      gap: var(--gap-large);
-      align-items: center;
-  }
-
   &__buttons {
     display: flex;
     justify-content: center;
@@ -33,7 +26,8 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 769px) {
+  /* Tablet view */
+  @media screen and (min-width: 480px) {
     &__heading {
       grid-column: 2 / -2;
     }
@@ -42,7 +36,8 @@
     }
   }
 
-  @media screen and (min-width: 1279px) {
+  /* Desktop view */
+  @media screen and (min-width: 769px) {
     &__heading {
       grid-column: 4 / -4;
     }
@@ -59,11 +54,14 @@
     width:100%;
 
     & .c-card{
-      @media screen and (min-width: 769px) {
+
+      /* Tablet view */
+      @media screen and (min-width: 480px) {
           width: calc((100% - 24px) / 2);
       }
 
-      @media screen and (min-width: 1024px) {
+      /* Desktop view */
+      @media screen and (min-width: 769px) {
           width: calc((100% - 48px) / 3);
       }
     }

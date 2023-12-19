@@ -10,12 +10,6 @@
         grid-column: 2 / -2;
     }
     
-    &__heading {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap-large);
-    }
-    
     &--content-align-center .c-custom-embed  {
         display: flex;
         justify-content: center;
@@ -26,7 +20,8 @@
         text-align: center;
     }
 
-    @media screen and (min-width: 1279px) {
+    /* Desktop view */
+    @media screen and (min-width: 769px) {
         &__heading, &__embed, &__button, &__note {
             grid-column: 4 / -4;
         }
