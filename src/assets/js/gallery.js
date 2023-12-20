@@ -20,7 +20,7 @@ galleries.forEach(gallery => {
     let paginateCardAmount = window.innerWidth >= 769 ? 6 : 3
     let showCards = paginateCards(0, paginateCardAmount, tiles, totalTiles, button)
 
-    gallery.querySelector('.c-button-temp').addEventListener("click", e => {
+    gallery.querySelector('.c-button').addEventListener("click", e => {
         showCards = paginateCards(showCards, paginateCardAmount, tiles, totalTiles, button)
     });
 });
