@@ -30,6 +30,8 @@ collections_config:
       default:
         path: src/schemas/page.html
 _inputs:
+  favicon:
+    type: image
   arrow:
     type: select
     options:
@@ -108,11 +110,12 @@ _inputs:
     hidden: true
   draft:
     type: switch
+    comment: If this is switched on, this page will not appear on the live site
   page_description:
     comment: If empty, defaults to the description set in the SEO data file
   featured_image:
     comment: If empty, defaults to the image set in the SEO data file
-  logo_image:
+  nav_logo_image:
     comment: >-
       If an image is uploaded it will be used over a name set in the logo text
       field
@@ -120,6 +123,11 @@ _inputs:
     comment: >-
       If an image is set in the logo image field, this value will not be used.
       You can change the font of a text based logo in data/theme.
+  footer_logo_image:
+    comment: >-
+      If an image is uploaded it will be used over a name set in the logo text
+      field.       Please note, the footer image has a fixed width size but not
+      a fixed height
   footer_content:
     type: markdown
     options:
