@@ -123,6 +123,8 @@ _inputs:
     comment: >-
       If an image is set in the logo image field, this value will not be used.
       You can change the font of a text based logo in data/theme.
+  footer.logo_image:
+    comment: Please note, the footer image has a fixed width size but not a fixed height
   footer_content:
     type: markdown
     options:
