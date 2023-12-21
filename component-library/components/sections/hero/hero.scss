@@ -1,6 +1,7 @@
 .c-hero {
   $c: &;    
   height: calc(100svh - var(--nav-height));
+  padding:0;
   display: grid;
   grid-template-columns: var(--twelve-column-grid);
   grid-template-rows: minmax(0, 1fr);
@@ -38,12 +39,6 @@
       max-width: 60ch; //recommended characters per line
     }
   }
-
-  /* Desktop view */
-  @media screen and (min-width: 769px) {  
-    padding:0;
-  }
-
 
   &--left-right-variant {      
     padding-top: 192px;
