@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+node './utils/combine-css.js'
 npx @bookshop/generate
