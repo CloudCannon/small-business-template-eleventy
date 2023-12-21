@@ -27,7 +27,6 @@
       "label": "Instagram"
     }
   ],
-  "google_maps_api_key": null,
   "_inputs": {
     "social_media_links": {
       "type": "array",
@@ -56,9 +55,6 @@
           ]
         }
       }
-    },
-    "google_maps_api_key": {
-      "comment": "The API key used for the Google Map component. To see more about getting an API key see the [documentation](https://developers.google.com/maps/documentation/javascript/get-api-key)."
     }
   }
 }
