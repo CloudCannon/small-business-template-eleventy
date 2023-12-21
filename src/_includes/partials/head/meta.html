@@ -29,3 +29,7 @@
 
 {%- comment -%} Canonical URL for SEO {%- endcomment -%}
 <link rel="canonical" href="{{ site.base_url }}{{ page.url | url }}" />
+
+{% if .title == "Components" %}
+<meta name="robots" content="noindex">
+{% endif %}
