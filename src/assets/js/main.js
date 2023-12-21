@@ -1,6 +1,8 @@
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import "./form-validation";
 import "./gallery";
+import "./leaflet";
+import "./map"
 
 const nav = document.getElementById("main-menu");
 const openClass = "c-navigation--open";
