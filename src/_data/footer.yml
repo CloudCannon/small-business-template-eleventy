@@ -1,0 +1,17 @@
+footer_logo_image: ''
+logo_text: Venture
+navigation_items:
+  - label: About Us
+    link_url: /about
+    open_in_new_tab: false
+  - label: Our Services
+    link_url: /services
+    open_in_new_tab: false
+  - label: Book Now
+    link_url: /bookings
+    open_in_new_tab: false
+  - label: Contact Us
+    link_url: /contact
+    open_in_new_tab: false
+footer_content: ©Enter your copyright and terms and conditions.
+footer_color_group: "primary"
