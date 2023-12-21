@@ -249,7 +249,7 @@
 
   /* Desktop view */
   @media screen and (min-width: 769px) {
-    position:static;
+    position:relative;
     height: auto;
     &__contents {
       grid-template-columns: 2fr 3fr;
