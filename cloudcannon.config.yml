@@ -30,6 +30,8 @@ collections_config:
       default:
         path: src/schemas/page.html
 _inputs:
+  favicon:
+    type: image
   arrow:
     type: select
     options:
