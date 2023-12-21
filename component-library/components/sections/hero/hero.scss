@@ -41,9 +41,6 @@
   }
 
   &--left-right-variant {      
-    padding-top: 192px;
-    padding-bottom: 0;
-
     grid-template-rows: auto minmax(0, 1fr);
     row-gap: var(--gap-extra-large);
     
