@@ -23,4 +23,6 @@
   {% assign font_string = font_string | append: '&display=swap' %}
 {% endif %}
 
+<link rel="preconnect" href="https://fonts-gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family={{ font_string }}" as="style" />
 <link href="https://fonts.googleapis.com/css2?family={{ font_string }}" rel="stylesheet">
