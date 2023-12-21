@@ -14,11 +14,11 @@ blueprint:
     id:
     display_social_icons: true
     heading: A contact block
-    description: This is a simple yet powerful block to display not only your location by using Google Maps, but also any other contact details you wish to share with your customers.
+    description: This is a simple yet powerful block to display not only your location by using OpenStreetMap, but also any other contact details you wish to share with your customers.
     contact_details:
       - text: 'Email address: mybusiness@business.com'
         hero_library_icon_name: envelope
-    map: bookshop:simple/google-map-embed!
+    map: bookshop:simple/map
     buttons: [bookshop:generic/button]    
   styles:
     color_group: "primary"
@@ -34,7 +34,7 @@ preview:
     contact_details:
       - text: 'Email address: mybusiness@business.com'
         hero_library_icon_name: envelope
-    map: bookshop:simple/google-map-embed!
+    map: bookshop:simple/map
     buttons: [bookshop:generic/button]
   styles:
     color_group: "primary"
