@@ -39,6 +39,11 @@
     }
   }
 
+  // fix for small height screens
+  @media screen and (max-height: 400px){
+    height:auto;
+  }
+
   &--left-right-variant {
     grid-template-rows: auto minmax(0, 1fr);
     row-gap: var(--gap-extra-large);
