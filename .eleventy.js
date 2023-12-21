@@ -15,10 +15,7 @@ const MarkdownIt = require("markdown-it"),
   });
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets/images");
-  eleventyConfig.addPassthroughCopy("src/assets/uploads");
-  eleventyConfig.addPassthroughCopy("src/assets/fonts");
-  eleventyConfig.addPassthroughCopy("src/assets/styles");
+  eleventyConfig.addPassthroughCopy("src/assets/*");
   eleventyConfig.addPassthroughCopy("css");
 
   // Data extensions
