@@ -39,6 +39,12 @@
     }
   }
 
+  /* Desktop view */
+  @media screen and (min-width: 769px) {  
+    padding:0;
+  }
+
+
   &--left-right-variant {      
     padding-top: 192px;
     padding-bottom: 0;
@@ -62,7 +68,6 @@
 
     /* Desktop view */
     @media screen and (min-width: 769px) {      
-      padding: 0;
       grid-template-rows: minmax(0, 1fr);
       #{$c}__content {
         grid-row: 1 / 2;
