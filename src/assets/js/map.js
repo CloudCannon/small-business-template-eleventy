@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
     let maps = document.getElementsByClassName("c-map-embed");
 
+    L.Icon.Default.imagePath = '/assets/images/map/';
+
     for (let i = 0; i < maps.length; i++) {
         let mapEl = maps[i];
         let map = L.map(mapEl, { scrollWheelZoom: false });
