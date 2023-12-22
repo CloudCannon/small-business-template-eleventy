@@ -75,7 +75,6 @@ checkViewportSize(); // Trigger on initial page load
 
 // check header height
 function checkHeaderHeight() {
-  console.log("here?")
   // select header element
   const header = document.querySelector('.c-navigation');
   // get rendered styles
