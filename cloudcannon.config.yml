@@ -21,6 +21,7 @@ collections_config:
     filter:
       base: strict
       exclude:
+        - 404.html
         - components.html
     icon: description
     disable_add: false
