@@ -10,8 +10,8 @@
 
     <div class="{{ c }}__lists">
         {% for list in content.lists %}
+            <h4 class="{{ c }}__lists__list__heading">{{ list.list_heading }}</h4>
             <ul class="{{ c }}__lists__list">
-                <h4 class="{{ c }}__lists__list__heading">{{ list.list_heading }}</h4>
                 {% for item in list.list_items %}
                     <li class="{{ c }}__lists__list__item">
                         <p class="{{ c }}__lists__list__item__label">{{ item.label }}</p>
